@@ -8,6 +8,7 @@ $selectedLayanan = isset($_GET['layanan']) ? $_GET['layanan'] : '';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/image/iconWeb.png">
     <title>KEMASIN</title>
     <link rel="stylesheet" href="https://unpkg.com/flowbite@latest/dist/flowbite.min.css" />
 </head>
@@ -20,7 +21,7 @@ $selectedLayanan = isset($_GET['layanan']) ? $_GET['layanan'] : '';
             <p class="text-center text-4xl font-bold text-gray-600 mb-10"> Pengisian Form <?= $selectedLayanan ?> </p>
 
             <div class="border-2 border-gray-800 py-8 mx-auto" style="width:50%">
-                <form class="max-w-md mx-auto">
+                <form class="max-w-md mx-auto" method="POST" action = "formLayanTy.php?product=<?=$selectedLayanan?>">
                     <div class="relative z-0 w-full mb-5 group">
                         <input type="email" name="email" id="email"
                             class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-blue-600 peer"
@@ -82,10 +83,10 @@ $selectedLayanan = isset($_GET['layanan']) ? $_GET['layanan'] : '';
                     </div>
                     <div class="grid md:grid-cols-2 md:gap-6">
                         <div class="relative z-0 w-full mb-5 group">
-                            <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phone" id="phone"
+                            <input type="number" name="phone" id="phone"
                                 class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                 placeholder=" " required />
-                            <label for="phone"
+                            <label for="number"
                                 class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Nomor
                                 Telephone</label>
                         </div>

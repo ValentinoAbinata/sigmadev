@@ -1,5 +1,8 @@
 footer + login nanti
 
+laykes butuh banyak opsi gg gg gg
+nanti add modal di formLayan(tergantung besok belajar nya apa) https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal2
+
 id : admin
 pass : admin1234
 
