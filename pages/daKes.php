@@ -15,8 +15,8 @@
 
     <?php include "../layout/navbar.php" ?>
     <div class="bg-gray-100">
-        <div style=" padding: 5%; padding-top : 7%; padding-bottom : 0%;">
-            <p class="text-center text-4xl font-bold text-blue-700 mb-10"> Layanan Kesehatan </p>
+        <div style=" padding: 5%; padding-top : 7%; padding-bottom : 0%; min-height:75dvh;">
+            <p class="text-center text-4xl font-bold text-blue-700 mb-10"> Data Kesehatan </p>
         </div>
         <?php include "../layout/footer.php" ?>
     </div>

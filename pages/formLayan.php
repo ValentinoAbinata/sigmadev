@@ -17,11 +17,12 @@ $selectedLayanan = isset($_GET['layanan']) ? $_GET['layanan'] : '';
 
     <?php include "../layout/navbar.php" ?>
     <div class="bg-gray-100">
-        <div style=" padding: 5%; padding-top : 7%; padding-bottom : 0%;">
+        <div style=" padding: 5%; padding-top : 7%; padding-bottom : 0%; min-height:75dvh;">
             <p class="text-center text-4xl font-bold text-gray-600 mb-10"> Pengisian Form <?= $selectedLayanan ?> </p>
 
             <div class="border-2 border-gray-800 py-8 mx-auto" style="width:50%">
-                <form class="max-w-md mx-auto" method="POST" action = "formLayanTy.php?product=<?=$selectedLayanan?>">
+                <form class="max-w-md mx-auto close" method="POST">
+                    <!-- action = "formLayanTy.php?product=<?= $selectedLayanan ?>" -->
                     <div class="relative z-0 w-full mb-5 group">
                         <input type="email" name="email" id="email"
                             class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-blue-600 peer"
@@ -104,12 +105,38 @@ $selectedLayanan = isset($_GET['layanan']) ? $_GET['layanan'] : '';
 
             </div>
         </div>
+
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const closeButton = document.querySelector(".close");
+
+                closeButton.addEventListener("submit", function (event) {
+                    event.preventDefault();
+
+                    Swal.fire({
+                        title: "Terima Kasih \ntelah mengisi form!",
+                        text: "Silahkan Menghubungi mimin",
+                        icon: "success",
+                        confirmButtonText: "Kembali ke Beranda"
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                            closeButton.submit();
+                            window.location.href = "beranda.php";
+
+                        }
+                    });
+                });
+            });
+        </script>
+
+
         <?php include "../layout/footer.php" ?>
     </div>
 
 
-
-
+    <!-- sweet alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/flowbite@latest/dist/flowbite.bundle.js"></script>
 </body>
 

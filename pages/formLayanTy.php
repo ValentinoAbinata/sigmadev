@@ -15,7 +15,7 @@
 
     <?php include "../layout/navbar.php" ?>
     <div class="bg-gray-100">
-        <div style=" padding: 5%; padding-top : 7%; padding-bottom : 0%;">
+        <div style=" padding: 5%; padding-top : 7%; padding-bottom : 0%; min-height:75dvh;">
             <p class="text-center text-4xl font-bold text-blue-700 mb-10"> Ini Tambahin Modal Aja Gausah Pake New Slide </p>
         </div>
         <?php include "../layout/footer.php" ?>
