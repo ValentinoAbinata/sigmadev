@@ -15,18 +15,15 @@
 
     <?php include "../layout/navbar.php" ?>
     <div class="bg-gray-100">
-        <div style=" padding: 5%; padding-top : 7%; padding-bottom : 0%; min-height:75dvh;">
+        <div style=" padding: 5%; padding-top : 9%; padding-bottom : 0%; min-height:75dvh;">
             <p class="text-center text-4xl font-bold text-blue-700 mb-10"> Frequently Asked Questions (FAQ) </p>
-            <div class="" style="padding:0px 20% 0px 20%;" >
+            <div class="mb-5" style="padding:0px 20% 0px 20%;" >
                 
                 <div class="col p-2 bg-green-300" style="border-color : white; border-width : 3px; border-radius: 12px;">
-                    <button onclick="q1()">q1?</button>
+                    <button onclick="q1()">Apakah KEMASIN itu?</button>
 
                     <div id="q1" class="" style="display:none; border-color:gray; border-top-width : 3px;">
-                        Why are you gay, Faris? Are you need 8==D
-                        annk ememk <br>
-                        eankae <br>
-                        aekn<br>
+                        KEMASIN adalah website heheheheheeeheheheehehehe
                     </div>
 
                     <script>
@@ -42,10 +39,10 @@
                 </div>
 
                 <div class="col p-2 bg-green-300" style="border-color : white; border-width : 3px; border-radius: 12px;">
-                    <button onclick="q2()">q2?</button>
+                    <button onclick="q2()">Bagaimana cara agar data Saya tampil dalam data kesehatan?</button>
 
                     <div id="q2" class="" style="display:none; border-color:gray; border-top-width : 3px;">
-                        Why are you gay, Faris? Are you need 8==D
+                        Setelah Anda mengisi form, maka laporkan kepada Customer Service.
                     </div>
 
                     <script>
@@ -61,10 +58,9 @@
                 </div>
 
                 <div class="col p-2 bg-green-300" style="border-color : white; border-width : 3px; border-radius: 12px;">
-                    <button onclick="q3()">q3?</button>
-
+                    <button onclick="q3()">Apa itu Klinik Utama?</button>
                     <div id="q3" class="" style="display:none; border-color:gray; border-top-width : 3px;">
-                        Why are you gay, Faris? Are you need 8==D
+                    Klinik Utama adalah klinik yang menyelenggarakan pelayanan medik spesialistik atau pelayanan medik dasar dan spesialis.
                     </div>
 
                     <script>
@@ -80,15 +76,34 @@
                 </div>
 
                 <div class="col p-2 bg-green-300" style="border-color : white; border-width : 3px; border-radius: 12px;">
-                    <button onclick="q4()">q4?</button>
+                    <button onclick="q4()">Apa itu Klinik Pratama?</button>
 
                     <div id="q4" class="" style="display:none; border-color:gray; border-top-width : 3px;">
-                        Why are you gay, Faris? Are you need 8==D
+                    Klinik Pratama adalah klinik yang menyelenggarakan pelayanan medik dasar yang terdiri dari Pelayanan dokter umum, Pelayanan dokter gigi umum, Pelayanan tindakan sederhana, Pelayanan kebidanan sederhana, Pelayanan administrasi rekam medis.
                     </div>
 
                     <script>
                         function q4() {
                             var x = document.getElementById("q4");
+                            if (x.style.display === "block") {
+                                x.style.display = "none";
+                            } else {
+                                x.style.display = "block";
+                            }
+                        }
+                    </script>
+                </div>
+
+                <div class="col p-2 bg-green-300" style="border-color : white; border-width : 3px; border-radius: 12px;">
+                    <button onclick="q5()">Siapakah pembuat website sigma ini?</button>
+
+                    <div id="q5" class="" style="display:none; border-color:gray; border-top-width : 3px;">
+                    Hanya Valentino Abinata
+                    </div>
+
+                    <script>
+                        function q5() {
+                            var x = document.getElementById("q5");
                             if (x.style.display === "block") {
                                 x.style.display = "none";
                             } else {

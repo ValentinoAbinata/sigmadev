@@ -7,7 +7,7 @@
     <link rel="icon" href="../assets/image/iconWeb.png">
     <title>KEMASIN</title>
     <link rel="stylesheet" href="https://unpkg.com/flowbite@latest/dist/flowbite.min.css" />
-    <link rel="stylesheet" href="../assets/css/styleSlide.css">
+
 
 </head>
 
@@ -27,39 +27,37 @@
             </div>
             <p class="text-center text-4xl font-bold text-blue-700 mb-10"> Selamat Datang </p>
 
-
-
-            <div id="gallery" class="relative w-full" data-carousel="slide">
+            <div id="gallery" class="relative w-full mb-" style="z-index: 0;" data-carousel="slide">
                 <!-- Carousel wrapper -->
                 <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
                     <!-- Item 1 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
-                            class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        <img src="../assets/image/1.png"
+                            class="absolute block max-h-85 w-85 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-contain"
                             alt="">
                     </div>
                     <!-- Item 2 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                        <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg"
-                            class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        <img src="../assets/image/2.jpg"
+                            class="absolute block max-h-85 w-85 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-contain"
                             alt="">
                     </div>
                     <!-- Item 3 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg"
-                            class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        <img src="../assets/image/3.jpg"
+                            class="absolute block max-h-85 w-85 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-contain"
                             alt="">
                     </div>
                     <!-- Item 4 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg"
-                            class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        <img src="../assets/image/4.jpg"
+                            class="absolute block max-h-85 w-85 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-contain"
                             alt="">
                     </div>
                     <!-- Item 5 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg"
-                            class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        <img src="../assets/image/5.jpg"
+                            class="absolute block max-h-85 w-85 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-contain"
                             alt="">
                     </div>
                 </div>
@@ -91,37 +89,31 @@
                     </span>
                 </button>
             </div>
-
-
-
-            <!-- Testimoni Pasien -->
-            <div class="mb-10">
-                <h2 class="text-center text-3xl font-bold text-blue-700 mb-5">Testimoni Pasien</h2>
-                <div id="testimonial-carousel" class="relative w-full" data-carousel="slide">
-                    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-                        <!-- Testimonial 1 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                            <div class="text-center">
-                                <p class="italic text-xl">"Layanan KEMASIN sangat membantu saya dalam memantau kesehatan
-                                    harian saya. Terima kasih!"</p>
-                                <span>- Faris, Yogyakarta</span>
-                            </div>
+        </div>
+        <!-- Testimoni Pasien -->
+        <div class="mt-10 mb-10">
+            <h2 class="text-center text-3xl font-bold text-blue-700 mb-5">Testimoni Pasien</h2>
+            <div id="testimonial-carousel" class="relative w-full" data-carousel="slide">
+                <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                    <!-- Testimonial 1 -->
+                    <div class="hidden duration-700 transition-opacity opacity-0" data-carousel-item="active">
+                        <div class="text-center">
+                            <p class="italic text-xl">"Layanan KEMASIN sangat membantu saya dalam memantau kesehatan harian saya. Terima kasih!"</p>
+                            <span>- Faris, Yogyakarta</span>
                         </div>
-                        <!-- Testimonial 2 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <div class="text-center">
-                                <p class="italic text-xl">"Proses konsultasi online sangat cepat dan mudah. Dokter
-                                    memberikan saran yang bermanfaat."</p>
-                                <span>- Adi, Sleman</span>
-                            </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="hidden duration-700 transition-opacity opacity-0" data-carousel-item>
+                        <div class="text-center">
+                            <p class="italic text-xl">"Proses konsultasi online sangat cepat dan mudah. Dokter memberikan saran yang bermanfaat."</p>
+                            <span>- Adi, Sleman</span>
                         </div>
-                        <!-- Testimonial 3 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <div class="text-center">
-                                <p class="italic text-xl">"Saya merasa lebih tenang karena bisa mengatur pengingat obat
-                                    melalui fitur KEMASIN."</p>
-                                <span>- Rama, Bantul</span>
-                            </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="hidden duration-700 transition-opacity opacity-0" data-carousel-item>
+                        <div class="text-center">
+                            <p class="italic text-xl">"Saya merasa lebih tenang karena bisa mengatur pengingat obat melalui fitur KEMASIN."</p>
+                            <span>- Rama, Bantul</span>
                         </div>
                     </div>
                     <!-- Slider controls -->
@@ -154,17 +146,15 @@
                 </div>
             </div>
 
+            <br>
 
+
+
+            <?php include "../layout/footer.php" ?>
         </div>
 
-        <br>
-
-        <?php include "../layout/footer.php" ?>
-    </div>
-
-    <script src="https://unpkg.com/flowbite@latest/dist/flowbite.bundle.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
-    <script src="../assets/source/mainSlide.js"></script>
+        <script src="https://unpkg.com/flowbite@latest/dist/flowbite.bundle.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 </body>
 
 </html>
