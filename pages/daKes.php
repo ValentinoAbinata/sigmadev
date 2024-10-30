@@ -1,5 +1,4 @@
 <?php
-    // include "connect.php" ;
     include("../assets/mySql/connect.php");
     $query = mysqli_query($conn, "SELECT * FROM pasien") ;
 ?>

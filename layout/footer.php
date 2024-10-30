@@ -22,13 +22,13 @@
                 </span>
                 <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-white">
                     <li>
-                        <a href="#" class="hover:underline me-4 md:me-6">Tentang Kami</a>
+                        <a href="fTentKami.php" class="hover:underline me-4 md:me-6">Tentang Kami</a>
                     </li>
                     <li>
-                        <a href="#" class="hover:underline me-4 md:me-6">Syarat Penggunaan</a>
+                        <a href="fSyarPengg.php" class="hover:underline me-4 md:me-6">Syarat Penggunaan</a>
                     </li>
                     <li>
-                        <a href="#" class="hover:underline me-4 md:me-6">Kebijakan Privasi</a>
+                        <a href="fzKebPriv.php" class="hover:underline me-4 md:me-6">Kebijakan Privasi</a>
                     </li>
                 </ul>
             </div>
