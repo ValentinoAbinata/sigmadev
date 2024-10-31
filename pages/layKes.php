@@ -26,7 +26,7 @@
                     <button type="submit" name="layanan" value="Vaksin Sinovac" 
                     class="relative w-full p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" style = "height: 250px">
                         <img class="absolute inset-0 object-cover w-full h-full rounded-lg opacity-30 blur-sm hover:blur-none"
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_EWct6A5puG014l71HK0EW7_4h5vL_5dW6A&s"
+                            src="../assets/image/Sinovac.png"
                             alt="Gambar Sinovac">
                         <div class="relative">
                             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-1000 dark:text-white">Vaksin Sinovac</h5>
@@ -37,7 +37,7 @@
                     <button type="submit" name="layanan" value="Vaksin AstraZeneca" 
                     class="relative w-full p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" style = "height: 250px">
                         <img class="absolute inset-0 object-cover w-full h-full rounded-lg opacity-30 blur-sm hover:blur-none"
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKctBQ6amDZI3thkb3VPN7_IvbV39wH7ctlg&s"
+                            src="../assets/image/AstraZeneca.png"
                             alt="Gambar AstraZeneca">
                         <div class="relative">
                             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-1000 dark:text-white">Vaksin AstraZeneca</h5>
@@ -49,7 +49,7 @@
                     <button type="submit" name="layanan" value="Vaksin Moderna" 
                     class="relative w-full p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" style = "height: 250px">
                         <img class="absolute inset-0 object-cover w-full h-full rounded-lg opacity-30 blur-sm hover:blur-none"
-                            src="https://rsia.acehprov.go.id/thumbnail/700x0/media/2021.08/moderna.jpg"
+                            src="../assets/image/Moderna.png"
                             alt="Gambar Moderna">
                         <div class="relative">
                             <h5 class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">Vaksin Moderna</h5>
@@ -60,7 +60,7 @@
                     <button type="submit" name="layanan" value="Vaksin Stunting" 
                     class="relative w-full p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" style = "height: 250px">
                         <img class="absolute inset-0 object-cover w-full h-full rounded-lg opacity-30 blur-sm hover:blur-none"
-                            src="https://cdn.antaranews.com/cache/1200x800/2024/09/20/Polio.jpg"
+                            src="../assets/image/Stunting.png"
                             alt="Gambar Stunting">
                         <div class="relative">
                             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Vaksin Stunting</h5>
@@ -71,7 +71,7 @@
                     <button type="submit" name="layanan" value="Vaksin BioNTech" 
                     class="relative w-full p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" style = "height: 250px">
                         <img class="absolute inset-0 object-cover w-full h-full rounded-lg opacity-30 blur-sm hover:blur-none"
-                            src="https://gdb.voanews.com/3e8439cb-9ef0-48ff-90b2-a50e5cee7760_cx0_cy3_cw0_w1200_r1.jpg"
+                            src="../assets/image/BioNTech.png"
                             alt="Gambar BioNTech">
                         <div class="relative">
                             <h5 class="mb-2 text-2xl text-white font-bold tracking-tight text-gray-900 dark:text-white">Vaksin BioNTech</h5>
@@ -82,7 +82,7 @@
                     <button type="submit" name="layanan" value="Vaksin Sinopharm" 
                     class="relative w-full p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" style = "height: 250px">
                         <img class="absolute inset-0 object-cover w-full h-full rounded-lg opacity-30 blur-sm hover:blur-none"
-                            src="https://static.republika.co.id/uploads/images/inpicture_slide/vaksin_210501153804-715.jpeg"
+                            src="../assets/image/Sinopharm.png"
                             alt="Gambar Sinopharm">
                         <div class="relative">
                             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Vaksin Sinopharm</h5>
@@ -93,7 +93,7 @@
                     <button type="submit" name="layanan" value="Vaksin Janssen" 
                     class="relative w-full p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" style = "height: 250px">
                         <img class="absolute inset-0 object-cover w-full h-full rounded-lg opacity-30 blur-sm hover:blur-none"
-                            src="https://rm.id/images/berita/med/dukung-percepatan-vaksinasi-bpom-terbitkan-izin-darurat-untuk-vaksin-janssen-dan-convidecia_90133.jpg"
+                            src="../assets/image/Janssen.jpg"
                             alt="Gambar Janssen">
                         <div class="relative">
                             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Vaksin Janssen</h5>
@@ -104,7 +104,7 @@
                     <button type="submit" name="layanan" value="Vaksin SputnikV" 
                     class="relative w-full p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" style = "height: 250px">
                         <img class="absolute inset-0 object-cover w-full h-full rounded-lg opacity-30 blur-sm hover:blur-none"
-                            src="https://res.cloudinary.com/dk0z4ums3/image/upload/v1619162393/attached_image/vaksin-sputnik.jpg"
+                            src="../assets/image/sputnikv.jpg"
                             alt="Gambar SputnikV">
                         <div class="relative">
                             <h5 class="mb-2 text-2xl font-bold text-white tracking-tight text-gray-900 dark:text-white">Vaksin SputnikV</h5>

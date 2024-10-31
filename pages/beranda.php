@@ -9,30 +9,7 @@
     <link rel="icon" href="../assets/image/iconWeb.png">
     <title>KEMASIN</title>
     <link rel="stylesheet" href="https://unpkg.com/flowbite@latest/dist/flowbite.min.css" />
-    <style>
-        /* Menambahkan efek scroll smooth */
-        html {
-            scroll-behavior: smooth;
-        }
-
-        .card {
-            background: rgba(232, 228, 166, 0.25);
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-            backdrop-filter: blur(2px);
-            -webkit-backdrop-filter: blur(2px);
-            border-radius: 10px;
-            border: 1px solid rgba(255, 255, 255, 0.18);
-        }
-
-        .card:hover {
-            transform: scale(1.05);
-        }
-        #inti{
-            border: 2px solid #D1D5DB;
-            border-radius : 10px ;
-        }
-    </style>
-
+    <link rel="stylesheet" href="../assets/css/beranda.css">
 
 </head>
 
@@ -132,12 +109,21 @@
                 </button>
             </div>
             <!-- inti Section -->
-            <div class="bg-[#F8F4E4] text-center py-10 px-4 rounded-lg mx-auto mt-7" id= "inti">
+            <div class="bg-[#F8F4E4] text-center py-10 px-4 rounded-lg mx-auto mt-7" id="inti">
                 <img src="../assets/image/iconKemasin2.png" alt="Kemasin logo" class="mx-auto mb-4 w-25">
                 <h2 class="text-3xl font-bold mb-2 text-gray-800">KEMASIN (Kesehatan Masyarakat Indonesia)</h2>
                 <p class="text-lg mb-4 text-gray-600">Website ini menyediakan beberapa informasi mengenai vaksinasi</p>
-                <button class="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-2 rounded-lg text-lg font-semibold mb-8">Learn More</button>
-    
+               
+                <button class="tombolP mb-10 ">
+                    <span class="hover-underline-animation font-semibold"> Learn more </span>       
+                </button>
+
+
+
+
+
+
+
                 <!-- Card Section -->
                 <div class="flex flex-col md:flex-row justify-center gap-5 px-3 mb-10">
                     <!-- Pengertian Card -->
@@ -147,7 +133,7 @@
                             <h3 class="text-2xl font-bold">Pengertian</h3>
                         </div>
                     </div>
-    
+
                     <!-- Dampak card -->
                     <div class="relative w-full md:w-1/3 h-56 bg-cover bg-center rounded-lg shadow-lg overflow-hidden text-black card">
                         <img src="../assets/image/perbedaan.jpg" alt="Perbedaan">
@@ -155,7 +141,7 @@
                             <h3 class="text-2xl font-bold">Perbedaan</h3>
                         </div>
                     </div>
-    
+
                     <!-- Dampak Card -->
                     <div class="relative w-full md:w-1/3 h-56 bg-cover bg-center rounded-lg shadow-lg overflow-hidden text-black card">
                         <img src="../assets/image/dampak.jpg" alt="Dampak">
@@ -208,7 +194,7 @@
 
 
 
-            <?php include "../layout/footer.php" ?>
+        <?php include "../layout/footer.php" ?>
 
         <script src="https://unpkg.com/flowbite@latest/dist/flowbite.bundle.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>

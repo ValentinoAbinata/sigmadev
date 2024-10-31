@@ -10,7 +10,7 @@
 <body>
     <div>
         <nav class="bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 fixed w-full z-20 top-0 start-0 border-b border-blue-200"
-            style="z-index: 1;">
+            style="z-index: 100000;">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="beranda.php" class="flex items-center space-x-3 rtl:space-x-reverse">
                     <img src="../assets/image/iconKemasin.png" class="h-20" alt="KEMASIN Logo">
@@ -43,7 +43,7 @@
                     <ul
                         class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-blue-200 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
                         <li>
-                            <a href="beranda.php" class="block py-2 px-3 rounded hover:bg-blue-200 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 
+                            <a href="beranda.php" class="block py-2 px-3 rounded hover:bg-blue-200 text-lg font-bold md:hover:bg-transparent md:hover:text-blue-700 md:p-0 
               <?php
               if (basename($_SERVER['PHP_SELF']) == 'beranda.php') {
                 echo "text-blue-700";
@@ -58,7 +58,7 @@
 
 
                         <li>
-                            <a href="daKes.php" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 
+                            <a href="daKes.php" class="block py-2 px-3 rounded text-lg font-bold hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 
               <?php
               if (basename($_SERVER['PHP_SELF']) == 'daKes.php') {
                 echo "text-blue-700";
@@ -69,7 +69,7 @@
               ">Data Kesehatan</a>
                         </li>
                         <li>
-                            <a href="layKes.php" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 
+                            <a href="layKes.php" class="block py-2 px-3 rounded text-lg font-bold hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 
               <?php
               if (basename($_SERVER['PHP_SELF']) == 'layKes.php') {
                 echo "text-blue-700";
@@ -80,7 +80,7 @@
               "> Layanan Kesehatan</a>
                         </li>
                         <li>
-                            <a href="faq.php" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 
+                            <a href="faq.php" class="block py-2 px-3 rounded text-lg font-bold hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 
               <?php
               if (basename($_SERVER['PHP_SELF']) == 'faq.php') {
                 echo "text-blue-700";
