@@ -13,7 +13,7 @@
             style="z-index: 100000;">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="beranda.php" class="flex items-center space-x-3 rtl:space-x-reverse">
-                    <img src="../assets/image/iconKemasin.png" class="h-20" alt="KEMASIN Logo">
+                    <img src="../assets/image/iconsigmaDev.png" class="h-20" alt="sigmaDev Logo">
                     <span class="self-center text-2xl font-bold whitespace-nowrap">KEMAS</span> <span
                         class="mx-0 px-0 text-2xl font-bold text-white" style="margin-left : 0 ;">IN</span>
                 </a>

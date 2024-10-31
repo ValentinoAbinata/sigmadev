@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../assets/image/iconWeb.png">
-    <title>KEMASIN</title>
+    <title>sigmaDev</title>
     <link rel="stylesheet" href="https://unpkg.com/flowbite@latest/dist/flowbite.min.css" />
 </head>
 
@@ -20,10 +20,10 @@
             <div class="mb-5" style="padding:0px 20% 0px 20%;" >
                 
                 <div class="col p-2 bg-green-300" style="border-color : white; border-width : 3px; border-radius: 12px;">
-                    <button onclick="q1()">Apakah KEMASIN itu?</button>
+                    <button onclick="q1()">Apakah sigmaDev itu?</button>
 
                     <div id="q1" class="" style="display:none; border-color:gray; border-top-width : 3px;">
-                        KEMASIN adalah website heheheheheeeheheheehehehe
+                        sigmaDev adalah website heheheheheeeheheheehehehe
                     </div>
 
                     <script>

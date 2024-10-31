@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../assets/image/iconWeb.png">
-    <title>KEMASIN</title>
+    <title>sigmaDev</title>
     <link rel="stylesheet" href="https://unpkg.com/flowbite@latest/dist/flowbite.min.css" />
 </head>
 
@@ -26,7 +26,7 @@
 
                 <div class="w-full" style="padding:10%;">
                     <div class="flex justify-center mx-auto">
-                        <img class="w-auto h-7" src="../assets/image/iconKemasin2.png" alt="logo">
+                        <img class="w-auto h-7" src="../assets/image/iconsigmaDev2.png" alt="logo">
                     </div>
 
                     <p class="mt-3 text-xl text-center text-gray-600 dark:text-gray-200">

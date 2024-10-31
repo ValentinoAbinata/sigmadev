@@ -18,7 +18,7 @@
                         Daerah Istimewa Yogyakarta 55281 <br>
                     </a>
                     Indonesia <br>  <br>
-                <a href="beranda.php" class="hover:underline">KEMASIN™</a> © 2024 
+                <a href="beranda.php" class="hover:underline">sigmaDev™</a> © 2024 
                 </span>
                 <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-white">
                     <li>

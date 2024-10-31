@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../assets/image/iconWeb.png">
-    <title>KEMASIN</title>
+    <title>sigmaDev</title>
     <link rel="stylesheet" href="https://unpkg.com/flowbite@latest/dist/flowbite.min.css" />
     <link rel="stylesheet" href="../assets/css/beranda.css">
 
@@ -110,8 +110,8 @@
             </div>
             <!-- inti Section -->
             <div class="bg-[#F8F4E4] text-center py-10 px-4 rounded-lg mx-auto mt-7" id="inti">
-                <img src="../assets/image/iconKemasin2.png" alt="Kemasin logo" class="mx-auto mb-4 w-25">
-                <h2 class="text-3xl font-bold mb-2 text-gray-800">KEMASIN (Kesehatan Masyarakat Indonesia)</h2>
+                <img src="../assets/image/iconsigmaDev2.png" alt="sigmaDev logo" class="mx-auto mb-4 w-25">
+                <h2 class="text-3xl font-bold mb-2 text-gray-800">sigmaDev (Kesehatan Masyarakat Indonesia)</h2>
                 <p class="text-lg mb-4 text-gray-600">Website ini menyediakan beberapa informasi mengenai vaksinasi</p>
                
                 <button class="tombolP mb-10 ">
@@ -163,7 +163,7 @@
                     <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
                         <div class="text-center">
                             <p class="italic text-xl absolute w-10/12 max-w-md -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-                                "Layanan KEMASIN sangat membantu saya dalam memantau kesehatan harian saya. Terima kasih!"
+                                "Layanan sigmaDev sangat membantu saya dalam memantau kesehatan harian saya. Terima kasih!"
                                 <span class="block mt-4">- Faris, Bima</span>
                             </p>
                         </div>
@@ -181,7 +181,7 @@
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
                         <div class="text-center">
                             <p class="italic text-xl absolute w-10/12 max-w-md -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-                                "Saya merasa lebih tenang karena bisa mengatur pengingat obat melalui fitur KEMASIN."
+                                "Saya merasa lebih tenang karena bisa mengatur pengingat obat melalui fitur sigmaDev."
                                 <span class="block mt-4">- Rama, Bantul</span>
                             </p>
                         </div>
