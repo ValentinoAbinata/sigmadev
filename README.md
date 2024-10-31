@@ -1,7 +1,3 @@
-footer + login nanti
-
-laykes butuh banyak opsi gg gg gg
-
 id : admin
 pass : admin1234
 
@@ -17,7 +13,6 @@ text-blue-700
 border-width : 3px;
 border-color : gray ;
 
-database tervalid admin false atau true
 
 manusia biasa > laykes > form > habis form ga langsung masuk ke dakes
 
@@ -33,4 +28,18 @@ bisa crud
 
 
 
+mungkin formLayan bisa post ke mana gitu tapi pakai isset
+
 scrollable dakes ~valent
+
+proses .php kasih session
+if ada session, navbar logout dan navbar instead of login
+
+
+
+
+INSERT INTO `pasien` (`nikP`, `emailP`, `namaP`, `jkP`, `lahirP`, `telpP`, `domisiliP`, `isShow`, `selectedLayanan`) VALUES ('1', 'akudummy1@gmail.com', 'dummy1', 'L', '0001-01-01', '1', '1', '0', '1');
+
+INSERT INTO `pasien` (`nikP`, `emailP`, `namaP`, `jkP`, `lahirP`, `telpP`, `domisiliP`, `isShow`, `selectedLayanan`) VALUES ('2', 'akudummy2@gmail.com', 'dummy2', 'L', '0002-02-02', '2', '2', '0', '2');
+
+INSERT INTO `pasien` (`nikP`, `emailP`, `namaP`, `jkP`, `lahirP`, `telpP`, `domisiliP`, `isShow`, `selectedLayanan`) VALUES ('3', 'akudummy3@gmail.com', 'dummy3', 'L', '0003-03-03', '3', '3', '0', '3');

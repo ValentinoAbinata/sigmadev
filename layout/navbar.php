@@ -14,8 +14,8 @@
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="beranda.php" class="flex items-center space-x-3 rtl:space-x-reverse">
                     <img src="../assets/image/iconsigmaDev.png" class="h-20" alt="sigmaDev Logo">
-                    <span class="self-center text-2xl font-bold whitespace-nowrap">KEMAS</span> <span
-                        class="mx-0 px-0 text-2xl font-bold text-white" style="margin-left : 0 ;">IN</span>
+                    <span class="self-center text-2xl font-bold whitespace-nowrap">sigma</span> <span
+                        class="mx-0 px-0 text-2xl font-bold text-white" style="margin-left : 0 ;">Dev</span>
                 </a>
                 <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                     <a type="button" href="login.php"

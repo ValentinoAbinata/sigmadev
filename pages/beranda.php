@@ -48,7 +48,7 @@
 
             <div id="gallery" class="relative w-full mb-" style="z-index: 0;" data-carousel="slide">
                 <!-- Carousel wrapper -->
-                <div class="relative h-56 overflow-hidden rounded-lg md:h-96 mx-auto" style="height : 75dvh ; width :75% ;">
+                <div class="relative h-56 overflow-hidden rounded-lg md:h-96 mx-auto" style="height : 30dvh ; width :75% ;">
                     <!-- Item 1 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
                         <img src="../assets/image/1.png"
@@ -108,49 +108,61 @@
                     </span>
                 </button>
             </div>
-            <!-- inti Section -->
-            <div class="bg-[#F8F4E4] text-center py-10 px-4 rounded-lg mx-auto mt-7" id="inti">
-                <img src="../assets/image/iconsigmaDev2.png" alt="sigmaDev logo" class="mx-auto mb-4 w-25">
-                <h2 class="text-3xl font-bold mb-2 text-gray-800">sigmaDev (Kesehatan Masyarakat Indonesia)</h2>
-                <p class="text-lg mb-4 text-gray-600">Website ini menyediakan beberapa informasi mengenai vaksinasi</p>
-               
-                <button class="tombolP mb-10 ">
-                    <span class="hover-underline-animation font-semibold"> Learn more </span>       
-                </button>
 
 
+            <div class="grid md:grid-cols-2 gap-5">
+                <!-- inti Section -->
+                <div class="bg-[#F8F4E4] text-center py-10 px-4 rounded-lg mx-auto mt-7" id="inti">
+                    <img src="../assets/image/iconsigmaDev2.png" alt="sigmaDev logo" class="mx-auto" style= "width: 15%; margin-bottom: 2px;"> 
+                    <h2 class="text-3xl font-bold mb-2 text-gray-800">sigmaDev (Siaga Masyarakat Desa Vaksin)</h2>
+                    <p class="text-lg mb-4 text-gray-600">Website ini menyediakan beberapa informasi mengenai vaksinasi</p>
 
+                    <button class="tombolP mb-10">
+                        <span class="hover-underline-animation font-semibold">Learn more</span>
+                    </button>
 
-
-
-
-                <!-- Card Section -->
-                <div class="flex flex-col md:flex-row justify-center gap-5 px-3 mb-10">
-                    <!-- Pengertian Card -->
-                    <div class="relative w-full md:w-1/3 h-56 bg-cover bg-center rounded-lg shadow-lg overflow-hidden text-black card">
-                        <img src="../assets/image/pengertian.jpg" alt="Pengertian">
-                        <div class="absolute bottom-0 w-full bg-black bg-opacity-50 p-4 text-center">
-                            <h3 class="text-2xl font-bold">Pengertian</h3>
+                    <!-- Card Section -->
+                    <div class="flex flex-col md:flex-row justify-center gap-5 px-3 mb-10">
+                        <!-- Pengertian Card -->
+                        <div class="relative flex-1 h-56 bg-cover bg-center rounded-lg shadow-lg overflow-hidden text-black card">
+                            <img src="../assets/image/pengertian.jpg" alt="Pengertian" class="object-cover w-full h-full">
+                            <div class="absolute bottom-0 w-full bg-black bg-opacity-50 p-4 text-center">
+                                <h3 class="text-2xl font-bold">Pengertian</h3>
+                            </div>
                         </div>
-                    </div>
 
-                    <!-- Dampak card -->
-                    <div class="relative w-full md:w-1/3 h-56 bg-cover bg-center rounded-lg shadow-lg overflow-hidden text-black card">
-                        <img src="../assets/image/perbedaan.jpg" alt="Perbedaan">
-                        <div class="absolute bottom-0 w-full bg-black bg-opacity-50 p-4 text-center">
-                            <h3 class="text-2xl font-bold">Perbedaan</h3>
+                        <!-- Perbedaan card -->
+                        <div class="relative flex-1 h-56 bg-cover bg-center rounded-lg shadow-lg overflow-hidden text-black card">
+                            <img src="../assets/image/perbedaan.jpg" alt="Perbedaan" class="object-cover w-full h-full">
+                            <div class="absolute bottom-0 w-full bg-black bg-opacity-50 p-4 text-center">
+                                <h3 class="text-2xl font-bold">Perbedaan</h3>
+                            </div>
                         </div>
-                    </div>
 
-                    <!-- Dampak Card -->
-                    <div class="relative w-full md:w-1/3 h-56 bg-cover bg-center rounded-lg shadow-lg overflow-hidden text-black card">
-                        <img src="../assets/image/dampak.jpg" alt="Dampak">
-                        <div class="absolute bottom-0 w-full bg-black bg-opacity-50 p-4 text-center">
-                            <h3 class="text-2xl font-bold">Dampak</h3>
+                        <!-- Dampak Card -->
+                        <div class="relative flex-1 h-56 bg-cover bg-center rounded-lg shadow-lg overflow-hidden text-black card">
+                            <img src="../assets/image/dampak.jpg" alt="Dampak" class="object-cover w-full h-full">
+                            <div class="absolute bottom-0 w-full bg-black bg-opacity-50 p-4 text-center">
+                                <h3 class="text-2xl font-bold">Dampak</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="bg-white text-center py-10 px-4 mt-7 rounded-lg shadow-lg">
+                    <h2 class="text-3xl font-bold mb-4 text-indigo-600">Fitur Baru</h2>
+                    <p class="text-lg text-gray-700 mb-6">Deskripsi singkat mengenai fitur baru ini yang dapat memberikan informasi tambahan atau layanan lainnya.</p>
+
+                    <ul class="list-disc list-inside text-left mx-auto max-w-md">
+                        <li class="mb-3"><span class="font-semibold text-indigo-500">Fitur 1:</span> Penjelasan singkat fitur pertama.</li>
+                        <li class="mb-3"><span class="font-semibold text-indigo-500">Fitur 2:</span> Penjelasan singkat fitur kedua.</li>
+                        <li class="mb-3"><span class="font-semibold text-indigo-500">Fitur 3:</span> Penjelasan singkat fitur ketiga.</li>
+                    </ul>
+
+                    <button class="mt-6 bg-teal-500 hover:bg-teal-600 text-white px-6 py-3 rounded-lg text-lg font-semibold">Lihat Selengkapnya</button>
+                </div>
             </div>
+
         </div>
 
 

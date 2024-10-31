@@ -1,0 +1,67 @@
+<?php
+include "connect.php" ;
+
+echo 'bapakmu 13131313' ;
+
+ $yatim = $_POST['formLayan'] ;
+ echo $yatim ;
+
+    // $nikP = $_POST['NIK'] ;
+    // echo $nikP ; 
+    // bilangin salahnya di mana buat insert
+    //  Submit Proses Insert
+    if (isset($_POST['formLayan'])){
+
+    $nikP = $_POST['NIK'] ;
+    $emailP = $_POST['email'] ;
+    $first_name = $_POST['first_name'] ;
+    $last_name = $_POST['last_name'] ;
+    $jkP = $_POST['gender'] ;
+    $lahirP = $_POST['tLahir'] ;
+    $telpP = $_POST['phone'] ;
+    $domisiliP = $_POST['domisili'] ;
+    $isShow = $_POST['isShow'] ;
+    $selectedLayanan = $_POST['selectedLayanan'] ;
+
+    $namaP = $first_name . ' ' . $last_name ;
+    
+    $query = mysqli_query($conn, "INSERT INTO pasien VALUES('$nikP', '$emailP', '$namaP', '$jkP', '$lahirP', '$telpP', '$domisiliP', '$isShow', '$selectedLayanan')") or die(mysqli_error($conn)) ;
+    if ($query){
+        echo "Proses Input Berhasil, Ingin Lihat Hasil? <a href='../../pages/beranda.php'> Kembali ke Beranda </a>" ;
+        // header('Location : ../../pages/beranda.php') ;
+    }
+}
+
+
+    //  Submit Proses Delete
+    if (isset($_GET['deleteNikP'])) {
+        $nikP = $_GET['deleteNikP'] ;
+        $query = mysqli_query($conn, "DELETE FROM pasien WHERE nikP = $nikP;") or die(mysqli_error($conn)) ;
+
+        echo "Proses Delete Berhasil, Ingin Lihat Hasil? <a href='../../pages/beranda.php'> Kembali ke Beranda </a>" ;
+
+        header('Location: ../../pages/beranda.php?deleteSukses=true') ;            
+    
+    }
+    //submit edit data
+    if (isset($_POST['submitEdit'])) {
+        $nikP = $_POST['NIK'] ;
+        $emailP = $_POST['email'] ;
+        $first_name = $_POST['first_name'] ;
+        $last_name = $_POST['last_name'] ;
+        $jkP = $_POST['gender'] ;
+        $lahirP = $_POST['tLahir'] ;
+        $telpP = $_POST['phone'] ;
+        $domisiliP = $_POST['domisili'] ;
+        $isShow = $_POST['isShow'] ;
+        $selectedLayanan = $_POST['selectedLayanan'] ;
+    
+        $namaP = $first_name . ' ' . $last_name ;
+        $query = mysqli_query($conn,"UPDATE pasien  SET nikP='$nikP',emailP='$emailP', namaP='$namaP', jkP='$jkP', lahirP='$lahirP', telpP='$telpP', domisiliP='$domisiliP', isShow='$isShow', selectedLayanan='$selectedLayanan' where nikP='$nikP'") or die(mysqli_error($db));
+        if($query){
+            header('Location: ../../pages/beranda.php?editSukses=true') ;
+         }
+    }
+    
+
+?>

@@ -16,9 +16,8 @@
     <?php include "../layout/navbar.php" ?>
     <div class="bg-gray-100">
         <div style=" padding: 5%; padding-top : 9%; padding-bottom : 0%; min-height:75dvh;">
-            <p class="text-center text-4xl font-bold text-blue-700 mb-10"> Login Admin </p>
 
-            <div class="flex flex-row bg-white rounded-lg shadow-lg">
+            <div class="flex flex-row bg-white rounded-lg shadow-lg mt-10 mb-10">
 
                 <div class="w-full">
                     <img class="w-full contain" style="border-right-color: aliceblue; border-right-width: 3px ;" src="../assets/image/vaksin.png" alt="pemanis">
@@ -26,7 +25,7 @@
 
                 <div class="w-full" style="padding:10%;">
                     <div class="flex justify-center mx-auto">
-                        <img class="w-auto h-7" src="../assets/image/iconsigmaDev2.png" alt="logo">
+                        <img class="w-auto h-24" src="../assets/image/iconsigmaDev2.png" alt="logo">
                     </div>
 
                     <p class="mt-3 text-xl text-center text-gray-600 dark:text-gray-200">
