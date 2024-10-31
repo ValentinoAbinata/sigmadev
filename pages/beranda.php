@@ -10,6 +10,7 @@
     <title>sigmaDev</title>
     <link rel="stylesheet" href="https://unpkg.com/flowbite@latest/dist/flowbite.min.css" />
     <link rel="stylesheet" href="../assets/css/beranda.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 
 </head>
 
@@ -44,7 +45,7 @@
             </div>
 
 
-            <p class="text-center text-4xl font-bold text-blue-700 mb-10" id="halo"> Selamat Datang </p>
+
 
             <div id="gallery" class="relative w-full mb-" style="z-index: 0;" data-carousel="slide">
                 <!-- Carousel wrapper -->
@@ -113,7 +114,7 @@
             <div class="grid md:grid-cols-2 gap-5">
                 <!-- inti Section -->
                 <div class="bg-[#F8F4E4] text-center py-10 px-4 rounded-lg mx-auto mt-7" id="inti">
-                    <img src="../assets/image/iconsigmaDev2.png" alt="sigmaDev logo" class="mx-auto" style= "width: 15%; margin-bottom: 2px;"> 
+                    <img src="../assets/image/iconsigmaDev2.png" alt="sigmaDev logo" class="mx-auto" style= "width: 10%; margin-bottom: 2px;"> 
                     <h2 class="text-3xl font-bold mb-2 text-gray-800">sigmaDev (Siaga Masyarakat Desa Vaksin)</h2>
                     <p class="text-lg mb-4 text-gray-600">Website ini menyediakan beberapa informasi mengenai vaksinasi</p>
 
@@ -125,7 +126,7 @@
                     <div class="flex flex-col md:flex-row justify-center gap-5 px-3 mb-10">
                         <!-- Pengertian Card -->
                         <div class="relative flex-1 h-56 bg-cover bg-center rounded-lg shadow-lg overflow-hidden text-black card">
-                            <img src="../assets/image/pengertian.jpg" alt="Pengertian" class="object-cover w-full h-full">
+                            <img src="../assets/image/pengertian.jpg" alt="Pengertian" class="object-fit w-full h-full">
                             <div class="absolute bottom-0 w-full bg-black bg-opacity-50 p-4 text-center">
                                 <h3 class="text-2xl font-bold">Pengertian</h3>
                             </div>
@@ -133,7 +134,7 @@
 
                         <!-- Perbedaan card -->
                         <div class="relative flex-1 h-56 bg-cover bg-center rounded-lg shadow-lg overflow-hidden text-black card">
-                            <img src="../assets/image/perbedaan.jpg" alt="Perbedaan" class="object-cover w-full h-full">
+                            <img src="../assets/image/perbedaan.jpg" alt="Perbedaan" class="object-fit w-full h-full">
                             <div class="absolute bottom-0 w-full bg-black bg-opacity-50 p-4 text-center">
                                 <h3 class="text-2xl font-bold">Perbedaan</h3>
                             </div>
@@ -141,7 +142,7 @@
 
                         <!-- Dampak Card -->
                         <div class="relative flex-1 h-56 bg-cover bg-center rounded-lg shadow-lg overflow-hidden text-black card">
-                            <img src="../assets/image/dampak.jpg" alt="Dampak" class="object-cover w-full h-full">
+                            <img src="../assets/image/dampak.jpg" alt="Dampak" class="object-fit w-full h-full">
                             <div class="absolute bottom-0 w-full bg-black bg-opacity-50 p-4 text-center">
                                 <h3 class="text-2xl font-bold">Dampak</h3>
                             </div>
@@ -149,17 +150,10 @@
                     </div>
                 </div>
 
-                <div class="bg-white text-center py-10 px-4 mt-7 rounded-lg shadow-lg">
-                    <h2 class="text-3xl font-bold mb-4 text-indigo-600">Fitur Baru</h2>
-                    <p class="text-lg text-gray-700 mb-6">Deskripsi singkat mengenai fitur baru ini yang dapat memberikan informasi tambahan atau layanan lainnya.</p>
+                <div class="bg-white py-10 px-4 mt-7 rounded-lg shadow-lg" style= "font-family: Poppins;">
+                    <h2 class="text-6xl font-bold mb-4 mt-10 text-indigo-600" >Selamat Datang di sigmaDev</h2>
+                    <p class="text-lg text-gray-700 mb-6 mt-5">Temukan informasi vaksinasi dan sumber daya kesehatan untuk komunitas desa. Bersama kita tingkatkan kesadaran dan hidup lebih sehat.</p>
 
-                    <ul class="list-disc list-inside text-left mx-auto max-w-md">
-                        <li class="mb-3"><span class="font-semibold text-indigo-500">Fitur 1:</span> Penjelasan singkat fitur pertama.</li>
-                        <li class="mb-3"><span class="font-semibold text-indigo-500">Fitur 2:</span> Penjelasan singkat fitur kedua.</li>
-                        <li class="mb-3"><span class="font-semibold text-indigo-500">Fitur 3:</span> Penjelasan singkat fitur ketiga.</li>
-                    </ul>
-
-                    <button class="mt-6 bg-teal-500 hover:bg-teal-600 text-white px-6 py-3 rounded-lg text-lg font-semibold">Lihat Selengkapnya</button>
                 </div>
             </div>
 

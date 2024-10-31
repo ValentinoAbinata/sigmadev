@@ -1,14 +1,6 @@
 <?php
 include "connect.php" ;
 
-echo 'bapakmu 13131313' ;
-
- $yatim = $_POST['formLayan'] ;
- echo $yatim ;
-
-    // $nikP = $_POST['NIK'] ;
-    // echo $nikP ; 
-    // bilangin salahnya di mana buat insert
     //  Submit Proses Insert
     if (isset($_POST['formLayan'])){
 
@@ -26,10 +18,13 @@ echo 'bapakmu 13131313' ;
     $namaP = $first_name . ' ' . $last_name ;
     
     $query = mysqli_query($conn, "INSERT INTO pasien VALUES('$nikP', '$emailP', '$namaP', '$jkP', '$lahirP', '$telpP', '$domisiliP', '$isShow', '$selectedLayanan')") or die(mysqli_error($conn)) ;
-    if ($query){
-        echo "Proses Input Berhasil, Ingin Lihat Hasil? <a href='../../pages/beranda.php'> Kembali ke Beranda </a>" ;
-        // header('Location : ../../pages/beranda.php') ;
-    }
+        // echo "Proses Input Berhasil, Ingin Lihat Hasil? <a href='../../pages/beranda.php'> Kembali ke Beranda </a>" ;
+        // header('Location : ../../pages/beranda.php?insertSukses=true') ;
+            header('Location : ../../pages/beranda.php') ;
+
+        // header('Location : ../beranda.php') ;
+        // ini kenapa cok cokco kcokco kcokc okcokok okc
+    
 }
 
 
@@ -55,6 +50,7 @@ echo 'bapakmu 13131313' ;
         $domisiliP = $_POST['domisili'] ;
         $isShow = $_POST['isShow'] ;
         $selectedLayanan = $_POST['selectedLayanan'] ;
+
     
         $namaP = $first_name . ' ' . $last_name ;
         $query = mysqli_query($conn,"UPDATE pasien  SET nikP='$nikP',emailP='$emailP', namaP='$namaP', jkP='$jkP', lahirP='$lahirP', telpP='$telpP', domisiliP='$domisiliP', isShow='$isShow', selectedLayanan='$selectedLayanan' where nikP='$nikP'") or die(mysqli_error($db));

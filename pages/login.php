@@ -1,4 +1,6 @@
-<?php ?>
+<?php
+session_start();
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +22,8 @@
             <div class="flex flex-row bg-white rounded-lg shadow-lg mt-10 mb-10">
 
                 <div class="w-full">
-                    <img class="w-full contain" style="border-right-color: aliceblue; border-right-width: 3px ;" src="../assets/image/vaksin.png" alt="pemanis">
+                    <img class="w-full contain" style="border-right-color: aliceblue; border-right-width: 3px ;"
+                        src="../assets/image/vaksin.png" alt="pemanis">
                 </div>
 
                 <div class="w-full" style="padding:10%;">
@@ -65,42 +68,63 @@
                         <span class="w-1/5 border-b dark:border-gray-400 lg:w-1/4"></span>
                     </div>
 
-                    <div class="mt-4">
-                        <label class="block mb-2 text-sm font-medium text-gray-600 dark:text-gray-200"
-                            for="LoggingEmailAddress">Email Address</label>
-                        <input id="LoggingEmailAddress"
-                            class="block w-full px-4 py-2 text-gray-700 bg-white border rounded-lg dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-blue-300"
-                            type="email" />
-                    </div>
+                    <form method="POST" action>
 
-                    <div class="mt-4">
-                        <div class="flex justify-between">
+                        <div class="mt-4">
                             <label class="block mb-2 text-sm font-medium text-gray-600 dark:text-gray-200"
-                                for="loggingPassword">Password</label>
-                            <a href="#" class="text-xs text-gray-500 dark:text-gray-300 hover:underline">Forget
-                                Password?</a>
+                                for="LoggingEmailAddress">Username</label>
+                            <input id="LoggingEmailAddress"
+                                class="block w-full px-4 py-2 text-gray-700 bg-white border rounded-lg dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-blue-300"
+                                type="text" name="username" />
                         </div>
 
-                        <input id="loggingPassword"
-                            class="block w-full px-4 py-2 text-gray-700 bg-white border rounded-lg dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-blue-300"
-                            type="password" />
-                    </div>
+                        <div class="mt-4">
+                            <div class="flex justify-between">
+                                <label class="block mb-2 text-sm font-medium text-gray-600 dark:text-gray-200"
+                                    for="loggingPassword">Password</label>
+                                <a href="#" class="text-xs text-gray-500 dark:text-gray-300 hover:underline">Forget
+                                    Password?</a>
+                            </div>
 
-                    <div class="mt-6">
-                        <button
-                            class="w-full px-6 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-gray-800 rounded-lg hover:bg-gray-700 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-50">
-                            Sign In
-                        </button>
-                    </div>
+                            <input id="loggingPassword"
+                                class="block w-full px-4 py-2 text-gray-700 bg-white border rounded-lg dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-blue-300"
+                                type="password" name="password" />
+                        </div>
 
-                    <div class="flex items-center justify-between mt-4">
-                        <span class="w-1/5 border-b dark:border-gray-600 md:w-1/4"></span>
+                        <div class="mt-6">
+                            <button
+                                class="w-full px-6 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-gray-800 rounded-lg hover:bg-gray-700 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-50"
+                                name="login">
+                                Sign In
+                            </button>
+                        </div>
 
-                        <a href="#" class="text-xs text-gray-500 uppercase dark:text-gray-400 hover:underline">or sign
-                            up</a>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="w-1/5 border-b dark:border-gray-600 md:w-1/4"></span>
 
-                        <span class="w-1/5 border-b dark:border-gray-600 md:w-1/4"></span>
-                    </div>
+                            <a href="#" class="text-xs text-gray-500 uppercase dark:text-gray-400 hover:underline">or
+                                sign
+                                up</a>
+
+                            <span class="w-1/5 border-b dark:border-gray-600 md:w-1/4"></span>
+                        </div>
+                    </form>
+                    <?php
+                    if (isset($_POST["login"])) {
+                        if ($_POST['username'] == "admin" && $_POST['password'] == "admin1234") {
+                            $_SESSION['username'] = $_POST['username'];
+                            $_SESSION['password'] = $_POST['password'];
+                            header("Location : beranda.php") ;
+                        } else {
+                            ?>
+                            <div class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400"
+                                role="alert">
+                                <span class="font-medium">Username atau/dan Password Kurang Tepat, Silahkan Ulangi!</span>
+                            </div>
+                            <?php
+                        }
+                    }
+                    ?>
                 </div>
             </div>
 
