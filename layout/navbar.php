@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/flowbite@latest/dist/flowbite.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
 
-<body>
+<body style="font-family: Poppins;">
     <div>
         <nav class="bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 fixed w-full z-20 top-0 start-0 border-b border-blue-200"
             style="z-index: 100000;">
