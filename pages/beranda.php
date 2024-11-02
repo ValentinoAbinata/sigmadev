@@ -190,25 +190,26 @@
                 </div>
             </div>
 
-            <section class="text-gray-600 body-font">
+            <!-- Pengertian,Perbedaan,Dampak -->
+            <section>
                 <div class="container px-5 py-24 mx-auto">
-                    <div class="flex flex-wrap w-full mb-20">
-                        <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
-                            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Pitchfork
-                                Kickstarter Taxidermy</h1>
-                            <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+                    <div class="flex flex-wrap grid grid-cols-3 w-full mb-20">
+                        <div class="lg:w-1/2 w-full mb-6 lg:mb-0" style="padding-left: 15px;">
+                            <h1 class="text-4xl font-bold mb-4 text-black" s>Informasi sigmaDev</h1>
+                            <div class="h-1 bg-red-600 rounded" style="width: 315px;"></div>
                         </div>
-                        <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">Whatever cardigan tote bag tumblr
-                            hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably
-                            haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid
-                            celiac humblebrag.</p>
+                        <p class="col-span-2 text-md text-black text-justify">sigmaDev adalah platform yang
+                            menyediakan informasi lengkap seputar vaksinasi dan sumber daya kesehatan, dirancang khusus
+                            untuk mendukung komunitas desa. Kami berfokus pada memberikan informasi yang faktual dan
+                            mudah diakses untuk membantu masyarakat dalam mengambil keputusan kesehatan yang tepat.</p>
                     </div>
                     <div class="flex flex-wrap -m-4 grid grid-cols-3">
                         <div class="xl:w-1/4 md:w-1/2 p-4">
                             <div class="bg-gray-100 p-6 rounded-lg">
                                 <img class="h-40 rounded w-full object-cover object-center mb-6"
                                     src="../assets/image/pengertian.jpg" alt="content">
-                                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE
+                                </h3>
                                 <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Chichen Itza</h2>
                                 <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit
                                     waistcoat. Distillery hexagon disrupt edison bulbche.</p>
@@ -218,7 +219,8 @@
                             <div class="bg-gray-100 p-6 rounded-lg">
                                 <img class="h-40 rounded w-full object-cover object-center mb-6"
                                     src="../assets/image/perbedaan.jpg" alt="content">
-                                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE
+                                </h3>
                                 <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Colosseum Roma</h2>
                                 <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit
                                     waistcoat. Distillery hexagon disrupt edison bulbche.</p>
@@ -228,59 +230,79 @@
                             <div class="bg-gray-100 p-6 rounded-lg">
                                 <img class="h-40 rounded w-full object-cover object-center mb-6"
                                     src="../assets/image/dampak.jpg" alt="content">
-                                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
-                                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Great Pyramid of Giza</h2>
+                                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE
+                                </h3>
+                                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Great Pyramid of Giza
+                                </h2>
                                 <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit
                                     waistcoat. Distillery hexagon disrupt edison bulbche.</p>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </section>
-
-
-            <!-- inti Section -->
-            <div class="cineronta bg-[#F8F4E4] text-center py-10 px-4 rounded-lg mx-auto mt-7" id="inti">
-                <img src="../assets/image/iconsigmaDev2.png" alt="sigmaDev logo" class="mx-auto"
-                    style="width: 10%; margin-bottom: 2px;">
-                <h2 class="text-3xl font-bold mb-2 text-gray-800">sigmaDev (Siaga Masyarakat Desa Vaksin)</h2>
-                <p class="text-lg mb-4 text-gray-600">Website ini menyediakan beberapa informasi mengenai vaksinasi</p>
-
-                <button class="tombolP mb-10">
-                    <span class="hover-underline-animation font-semibold">Learn more</span>
-                </button>
-
-                <!-- Card Section -->
-                <div class="flex flex-col md:flex-row justify-center gap-6 px-3 mb-10">
-                    <!-- Pengertian Card -->
-                    <div
-                        class="relative flex-1 h-56 bg-cover bg-center rounded-lg shadow-lg overflow-hidden text-black card">
-                        <img src="../assets/image/pengertian.jpg" alt="Pengertian" class="object-fit w-full h-full">
-                        <div class="absolute bottom-0 w-full bg-black bg-opacity-50 p-4 text-center">
-                            <h3 class="text-2xl font-bold">Pengertian</h3>
+            <!-- Cara Pendaftaran -->
+            <section class="text-gray-600 body-font">
+                <div class="container px-5 py-10 mx-auto">
+                    <div class="flex flex-col justify-center items-center text-center w-full mb-20">
+                        <img src="../assets/image/iconsigmaDev2.png" alt="iconsigmaDev" style="width:150px; height:150px;">
+                        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Cara Pendaftaran     </h1>
+                        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon
+                            brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't
+                            heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac
+                            humblebrag.</p>
+                    </div>
+                    <div class="flex flex-wrap grid grid-cols-4">
+                        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+                            <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Shooting Stars</h2>
+                            <p class="leading-relaxed text-base mb-4">Fingerstache flexitarian street art 8-bit
+                                waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+                            <a class="text-indigo-500 inline-flex items-center">Learn More
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+                            <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">The Catalyzer</h2>
+                            <p class="leading-relaxed text-base mb-4">Fingerstache flexitarian street art 8-bit
+                                waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+                            <a class="text-indigo-500 inline-flex items-center">Learn More
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+                            <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Neptune</h2>
+                            <p class="leading-relaxed text-base mb-4">Fingerstache flexitarian street art 8-bit
+                                waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+                            <a class="text-indigo-500 inline-flex items-center">Learn More
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+                            <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Melanchole</h2>
+                            <p class="leading-relaxed text-base mb-4">Fingerstache flexitarian street art 8-bit
+                                waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+                            <a class="text-indigo-500 inline-flex items-center">Learn More
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
                         </div>
                     </div>
-
-                    <!-- Perbedaan card -->
-                    <div
-                        class="relative flex-1 h-56 bg-cover bg-center rounded-lg shadow-lg overflow-hidden text-black card">
-                        <img src="../assets/image/perbedaan.jpg" alt="Perbedaan" class="object-fit w-full h-full">
-                        <div class="absolute bottom-0 w-full bg-black bg-opacity-50 p-4 text-center">
-                            <h3 class="text-2xl font-bold">Perbedaan</h3>
-                        </div>
-                    </div>
-
-                    <!-- Dampak Card -->
-                    <div
-                        class="relative flex-1 h-56 bg-cover bg-center rounded-lg shadow-lg overflow-hidden text-black card">
-                        <img src="../assets/image/dampak.jpg" alt="Dampak" class="object-fit w-full h-full">
-                        <div class="absolute bottom-0 w-full bg-black bg-opacity-50 p-4 text-center">
-                            <h3 class="text-2xl font-bold">Dampak</h3>
-                        </div>
-                    </div>
+                    <button
+                        class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
                 </div>
-            </div>
+            </section>
 
 
 
@@ -291,11 +313,13 @@
                         <h5 class="text-sm font-semibold uppercase mb-2 text-gray-300">Meningkatkan Kesadaran</h5>
                         <h2 class="text-3xl font-bold mb-4">Pencapaian Kesehatan Desa</h2>
                         <p class="mb-4">
-                            Kami berkomitmen untuk menyediakan informasi vaksinasi yang akurat dan sumber daya kesehatan
+                            Kami berkomitmen untuk menyediakan informasi vaksinasi yang akurat dan sumber daya
+                            kesehatan
                             untuk komunitas desa. Bersama-sama, kita dapat menciptakan lingkungan yang lebih sehat.
                         </p>
                         <p class="mb-8">
-                            Lihat bagaimana inisiatif kesehatan kami berdampak positif pada komunitas. Dari peningkatan
+                            Lihat bagaimana inisiatif kesehatan kami berdampak positif pada komunitas. Dari
+                            peningkatan
                             vaksinasi hingga kegiatan edukasi, kami berusaha untuk kesehatan yang lebih baik.
                         </p>
                     </div>
@@ -366,7 +390,8 @@
                         <div class="text-center">
                             <p
                                 class="italic text-xl absolute w-10/12 max-w-md -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-                                "Saya merasa lebih tenang karena bisa mengatur pengingat obat melalui fitur sigmaDev."
+                                "Saya merasa lebih tenang karena bisa mengatur pengingat obat melalui fitur
+                                sigmaDev."
                                 <span class="block mt-4">- Rama, Bantul</span>
                             </p>
                         </div>
