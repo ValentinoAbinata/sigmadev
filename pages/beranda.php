@@ -9,8 +9,11 @@
     <link rel="icon" href="../assets/image/iconWeb.png">
     <title>sigmaDev</title>
     <link rel="stylesheet" href="https://unpkg.com/flowbite@latest/dist/flowbite.min.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="../assets/css/beranda.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
 
 </head>
 
@@ -19,123 +22,222 @@
     <?php include "../layout/navbar.php" ?>
 
     <div style="background-color: #FBFBFB">
-        <div class="relative h-screen flex items-center justify-center text-center text-white bg-cover bg-center"
-            style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/image/bg1.jpg')">
-            <!-- Teks Pembuka-->
-            <div class="relative z-10" style="z-index:0;">
-                <p class="text-sm tracking-widest uppercase mb-2">Rerap & Valen COOKING</p>
-                <h1 class="text-4xl md:text-5xl font-bold mb-4">Pemuda Pembantai Boti</h1>
-                <p class="text-lg md:text-xl mb-8">Lu Boti Lu Mati.</p>
-                <a href="#banner"
-                    class="bg-teal-500 hover:bg-teal-600 text-white px-6 py-3 rounded-lg text-lg font-semibold">
-                    Mulai Sekarang
-                </a>
+
+        <!-- Carousel Hero -->
+        <div id="hero-carousel" class="relative w-full h-screen overflow-hidden" data-carousel="slide">
+            <!-- Carousel wrapper -->
+            <div class="relative w-full h-full flex items-center justify-center text-white text-center">
+                <!-- Slide 1 -->
+                <div class="hidden duration-700 ease-in-out h-full w-full bg-cover bg-center"
+                    style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/image/bg1.jpg');"
+                    data-carousel-item="active">
+                    <div class="flex flex-col text-left justify-center h-full bg-black bg-opacity-50 p-6 mt-0">
+                        <div class="relative z-10">
+                            <h1 class="text-7xl font-bold mb-2 w3-animate-top" style="font-family: Roboto !important ">
+                                Lindungi Dirimu
+                                atau <br> Kematian Menjemputmu</h1>
+                            <h1 class="mb-2 w3-animate-right" style="font-size:20px">Vaksinasi diperlukan untuk
+                                memperkuat imunitas
+                                tubuh. <br> Ayo daftar vaksin sekarang
+                                dan jaga kesehatanmu agar terhindar dari penyakit yang berbahaya. <br>
+                                Pastikan untuk mendapatkan vaksin lengkap untuk perlindungan maksimal.</h1>
+                            <div class="w3-animate-bottom" style="margin-top: 2.5%">
+                                <a href="#banner"
+                                    class="bg-teal-500 hover:bg-teal-600 text-white  mx-auto rounded-lg font-semibold"
+                                    style="padding: 20px; font-size: 20px">
+                                    Mulai Sekarang
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="hidden duration-700 ease-in-out h-full w-full bg-cover bg-center"
+                    style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/image/bg2.jpg');"
+                    data-carousel-item>
+                    <div class="flex flex-col text-left justify-center h-full bg-black bg-opacity-50 p-6 mt-0">
+                        <div class="relative z-10">
+                            <h1 class="text-7xl font-bold mb-2" style="font-family: Roboto !important">Ciptakan Masa
+                                Depan Sehatmu</h1>
+                            <h1 class="mb-2" style="font-size:20px">Vaksinasi adalah langkah pertama untuk melindungi
+                                diri dan orang yang kamu cintai. <br> Segera daftar vaksinasi dan tingkatkan
+                                perlindunganmu dari berbagai penyakit. <br> Jangan tunggu lagi, jaga kesehatanmu
+                                sekarang juga!</h1>
+                            <div style="margin-top: 2.5%">
+                                <a href="#banner"
+                                    class="bg-teal-500 hover:bg-teal-600 text-white  mx-auto rounded-lg font-semibold"
+                                    style="padding: 20px; font-size: 20px">
+                                    Mulai Sekarang
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="hidden duration-700 ease-in-out h-full w-full bg-cover bg-center"
+                    style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/image/bg3.jpg');"
+                    data-carousel-item>
+                    <div class="flex flex-col text-left justify-center h-full bg-black bg-opacity-50 p-6 mt-0">
+                        <div class="relative z-10">
+                            <h1 class="text-7xl font-bold mb-2" style="font-family: Roboto !important">Kesehatan Adalah
+                                Investasi</h1>
+                            <h1 class="mb-2" style="font-size:20px">Dengan vaksinasi, kamu tidak hanya melindungi diri
+                                sendiri tetapi juga berkontribusi pada kesehatan masyarakat. <br> Ayo, jadilah bagian
+                                dari perubahan positif dan pastikan imunmu terjaga. <br> Vaksin lengkap adalah kunci
+                                untuk kesehatan optimal.</h1>
+                            <div style="margin-top: 2.5%">
+                                <a href="#banner"
+                                    class="bg-teal-500 hover:bg-teal-600 text-white  mx-auto rounded-lg font-semibold"
+                                    style="padding: 20px; font-size: 20px">
+                                    Mulai Sekarang
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!-- Carousel controls -->
+            <button type="button"
+                class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-prev>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/75 group-hover:bg-white/75">
+                    <svg class="w-4 h-4 text-gray-800" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5 1 1 5l4 4" />
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button"
+                class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-next>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/75 group-hover:bg-white/75">
+                    <svg class="w-4 h-4 text-gray-800" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 9l4-4-4-4" />
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
         </div>
 
         <div style=" padding: 5%; padding-top : 0%; padding-bottom : 0%; min-height:75dvh;">
             <!-- Banner Pengumuman Kesehatan -->
-            <div id="banner" class="scroll-mt-20 bg-indigo-600 text-white py-2 px-4 rounded-lg" style="margin-bottom: 5%;">
-                <marquee behavior="scroll" direction="left" scrollamount="6">
-                    <span>Pengumuman: Program vaksinasi flu gratis akan dilaksanakan pada tanggal 15 November
-                        2024 di
-                        Puskesmas terdekat. Daftarkan diri Anda sekarang!</span>
-                    <a href="#" class="text-yellow-300 underline ml-2">Pelajari Lebih Lanjut</a>
-                </marquee>
-            </div>
-
-
-
-
-            <div id="gallery" class="relative w-full" style="z-index: 0;margin-top:25px;" data-carousel="slide">
-                <!-- Carousel wrapper -->
-                <div class="relative h-56 overflow-hidden rounded-lg md:h-96 mx-auto"
-                    style="height : 30dvh ; width :75% ;">
-                    <!-- Item 1 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="../assets/image/1.png"
-                            class="absolute block max-h-85 w-85 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-contain"
-                            alt="">
-                    </div>
-                    <!-- Item 2 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                        <img src="../assets/image/2.jpg"
-                            class="absolute block max-h-85 w-85 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-contain"
-                            alt="">
-                    </div>
-                    <!-- Item 3 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="../assets/image/3.jpg"
-                            class="absolute block max-h-85 w-85 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-contain"
-                            alt="">
-                    </div>
-                    <!-- Item 4 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="../assets/image/4.jpg"
-                            class="absolute block max-h-85 w-85 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-contain"
-                            alt="">
-                    </div>
-                    <!-- Item 5 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="../assets/image/5.jpg"
-                            class="absolute block max-h-85 w-85 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-contain"
-                            alt="">
-                    </div>
-                </div>
-                <!-- Slider controls -->
-                <button type="button"
-                    class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                    data-carousel-prev>
-                    <span
-                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                        <svg class="w-4 h-4 text-dark dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M5 1 1 5l4 4" />
+            <div class="announcement-banner" id="banner">
+                <div class="announcement-content">
+                    <div class="announcement-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
                         </svg>
-                        <span class="sr-only">Previous</span>
-                    </span>
-                </button>
-                <button type="button"
-                    class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                    data-carousel-next>
-                    <span
-                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                        <svg class="w-4 h-4 text-dark dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="m1 9 4-4-4-4" />
-                        </svg>
-                        <span class="sr-only">Next</span>
-                    </span>
-                </button>
+                    </div>
+                    <div class="announcement-marquee">
+                        <marquee behavior="scroll" scrollamount="5">
+                            <span class="announcement-text text-2xl">
+                                Pengumuman: Program vaksinasi flu gratis akan dilaksanakan pada tanggal 3 Desember 2024
+                                di Puskesmas terdekat. Daftarkan diri Anda sekarang!
+                            </span>
+                        </marquee>
+                    </div>
+                </div>
             </div>
 
 
+            <div class="mt-7 px-8 py-6">
+                <div class="grid grid grid-cols-3 gap-3 items-center">
+                    <!-- Kolom Teks -->
+                    <div class=" col-span-2 pembuka p-4">
+                        <h2 class="text-6xl font-bold mb-4 text-indigo-600"
+                            style="border-left: 4px solid #000; padding-left: 10px;">
+                            Selamat Datang di sigmaDev
+                        </h2>
+                        <p class="text-md text-gray-700 mb-6 mt-5 px-3"
+                            style="border-right: 4px solid #000; text-align: justify;">
+                            Platform sigmaDev menyediakan informasi penting seputar vaksinasi dan pendataan warga untuk
+                            vaksinasi, yang
+                            bertujuan untuk meningkatkan kesadaran masyarakat tentang pentingnya imunisasi serta
+                            memastikan
+                            bahwa setiap warga mendapatkan akses yang tepat terhadap vaksin yang dibutuhkan. Dalam upaya
+                            ini, sigmaDev mengintegrasikan berbagai fitur yang memudahkan proses pendataan dan
+                            informasi.
+                            <br><br>
+                            Dengan menggunakan platform ini, masyarakat dapat dengan mudah mendaftarkan diri dan
+                            memberikan
+                            informasi terkait status vaksinasi mereka. Ini termasuk data identitas warga, seperti nama,
+                            alamat, dan tanggal lahir, yang diperlukan untuk memastikan bahwa semua informasi yang
+                            tercatat
+                            akurat dan up-to-date. Selain itu, platform ini juga mencakup riwayat vaksinasi,
+                            memungkinkan
+                            warga untuk melaporkan jenis vaksin yang telah diterima beserta tanggalnya, sehingga pihak
+                            kesehatan dapat memantau cakupan vaksinasi di komunitas.
+                        </p>
+                        <a href="laykes.php">
+                            <button class="tombolP">
+                                <span class="hover-underline-animation px-5 mx-auto">Pilih Vaksin</span>
+                            </button>
+                        </a>
+                    </div>
 
-            <div class="grid grid-flow-row-dense grid-cols-3 grid-rows-1 gap-0 mt-10">
-                <!-- inti Section -->
-                <div class="col-span-2 bg-gray-300 py-10 mt-7 px-4 shadow-lg" style="max-height: 75%">
-                    <h2 class="text-6xl font-bold mb-4 text-indigo-600 " style="margin-top: 10px; padding: 10px; border-left: 4px solid #000;">Selamat Datang di
-                        sigmaDev</h2>
-                    <p class="text-lg text-gray-700 mb-6 mt-5" style= "border-right: 4px solid #000;">Platform sigmaDev menyediakan informasi penting seputar
-                        vaksinasi dan sumber daya kesehatan bagi komunitas desa. Temukan artikel, panduan, dan berita
-                        terbaru yang membantu meningkatkan kesadaran serta mendukung gaya hidup sehat di lingkungan
-                        desa.</p>
-
-                    <a href="laykes.php">
-                        <button class="tombolP">
-                            <span class="hover-underline-animation px-5 mx-auto"> Pilih Vaksin </span>
-                        </button>
-                    </a>
-
+                    <!-- Kolom Gambar -->
+                    <div class="flex justify-center bg-center bg-cover">
+                        <img src="../assets/image/pembuka.avif" alt="vaksin Desa"
+                            class="rounded-lg object-fit w-full h-full" style="height:350px; width:400px;">
+                    </div>
                 </div>
-                <div class=" col-span-1/3 text-center py-10 px-4 rounded-lg mx-auto mt-7">
-                    <img src="../assets/image/vaksinDesa.jpg" alt="vaksin Desa" class="mx-auto">
-
-                </div>
-
             </div>
+
+            <section class="text-gray-600 body-font">
+                <div class="container px-5 py-24 mx-auto">
+                    <div class="flex flex-wrap w-full mb-20">
+                        <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+                            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Pitchfork
+                                Kickstarter Taxidermy</h1>
+                            <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+                        </div>
+                        <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">Whatever cardigan tote bag tumblr
+                            hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably
+                            haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid
+                            celiac humblebrag.</p>
+                    </div>
+                    <div class="flex flex-wrap -m-4 grid grid-cols-3">
+                        <div class="xl:w-1/4 md:w-1/2 p-4">
+                            <div class="bg-gray-100 p-6 rounded-lg">
+                                <img class="h-40 rounded w-full object-cover object-center mb-6"
+                                    src="../assets/image/pengertian.jpg" alt="content">
+                                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Chichen Itza</h2>
+                                <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit
+                                    waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+                            </div>
+                        </div>
+                        <div class="xl:w-1/4 md:w-1/2 p-4">
+                            <div class="bg-gray-100 p-6 rounded-lg">
+                                <img class="h-40 rounded w-full object-cover object-center mb-6"
+                                    src="../assets/image/perbedaan.jpg" alt="content">
+                                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Colosseum Roma</h2>
+                                <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit
+                                    waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+                            </div>
+                        </div>
+                        <div class="xl:w-1/4 md:w-1/2 p-4">
+                            <div class="bg-gray-100 p-6 rounded-lg">
+                                <img class="h-40 rounded w-full object-cover object-center mb-6"
+                                    src="../assets/image/dampak.jpg" alt="content">
+                                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Great Pyramid of Giza</h2>
+                                <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit
+                                    waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
 
 
             <!-- inti Section -->
@@ -283,13 +385,7 @@
         <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.polyfills.min.js">
         </script>
-        <script>
-        const scroll = new SmoothScroll('a[href="#banner"]', {
-            speed: 1,
-            speedAsDuration: true,
-            offset: 110 // Sesuaikan offset
-        });
-        </script>
+        <script src="../assets/src/beranda.js"></script>
 </body>
 
 </html>

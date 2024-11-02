@@ -3,6 +3,67 @@ html {
   scroll-behavior: smooth;
 }
 
+/* banner kesehatan */
+.announcement-banner {
+  background: linear-gradient(135deg, #4338ca, #3730a3);
+  color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.announcement-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.announcement-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0.5rem;
+  border-radius: 50%;
+  flex-shrink: 0; 
+}
+
+.announcement-text {
+  font-size: 1rem;
+  letter-spacing: 0.025em;
+}
+
+.announcement-marquee {
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.announcement-banner::before,
+.announcement-banner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4rem;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.announcement-banner::before {
+  left: 0;
+  background: linear-gradient(to right, #4338ca, transparent);
+}
+
+.announcement-banner::after {
+  right: 0;
+  background: linear-gradient(to left, #4338ca, transparent);
+}
+
+
+
 /* Tombol jelajahi */ 
 .cta {
   border: none;
@@ -68,6 +129,85 @@ html {
   transform: scale(1.05);
 }
 
+.pembuka {
+  backdrop-filter: blur(25px) saturate(166%);
+  -webkit-backdrop-filter: blur(25px) saturate(166%);
+  background-color: rgba(255, 255, 255, 0.53);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+
+/* From Uiverse.io by suleymanlaarabidev */ 
+.pengertian {
+  width: 190px;
+  height: 254px;
+  background: rgb(103, 225, 255);
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.pengertian {
+  position: relative;
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.pengertian:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
+  background: rgb(103, 151, 255);
+}
+
+.konten1,
+.konten2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: opacity 0.4s, transform 0.4s;
+}
+
+.konten1 {
+  opacity: 1;
+}
+
+.pengertian:hover .konten1 {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.konten2 {
+  opacity: 0;
+  transform: scale(0.8);
+  font-size: 1.8rem;
+  color: white;
+}
+
+.pengertian:hover .konten2 {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+
+
+
+
+
+
+
+
+/* border inti */
 #inti {
   border: 2px solid #D1D5DB;
   border-radius: 10px;
@@ -76,57 +216,44 @@ html {
   max-width: 65%;
 }
 
-/* tombol pelajari lebih lanjut*/ 
+/* tombol pilih vaksin*/ 
 .tombolP {
-  display: inline-block;
-  width: 150px;
-  height: 50px;
-  border-radius: 10px;
-  border: 1px solid #03045e;
-  position: relative;
-  overflow: hidden;
-  transition: all 0.5s ease-in;
-  margin-bottom: 5px;
+  padding: 15px 25px;
+  border: unset;
+  border-radius: 15px;
+  color: #212121;
   z-index: 1;
- }
- 
- .tombolP::before,
- .tombolP::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  width: 0;
-  height: 100%;
-  transform: skew(15deg);
-  transition: all 0.5s;
+  background: #e8e8e8;
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms;
   overflow: hidden;
-  z-index: -1;
  }
  
  .tombolP::before {
-  left: -10px;
-  background: #A0D683;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #6190ed;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms
  }
  
- .tombolP::after {
-  right: -10px;
-  background:#D3EE98;
+ .tombolP:hover {
+  color: #e8e8e8;
  }
  
- .tombolP:hover::before,
- .tombolP:hover::after {
-  width: 58%;
- }
- 
- .tombolP:hover span {
-  color: #000000;
-  transition: 0.3s;
- }
- 
- .tombolP span {
-  color: #1E3E62;
-  font-size: 18px;
-  transition: all 0.3s ease-in;
+ .tombolP:hover::before {
+  width: 100%;
  }
 /* border left statistik */
  .borderS {
