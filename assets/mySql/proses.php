@@ -18,13 +18,9 @@ include "connect.php" ;
     $namaP = $first_name . ' ' . $last_name ;
     
     $query = mysqli_query($conn, "INSERT INTO pasien VALUES('$nikP', '$emailP', '$namaP', '$jkP', '$lahirP', '$telpP', '$domisiliP', '$isShow', '$selectedLayanan')") or die(mysqli_error($conn)) ;
-        // echo "Proses Input Berhasil, Ingin Lihat Hasil? <a href='../../pages/beranda.php'> Kembali ke Beranda </a>" ;
-        // header('Location : ../../pages/beranda.php?insertSukses=true') ;
-            header('Location : ../../pages/beranda.php') ;
-
-        // header('Location : ../beranda.php') ;
-        // ini kenapa cok cokco kcokco kcokc okcokok okc
-    
+        if($query){
+        header('Location : ../../pages/beranda.php?insertSukses=true', true, 301) ; exit ;
+        }
 }
 
 
@@ -32,10 +28,9 @@ include "connect.php" ;
     if (isset($_GET['deleteNikP'])) {
         $nikP = $_GET['deleteNikP'] ;
         $query = mysqli_query($conn, "DELETE FROM pasien WHERE nikP = $nikP;") or die(mysqli_error($conn)) ;
-
-        echo "Proses Delete Berhasil, Ingin Lihat Hasil? <a href='../../pages/beranda.php'> Kembali ke Beranda </a>" ;
-
-        header('Location: ../../pages/beranda.php?deleteSukses=true') ;            
+        if($query){
+            header('Location: ../../pages/beranda.php?deleteSukses=true', true, 301) ; exit ;            
+        }
     
     }
     //submit edit data
@@ -55,9 +50,6 @@ include "connect.php" ;
         $namaP = $first_name . ' ' . $last_name ;
         $query = mysqli_query($conn,"UPDATE pasien  SET nikP='$nikP',emailP='$emailP', namaP='$namaP', jkP='$jkP', lahirP='$lahirP', telpP='$telpP', domisiliP='$domisiliP', isShow='$isShow', selectedLayanan='$selectedLayanan' where nikP='$nikP'") or die(mysqli_error($db));
         if($query){
-            header('Location: ../../pages/beranda.php?editSukses=true') ;
+            header('Location: ../../pages/beranda.php?editSukses=true', true, 301) ;
          }
     }
-    
-
-?>

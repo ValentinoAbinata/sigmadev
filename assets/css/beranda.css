@@ -92,73 +92,62 @@ html {
   border: 1px solid rgba(209, 213, 219, 0.3);
 }
 
-
-/* From Uiverse.io by suleymanlaarabidev */ 
-.pengertian {
-  width: 190px;
-  height: 254px;
-  background: rgb(103, 225, 255);
+/* Pengertian,manfaat,cara kerja */
+.card {
+  min-width: 400px;
+  height:200px;
   transition: all 0.4s;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.25);
   font-size: 30px;
   font-weight: 900;
 }
 
-.pengertian {
-  position: relative;
-  transition: transform 0.4s, box-shadow 0.4s;
-}
-
-.pengertian:hover {
+.card:hover {
   border-radius: 15px;
   cursor: pointer;
   transform: scale(1.2);
-  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
   background: rgb(103, 151, 255);
 }
 
-.konten1,
-.konten2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+.first-content {
   height: 100%;
+  width: 100%;
+  transition: all 0.4s;
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 1;
   border-radius: 15px;
-  transition: opacity 0.4s, transform 0.4s;
 }
 
-.konten1 {
-  opacity: 1;
-}
-
-.pengertian:hover .konten1 {
+.card:hover .first-content {
+  height: 0px;
   opacity: 0;
-  transform: scale(0.8);
 }
 
-.konten2 {
+.second-content {
+  height: 25%;
+  width: 80%;
   opacity: 0;
-  transform: scale(0.8);
-  font-size: 1.8rem;
-  color: white;
+  margin-top: auto;
+  margin-bottom:auto;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  border-radius: 15px;
+  transition: all 0.4s;
+  font-size: 5px;
+  transform: rotate(90deg) scale(-1);
 }
 
-.pengertian:hover .konten2 {
+.card:hover .second-content {
   opacity: 1;
-  transform: scale(1);
+  height: 50%;
+  font-size: 15px;
+  transform: rotate(0deg);
 }
-
-
-
-
-
-
-
 
 
 
@@ -214,4 +203,5 @@ html {
  .borderS {
   border-left: 2px solid #D1D5DB;
  }
+
  

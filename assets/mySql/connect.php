@@ -1,7 +1,6 @@
 <?php
+function debug_to_console($data)//  Biar Echo Koneksi Berhasil! dan Koneksi Gagal! keluar di console
 
-    //  Biar Echo Koneksi Berhasil! dan Koneksi Gagal! keluar di console
-    function debug_to_console($data)
     {
     $output = $data;
     if (is_array($output))
@@ -21,4 +20,3 @@
     } else {
        debug_to_console("Koneksi Gagal!");
     }
-?>

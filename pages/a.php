@@ -439,14 +439,14 @@ input {
 
       <div class="form-container login-container">
         <form class="form-lg" method="POST" action>
-          <h1>Welcome Admin</h1>
+          <h1>Welcome Admin!</h1>
           <div class="form-control2">
             <input type="email" class="email-2" placeholder="Username" />
             <small class="email-error-2"></small>
             <span></span>
           </div>
           <div class="form-control2">
-            <input type="password" class="password-2" placeholder="Contraseña" />
+            <input type="password" class="password-2" placeholder="Password" />
             <small class="password-error-2"></small>
             <span></span>
           </div>
@@ -454,10 +454,10 @@ input {
           <div class="content">
             <div class="checkbox">
               <input type="checkbox" name="checkbox" id="checkbox" />
-              <label for="">Recuérdame</label>
+              <label for="">Remember me?</label>
             </div>
             <div class="pass-link">
-              <a href="#">¿Olvidaste la contraseña?</a>
+              <a href="#">¿Olvidaste </a>
             </div>
           </div>
           <button type="submit" value="submit">Iniciar sesión</button>

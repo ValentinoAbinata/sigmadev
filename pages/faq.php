@@ -1,5 +1,3 @@
-<?php ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +10,6 @@
 </head>
 
 <body>
-
     <?php include "../layout/navbar.php" ?>
     <div class="bg-gray-100">
         <div style=" padding: 5%; padding-top : 9%; padding-bottom : 0%; min-height:75dvh;">

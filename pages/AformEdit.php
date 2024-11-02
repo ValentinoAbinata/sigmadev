@@ -4,7 +4,6 @@ $nikP = $_GET['editNikP'];
 $query = mysqli_query($conn, "SELECT * FROM pasien where nikP=$nikP");
 $data = mysqli_fetch_array($query);
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,7 +17,6 @@ $data = mysqli_fetch_array($query);
 </head>
 
 <body>
-
     <?php include "../layout/navbar.php" ?>
     <div class="bg-gray-100">
         <div style=" padding: 5%; padding-top : 9%; padding-bottom : 0%; min-height:75dvh;">
@@ -186,9 +184,6 @@ $data = mysqli_fetch_array($query);
                 color: white;
             }
         </style>
-
-
-
         <?php include "../layout/footer.php" ?>
     </div>
 

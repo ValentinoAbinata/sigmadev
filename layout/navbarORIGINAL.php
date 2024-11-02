@@ -1,4 +1,6 @@
-<?php session_start(); ?> <!DOCTYPE html> <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,16 +44,47 @@
                     <ul
                         class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-blue-200 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
                         <li>
-                            <a href="beranda.php" class="block py-2 px-3 rounded hover:bg-blue-200 text-lg font-bold md:hover:bg-transparent md:hover:text-blue-700 md:p-0" aria-current="page">Beranda</a>
+                            <a href="beranda.php" class="block py-2 px-3 rounded hover:bg-blue-200 text-lg font-bold md:hover:bg-transparent md:hover:text-blue-700 md:p-0 
+              <?php
+              if (basename($_SERVER['PHP_SELF']) == 'beranda.php') {
+                echo "text-blue-700";
+              } else {
+                echo "text-gray-900";
+              }
+              ?>
+              " aria-current="page">Beranda</a>
                         </li>
                         <li>
-                            <a href="daKes.php" class="block py-2 px-3 rounded text-lg font-bold hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Data Kesehatan</a>
+                            <a href="daKes.php" class="block py-2 px-3 rounded text-lg font-bold hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 
+              <?php
+              if (basename($_SERVER['PHP_SELF']) == 'daKes.php') {
+                echo "text-blue-700";
+              } else {
+                echo "text-gray-900";
+              }
+              ?>">Data Kesehatan</a>
                         </li>
                         <li>
-                            <a href="layKes.php" class="block py-2 px-3 rounded text-lg font-bold hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"> Layanan Kesehatan</a>
+                            <a href="layKes.php" class="block py-2 px-3 rounded text-lg font-bold hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 
+              <?php
+              if (basename($_SERVER['PHP_SELF']) == 'layKes.php') {
+                echo "text-blue-700";
+              } else {
+                echo "text-gray-900";
+              }
+              ?>
+              "> Layanan Kesehatan</a>
                         </li>
                         <li>
-                            <a href="faq.php" class="block py-2 px-3 rounded text-lg font-bold hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">FAQ</a>
+                            <a href="faq.php" class="block py-2 px-3 rounded text-lg font-bold hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 
+              <?php
+              if (basename($_SERVER['PHP_SELF']) == 'faq.php') {
+                echo "text-blue-700";
+              } else {
+                echo "text-gray-900";
+              }
+              ?>
+              ">FAQ</a>
                         </li>
                     </ul>
                 </div>

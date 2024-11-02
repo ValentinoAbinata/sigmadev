@@ -37,6 +37,8 @@ if ada session, navbar logout dan navbar instead of login
 
 
 
+besok coba login ke cekLogin.php biar kyk windyiwndywindywindy
+
 
 INSERT INTO `pasien` (`nikP`, `emailP`, `namaP`, `jkP`, `lahirP`, `telpP`, `domisiliP`, `isShow`, `selectedLayanan`) VALUES ('1', 'akudummy1@gmail.com', 'dummy1', 'L', '0001-01-01', '1', '1', '0', '1');
 

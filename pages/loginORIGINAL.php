@@ -1,4 +1,6 @@
-<?php session_start();?>
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -105,8 +107,30 @@
                             <span class="w-1/5 border-b dark:border-gray-600 md:w-1/4"></span>
                         </div>
                     </form>
+                    <?php
+                    if (isset($_GET['isLogin'])){
+                        echo "Harap Login Terlebih Dahulu!" ;
+                    }
+                    if (isset($_POST["login"])) {
+                        if ($_POST['username'] == "admin" && $_POST['password'] == "admin1234") {
+                            $_SESSION['username'] = $_POST['username'];
+                            $_SESSION['password'] = $_POST['password'];
+                            echo "Jika Tidak Kembali ke Beranda, Tekan <a href='beranda.php' class='text-blue-400'> ini </a>" ;
+                            ("Location : beranda.php?isLogin=tru") ;
+                        } else {
+                            ?>
+                            <div class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400"
+                                role="alert">
+                                <span class="font-medium">Username atau/dan Password Kurang Tepat, Silahkan Ulangi!</span>
+                            </div>
+                            <?php
+                        }
+                    }
+                    ?>
                 </div>
             </div>
+
+
         </div>
         <?php include "../layout/footer.php" ?>
     </div>
@@ -118,16 +142,3 @@
 </body>
 
 </html>
-<?php
-                    if (isset($_GET['isLogin'])){
-                        echo "Harap Login Terlebih Dahulu!" ;
-                    }
-                    if (isset($_POST["login"])) {
-                        if ($_POST['username'] == "admin" && $_POST['password'] == "admin1234") {
-                            $_SESSION['username'] = $_POST['username'];
-                            $_SESSION['password'] = $_POST['password'];
-                            header('Location : beranda.php?isLogin=true', true, 301) ; exit;
-                        } 
-                        header('Location : beranda.php?isLogin=false', true, 301) ; exit ;
-                    }
-//  LOGIN CEK APAKAH LOGIN CEK WIBU WIBU WIBU WIBU

@@ -33,9 +33,7 @@
 </head>
 
 <body>
-
     <?php include "../layout/navbar.php" ?>
-
     <div class="bg-gray-100">
         <div class="relative h-screen flex items-center justify-center text-center text-white bg-cover bg-center"
             style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/image/bg1.jpg')">
@@ -70,9 +68,7 @@
 
             <br>
         </div>
-
         <?php include "../layout/footer.php" ?>
-
         <script>
             const observer = new IntersectionObserver(entries => {
                 entries.forEach(entry => {

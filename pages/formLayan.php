@@ -1,7 +1,6 @@
 <?php
 $selectedLayanan = isset($_GET['layanan']) ? $_GET['layanan'] : '';
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,7 +14,6 @@ $selectedLayanan = isset($_GET['layanan']) ? $_GET['layanan'] : '';
 </head>
 
 <body>
-
     <?php include "../layout/navbar.php" ?>
     <div class="bg-gray-100">
         <div style=" padding: 5%; padding-top : 9%; padding-bottom : 0%; min-height:75dvh;">
@@ -198,8 +196,6 @@ $selectedLayanan = isset($_GET['layanan']) ? $_GET['layanan'] : '';
             // });
 
         </script>
-
-
         <?php include "../layout/footer.php" ?>
     </div>
 

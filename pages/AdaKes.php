@@ -1,8 +1,11 @@
 <?php
     include("../assets/mySql/connect.php");
+    if(empty($_SESSION['username']))
+    {
+        header("location:login.php?isLogin=false");
+    }
     $query = mysqli_query($conn, "SELECT * FROM pasien") ;
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,7 +18,6 @@
 </head>
 
 <body>
-
     <?php include "../layout/navbar.php" ?>
     <div class="bg-gray-100">
         <div style=" padding: 5%; padding-top : 9%; padding-bottom : 0%; min-height:75dvh;">
@@ -59,8 +61,6 @@
                             while ($data = mysqli_fetch_array($query)) : 
                             if($data['isShow'] == 0) : 
                         ?>
-                    
-
                             <tr
                                 class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
                                 <th scope="row"
@@ -95,9 +95,8 @@
                                 endif; 
                                 endwhile ;
                             ?>
-                            
-                       <!-- ini nanti buat isShow == 1 tapi gaada tampilkandi dakes.. adanya jangan tampilkan di dakes :D-->
                         </tbody>
+                        <!-- ini nanti buat isShow == 1 tapi gaada tampilkandi dakes.. adanya jangan tampilkan di dakes :D-->
                     </table>
                 </div>
 

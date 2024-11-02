@@ -1,5 +1,3 @@
-<?php ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -190,71 +188,76 @@
                 </div>
             </div>
 
-            <!-- Pengertian,Perbedaan,Dampak -->
-            <section>
-                <div class="container px-5 py-24 mx-auto">
+            <!-- Pengertian,Cara Kerja,Dampak -->
+            <section style="font-family: Poppins;">
+                <div class="container px-5 py-10 mx-auto">
                     <div class="flex flex-wrap grid grid-cols-3 w-full mb-20">
                         <div class="lg:w-1/2 w-full mb-6 lg:mb-0" style="padding-left: 15px;">
-                            <h1 class="text-4xl font-bold mb-4 text-black" s>Informasi sigmaDev</h1>
+                            <h1 class="text-4xl font-bold mb-4 text-black">Informasi sigmaDev</h1>
                             <div class="h-1 bg-red-600 rounded" style="width: 315px;"></div>
                         </div>
-                        <p class="col-span-2 text-md text-black text-justify">sigmaDev adalah platform yang
-                            menyediakan informasi lengkap seputar vaksinasi dan sumber daya kesehatan, dirancang khusus
-                            untuk mendukung komunitas desa. Kami berfokus pada memberikan informasi yang faktual dan
-                            mudah diakses untuk membantu masyarakat dalam mengambil keputusan kesehatan yang tepat.</p>
+                        <p class="col-span-2 text-md text-black text-justify">
+                            sigmaDev adalah platform yang menyediakan informasi lengkap seputar vaksinasi dan sumber daya kesehatan,
+                            dirancang khusus untuk mendukung komunitas desa. Kami berfokus pada memberikan informasi yang faktual dan
+                            mudah diakses untuk membantu masyarakat dalam mengambil keputusan kesehatan yang tepat.
+                        </p>
                     </div>
-                    <div class="flex flex-wrap -m-4 grid grid-cols-3">
-                        <div class="xl:w-1/4 md:w-1/2 p-4">
-                            <div class="bg-gray-100 p-6 rounded-lg">
-                                <img class="h-40 rounded w-full object-cover object-center mb-6"
-                                    src="../assets/image/pengertian.jpg" alt="content">
-                                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE
-                                </h3>
-                                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Chichen Itza</h2>
-                                <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit
-                                    waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+                    <div class="flex flex-wrap -m-4 grid grid-cols-3 gap-5 mt-7">
+                        <div class="p-4">
+                            <div class="card h-60 w-60">
+                                <div class="first-content relative h-full w-full">
+                                    <img class="h-full w-full object-cover rounded" src="../assets/image/pengertian.jpg" alt="content">
+                                    <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-60 text-white px-3 py-1 rounded text-3xl font-bold">
+                                        Pengertian
+                                    </div>
+                                </div>
+                                <div class="second-content mx-auto py-9 ">
+                                    <span class="">Vaksinasi adalah pemberian vaksin untuk membantu sistem imun mengembangkan perlindungan dari suatu penyakit. Vaksin sendiri mengandung mikroorganisme atau virus dalam keadaan lemah, hidup atau mati, atau mengandung protein atau toksin dari organisme.</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="xl:w-1/4 md:w-1/2 p-4">
-                            <div class="bg-gray-100 p-6 rounded-lg">
-                                <img class="h-40 rounded w-full object-cover object-center mb-6"
-                                    src="../assets/image/perbedaan.jpg" alt="content">
-                                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE
-                                </h3>
-                                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Colosseum Roma</h2>
-                                <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit
-                                    waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+                        <div class="p-4">
+                            <div class="card h-60 w-60">
+                                <div class="first-content relative h-full w-full">
+                                    <img class="h-full w-full object-cover rounded" src="../assets/image/caraKerja.jpg" alt="content">
+                                    <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-60 text-white px-3 py-1 rounded text-3xxl font-bold">
+                                        Cara Kerja
+                                    </div>
+                                </div>
+                                <div class="second-content">
+                                    <span>More Info about Great Pyramid of Giza</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="xl:w-1/4 md:w-1/2 p-4">
-                            <div class="bg-gray-100 p-6 rounded-lg">
-                                <img class="h-40 rounded w-full object-cover object-center mb-6"
-                                    src="../assets/image/dampak.jpg" alt="content">
-                                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE
-                                </h3>
-                                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Great Pyramid of Giza
-                                </h2>
-                                <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit
-                                    waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+                        <div class="p-4">
+                            <div class="card h-60 w-60">
+                                <div class="first-content relative h-full w-full">
+                                    <img class="h-full w-full object-cover rounded" src="../assets/image/dampak.jpg" alt="content">
+                                    <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-60 text-white px-3 py-1 rounded text-3xl font-bold">
+                                        Manfaat
+                                    </div>
+                                </div>
+                                <div class="second-content">
+                                    <span>More Info about Great Pyramid of Giza</span>
+                                </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </section>
+
+
             <!-- Cara Pendaftaran -->
-            <section class="text-gray-600 body-font">
-                <div class="container px-5 py-10 mx-auto">
+            <section>
+                <div class="container px-5 py-10 mx-auto" style="margin-top:50px;">
                     <div class="flex flex-col justify-center items-center text-center w-full mb-20">
                         <img src="../assets/image/iconsigmaDev2.png" alt="iconsigmaDev" style="width:150px; height:150px;">
-                        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Cara Pendaftaran     </h1>
-                        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon
-                            brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't
-                            heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac
-                            humblebrag.</p>
+                        <h1 class="text-4xl font-bold text-black">Cara Pendaftaran</h1>
+                        <div class="h-1 bg-red-600 rounded" style="width: 270px;"></div>
+                        <p class="lg:w-2/3 mx-auto leading-relaxed text-base mt-5">Pendaftaran vaksinasi di website sigmaDev sangat mudah dan cepat. Kami telah merancang proses ini untuk memudahkan setiap orang dalam mendaftar vaksinasi dengan langkah-langkah yang jelas dan sederhana. Berikut ini adalah langkah-langkah pendaftaran vaksinasi:</p>
                     </div>
-                    <div class="flex flex-wrap grid grid-cols-4">
-                        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+                    <div class="flex flex-wrap grid grid-cols-4 mt-3 mb-7">
+                        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60" style="border-left:2px solid #000000;border-right:2px solid #000000;">
                             <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Shooting Stars</h2>
                             <p class="leading-relaxed text-base mb-4">Fingerstache flexitarian street art 8-bit
                                 waistcoat. Distillery hexagon disrupt edison bulbche.</p>
@@ -265,7 +268,7 @@
                                 </svg>
                             </a>
                         </div>
-                        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+                        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60" style="border-right:2px solid #000000;">
                             <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">The Catalyzer</h2>
                             <p class="leading-relaxed text-base mb-4">Fingerstache flexitarian street art 8-bit
                                 waistcoat. Distillery hexagon disrupt edison bulbche.</p>
@@ -276,7 +279,7 @@
                                 </svg>
                             </a>
                         </div>
-                        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+                        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60" style="border-right:2px solid #000000;">
                             <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Neptune</h2>
                             <p class="leading-relaxed text-base mb-4">Fingerstache flexitarian street art 8-bit
                                 waistcoat. Distillery hexagon disrupt edison bulbche.</p>
@@ -287,7 +290,7 @@
                                 </svg>
                             </a>
                         </div>
-                        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+                        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60" style="border-right:2px solid #000000;">
                             <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Melanchole</h2>
                             <p class="leading-relaxed text-base mb-4">Fingerstache flexitarian street art 8-bit
                                 waistcoat. Distillery hexagon disrupt edison bulbche.</p>
@@ -305,49 +308,67 @@
             </section>
 
 
-
-            <div class="bg-green-800 text-white py-12 px-8 lg:px-20 rounded-lg mt-8">
+            <div class="text-black py-12 px-8 lg:px-20 rounded-lg mt-8">
                 <div class="grid lg:grid-cols-2 gap-8 items-center">
                     <!-- Teks Pencapaian -->
-                    <div>
-                        <h5 class="text-sm font-semibold uppercase mb-2 text-gray-300">Meningkatkan Kesadaran</h5>
+                    <div class="text-justify p-3" style="margin-left: 100px;">
                         <h2 class="text-3xl font-bold mb-4">Pencapaian Kesehatan Desa</h2>
-                        <p class="mb-4">
+
+                        <p class="mb-4 text-left">
                             Kami berkomitmen untuk menyediakan informasi vaksinasi yang akurat dan sumber daya
-                            kesehatan
-                            untuk komunitas desa. Bersama-sama, kita dapat menciptakan lingkungan yang lebih sehat.
+                            kesehatan untuk komunitas desa. Bersama-sama, kita dapat menciptakan lingkungan yang lebih sehat.
                         </p>
-                        <p class="mb-8">
+
+                        <p class="mb-8 text-right">
                             Lihat bagaimana inisiatif kesehatan kami berdampak positif pada komunitas. Dari
-                            peningkatan
-                            vaksinasi hingga kegiatan edukasi, kami berusaha untuk kesehatan yang lebih baik.
+                            peningkatan vaksinasi hingga kegiatan edukasi, kami berusaha untuk kesehatan yang lebih baik.
                         </p>
                     </div>
 
                     <!-- Gambar  -->
                     <div class="flex justify-center lg:justify-end">
-                        <img src="../assets/image/keberagaman.jpeg" alt="Avocado"
-                            class="rounded-lg w-full max-w-xs object-cover">
+                        <img src="../assets/image/vaccine.jpg" alt="keberagaman"
+                            class="rounded-lg max-w-xs object-cover" style="width:400px;height:250px">
                     </div>
                 </div>
 
                 <!-- Statistik -->
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center mt-8">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center mt-8 justify-center items-center">
                     <div>
-                        <h3 class="text-3xl font-bold">85%</h3>
+                        <div class="w-16 h-16 mx-auto rounded-full flex items-center justify-center bg-green-500 hover:bg-blue-500 transition-all duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" style="width:35px; height:35px;" class="text-blue-500">
+                                <path d="M29.0918,8.5654,27.68,7.1533l-.002-.0029L24.85,4.3223l-.0029-.002L23.4346,2.9082a1,1,0,0,0-1.4141,1.4141l.7075.7075L19.9,7.8579,17.7783,5.7363A1,1,0,0,0,16.3643,7.15l1.4146,1.4146L7.1719,19.1719a3.959,3.959,0,0,0-.6072,4.8494L2.293,28.293A1,1,0,1,0,3.707,29.707l4.2717-4.2717a3.959,3.959,0,0,0,4.8494-.6072L23.4351,14.2212,24.85,15.6357a1,1,0,0,0,1.4141-1.4141L24.1421,12.1,26.97,9.272l.7075.7075a1,1,0,0,0,1.4141-1.4141ZM20.6211,14.207,20,13.5859A1,1,0,0,0,18.5859,15l.6211.6211L17.6211,17.207,17,16.5859A1,1,0,0,0,15.5859,18l.6211.6211L14.6211,20.207,14,19.5859A1,1,0,0,0,12.5859,21l.6211.6211-1.793,1.793a2.0471,2.0471,0,0,1-2.8281,0,1.9993,1.9993,0,0,1,0-2.8281L19.1924,9.9795l2.8281,2.8281Zm2.1069-3.521L21.314,9.272l2.8281-2.8281,1.4141,1.4141Z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-3xl font-bold mt-2">85%</h3>
                         <p class="text-sm">Vaksinasi Terbaru</p>
                     </div>
                     <div class="borderS">
+                        <div class="w-16 h-16 mx-auto rounded-full flex items-center justify-center bg-green-500 hover:bg-blue-500 transition-all duration-300">
+                            <svg class="w-[50px] h-[50px]  text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" d="M12 6a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm-1.5 8a4 4 0 0 0-4 4 2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 4 4 0 0 0-4-4h-3Zm6.82-3.096a5.51 5.51 0 0 0-2.797-6.293 3.5 3.5 0 1 1 2.796 6.292ZM19.5 18h.5a2 2 0 0 0 2-2 4 4 0 0 0-4-4h-1.1a5.503 5.503 0 0 1-.471.762A5.998 5.998 0 0 1 19.5 18ZM4 7.5a3.5 3.5 0 0 1 5.477-2.889 5.5 5.5 0 0 0-2.796 6.293A3.501 3.501 0 0 1 4 7.5ZM7.1 12H6a4 4 0 0 0-4 4 2 2 0 0 0 2 2h.5a5.998 5.998 0 0 1 3.071-5.238A5.505 5.505 0 0 1 7.1 12Z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
                         <h3 class="text-3xl font-bold">1200 orang</h3>
                         <p class="text-sm">Partisipasi Komunitas</p>
                     </div>
                     <div class="borderS">
+                        <div class="w-16 h-16 mx-auto rounded-full flex items-center justify-center bg-green-500 hover:bg-blue-500 transition-all duration-300">
+                            <svg class="w-[50px] h-[50px]  text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" d="M6 2a2 2 0 0 0-2 2v15a3 3 0 0 0 3 3h12a1 1 0 1 0 0-2h-2v-2h2a1 1 0 0 0 1-1V4a2 2 0 0 0-2-2h-8v16h5v2H7a1 1 0 1 1 0-2h1V2H6Z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
                         <h3 class="text-3xl font-bold">50 sesi</h3>
                         <p class="text-sm">Program Edukasi</p>
                     </div>
                     <div class="borderS">
-                        <h3 class="text-3xl font-bold">Meningkat 30%</h3>
-                        <p class="text-sm">Kesehatan Masyarakat</p>
+                        <div class="w-16 h-16 mx-auto rounded-full flex items-center justify-center bg-green-500 hover:bg-blue-500 transition-all duration-300">
+                            <svg class="w-[50px] h-[50px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="m12.75 20.66 6.184-7.098c2.677-2.884 2.559-6.506.754-8.705-.898-1.095-2.206-1.816-3.72-1.855-1.293-.034-2.652.43-3.963 1.442-1.315-1.012-2.678-1.476-3.973-1.442-1.515.04-2.825.76-3.724 1.855-1.806 2.201-1.915 5.823.772 8.706l6.183 7.097c.19.216.46.34.743.34a.985.985 0 0 0 .743-.34Z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-3xl font-bold">30%</h3>
+                        <p class="text-sm">Kenaikan Kesehatan Masyarakat</p>
                     </div>
                 </div>
             </div>
