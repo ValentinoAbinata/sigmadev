@@ -212,7 +212,7 @@
                                     </div>
                                 </div>
                                 <div class="second-content mx-auto py-9 ">
-                                    <span class="">Vaksinasi adalah pemberian vaksin untuk membantu sistem imun mengembangkan perlindungan dari suatu penyakit. Vaksin sendiri mengandung mikroorganisme atau virus dalam keadaan lemah, hidup atau mati, atau mengandung protein atau toksin dari organisme.</span>
+                                    <span class="">Vaksinasi adalah pemberian vaksin untuk membantu sistem kekebalan tubuhmengembangkan perlindungan dari suatu penyakit. Vaksin sendiri mengandung mikroorganisme atau virus dalam keadaan lemah, hidup atau mati, atau mengandung protein atau toksin dari organisme.</span>
                                 </div>
                             </div>
                         </div>
