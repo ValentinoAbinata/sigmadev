@@ -188,58 +188,69 @@
                 </div>
             </div>
 
-            <!-- Pengertian,Cara Kerja,Dampak -->
-            <section style="font-family: Poppins;">
-                <div class="container px-5 py-10 mx-auto">
-                    <div class="flex flex-wrap grid grid-cols-3 w-full mb-20">
+            <section>
+                <div class="container px-5 mx-auto">
+                    <div class="flex flex-wrap grid grid-cols-3 w-full mb-10">
                         <div class="lg:w-1/2 w-full mb-6 lg:mb-0" style="padding-left: 15px;">
                             <h1 class="text-4xl font-bold mb-4 text-black">Informasi sigmaDev</h1>
                             <div class="h-1 bg-red-600 rounded" style="width: 315px;"></div>
                         </div>
-                        <p class="col-span-2 text-md text-black text-justify">
-                            sigmaDev adalah platform yang menyediakan informasi lengkap seputar vaksinasi dan sumber daya kesehatan,
-                            dirancang khusus untuk mendukung komunitas desa. Kami berfokus pada memberikan informasi yang faktual dan
-                            mudah diakses untuk membantu masyarakat dalam mengambil keputusan kesehatan yang tepat.
-                        </p>
+                        <p class="col-span-2 text-md text-black text-justify">sigmaDev adalah platform yang
+                            menyediakan informasi lengkap seputar vaksinasi dan sumber daya kesehatan, dirancang khusus
+                            untuk mendukung komunitas desa. Kami berfokus pada memberikan informasi yang faktual dan
+                            mudah diakses untuk membantu masyarakat dalam mengambil keputusan kesehatan yang tepat.</p>
                     </div>
-                    <div class="flex flex-wrap -m-4 grid grid-cols-3 gap-5 mt-7">
-                        <div class="p-4">
-                            <div class="card h-60 w-60">
-                                <div class="first-content relative h-full w-full">
-                                    <img class="h-full w-full object-cover rounded" src="../assets/image/pengertian.jpg" alt="content">
-                                    <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-60 text-white px-3 py-1 rounded text-3xl font-bold">
-                                        Pengertian
-                                    </div>
-                                </div>
-                                <div class="second-content mx-auto py-9 ">
-                                    <span class="">Vaksinasi adalah pemberian vaksin untuk membantu sistem kekebalan tubuhmengembangkan perlindungan dari suatu penyakit. Vaksin sendiri mengandung mikroorganisme atau virus dalam keadaan lemah, hidup atau mati, atau mengandung protein atau toksin dari organisme.</span>
-                                </div>
+                    <div class="flex flex-wrap -m-4 grid grid-cols-3 gap-6">
+                        <!-- Card 1 - Pengertian -->
+                        <div class="xl:w-1/4 md:w-1/2 p-4">
+                            <div
+                                class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                                <img class="h-40 rounded w-full object-cover object-center mb-6"
+                                    src="../assets/image/pengertian.jpg" alt="Gambar Pengertian Vaksinasi">
+                                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">INFORMASI
+                                </h3>
+                                <h2 class="font-bold text-gray-900 text-2xl text-center mb-4" style="Roboto">Pengertian
+                                </h2>
+                                <p class="leading-relaxed text-base text-justify mb-5">Vaksinasi adalah proses pemberian
+                                    vaksin untuk membantu sistem kekebalan tubuh dalam mengembangkan perlindungan
+                                    terhadap suatu penyakit. Vaksin mengandung mikroorganisme atau virus dalam keadaan
+                                    lemah, atau mengandung protein/toksin dari organisme tertentu.</p>
                             </div>
                         </div>
-                        <div class="p-4">
-                            <div class="card h-60 w-60">
-                                <div class="first-content relative h-full w-full">
-                                    <img class="h-full w-full object-cover rounded" src="../assets/image/caraKerja.jpg" alt="content">
-                                    <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-60 text-white px-3 py-1 rounded text-3xxl font-bold">
-                                        Cara Kerja
-                                    </div>
-                                </div>
-                                <div class="second-content">
-                                    <span>More Info about Great Pyramid of Giza</span>
-                                </div>
+
+                        <!-- Card 2 - Cara Kerja -->
+                        <div class="xl:w-1/4 md:w-1/2 p-4">
+                            <div
+                                class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                                <img class="h-40 rounded w-full object-cover object-center mb-6"
+                                    src="../assets/image/caraKerja.jpg" alt="Gambar Cara Kerja Vaksinasi">
+                                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">MEKANISME
+                                </h3>
+                                <h2 class="font-bold text-gray-900 text-2xl text-center mb-4" style="Roboto">Cara Kerja
+                                </h2>
+                                <p class="leading-relaxed text-base text-justify mb-5">Vaksinasi bekerja dengan
+                                    merangsang
+                                    sistem kekebalan tubuh untuk mengenali dan melawan patogen penyebab penyakit
+                                    tertentu. Vaksin mengajarkan tubuh untuk melawan infeksi secara efektif tanpa
+                                    menyebabkan penyakit.</p>
                             </div>
                         </div>
-                        <div class="p-4">
-                            <div class="card h-60 w-60">
-                                <div class="first-content relative h-full w-full">
-                                    <img class="h-full w-full object-cover rounded" src="../assets/image/dampak.jpg" alt="content">
-                                    <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-60 text-white px-3 py-1 rounded text-3xl font-bold">
-                                        Manfaat
-                                    </div>
-                                </div>
-                                <div class="second-content">
-                                    <span>More Info about Great Pyramid of Giza</span>
-                                </div>
+
+                        <!-- Card 3 - Manfaat -->
+                        <div class="xl:w-1/4 md:w-1/2 p-4">
+                            <div
+                                class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                                <img class="h-40 rounded w-full object-cover object-center mb-6"
+                                    src="../assets/image/manfaat.jpg" alt="Gambar Manfaat Vaksinasi">
+                                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">KEUNTUNGAN
+                                </h3>
+                                <h2 class="font-bold text-gray-900 text-2xl text-center mb-4" style="Roboto">Manfaat
+                                </h2>
+                                <p class="leading-relaxed text-base text-justify">Vaksinasi membantu mencegah penyebaran
+                                    penyakit dengan meningkatkan imunitas individu dan komunitas. Vaksinasi berperan
+                                    penting dalam mengurangi angka
+                                    kematian dan penyakit parah akibat infeksi, serta menekan biaya kesehatan dan
+                                    ekonomi akibat wabah.</p>
                             </div>
                         </div>
                     </div>
@@ -247,17 +258,23 @@
             </section>
 
 
+
             <!-- Cara Pendaftaran -->
             <section>
-                <div class="container px-5 py-10 mx-auto" style="margin-top:50px;">
+                <div class="container px-5 py-10 mx-auto" style="">
                     <div class="flex flex-col justify-center items-center text-center w-full mb-20">
-                        <img src="../assets/image/iconsigmaDev2.png" alt="iconsigmaDev" style="width:150px; height:150px;">
+                        <img src="../assets/image/iconsigmaDev2.png" alt="iconsigmaDev"
+                            style="width:125px; height:125px;">
                         <h1 class="text-4xl font-bold text-black">Cara Pendaftaran</h1>
                         <div class="h-1 bg-red-600 rounded" style="width: 270px;"></div>
-                        <p class="lg:w-2/3 mx-auto leading-relaxed text-base mt-5">Pendaftaran vaksinasi di website sigmaDev sangat mudah dan cepat. Kami telah merancang proses ini untuk memudahkan setiap orang dalam mendaftar vaksinasi dengan langkah-langkah yang jelas dan sederhana. Berikut ini adalah langkah-langkah pendaftaran vaksinasi:</p>
+                        <p class="lg:w-2/3 mx-auto leading-relaxed text-base mt-5">Pendaftaran vaksinasi di website
+                            sigmaDev sangat mudah dan cepat. Kami telah merancang proses ini untuk memudahkan setiap
+                            orang dalam mendaftar vaksinasi dengan langkah-langkah yang jelas dan sederhana. Berikut ini
+                            adalah langkah-langkah pendaftaran vaksinasi:</p>
                     </div>
                     <div class="flex flex-wrap grid grid-cols-4 mt-3 mb-7">
-                        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60" style="border-left:2px solid #000000;border-right:2px solid #000000;">
+                        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60"
+                            style="border-left:2px solid #000000;border-right:2px solid #000000;">
                             <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Shooting Stars</h2>
                             <p class="leading-relaxed text-base mb-4">Fingerstache flexitarian street art 8-bit
                                 waistcoat. Distillery hexagon disrupt edison bulbche.</p>
@@ -268,7 +285,8 @@
                                 </svg>
                             </a>
                         </div>
-                        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60" style="border-right:2px solid #000000;">
+                        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60"
+                            style="border-right:2px solid #000000;">
                             <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">The Catalyzer</h2>
                             <p class="leading-relaxed text-base mb-4">Fingerstache flexitarian street art 8-bit
                                 waistcoat. Distillery hexagon disrupt edison bulbche.</p>
@@ -279,7 +297,8 @@
                                 </svg>
                             </a>
                         </div>
-                        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60" style="border-right:2px solid #000000;">
+                        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60"
+                            style="border-right:2px solid #000000;">
                             <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Neptune</h2>
                             <p class="leading-relaxed text-base mb-4">Fingerstache flexitarian street art 8-bit
                                 waistcoat. Distillery hexagon disrupt edison bulbche.</p>
@@ -290,7 +309,8 @@
                                 </svg>
                             </a>
                         </div>
-                        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60" style="border-right:2px solid #000000;">
+                        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60"
+                            style="border-right:2px solid #000000;">
                             <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Melanchole</h2>
                             <p class="leading-relaxed text-base mb-4">Fingerstache flexitarian street art 8-bit
                                 waistcoat. Distillery hexagon disrupt edison bulbche.</p>
@@ -307,71 +327,332 @@
                 </div>
             </section>
 
+            <section class="text-gray-600 body-font py-12">
+                <h1 class="text-4xl font-bold text-black px-5">Kenapa Harus sigmaDev?</h1>
+                <div class=" h-1 bg-red-600 rounded mb-2 mt-2" style="margin-left: 248px;width: 165px;"></div>
+                <div class="container px-5 py-3 mx-auto flex flex-wrap">
+                    <div class="flex flex-wrap grid grid-cols-3 gap-5 w-full">
+                        <div class="col-span-2 lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
+                            <div class="flex relative pb-12">
+                                <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                                    <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                                </div>
+                                <div
+                                    class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                    </svg>
+                                </div>
+                                <div class="flex-grow pl-4 px-2">
+                                    <h2 class="font-medium title-font text-md text-gray-900 mb-1 tracking-wider">
+                                        Keamanan Terjamin
+                                    </h2>
+                                    <p class="leading-relaxed text-justify">Platform kami dirancang dengan standar
+                                        keamanan yang
+                                        tinggi, melindungi data pengguna dari ancaman digital dan memastikan informasi
+                                        tetap terjaga.</p>
+                                </div>
+                            </div>
+                            <div class="flex relative pb-12">
+                                <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                                    <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                                </div>
+                                <div
+                                    class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                                    </svg>
+                                </div>
+                                <div class="flex-grow pl-4 px-2">
+                                    <h2 class="font-medium title-font text-md text-gray-900 mb-1 tracking-wider">Akses
+                                        Informasi yang Mudah
+                                    </h2>
+                                    <p class="leading-relaxed text-justify">sigmaDev menawarkan antarmuka yang mudah
+                                        digunakan dan
+                                        mempermudah pengguna dalam mencari informasi kesehatan dan vaksinasi.</p>
+                                </div>
+                            </div>
+                            <div class="flex relative pb-12">
+                                <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                                    <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                                </div>
+                                <div
+                                    class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                        <path d="M22 4L12 14.01l-3-3"></path>
+                                    </svg>
+                                </div>
+                                <div class="flex-grow pl-4 px-2">
+                                    <h2 class="font-medium title-font text-md text-gray-900 mb-1 tracking-wider">Sumber
+                                        Tepercaya
+                                    </h2>
+                                    <p class="leading-relaxed text-justify">Kami bekerja sama dengan sumber terpercaya
+                                        dan
+                                        diverifikasi sehingga informasi yang disajikan di sigmaDev adalah akurat dan
+                                        dapat dipercaya.</p>
+                                </div>
+                            </div>
+                            <div class="flex relative pb-12">
+                                <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                                    <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                                </div>
+                                <div
+                                    class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                                    <svg class="w-6 h-6 text-white dark:text-white" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                        viewBox="0 0 24 24">
+                                        <path stroke="currentColor" stroke-linecap="square" stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M7 19H5a1 1 0 0 1-1-1v-1a3 3 0 0 1 3-3h1m4-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm7.441 1.559a1.907 1.907 0 0 1 0 2.698l-6.069 6.069L10 19l.674-3.372 6.07-6.07a1.907 1.907 0 0 1 2.697 0Z" />
+                                    </svg>
 
-            <div class="text-black py-12 px-8 lg:px-20 rounded-lg mt-8">
-                <div class="grid lg:grid-cols-2 gap-8 items-center">
-                    <!-- Teks Pencapaian -->
-                    <div class="text-justify p-3" style="margin-left: 100px;">
-                        <h2 class="text-3xl font-bold mb-4">Pencapaian Kesehatan Desa</h2>
-
-                        <p class="mb-4 text-left">
-                            Kami berkomitmen untuk menyediakan informasi vaksinasi yang akurat dan sumber daya
-                            kesehatan untuk komunitas desa. Bersama-sama, kita dapat menciptakan lingkungan yang lebih sehat.
-                        </p>
-
-                        <p class="mb-8 text-right">
-                            Lihat bagaimana inisiatif kesehatan kami berdampak positif pada komunitas. Dari
-                            peningkatan vaksinasi hingga kegiatan edukasi, kami berusaha untuk kesehatan yang lebih baik.
-                        </p>
+                                </div>
+                                <div class="flex-grow pl-4 px-2">
+                                    <h2 class="font-medium title-font text-md text-gray-900 mb-1 tracking-wider">
+                                        Kemudahan Pembaruan Data
+                                    </h2>
+                                    <p class="leading-relaxed text-justify">Platform kami memungkinkan pembaruan
+                                        informasi kesehatan
+                                        secara berkala, memastikan semua data selalu up-to-date.</p>
+                                </div>
+                            </div>
+                            <div class="flex relative">
+                                <div
+                                    class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                                    <svg class="w-6 h-6 text-white dark:text-white" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                        viewBox="0 0 24 24">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
+                                            d="M4.5 17H4a1 1 0 0 1-1-1 3 3 0 0 1 3-3h1m0-3.05A2.5 2.5 0 1 1 9 5.5M19.5 17h.5a1 1 0 0 0 1-1 3 3 0 0 0-3-3h-1m0-3.05a2.5 2.5 0 1 0-2-4.45m.5 13.5h-7a1 1 0 0 1-1-1 3 3 0 0 1 3-3h3a3 3 0 0 1 3 3 1 1 0 0 1-1 1Zm-1-9.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z" />
+                                    </svg>
+                                </div>
+                                <div class="flex-grow pl-4 px-2">
+                                    <h2 class="font-medium title-font text-md text-gray-900 mb-1 tracking-wider">Fokus
+                                        pada Kesehatan Masyarakat
+                                    </h2>
+                                    <p class="leading-relaxed text-justify">Komitmen sigmaDev adalah meningkatkan
+                                        kualitas hidup
+                                        masyarakat melalui akses informasi kesehatan yang mudah dan cepat.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12"
+                            src="../assets/image/kenapaharusSigma.jpg" alt="step" style="height: 350px; width: 400px">
                     </div>
+                </div>
+            </section>
 
+            <div class="text-black py-12 px-3  rounded-lg mt-8">
+                <div class="grid grid-cols-3 items-center">
                     <!-- Gambar  -->
                     <div class="flex justify-center lg:justify-end">
                         <img src="../assets/image/vaccine.jpg" alt="keberagaman"
-                            class="rounded-lg max-w-xs object-cover" style="width:400px;height:250px">
+                            class="rounded-lg max-w-xs object-cover"
+                            style=" margin-left: 20px;width:400px;height:250px">
                     </div>
+
+                    <!-- Teks Pencapaian -->
+                    <div class="col-span-2 text-justify p-3" style="margin-left: 20px;">
+                        <h2 class="text-3xl font-bold mb-4">Pencapaian Kesehatan Desa</h2>
+
+                        <p class="mb-4 text-left">
+                            Kami berkomitmen untuk menyediakan informasi vaksinasi yang akurat dan sumber daya kesehatan
+                            bagi komunitas desa. Dengan akses yang lebih baik, kami berharap dapat memberdayakan
+                            masyarakat untuk membuat keputusan kesehatan yang lebih baik. Bersama, kita bisa menciptakan
+                            lingkungan yang lebih sehat dan produktif untuk semua.
+                        </p>
+
+                        <p class="mb-8 text-right">
+                            Lihat bagaimana inisiatif kesehatan kami berdampak positif pada komunitas. Dari peningkatan
+                            vaksinasi hingga kegiatan edukasi yang bermanfaat, kami berupaya menciptakan kesehatan yang
+                            lebih baik untuk semua. Mari bergandeng tangan untuk masa depan yang
+                            lebih sehat dan sejahtera.
+                        </p>
+                    </div>
+
+                    
                 </div>
 
                 <!-- Statistik -->
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center mt-8 justify-center items-center">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center mt-8 justify-center items-center"
+                    style="margin-right:50px">
                     <div>
-                        <div class="w-16 h-16 mx-auto rounded-full flex items-center justify-center bg-green-500 hover:bg-blue-500 transition-all duration-300">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" style="width:35px; height:35px;" class="text-blue-500">
-                                <path d="M29.0918,8.5654,27.68,7.1533l-.002-.0029L24.85,4.3223l-.0029-.002L23.4346,2.9082a1,1,0,0,0-1.4141,1.4141l.7075.7075L19.9,7.8579,17.7783,5.7363A1,1,0,0,0,16.3643,7.15l1.4146,1.4146L7.1719,19.1719a3.959,3.959,0,0,0-.6072,4.8494L2.293,28.293A1,1,0,1,0,3.707,29.707l4.2717-4.2717a3.959,3.959,0,0,0,4.8494-.6072L23.4351,14.2212,24.85,15.6357a1,1,0,0,0,1.4141-1.4141L24.1421,12.1,26.97,9.272l.7075.7075a1,1,0,0,0,1.4141-1.4141ZM20.6211,14.207,20,13.5859A1,1,0,0,0,18.5859,15l.6211.6211L17.6211,17.207,17,16.5859A1,1,0,0,0,15.5859,18l.6211.6211L14.6211,20.207,14,19.5859A1,1,0,0,0,12.5859,21l.6211.6211-1.793,1.793a2.0471,2.0471,0,0,1-2.8281,0,1.9993,1.9993,0,0,1,0-2.8281L19.1924,9.9795l2.8281,2.8281Zm2.1069-3.521L21.314,9.272l2.8281-2.8281,1.4141,1.4141Z"></path>
+                        <div
+                            class="w-16 h-16 mx-auto rounded-full flex items-center justify-center bg-green-500 hover:bg-blue-500 transition-all duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" style="width:35px; height:35px;"
+                                class="text-blue-500">
+                                <path
+                                    d="M29.0918,8.5654,27.68,7.1533l-.002-.0029L24.85,4.3223l-.0029-.002L23.4346,2.9082a1,1,0,0,0-1.4141,1.4141l.7075.7075L19.9,7.8579,17.7783,5.7363A1,1,0,0,0,16.3643,7.15l1.4146,1.4146L7.1719,19.1719a3.959,3.959,0,0,0-.6072,4.8494L2.293,28.293A1,1,0,1,0,3.707,29.707l4.2717-4.2717a3.959,3.959,0,0,0,4.8494-.6072L23.4351,14.2212,24.85,15.6357a1,1,0,0,0,1.4141-1.4141L24.1421,12.1,26.97,9.272l.7075.7075a1,1,0,0,0,1.4141-1.4141ZM20.6211,14.207,20,13.5859A1,1,0,0,0,18.5859,15l.6211.6211L17.6211,17.207,17,16.5859A1,1,0,0,0,15.5859,18l.6211.6211L14.6211,20.207,14,19.5859A1,1,0,0,0,12.5859,21l.6211.6211-1.793,1.793a2.0471,2.0471,0,0,1-2.8281,0,1.9993,1.9993,0,0,1,0-2.8281L19.1924,9.9795l2.8281,2.8281Zm2.1069-3.521L21.314,9.272l2.8281-2.8281,1.4141,1.4141Z">
+                                </path>
                             </svg>
                         </div>
-                        <h3 class="text-3xl font-bold mt-2">85%</h3>
-                        <p class="text-sm">Vaksinasi Terbaru</p>
+                        <h3 class="text-3xl font-bold transition-all duration-300"
+                            style="color: #000000; transition: color 0.3s;" onmouseover="this.style.color='#ef4444'"
+                            onmouseout="this.style.color='#000000'">85%</h3>
+                        <p class="text-sm font-semibold transition-all duration-300"
+                            style="color: #000000; transition: color 0.3s;" onmouseover="this.style.color='#ef4444'"
+                            onmouseout="this.style.color='#000000'">
+                            Vaksinasi Terbaru
+                        </p>
+
+                    </div>
+                    <div class=" borderS">
+                        <div
+                            class="w-16 h-16 mx-auto rounded-full flex items-center justify-center bg-green-500 hover:bg-blue-500 transition-all duration-300">
+                            <svg class="w-[50px] h-[50px]  text-gray-800 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M12 6a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm-1.5 8a4 4 0 0 0-4 4 2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 4 4 0 0 0-4-4h-3Zm6.82-3.096a5.51 5.51 0 0 0-2.797-6.293 3.5 3.5 0 1 1 2.796 6.292ZM19.5 18h.5a2 2 0 0 0 2-2 4 4 0 0 0-4-4h-1.1a5.503 5.503 0 0 1-.471.762A5.998 5.998 0 0 1 19.5 18ZM4 7.5a3.5 3.5 0 0 1 5.477-2.889 5.5 5.5 0 0 0-2.796 6.293A3.501 3.501 0 0 1 4 7.5ZM7.1 12H6a4 4 0 0 0-4 4 2 2 0 0 0 2 2h.5a5.998 5.998 0 0 1 3.071-5.238A5.505 5.505 0 0 1 7.1 12Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <h3 class="text-3xl font-bold transition-all duration-300"
+                            style="color: #000000; transition: color 0.3s;" onmouseover="this.style.color='#ef4444'"
+                            onmouseout="this.style.color='#000000'">1200 orang</h3>
+                        <p class="text-sm font-semibold transition-all duration-300"
+                            style="color: #000000; transition: color 0.3s;" onmouseover="this.style.color='#ef4444'"
+                            onmouseout="this.style.color='#000000'">Partisipasi Komunitas</p>
                     </div>
                     <div class="borderS">
-                        <div class="w-16 h-16 mx-auto rounded-full flex items-center justify-center bg-green-500 hover:bg-blue-500 transition-all duration-300">
-                            <svg class="w-[50px] h-[50px]  text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" viewBox="0 0 24 24">
-                                <path fill-rule="evenodd" d="M12 6a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm-1.5 8a4 4 0 0 0-4 4 2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 4 4 0 0 0-4-4h-3Zm6.82-3.096a5.51 5.51 0 0 0-2.797-6.293 3.5 3.5 0 1 1 2.796 6.292ZM19.5 18h.5a2 2 0 0 0 2-2 4 4 0 0 0-4-4h-1.1a5.503 5.503 0 0 1-.471.762A5.998 5.998 0 0 1 19.5 18ZM4 7.5a3.5 3.5 0 0 1 5.477-2.889 5.5 5.5 0 0 0-2.796 6.293A3.501 3.501 0 0 1 4 7.5ZM7.1 12H6a4 4 0 0 0-4 4 2 2 0 0 0 2 2h.5a5.998 5.998 0 0 1 3.071-5.238A5.505 5.505 0 0 1 7.1 12Z" clip-rule="evenodd" />
+                        <div
+                            class="w-16 h-16 mx-auto rounded-full flex items-center justify-center bg-green-500 hover:bg-blue-500 transition-all duration-300">
+                            <svg class="w-[50px] h-[50px]  text-gray-800 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M6 2a2 2 0 0 0-2 2v15a3 3 0 0 0 3 3h12a1 1 0 1 0 0-2h-2v-2h2a1 1 0 0 0 1-1V4a2 2 0 0 0-2-2h-8v16h5v2H7a1 1 0 1 1 0-2h1V2H6Z"
+                                    clip-rule="evenodd" />
                             </svg>
                         </div>
-                        <h3 class="text-3xl font-bold">1200 orang</h3>
-                        <p class="text-sm">Partisipasi Komunitas</p>
+                        <h3 class="text-3xl font-bold transition-all duration-300"
+                            style="color: #000000; transition: color 0.3s;" onmouseover="this.style.color='#ef4444'"
+                            onmouseout="this.style.color='#000000'">50 sesi</h3>
+                        <p class="text-sm font-semibold transition-all duration-300"
+                            style="color: #000000; transition: color 0.3s;" onmouseover="this.style.color='#ef4444'"
+                            onmouseout="this.style.color='#000000'">Program Edukasi</p>
                     </div>
                     <div class="borderS">
-                        <div class="w-16 h-16 mx-auto rounded-full flex items-center justify-center bg-green-500 hover:bg-blue-500 transition-all duration-300">
-                            <svg class="w-[50px] h-[50px]  text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" viewBox="0 0 24 24">
-                                <path fill-rule="evenodd" d="M6 2a2 2 0 0 0-2 2v15a3 3 0 0 0 3 3h12a1 1 0 1 0 0-2h-2v-2h2a1 1 0 0 0 1-1V4a2 2 0 0 0-2-2h-8v16h5v2H7a1 1 0 1 1 0-2h1V2H6Z" clip-rule="evenodd" />
+                        <div
+                            class="w-16 h-16 mx-auto rounded-full flex items-center justify-center bg-green-500 hover:bg-blue-500 transition-all duration-300">
+                            <svg class="w-[50px] h-[50px] text-gray-800 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="m12.75 20.66 6.184-7.098c2.677-2.884 2.559-6.506.754-8.705-.898-1.095-2.206-1.816-3.72-1.855-1.293-.034-2.652.43-3.963 1.442-1.315-1.012-2.678-1.476-3.973-1.442-1.515.04-2.825.76-3.724 1.855-1.806 2.201-1.915 5.823.772 8.706l6.183 7.097c.19.216.46.34.743.34a.985.985 0 0 0 .743-.34Z" />
                             </svg>
                         </div>
-                        <h3 class="text-3xl font-bold">50 sesi</h3>
-                        <p class="text-sm">Program Edukasi</p>
-                    </div>
-                    <div class="borderS">
-                        <div class="w-16 h-16 mx-auto rounded-full flex items-center justify-center bg-green-500 hover:bg-blue-500 transition-all duration-300">
-                            <svg class="w-[50px] h-[50px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="m12.75 20.66 6.184-7.098c2.677-2.884 2.559-6.506.754-8.705-.898-1.095-2.206-1.816-3.72-1.855-1.293-.034-2.652.43-3.963 1.442-1.315-1.012-2.678-1.476-3.973-1.442-1.515.04-2.825.76-3.724 1.855-1.806 2.201-1.915 5.823.772 8.706l6.183 7.097c.19.216.46.34.743.34a.985.985 0 0 0 .743-.34Z" />
-                            </svg>
-                        </div>
-                        <h3 class="text-3xl font-bold">30%</h3>
-                        <p class="text-sm">Kenaikan Kesehatan Masyarakat</p>
+                        <h3 class="text-3xl font-bold transition-all duration-300"
+                            style="color: #000000; transition: color 0.3s;" onmouseover="this.style.color='#ef4444'"
+                            onmouseout="this.style.color='#000000'">30%</h3>
+                        <p class="text-sm font-semibold transition-all duration-300"
+                            style="color: #000000; transition: color 0.3s;" onmouseover="this.style.color='#ef4444'"
+                            onmouseout="this.style.color='#000000'">Kenaikan Kesehatan Masyarakat</p>
                     </div>
                 </div>
             </div>
+            <!-- Info tambahan Ngarah ke Website Pemerintah-->
+            <section class=" body-font overflow-hidden">
+                <h2 class="text-center text-3xl font-bold text-black mt-7 mb-3">Informasi Lainnya</h2>
+                <div class="container px-5 py-3 mx-auto">
+                    <div class="flex flex-wrap grid grid-cols-2 gap-5 -m-3">
+                        <div class="p-12 md:w-1/2 items-start">
+                            <span
+                                class="inline-block py-1 px-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">CATEGORY</span>
+                            <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">Roof party
+                                normcore before they sold out, cornhole vape</h2>
+                            <p class="leading-relaxed mb-8">Live-edge letterpress cliche, salvia fanny pack humblebrag
+                                narwhal portland. VHS man braid palo santo hoodie brunch trust fund. Bitters hashtag
+                                waistcoat fashion axe chia unicorn. Plaid fixie chambray 90's, slow-carb etsy tumeric.
+                                Cray pug you probably haven't heard of them hexagon kickstarter craft beer pork chic.
+                            </p>
+                            <div
+                                class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full">
+                                <a class="text-indigo-500 inline-flex items-center">Learn More
+                                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M5 12h14"></path>
+                                        <path d="M12 5l7 7-7 7"></path>
+                                    </svg>
+                                </a>
+                                <span
+                                    class="text-gray-400 mr-3 inline-flex items-center ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                    </svg>1.2K
+                                </span>
+                                <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                        <path
+                                            d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                                        </path>
+                                    </svg>6
+                                </span>
+                            </div>
+                            <a class="inline-flex items-center">
+                                <img alt="blog" src="https://dummyimage.com/104x104"
+                                    class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                                <span class="flex-grow flex flex-col pl-4">
+                                    <span class="title-font font-medium text-gray-900">Holden Caulfield</span>
+                                    <span class="text-gray-400 text-xs tracking-widest mt-0.5">UI DEVELOPER</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="p-12 md:w-1/2 items-start">
+                            <span
+                                class="inline-block py-1 px-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">CATEGORY</span>
+                            <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">Roof party
+                                normcore before they sold out, cornhole vape</h2>
+                            <p class="leading-relaxed mb-8">Live-edge letterpress cliche, salvia fanny pack humblebrag
+                                narwhal portland. VHS man braid palo santo hoodie brunch trust fund. Bitters hashtag
+                                waistcoat fashion axe chia unicorn. Plaid fixie chambray 90's, slow-carb etsy tumeric.
+                                Cray pug you probably haven't heard of them hexagon kickstarter craft beer pork chic.
+                            </p>
+                            <div
+                                class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full">
+                                <a class="text-indigo-500 inline-flex items-center">Learn More
+                                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M5 12h14"></path>
+                                        <path d="M12 5l7 7-7 7"></path>
+                                    </svg>
+                                </a>
+                                <span
+                                    class="text-gray-400 mr-3 inline-flex items-center ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                    </svg>1.2K
+                                </span>
+                                <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                        <path
+                                            d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                                        </path>
+                                    </svg>6
+                                </span>
+                            </div>
+                            <a class="inline-flex items-center">
+                                <img alt="blog" src="https://dummyimage.com/104x104"
+                                    class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                                <span class="flex-grow flex flex-col pl-4">
+                                    <span class="title-font font-medium text-gray-900">Holden Caulfield</span>
+                                    <span class="text-gray-400 text-xs tracking-widest mt-0.5">UI DEVELOPER</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
 
 
