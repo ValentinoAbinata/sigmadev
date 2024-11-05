@@ -261,7 +261,7 @@
 
             <!-- Cara Pendaftaran -->
             <section>
-                <div class="container px-5 py-10 mx-auto" style="">
+                <div class="container px-5 py-10 mx-auto">
                     <div class="flex flex-col justify-center items-center text-center w-full mb-20">
                         <img src="../assets/image/iconsigmaDev2.png" alt="iconsigmaDev"
                             style="width:125px; height:125px;">
@@ -272,60 +272,92 @@
                             orang dalam mendaftar vaksinasi dengan langkah-langkah yang jelas dan sederhana. Berikut ini
                             adalah langkah-langkah pendaftaran vaksinasi:</p>
                     </div>
-                    <div class="flex flex-wrap grid grid-cols-4 mt-3 mb-7">
-                        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60"
-                            style="border-left:2px solid #000000;border-right:2px solid #000000;">
-                            <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Shooting Stars</h2>
-                            <p class="leading-relaxed text-base mb-4">Fingerstache flexitarian street art 8-bit
-                                waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-                            <a class="text-indigo-500 inline-flex items-center">Learn More
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                                </svg>
-                            </a>
+
+                    <div class="container mx-auto flex flex-col items-center">
+                        <!-- Garis dan Nomor -->
+                        <div class="flex items-center justify-center space-x-10 mb-5">
+                            <div class="flex items-center space-x-2">
+                                <div class="w-48 h-1 bg-gray-200"></div>
+                                <div
+                                    class="w-6 h-6 rounded-full bg-indigo-500 text-white flex items-center justify-center font-medium text-sm">
+                                    1</div>
+                                <div class="w-48 h-1 bg-gray-200"></div>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <div class="w-60 h-1 bg-gray-200"></div>
+                                <div
+                                    class="w-6 h-6 rounded-full bg-indigo-500 text-white flex items-center justify-center font-medium text-sm">
+                                    2</div>
+                                <div class="w-60 h-1 bg-gray-200"></div>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <div class="w-48 h-1 bg-gray-200"></div>
+                                <div
+                                    class="w-6 h-6 rounded-full bg-indigo-500 text-white flex items-center justify-center font-medium text-sm">
+                                    3</div>
+                                <div class="w-48 h-1 bg-gray-200"></div>
+                            </div>
                         </div>
-                        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60"
-                            style="border-right:2px solid #000000;">
-                            <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">The Catalyzer</h2>
-                            <p class="leading-relaxed text-base mb-4">Fingerstache flexitarian street art 8-bit
-                                waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-                            <a class="text-indigo-500 inline-flex items-center">Learn More
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60"
-                            style="border-right:2px solid #000000;">
-                            <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Neptune</h2>
-                            <p class="leading-relaxed text-base mb-4">Fingerstache flexitarian street art 8-bit
-                                waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-                            <a class="text-indigo-500 inline-flex items-center">Learn More
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60"
-                            style="border-right:2px solid #000000;">
-                            <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Melanchole</h2>
-                            <p class="leading-relaxed text-base mb-4">Fingerstache flexitarian street art 8-bit
-                                waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-                            <a class="text-indigo-500 inline-flex items-center">Learn More
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                                </svg>
-                            </a>
+
+                        <!-- Icon dan Deskripsi Langkah -->
+                        <div class="grid grid-cols-3 gap-10">
+                            <!-- Langkah 1 -->
+                            <div class="flex flex-col items-center">
+                                <div
+                                    class="w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full flex items-center justify-center mb-3">
+                                    <svg class="w-12 h-12 text-gray-800 dark:text-white" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                        viewBox="0 0 24 24">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M15 4h3a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h3m0 3h6m-3 5h3m-6 0h.01M12 16h3m-6 0h.01M10 3v4h4V3h-4Z" />
+                                    </svg>
+
+                                </div>
+                                <h2 class="font-medium title-font text-gray-900 mb-1 text-2xl">Tekan Menu "Layanan
+                                    Kesehatan"</h2>
+                                <p class="leading-relaxed text-center">Menu layanan kesehatan berisi vaksin-vaksin yang
+                                    telah disediakan.</p>
+                            </div>
+
+                            <!-- Langkah 2 -->
+                            <div class="flex flex-col items-center">
+                                <div
+                                    class="w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full flex items-center justify-center mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+                                        class="text-blue-500 w-12 h-12">
+                                        <path
+                                            d="M29.0918,8.5654,27.68,7.1533l-.002-.0029L24.85,4.3223l-.0029-.002L23.4346,2.9082a1,1,0,0,0-1.4141,1.4141l.7075.7075L19.9,7.8579,17.7783,5.7363A1,1,0,0,0,16.3643,7.15l1.4146,1.4146L7.1719,19.1719a3.959,3.959,0,0,0-.6072,4.8494L2.293,28.293A1,1,0,1,0,3.707,29.707l4.2717-4.2717a3.959,3.959,0,0,0,4.8494-.6072L23.4351,14.2212,24.85,15.6357a1,1,0,0,0,1.4141-1.4141L24.1421,12.1,26.97,9.272l.7075.7075a1,1,0,0,0,1.4141-1.4141ZM20.6211,14.207,20,13.5859A1,1,0,0,0,18.5859,15l.6211.6211L17.6211,17.207,17,16.5859A1,1,0,0,0,15.5859,18l.6211.6211L14.6211,20.207,14,19.5859A1,1,0,0,0,12.5859,21l.6211.6211-1.793,1.793a2.0471,2.0471,0,0,1-2.8281,0,1.9993,1.9993,0,0,1,0-2.8281L19.1924,9.9795l2.8281,2.8281Zm2.1069-3.521L21.314,9.272l2.8281-2.8281,1.4141,1.4141Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <h2 class="font-medium title-font text-gray-900 mb-1 text-2xl">Pilih Vaksin </h2>
+                                <p class="leading-relaxed text-center">Pilih vaksin yang tersedia lalu isi form sesuai
+                                    dengan jenis vaksin.</p>
+                            </div>
+
+                            <!-- Langkah 3 -->
+                            <div class="flex flex-col items-center">
+                                <div
+                                    class="w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full flex items-center justify-center mb-3">
+                                    <svg class="w-12 h-12 text-gray-800 dark:text-white" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                        viewBox="0 0 24 24">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
+                                            d="M16 19h4a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-2m-2.236-4a3 3 0 1 0 0-4M3 18v-1a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v1a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1Zm8-10a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                    </svg>
+
+                                </div>
+                                <h2 class="font-medium title-font text-gray-900 mb-1 text-2xl">Hubungi Admin</h2>
+                                <p class="leading-relaxed text-center">Jika ingin data Anda tampil pada "Data Kesehatan"
+                                    pilih menu "Tentang Kami" lalu hubungi admin yang tersedia</p>
+                            </div>
                         </div>
                     </div>
-                    <button
-                        class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
                 </div>
             </section>
+
+
 
             <section class="text-gray-600 body-font py-12">
                 <h1 class="text-4xl font-bold text-black px-5">Kenapa Harus sigmaDev?</h1>
@@ -474,7 +506,7 @@
                         </p>
                     </div>
 
-                    
+
                 </div>
 
                 <!-- Statistik -->
@@ -555,105 +587,139 @@
                     </div>
                 </div>
             </div>
-            <!-- Info tambahan Ngarah ke Website Pemerintah-->
-            <section class=" body-font overflow-hidden">
+            <!-- Info tambahan Ngarah ke Website Lain-->
+            <section class="text-gray-600 body-font">
                 <h2 class="text-center text-3xl font-bold text-black mt-7 mb-3">Informasi Lainnya</h2>
                 <div class="container px-5 py-3 mx-auto">
-                    <div class="flex flex-wrap grid grid-cols-2 gap-5 -m-3">
-                        <div class="p-12 md:w-1/2 items-start">
-                            <span
-                                class="inline-block py-1 px-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">CATEGORY</span>
-                            <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">Roof party
-                                normcore before they sold out, cornhole vape</h2>
-                            <p class="leading-relaxed mb-8">Live-edge letterpress cliche, salvia fanny pack humblebrag
-                                narwhal portland. VHS man braid palo santo hoodie brunch trust fund. Bitters hashtag
-                                waistcoat fashion axe chia unicorn. Plaid fixie chambray 90's, slow-carb etsy tumeric.
-                                Cray pug you probably haven't heard of them hexagon kickstarter craft beer pork chic.
-                            </p>
-                            <div
-                                class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full">
-                                <a class="text-indigo-500 inline-flex items-center">Learn More
-                                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
-                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M5 12h14"></path>
-                                        <path d="M12 5l7 7-7 7"></path>
-                                    </svg>
-                                </a>
-                                <span
-                                    class="text-gray-400 mr-3 inline-flex items-center ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
-                                        stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                                        <circle cx="12" cy="12" r="3"></circle>
-                                    </svg>1.2K
-                                </span>
-                                <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
-                                        stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                                        <path
-                                            d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
-                                        </path>
-                                    </svg>6
-                                </span>
+                    <div class="flex flex-wrap -m-4 grid grid-cols-3">
+                        <div class="p-4 md:w-1/3">
+                            <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                                <img class="lg:h-48 md:h-36 w-full object-cover object-center infoT"
+                                    src="../assets/image/info1.jpeg" alt="blog">
+                                <div class="p-6">
+                                    <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
+                                        CATEGORY</h2>
+                                    <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Pertanyaan Seputar
+                                        Vaksin</h1>
+                                    <p class="leading-relaxed mb-7">Website tersebut memaparkan pertanyaan yang
+                                        berkaitan dengan vaksin</p>
+                                    <div class="flex items-center flex-wrap ">
+                                        <a class="inline-flex items-center md:mb-2 lg:mb-0  transition-all duration-300" style="color: #000000; transition: color 0.3s;" onmouseover="this.style.color='#00acee'"
+                                            onmouseout="this.style.color='#000000'"
+                                            href="https://www.unicef.org/indonesia/id/imunisasi?gad_source=1&gclid=Cj0KCQiAoae5BhCNARIsADVLzZeKUHy6q4IOWHeE-NjN2nWxGlqo8p6S8p4asmwxVF1q4zqyEC2kd9IaAsG5EALw_wcB">
+                                            Pelajari lebih lanjut
+                                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor"
+                                                stroke-width="2" fill="none" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <path d="M5 12h14"></path>
+                                                <path d="M12 5l7 7-7 7"></path>
+                                            </svg>
+                                        </a>
+                                        <span
+                                            class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                                            <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
+                                                stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>50.2K
+                                        </span>
+                                        <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                                            <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
+                                                stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                                                </path>
+                                            </svg>1975
+                                        </span>
+                                    </div>
+                                </div>
                             </div>
-                            <a class="inline-flex items-center">
-                                <img alt="blog" src="https://dummyimage.com/104x104"
-                                    class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
-                                <span class="flex-grow flex flex-col pl-4">
-                                    <span class="title-font font-medium text-gray-900">Holden Caulfield</span>
-                                    <span class="text-gray-400 text-xs tracking-widest mt-0.5">UI DEVELOPER</span>
-                                </span>
-                            </a>
                         </div>
-                        <div class="p-12 md:w-1/2 items-start">
-                            <span
-                                class="inline-block py-1 px-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">CATEGORY</span>
-                            <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">Roof party
-                                normcore before they sold out, cornhole vape</h2>
-                            <p class="leading-relaxed mb-8">Live-edge letterpress cliche, salvia fanny pack humblebrag
-                                narwhal portland. VHS man braid palo santo hoodie brunch trust fund. Bitters hashtag
-                                waistcoat fashion axe chia unicorn. Plaid fixie chambray 90's, slow-carb etsy tumeric.
-                                Cray pug you probably haven't heard of them hexagon kickstarter craft beer pork chic.
-                            </p>
-                            <div
-                                class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full">
-                                <a class="text-indigo-500 inline-flex items-center">Learn More
-                                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
-                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M5 12h14"></path>
-                                        <path d="M12 5l7 7-7 7"></path>
-                                    </svg>
-                                </a>
-                                <span
-                                    class="text-gray-400 mr-3 inline-flex items-center ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
-                                        stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                                        <circle cx="12" cy="12" r="3"></circle>
-                                    </svg>1.2K
-                                </span>
-                                <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
-                                        stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                                        <path
-                                            d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
-                                        </path>
-                                    </svg>6
-                                </span>
+                        <div class="p-4 md:w-1/3">
+                            <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                                <img class="lg:h-48 md:h-36 w-full object-cover object-center infoT"
+                                    src="../assets/image/info2.jpeg" style="height: 275px;" alt="blog">
+                                <div class="p-6">
+                                    <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
+                                        CATEGORY</h2>
+                                    <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Vaksin Covid-19</h1>
+                                    <p class="leading-relaxed mb-7">Tujuan, manfaat, jenis-jenis, dan prosedur vaksin Covid-19.</p>
+                                    <div class="flex items-center flex-wrap">
+                                        <a class="inline-flex items-center md:mb-2 lg:mb-0  transition-all duration-300" style="color: #000000; transition: color 0.3s;" onmouseover="this.style.color='#00acee'"
+                                            onmouseout="this.style.color='#000000'"
+                                            href="https://www.halodoc.com/kesehatan/vaksin-covid-19?srsltid=AfmBOoqInkNABjjIBBDoZeF4-LfGojzDy5p5f2njUzaxf7g0M-xIZVEu">
+                                            Pelajari lebih lanjut
+                                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor"
+                                                stroke-width="2" fill="none" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <path d="M5 12h14"></path>
+                                                <path d="M12 5l7 7-7 7"></path>
+                                            </svg>
+                                        </a>
+                                        <span
+                                            class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                                            <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
+                                                stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>15.9K
+                                        </span>
+                                        <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                                            <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
+                                                stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                                                </path>
+                                            </svg>612
+                                        </span>
+                                    </div>
+                                </div>
                             </div>
-                            <a class="inline-flex items-center">
-                                <img alt="blog" src="https://dummyimage.com/104x104"
-                                    class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
-                                <span class="flex-grow flex flex-col pl-4">
-                                    <span class="title-font font-medium text-gray-900">Holden Caulfield</span>
-                                    <span class="text-gray-400 text-xs tracking-widest mt-0.5">UI DEVELOPER</span>
-                                </span>
-                            </a>
+                        </div>
+                        <div class="p-4 md:w-1/3">
+                            <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                                <img class="lg:h-48 md:h-36 w-full object-cover object-center infoT"
+                                    src="../assets/image/info3.jpeg" alt="blog" style="height:275px;">
+                                <div class="p-6">
+                                    <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
+                                        CATEGORY</h2>
+                                    <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Mitos-Mitos Tentang Vaksin COVID-19</h1>
+                                    <p class="leading-relaxed mb-7">Informasi mengenai hoaks yang beredar di masyarakat mengenai vaksin COVID-19</p>
+                                    <div class="flex items-center flex-wrap ">
+                                        <a class="inline-flex items-center md:mb-2 lg:mb-0  transition-all duration-300" style="color: #000000; transition: color 0.3s;" onmouseover="this.style.color='#00acee'"
+                                             onmouseout="this.style.color='#000000'"
+                                         href="https://www.menpan.go.id/site/berita-terkini/mitos-mitos-tentang-vaksin-covid-19">
+                                            Pelajari lebih lanjut
+                                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor"
+                                                stroke-width="2" fill="none" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <path d="M5 12h14"></path>
+                                                <path d="M12 5l7 7-7 7"></path>
+                                            </svg>
+                                        </a>
+                                        <span
+                                            class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                                            <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
+                                                stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>11.7K
+                                        </span>
+                                        <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                                            <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
+                                                stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                                                </path>
+                                            </svg>181
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
-
 
 
 

@@ -2,7 +2,7 @@
     include("../assets/mySql/connect.php");
     if(empty($_SESSION['username']))
     {
-        header("location:login.php?isLogin=false");
+        header("location:loginNew.php?isLogin=false");
     }
     $query = mysqli_query($conn, "SELECT * FROM pasien") ;
 ?>
