@@ -4,3 +4,23 @@ const scroll = new SmoothScroll('a[href="#banner"]', {
     offset: 110 // Sesuaikan offset
 });
 
+var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    slidesPerView: 3,
+    spaceBetween: 20, // Atur jarak antar slide
+    centeredSlides: true,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 300,
+      modifier: 1,
+      slideShadows: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });

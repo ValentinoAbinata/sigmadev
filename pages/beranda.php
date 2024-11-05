@@ -7,7 +7,7 @@
     <link rel="icon" href="../assets/image/iconWeb.png">
     <title>sigmaDev</title>
     <link rel="stylesheet" href="https://unpkg.com/flowbite@latest/dist/flowbite.min.css" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../assets/css/beranda.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
@@ -30,16 +30,16 @@
                     style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/image/bg1.jpg');"
                     data-carousel-item="active">
                     <div class="flex flex-col text-left justify-center h-full bg-black bg-opacity-50 p-6 mt-0">
-                        <div class="relative z-10">
-                            <h1 class="text-7xl font-bold mb-2 w3-animate-top" style="font-family: Roboto !important ">
+                        <div class="relative z-10" style="margin-left:50px;">
+                            <h1 class="text-7xl font-bold mb-2 " style="font-family: Roboto !important ">
                                 Lindungi Dirimu
                                 atau <br> Kematian Menjemputmu</h1>
-                            <h1 class="mb-2 w3-animate-right" style="font-size:20px">Vaksinasi diperlukan untuk
+                            <h1 class="mb-2" style="font-size:20px">Vaksinasi diperlukan untuk
                                 memperkuat imunitas
                                 tubuh. <br> Ayo daftar vaksin sekarang
                                 dan jaga kesehatanmu agar terhindar dari penyakit yang berbahaya. <br>
                                 Pastikan untuk mendapatkan vaksin lengkap untuk perlindungan maksimal.</h1>
-                            <div class="w3-animate-bottom" style="margin-top: 2.5%">
+                            <div class="" style="margin-top: 2.5%">
                                 <a href="#banner"
                                     class="bg-teal-500 hover:bg-teal-600 text-white  mx-auto rounded-lg font-semibold"
                                     style="padding: 20px; font-size: 20px">
@@ -54,17 +54,17 @@
                     style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/image/bg2.jpg');"
                     data-carousel-item>
                     <div class="flex flex-col text-left justify-center h-full bg-black bg-opacity-50 p-6 mt-0">
-                        <div class="relative z-10">
-                            <h1 class="text-7xl font-bold mb-2" style="font-family: Roboto !important">Ciptakan Masa
+                        <div class="relative z-10" style="margin-left:50px;">
+                            <h1 class="text-7xl font-bold mb-2" style="font-family: Roboto !important; margin-left:50px;">Ciptakan Masa
                                 Depan Sehatmu</h1>
-                            <h1 class="mb-2" style="font-size:20px">Vaksinasi adalah langkah pertama untuk melindungi
+                            <h1 class="mb-2" style="font-size:20px; margin-left:50px;">Vaksinasi adalah langkah pertama untuk melindungi
                                 diri dan orang yang kamu cintai. <br> Segera daftar vaksinasi dan tingkatkan
                                 perlindunganmu dari berbagai penyakit. <br> Jangan tunggu lagi, jaga kesehatanmu
                                 sekarang juga!</h1>
                             <div style="margin-top: 2.5%">
                                 <a href="#banner"
                                     class="bg-teal-500 hover:bg-teal-600 text-white  mx-auto rounded-lg font-semibold"
-                                    style="padding: 20px; font-size: 20px">
+                                    style="padding: 20px; font-size: 20px;margin-left:50px;">
                                     Mulai Sekarang
                                 </a>
                             </div>
@@ -83,7 +83,7 @@
                                 sendiri tetapi juga berkontribusi pada kesehatan masyarakat. <br> Ayo, jadilah bagian
                                 dari perubahan positif dan pastikan imunmu terjaga. <br> Vaksin lengkap adalah kunci
                                 untuk kesehatan optimal.</h1>
-                            <div style="margin-top: 2.5%">
+                            <div style="margin-top: 2.5%;margin-left:50px;">
                                 <a href="#banner"
                                     class="bg-teal-500 hover:bg-teal-600 text-white  mx-auto rounded-lg font-semibold"
                                     style="padding: 20px; font-size: 20px">
@@ -145,7 +145,7 @@
             </div>
 
 
-            <div class="mt-7 px-8 py-6">
+            <div class="mt-7 px-8 py-24">
                 <div class="grid grid grid-cols-3 gap-3 items-center">
                     <!-- Kolom Teks -->
                     <div class=" col-span-2 pembuka p-4">
@@ -261,7 +261,7 @@
 
             <!-- Cara Pendaftaran -->
             <section>
-                <div class="container px-5 py-10 mx-auto">
+                <div class="container px-5 py-24 mx-auto">
                     <div class="flex flex-col justify-center items-center text-center w-full mb-20">
                         <img src="../assets/image/iconsigmaDev2.png" alt="iconsigmaDev"
                             style="width:125px; height:125px;">
@@ -478,7 +478,7 @@
                 </div>
             </section>
 
-            <div class="text-black py-12 px-3  rounded-lg mt-8">
+            <div class="text-black py-24 px-3  rounded-lg mt-8">
                 <div class="grid grid-cols-3 items-center">
                     <!-- Gambar  -->
                     <div class="flex justify-center lg:justify-end">
@@ -604,7 +604,9 @@
                                     <p class="leading-relaxed mb-7">Website tersebut memaparkan pertanyaan yang
                                         berkaitan dengan vaksin</p>
                                     <div class="flex items-center flex-wrap ">
-                                        <a class="inline-flex items-center md:mb-2 lg:mb-0  transition-all duration-300" style="color: #000000; transition: color 0.3s;" onmouseover="this.style.color='#00acee'"
+                                        <a class="inline-flex items-center md:mb-2 lg:mb-0  transition-all duration-300"
+                                            style="color: #000000; transition: color 0.3s;"
+                                            onmouseover="this.style.color='#00acee'"
                                             onmouseout="this.style.color='#000000'"
                                             href="https://www.unicef.org/indonesia/id/imunisasi?gad_source=1&gclid=Cj0KCQiAoae5BhCNARIsADVLzZeKUHy6q4IOWHeE-NjN2nWxGlqo8p6S8p4asmwxVF1q4zqyEC2kd9IaAsG5EALw_wcB">
                                             Pelajari lebih lanjut
@@ -643,9 +645,12 @@
                                     <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
                                         CATEGORY</h2>
                                     <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Vaksin Covid-19</h1>
-                                    <p class="leading-relaxed mb-7">Tujuan, manfaat, jenis-jenis, dan prosedur vaksin Covid-19.</p>
+                                    <p class="leading-relaxed mb-7">Tujuan, manfaat, jenis-jenis, dan prosedur vaksin
+                                        Covid-19.</p>
                                     <div class="flex items-center flex-wrap">
-                                        <a class="inline-flex items-center md:mb-2 lg:mb-0  transition-all duration-300" style="color: #000000; transition: color 0.3s;" onmouseover="this.style.color='#00acee'"
+                                        <a class="inline-flex items-center md:mb-2 lg:mb-0  transition-all duration-300"
+                                            style="color: #000000; transition: color 0.3s;"
+                                            onmouseover="this.style.color='#00acee'"
                                             onmouseout="this.style.color='#000000'"
                                             href="https://www.halodoc.com/kesehatan/vaksin-covid-19?srsltid=AfmBOoqInkNABjjIBBDoZeF4-LfGojzDy5p5f2njUzaxf7g0M-xIZVEu">
                                             Pelajari lebih lanjut
@@ -683,12 +688,16 @@
                                 <div class="p-6">
                                     <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
                                         CATEGORY</h2>
-                                    <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Mitos-Mitos Tentang Vaksin COVID-19</h1>
-                                    <p class="leading-relaxed mb-7">Informasi mengenai hoaks yang beredar di masyarakat mengenai vaksin COVID-19</p>
+                                    <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Mitos-Mitos Tentang
+                                        Vaksin COVID-19</h1>
+                                    <p class="leading-relaxed mb-7">Informasi mengenai hoaks yang beredar di masyarakat
+                                        mengenai vaksin COVID-19</p>
                                     <div class="flex items-center flex-wrap ">
-                                        <a class="inline-flex items-center md:mb-2 lg:mb-0  transition-all duration-300" style="color: #000000; transition: color 0.3s;" onmouseover="this.style.color='#00acee'"
-                                             onmouseout="this.style.color='#000000'"
-                                         href="https://www.menpan.go.id/site/berita-terkini/mitos-mitos-tentang-vaksin-covid-19">
+                                        <a class="inline-flex items-center md:mb-2 lg:mb-0  transition-all duration-300"
+                                            style="color: #000000; transition: color 0.3s;"
+                                            onmouseover="this.style.color='#00acee'"
+                                            onmouseout="this.style.color='#000000'"
+                                            href="https://www.menpan.go.id/site/berita-terkini/mitos-mitos-tentang-vaksin-covid-19">
                                             Pelajari lebih lanjut
                                             <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor"
                                                 stroke-width="2" fill="none" stroke-linecap="round"
@@ -729,51 +738,83 @@
         <!-- Testimoni Pasien -->
         <div class="mt-10 mb-10">
             <h2 class="text-center text-3xl font-bold text-blue-700 mb-5">Apa Kata Mereka?</h2>
-            <div id="testimonial-carousel" class="relative w-full" data-carousel="slide">
-                <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-                    <!-- Testimonial 1 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                        <div class="text-center">
-                            <p
-                                class="italic text-xl absolute w-10/12 max-w-md -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-                                "Layanan sigmaDev sangat membantu saya dalam memantau kesehatan harian saya. Terima
-                                kasih!"
-                                <span class="block mt-4">- Faris, Bima</span>
-                            </p>
-                        </div>
-                    </div>
-                    <!-- Testimonial 2 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <div class="text-center">
-                            <p
-                                class="italic text-xl absolute w-10/12 max-w-md -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-                                "Proses konsultasi online sangat cepat dan mudah. Dokter memberikan saran yang
-                                bermanfaat."
-                                <span class="block mt-4">- Adi, Sleman</span>
-                            </p>
-                        </div>
-                    </div>
-                    <!-- Testimonial 3 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <div class="text-center">
-                            <p
-                                class="italic text-xl absolute w-10/12 max-w-md -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-                                "Saya merasa lebih tenang karena bisa mengatur pengingat obat melalui fitur
-                                sigmaDev."
-                                <span class="block mt-4">- Rama, Bantul</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
 
-            </div>
+
+
+            <section class="swiper mySwiper">
+
+                <div class="swiper-wrapper">
+
+                    <div class="card swiper-slide">
+                        <div class="card__image">
+                            <img src="../assets/image/user_1.jpg" alt="card image">
+                        </div>
+                        <div class="card__content">
+                            <span class="card__title">Web Designer</span>
+                            <span class="card__name">Vanessa Martinez</span>
+                            <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
+                                veritatis
+                                labore provident
+                                non tempora odio est sunt, ipsum</p>
+                        </div>
+                    </div>
+
+                    <div class="card swiper-slide">
+                        <div class="card__image">
+                            <img src="../assets/image/user_11.jpg"alt="card image">
+                        </div>
+
+                        <div class="card__content">
+                            <span class="card__title">Ui Designer</span>
+                            <span class="card__name">Sarah Bowen</span>
+                            <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
+                                veritatis
+                                labore provident
+                                non tempora odio est sunt, ipsum</p>
+                        </div>
+                    </div>
+
+                    <div class="card swiper-slide">
+                        <div class="card__image">
+                            <img src="../assets/image/user_22.jpg" alt="card image">
+                        </div>
+
+                        <div class="card__content">
+                            <span class="card__title">Web Developer</span>
+                            <span class="card__name">David Murphy</span>
+                            <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
+                                veritatis
+                                labore provident
+                                non tempora odio est sunt, ipsum</p>
+                        </div>
+                    </div>
+
+                    <div class="card swiper-slide">
+                        <div class="card__image">
+                            <img src="../assets/image/user_33.jpg" alt="card image">
+                        </div>
+
+                        <div class="card__content">
+                            <span class="card__title">Mobile Designer</span>
+                            <span class="card__name">Kelsey West</span>
+                            <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
+                                veritatis
+                                labore provident
+                                non tempora odio est sunt, ipsum</p>
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+            </section>
 
         </div>
 
 
-
         <?php include "../layout/footer.php" ?>
 
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="https://unpkg.com/flowbite@latest/dist/flowbite.bundle.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.polyfills.min.js">
