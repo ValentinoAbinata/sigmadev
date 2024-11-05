@@ -16,8 +16,7 @@ input {
   width: 100%;
   background-image:url('../image/BGLOGIN.jpg');
   background-size: cover; /* Menutupi seluruh area */
-  background-position: center; /* Memposisikan gambar di tengah */
-  margin-top: 112px;
+  background-position: start;
   min-height: 100vh;
   overflow: hidden;
 }
@@ -312,6 +311,7 @@ li:hover::after {
 .btn.transparent:hover {
     transform: scale(1.05);
 }
+
 
 .right-panel .image,
 .right-panel .content {

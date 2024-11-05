@@ -1,4 +1,5 @@
 <?php 
+    ob_start(); // Memulai output buffering
     session_start();
 ?>
 
@@ -8,18 +9,23 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../assets/css/login.css" />
-     <link rel="stylesheet" href="https://unpkg.com/flowbite@latest/dist/flowbite.min.css" />
-    <title>Sign in & Sign up Form</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@latest/dist/flowbite.min.css" />
+    <link rel="icon" href="../assets/image/iconWeb.png">
+    <title>sigmaDev</title>
+    <link rel="stylesheet" href="../assets/css/Login.css"/>
+
+     
+
+
 </head>
 
 <body>
-<?php include "../layout/navbar.php" ?>
-    <div class="container">
+    <?php include "../layout/navbar.php" ?>
+    <div class="container" style="margin-top: 50px;">
         <div class="forms-container">
             <div class="signin-signup">
-                <form action="#" class="sign-in-form" method="POST">
+                <form action class="sign-in-form" method="POST">
                     <h2 class="title">Welcome Admin</h2>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
@@ -27,14 +33,14 @@
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Password" name />
+                        <input type="password" placeholder="Password" name="password" />
                     </div>
-                    <input type="submit" value="Login" class="btn solid" />
-                    <p class="social-text">Login dengan cara lain</p>
+                    <input type="submit" value="Login" class="btn solid mt-0" name="login" />
+                    <p class="social-text mt-0">Login dengan cara lain</p>
                     <div class="social-media"> 
-                        <ul class="example-2">
-                            <li class="icon-content">
-                                <a href="https://www.github.com/" aria-label="GitHub" data-social="github">
+                        <ul class="example-2 mb-8">
+                            <li class="icon-content ">
+                                <a href="https://www.github.com/" aria-label="GitHub" data-social="github"> 
                                     <div class="filled"></div>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-github" viewBox="0 0 16 16" xml:space="preserve">
@@ -57,36 +63,33 @@
                         </ul>
                     </div>
                 </form>
-                <form action="#" class="sign-up-form">
-                    <h2 class="title">Sign up</h2>
-                    <div class="input-field">
-                        <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Username" />
-                    </div>
-                    <div class="input-field">
-                        <i class="fas fa-envelope"></i>
-                        <input type="email" placeholder="Email" />
-                    </div>
-                    <div class="input-field">
-                        <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Password" />
-                    </div>
-                    <input type="submit" class="btn" value="Sign up" />
-                    <p class="social-text">Or Sign up with social platforms</p>
-                    <div class="social-media">
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-google"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </div>
+
+                <?php
+                    if (isset($_GET['isLogin'])){
+                        echo "Harap Login Terlebih Dahulu!" ;
+                    }
+                    if (isset($_POST["login"])) {
+                        if ($_POST['username'] == "admin" && $_POST['password'] == "admin1234") {
+                            $_SESSION['username'] = $_POST['username'];
+                            $_SESSION['password'] = $_POST['password'];
+                            header("Location: beranda.php?isLogin=true");
+                            exit();
+                        } else {
+                            ?>
+                            <div class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400"
+                                role="alert">
+                                <span class="font-medium">Username atau/dan Password Kurang Tepat, Silahkan Ulangi!</span>
+                            </div>
+                            <?php
+                        }
+                    }
+                ?>
+
+
+
+                <form action class="sign-up-form">
+                    <h2 class="title">informasi Login Page</h2>
+                    
                 </form>
             </div>
         </div>
@@ -132,6 +135,11 @@
         container.classList.remove("sign-up-mode");
     });
     </script>
+     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
+
+<?php
+    ob_end_flush(); // ngirim semua output yang ketunda
+?>
