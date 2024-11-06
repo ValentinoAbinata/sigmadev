@@ -1,8 +1,13 @@
 <?php
-include("../assets/mySql/connect.php");
-$nikP = $_GET['editNikP'];
-$query = mysqli_query($conn, "SELECT * FROM pasien where nikP=$nikP");
-$data = mysqli_fetch_array($query);
+    session_start();
+    if(empty($_SESSION['username'])){
+        header("location:loginNew.php?islogin=false");
+        exit();
+    }
+    include("../assets/mySql/connect.php");
+    $nikP = $_GET['editNikP'];
+    $query = mysqli_query($conn, "SELECT * FROM pasien where nikP=$nikP");
+    $data = mysqli_fetch_array($query);
 ?>
 <!DOCTYPE html>
 <html lang="en">

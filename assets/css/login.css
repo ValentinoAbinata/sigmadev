@@ -11,16 +11,45 @@ input {
   font-family: "Poppins", sans-serif;
 }
 
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+      opacity: 1;
+  }
+  to {
+      opacity: 0;
+  }
+}
+
+.bg-login {
+  animation: fadeIn 1s ease-in-out;
+  background-image: url('../image/BGLOGIN.jpg');
+  background-size: cover;
+  background-position: start;
+}
+
+.bg-info {
+  animation: fadeIn 1s ease-in-out;
+  background-image: url('../image/bgLogin2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
 .container {
   position: relative;
   width: 100%;
-  background-image:url('../image/BGLOGIN.jpg');
-  background-size: cover; /* Menutupi seluruh area */
-  background-position: start;
   min-height: 100vh;
   overflow: hidden;
+  transition: all 0.8s ease-in-out;
 }
-
 
 .forms-container {
   position: absolute;
@@ -115,13 +144,7 @@ form.sign-in-form {
 
 
 /* Social icon */
-
-ul {
-  list-style: none;
-  padding-bottom: 55px;
-}
-
-li::after {
+.icon-content::after {
   content: "";
   display: block;
   height: 0px;
@@ -129,7 +152,7 @@ li::after {
   pointer-events: none;
 }
 
-li:hover::after {
+.icon-content:hover::after {
   height: 10px;
 }
 

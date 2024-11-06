@@ -1,13 +1,14 @@
 <?php
-    include("../assets/mySql/connect.php");
-    if(empty($_SESSION['username']))
-    {
-        header("location:loginNew.php?isLogin=false");
+    session_start();
+    if(empty($_SESSION['username'])){
+        header("location:loginNew.php?islogin=false");
     }
+    
+    include("../assets/mySql/connect.php");
     $query = mysqli_query($conn, "SELECT * FROM pasien") ;
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en">    
 
 <head>
     <meta charset="UTF-8">
