@@ -279,25 +279,25 @@
                         <!-- Garis dan Nomor -->
                         <div class="flex items-center justify-center space-x-10 mb-5">
                             <div class="flex items-center space-x-2">
-                                <div class="w-48 h-1 bg-gray-200"></div>
+                                <div class="h-1 bg-gray-200" style="width: 199px"></div>
                                 <div
                                     class="w-6 h-6 rounded-full bg-indigo-500 text-white flex items-center justify-center font-medium text-sm">
                                     1</div>
-                                <div class="w-48 h-1 bg-gray-200"></div>
+                                <div class=" h-1 bg-gray-200" style="width: 180px"></div>
                             </div>
                             <div class="flex items-center space-x-2">
-                                <div class="w-60 h-1 bg-gray-200"></div>
+                                <div class=" h-1 bg-gray-200" style="width: 220px"></div>
                                 <div
                                     class="w-6 h-6 rounded-full bg-indigo-500 text-white flex items-center justify-center font-medium text-sm">
                                     2</div>
                                 <div class="w-60 h-1 bg-gray-200"></div>
                             </div>
                             <div class="flex items-center space-x-2">
-                                <div class="w-48 h-1 bg-gray-200"></div>
+                                <div class=" h-1 bg-gray-200" style="width: 170px"></div>
                                 <div
                                     class="w-6 h-6 rounded-full bg-indigo-500 text-white flex items-center justify-center font-medium text-sm">
                                     3</div>
-                                <div class="w-48 h-1 bg-gray-200"></div>
+                                <div class=" h-1 bg-gray-200"style="width: 200px"></div>
                             </div>
                         </div>
 
