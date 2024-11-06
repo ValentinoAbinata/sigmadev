@@ -34,6 +34,7 @@ input {
   background-image: url('../image/BGLOGIN.jpg');
   background-size: cover;
   background-position: start;
+ 
 }
 
 .bg-info {
@@ -41,6 +42,7 @@ input {
   background-image: url('../image/bgLogin2.jpg');
   background-size: cover;
   background-position: center;
+  margin-top: 500px;
 }
 
 .container {
@@ -49,6 +51,7 @@ input {
   min-height: 100vh;
   overflow: hidden;
   transition: all 0.8s ease-in-out;
+  margin-top: 50px;
 }
 
 .forms-container {

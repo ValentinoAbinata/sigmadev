@@ -17,7 +17,7 @@
 
 <body>
     <?php include "../layout/navbar.php" ?>
-    <div class="container bg-login" style="margin-top: 50px;">
+    <div class="container bg-login" style="margin-top: 97px;">
         <div class="forms-container">
             <div class="signin-signup">
 
