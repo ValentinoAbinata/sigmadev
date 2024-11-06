@@ -55,9 +55,11 @@
                     data-carousel-item>
                     <div class="flex flex-col text-left justify-center h-full bg-black bg-opacity-50 p-6 mt-0">
                         <div class="relative z-10" style="margin-left:50px;">
-                            <h1 class="text-7xl font-bold mb-2" style="font-family: Roboto !important; margin-left:50px;">Ciptakan Masa
+                            <h1 class="text-7xl font-bold mb-2"
+                                style="font-family: Roboto !important; margin-left:50px;">Ciptakan Masa
                                 Depan Sehatmu</h1>
-                            <h1 class="mb-2" style="font-size:20px; margin-left:50px;">Vaksinasi adalah langkah pertama untuk melindungi
+                            <h1 class="mb-2" style="font-size:20px; margin-left:50px;">Vaksinasi adalah langkah pertama
+                                untuk melindungi
                                 diri dan orang yang kamu cintai. <br> Segera daftar vaksinasi dan tingkatkan
                                 perlindunganmu dari berbagai penyakit. <br> Jangan tunggu lagi, jaga kesehatanmu
                                 sekarang juga!</h1>
@@ -736,81 +738,355 @@
 
 
         <!-- Testimoni Pasien -->
-        <div class="mt-10 mb-10">
+        <section class="swiper mySwiper py-24 px-6">
             <h2 class="text-center text-3xl font-bold text-blue-700 mb-5">Apa Kata Mereka?</h2>
+            <div class="swiper-wrapper">
 
-
-
-            <section class="swiper mySwiper">
-
-                <div class="swiper-wrapper">
-
-                    <div class="card swiper-slide">
-                        <div class="card__image">
-                            <img src="../assets/image/user_1.jpg" alt="card image">
-                        </div>
-                        <div class="card__content">
-                            <span class="card__title">Web Designer</span>
-                            <span class="card__name">Vanessa Martinez</span>
-                            <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
-                                veritatis
-                                labore provident
-                                non tempora odio est sunt, ipsum</p>
-                        </div>
+                <div class="card swiper-slide">
+                    <div class="card__image">
+                        <img src="../assets/image/user_1.jpg" alt="gambar kartu">
                     </div>
+                    <div class="card__content">
+                        <span class="card__title">Warga Desa</span>
+                        <span class="card__name">Dewi Lestari</span>
+                        <div class="flex flex-wrap grid grid-cols-5 justify-center items-center">
+                            <svg class="w-6 h-6 text-yellow-500 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFD700"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-width="2"
+                                    d="M11.083 5.104c.35-.8 1.485-.8 1.834 0l1.752 4.022a1 1 0 0 0 .84.597l4.463.342c.9.069 1.255 1.2.556 1.771l-3.33 2.723a1 1 0 0 0-.337 1.016l1.03 4.119c.214.858-.71 1.552-1.474 1.106l-3.913-2.281a1 1 0 0 0-1.008 0L7.583 20.8c-.764.446-1.688-.248-1.474-1.106l1.03-4.119A1 1 0 0 0 6.8 14.56l-3.33-2.723c-.698-.571-.342-1.702.557-1.771l4.462-.342a1 1 0 0 0 .84-.597l1.753-4.022Z" />
+                            </svg>
 
-                    <div class="card swiper-slide">
-                        <div class="card__image">
-                            <img src="../assets/image/user_11.jpg"alt="card image">
-                        </div>
+                            <svg class="w-6 h-6 text-yellow-500 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFD700"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-width="2"
+                                    d="M11.083 5.104c.35-.8 1.485-.8 1.834 0l1.752 4.022a1 1 0 0 0 .84.597l4.463.342c.9.069 1.255 1.2.556 1.771l-3.33 2.723a1 1 0 0 0-.337 1.016l1.03 4.119c.214.858-.71 1.552-1.474 1.106l-3.913-2.281a1 1 0 0 0-1.008 0L7.583 20.8c-.764.446-1.688-.248-1.474-1.106l1.03-4.119A1 1 0 0 0 6.8 14.56l-3.33-2.723c-.698-.571-.342-1.702.557-1.771l4.462-.342a1 1 0 0 0 .84-.597l1.753-4.022Z" />
+                            </svg>
 
-                        <div class="card__content">
-                            <span class="card__title">Ui Designer</span>
-                            <span class="card__name">Sarah Bowen</span>
-                            <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
-                                veritatis
-                                labore provident
-                                non tempora odio est sunt, ipsum</p>
+                            <svg class="w-6 h-6 text-yellow-500 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFD700"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-width="2"
+                                    d="M11.083 5.104c.35-.8 1.485-.8 1.834 0l1.752 4.022a1 1 0 0 0 .84.597l4.463.342c.9.069 1.255 1.2.556 1.771l-3.33 2.723a1 1 0 0 0-.337 1.016l1.03 4.119c.214.858-.71 1.552-1.474 1.106l-3.913-2.281a1 1 0 0 0-1.008 0L7.583 20.8c-.764.446-1.688-.248-1.474-1.106l1.03-4.119A1 1 0 0 0 6.8 14.56l-3.33-2.723c-.698-.571-.342-1.702.557-1.771l4.462-.342a1 1 0 0 0 .84-.597l1.753-4.022Z" />
+                            </svg>
+
+                            <svg class="w-6 h-6 text-yellow-500 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFD700"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-width="2"
+                                    d="M11.083 5.104c.35-.8 1.485-.8 1.834 0l1.752 4.022a1 1 0 0 0 .84.597l4.463.342c.9.069 1.255 1.2.556 1.771l-3.33 2.723a1 1 0 0 0-.337 1.016l1.03 4.119c.214.858-.71 1.552-1.474 1.106l-3.913-2.281a1 1 0 0 0-1.008 0L7.583 20.8c-.764.446-1.688-.248-1.474-1.106l1.03-4.119A1 1 0 0 0 6.8 14.56l-3.33-2.723c-.698-.571-.342-1.702.557-1.771l4.462-.342a1 1 0 0 0 .84-.597l1.753-4.022Z" />
+                            </svg>
+
+                            <svg class="w-6 h-6 text-yellow-500 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFD700"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-width="2"
+                                    d="M11.083 5.104c.35-.8 1.485-.8 1.834 0l1.752 4.022a1 1 0 0 0 .84.597l4.463.342c.9.069 1.255 1.2.556 1.771l-3.33 2.723a1 1 0 0 0-.337 1.016l1.03 4.119c.214.858-.71 1.552-1.474 1.106l-3.913-2.281a1 1 0 0 0-1.008 0L7.583 20.8c-.764.446-1.688-.248-1.474-1.106l1.03-4.119A1 1 0 0 0 6.8 14.56l-3.33-2.723c-.698-.571-.342-1.702.557-1.771l4.462-.342a1 1 0 0 0 .84-.597l1.753-4.022Z" />
+                            </svg>
+
                         </div>
+                        <p class="card__text">SigmaDev sangat membantu saya dalam proses pendataan vaksinasi. Terima
+                            kasih sigmaDev atas layanan yang memudahkan warga seperti kami.</p>
                     </div>
-
-                    <div class="card swiper-slide">
-                        <div class="card__image">
-                            <img src="../assets/image/user_22.jpg" alt="card image">
-                        </div>
-
-                        <div class="card__content">
-                            <span class="card__title">Web Developer</span>
-                            <span class="card__name">David Murphy</span>
-                            <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
-                                veritatis
-                                labore provident
-                                non tempora odio est sunt, ipsum</p>
-                        </div>
-                    </div>
-
-                    <div class="card swiper-slide">
-                        <div class="card__image">
-                            <img src="../assets/image/user_33.jpg" alt="card image">
-                        </div>
-
-                        <div class="card__content">
-                            <span class="card__title">Mobile Designer</span>
-                            <span class="card__name">Kelsey West</span>
-                            <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
-                                veritatis
-                                labore provident
-                                non tempora odio est sunt, ipsum</p>
-                        </div>
-                    </div>
-
-                    
-
                 </div>
-            </section>
 
-        </div>
+                <div class="card swiper-slide">
+                    <div class="card__image">
+                        <img src="../assets/image/user_11.jpg" alt="gambar kartu">
+                    </div>
 
+                    <div class="card__content">
+                        <span class="card__title">Sekretaris Desa</span>
+                        <span class="card__name">Putri Puspita</span>
+                        <div class="flex flex-wrap grid grid-cols-5 justify-center items-center">
+                            <svg class="w-6 h-6 text-yellow-500 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFD700"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-width="2"
+                                    d="M11.083 5.104c.35-.8 1.485-.8 1.834 0l1.752 4.022a1 1 0 0 0 .84.597l4.463.342c.9.069 1.255 1.2.556 1.771l-3.33 2.723a1 1 0 0 0-.337 1.016l1.03 4.119c.214.858-.71 1.552-1.474 1.106l-3.913-2.281a1 1 0 0 0-1.008 0L7.583 20.8c-.764.446-1.688-.248-1.474-1.106l1.03-4.119A1 1 0 0 0 6.8 14.56l-3.33-2.723c-.698-.571-.342-1.702.557-1.771l4.462-.342a1 1 0 0 0 .84-.597l1.753-4.022Z" />
+                            </svg>
+
+                            <svg class="w-6 h-6 text-yellow-500 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFD700"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-width="2"
+                                    d="M11.083 5.104c.35-.8 1.485-.8 1.834 0l1.752 4.022a1 1 0 0 0 .84.597l4.463.342c.9.069 1.255 1.2.556 1.771l-3.33 2.723a1 1 0 0 0-.337 1.016l1.03 4.119c.214.858-.71 1.552-1.474 1.106l-3.913-2.281a1 1 0 0 0-1.008 0L7.583 20.8c-.764.446-1.688-.248-1.474-1.106l1.03-4.119A1 1 0 0 0 6.8 14.56l-3.33-2.723c-.698-.571-.342-1.702.557-1.771l4.462-.342a1 1 0 0 0 .84-.597l1.753-4.022Z" />
+                            </svg>
+
+                            <svg class="w-6 h-6 text-yellow-500 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFD700"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-width="2"
+                                    d="M11.083 5.104c.35-.8 1.485-.8 1.834 0l1.752 4.022a1 1 0 0 0 .84.597l4.463.342c.9.069 1.255 1.2.556 1.771l-3.33 2.723a1 1 0 0 0-.337 1.016l1.03 4.119c.214.858-.71 1.552-1.474 1.106l-3.913-2.281a1 1 0 0 0-1.008 0L7.583 20.8c-.764.446-1.688-.248-1.474-1.106l1.03-4.119A1 1 0 0 0 6.8 14.56l-3.33-2.723c-.698-.571-.342-1.702.557-1.771l4.462-.342a1 1 0 0 0 .84-.597l1.753-4.022Z" />
+                            </svg>
+
+                            <svg class="w-6 h-6 text-yellow-500 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFD700"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-width="2"
+                                    d="M11.083 5.104c.35-.8 1.485-.8 1.834 0l1.752 4.022a1 1 0 0 0 .84.597l4.463.342c.9.069 1.255 1.2.556 1.771l-3.33 2.723a1 1 0 0 0-.337 1.016l1.03 4.119c.214.858-.71 1.552-1.474 1.106l-3.913-2.281a1 1 0 0 0-1.008 0L7.583 20.8c-.764.446-1.688-.248-1.474-1.106l1.03-4.119A1 1 0 0 0 6.8 14.56l-3.33-2.723c-.698-.571-.342-1.702.557-1.771l4.462-.342a1 1 0 0 0 .84-.597l1.753-4.022Z" />
+                            </svg>
+
+                            <svg class="w-6 h-6 text-yellow-500 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFD700"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-width="2"
+                                    d="M11.083 5.104c.35-.8 1.485-.8 1.834 0l1.752 4.022a1 1 0 0 0 .84.597l4.463.342c.9.069 1.255 1.2.556 1.771l-3.33 2.723a1 1 0 0 0-.337 1.016l1.03 4.119c.214.858-.71 1.552-1.474 1.106l-3.913-2.281a1 1 0 0 0-1.008 0L7.583 20.8c-.764.446-1.688-.248-1.474-1.106l1.03-4.119A1 1 0 0 0 6.8 14.56l-3.33-2.723c-.698-.571-.342-1.702.557-1.771l4.462-.342a1 1 0 0 0 .84-.597l1.753-4.022Z" />
+                            </svg>
+
+                        </div>
+                        <p class="card__text">sigmaDev memberikan kemudahan bagi kami untuk mengakses informasi
+                            vaksinasi. Sistemnya memudahkan dan sangat informatif!</p>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="card__image">
+                        <img src="../assets/image/user_22.jpg" alt="gambar kartu">
+                    </div>
+
+                    <div class="card__content">
+                        <span class="card__title">Perawat Puskesmas</span>
+                        <span class="card__name">Siti Aminah</span>
+                        <div class="flex flex-wrap grid grid-cols-5 justify-center items-center">
+                            <svg class="w-6 h-6 text-yellow-500 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFD700"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-width="2"
+                                    d="M11.083 5.104c.35-.8 1.485-.8 1.834 0l1.752 4.022a1 1 0 0 0 .84.597l4.463.342c.9.069 1.255 1.2.556 1.771l-3.33 2.723a1 1 0 0 0-.337 1.016l1.03 4.119c.214.858-.71 1.552-1.474 1.106l-3.913-2.281a1 1 0 0 0-1.008 0L7.583 20.8c-.764.446-1.688-.248-1.474-1.106l1.03-4.119A1 1 0 0 0 6.8 14.56l-3.33-2.723c-.698-.571-.342-1.702.557-1.771l4.462-.342a1 1 0 0 0 .84-.597l1.753-4.022Z" />
+                            </svg>
+
+                            <svg class="w-6 h-6 text-yellow-500 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFD700"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-width="2"
+                                    d="M11.083 5.104c.35-.8 1.485-.8 1.834 0l1.752 4.022a1 1 0 0 0 .84.597l4.463.342c.9.069 1.255 1.2.556 1.771l-3.33 2.723a1 1 0 0 0-.337 1.016l1.03 4.119c.214.858-.71 1.552-1.474 1.106l-3.913-2.281a1 1 0 0 0-1.008 0L7.583 20.8c-.764.446-1.688-.248-1.474-1.106l1.03-4.119A1 1 0 0 0 6.8 14.56l-3.33-2.723c-.698-.571-.342-1.702.557-1.771l4.462-.342a1 1 0 0 0 .84-.597l1.753-4.022Z" />
+                            </svg>
+
+                            <svg class="w-6 h-6 text-yellow-500 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFD700"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-width="2"
+                                    d="M11.083 5.104c.35-.8 1.485-.8 1.834 0l1.752 4.022a1 1 0 0 0 .84.597l4.463.342c.9.069 1.255 1.2.556 1.771l-3.33 2.723a1 1 0 0 0-.337 1.016l1.03 4.119c.214.858-.71 1.552-1.474 1.106l-3.913-2.281a1 1 0 0 0-1.008 0L7.583 20.8c-.764.446-1.688-.248-1.474-1.106l1.03-4.119A1 1 0 0 0 6.8 14.56l-3.33-2.723c-.698-.571-.342-1.702.557-1.771l4.462-.342a1 1 0 0 0 .84-.597l1.753-4.022Z" />
+                            </svg>
+
+                            <svg class="w-6 h-6 text-yellow-500 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFD700"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-width="2"
+                                    d="M11.083 5.104c.35-.8 1.485-.8 1.834 0l1.752 4.022a1 1 0 0 0 .84.597l4.463.342c.9.069 1.255 1.2.556 1.771l-3.33 2.723a1 1 0 0 0-.337 1.016l1.03 4.119c.214.858-.71 1.552-1.474 1.106l-3.913-2.281a1 1 0 0 0-1.008 0L7.583 20.8c-.764.446-1.688-.248-1.474-1.106l1.03-4.119A1 1 0 0 0 6.8 14.56l-3.33-2.723c-.698-.571-.342-1.702.557-1.771l4.462-.342a1 1 0 0 0 .84-.597l1.753-4.022Z" />
+                            </svg>
+
+                            <svg class="w-6 h-6 text-yellow-500 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFD700"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-width="2"
+                                    d="M11.083 5.104c.35-.8 1.485-.8 1.834 0l1.752 4.022a1 1 0 0 0 .84.597l4.463.342c.9.069 1.255 1.2.556 1.771l-3.33 2.723a1 1 0 0 0-.337 1.016l1.03 4.119c.214.858-.71 1.552-1.474 1.106l-3.913-2.281a1 1 0 0 0-1.008 0L7.583 20.8c-.764.446-1.688-.248-1.474-1.106l1.03-4.119A1 1 0 0 0 6.8 14.56l-3.33-2.723c-.698-.571-.342-1.702.557-1.771l4.462-.342a1 1 0 0 0 .84-.597l1.753-4.022Z" />
+                            </svg>
+
+                        </div>
+                        <p class="card__text">Terima kasih sigmaDev, sekarang kami bisa mengelola data vaksinasi warga
+                            dengan lebih mudah. Platform ini benar-benar membantu pekerjaan kami.</p>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="card__image">
+                        <img src="../assets/image/user_33.jpg" alt="gambar kartu">
+                    </div>
+
+                    <div class="card__content">
+                        <span class="card__title">Warga Desa</span>
+                        <span class="card__name">Siti Khansa</span>
+                        <div class="flex flex-wrap grid grid-cols-5 justify-center items-center">
+                            <svg class="w-6 h-6 text-yellow-500 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFD700"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-width="2"
+                                    d="M11.083 5.104c.35-.8 1.485-.8 1.834 0l1.752 4.022a1 1 0 0 0 .84.597l4.463.342c.9.069 1.255 1.2.556 1.771l-3.33 2.723a1 1 0 0 0-.337 1.016l1.03 4.119c.214.858-.71 1.552-1.474 1.106l-3.913-2.281a1 1 0 0 0-1.008 0L7.583 20.8c-.764.446-1.688-.248-1.474-1.106l1.03-4.119A1 1 0 0 0 6.8 14.56l-3.33-2.723c-.698-.571-.342-1.702.557-1.771l4.462-.342a1 1 0 0 0 .84-.597l1.753-4.022Z" />
+                            </svg>
+
+                            <svg class="w-6 h-6 text-yellow-500 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFD700"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-width="2"
+                                    d="M11.083 5.104c.35-.8 1.485-.8 1.834 0l1.752 4.022a1 1 0 0 0 .84.597l4.463.342c.9.069 1.255 1.2.556 1.771l-3.33 2.723a1 1 0 0 0-.337 1.016l1.03 4.119c.214.858-.71 1.552-1.474 1.106l-3.913-2.281a1 1 0 0 0-1.008 0L7.583 20.8c-.764.446-1.688-.248-1.474-1.106l1.03-4.119A1 1 0 0 0 6.8 14.56l-3.33-2.723c-.698-.571-.342-1.702.557-1.771l4.462-.342a1 1 0 0 0 .84-.597l1.753-4.022Z" />
+                            </svg>
+
+                            <svg class="w-6 h-6 text-yellow-500 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFD700"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-width="2"
+                                    d="M11.083 5.104c.35-.8 1.485-.8 1.834 0l1.752 4.022a1 1 0 0 0 .84.597l4.463.342c.9.069 1.255 1.2.556 1.771l-3.33 2.723a1 1 0 0 0-.337 1.016l1.03 4.119c.214.858-.71 1.552-1.474 1.106l-3.913-2.281a1 1 0 0 0-1.008 0L7.583 20.8c-.764.446-1.688-.248-1.474-1.106l1.03-4.119A1 1 0 0 0 6.8 14.56l-3.33-2.723c-.698-.571-.342-1.702.557-1.771l4.462-.342a1 1 0 0 0 .84-.597l1.753-4.022Z" />
+                            </svg>
+
+                            <svg class="w-6 h-6 text-yellow-500 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFD700"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-width="2"
+                                    d="M11.083 5.104c.35-.8 1.485-.8 1.834 0l1.752 4.022a1 1 0 0 0 .84.597l4.463.342c.9.069 1.255 1.2.556 1.771l-3.33 2.723a1 1 0 0 0-.337 1.016l1.03 4.119c.214.858-.71 1.552-1.474 1.106l-3.913-2.281a1 1 0 0 0-1.008 0L7.583 20.8c-.764.446-1.688-.248-1.474-1.106l1.03-4.119A1 1 0 0 0 6.8 14.56l-3.33-2.723c-.698-.571-.342-1.702.557-1.771l4.462-.342a1 1 0 0 0 .84-.597l1.753-4.022Z" />
+                            </svg>
+
+                        </div>
+                        <p class="card__text">sigmaDev sangat bermanfaat dalam menyediakan informasi vaksinasi. Sistem
+                            ini ramah pengguna dan memudahkan proses pendataan.</p>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="card__image">
+                        <img src="../assets/image/user2.jpg" alt="gambar kartu">
+                    </div>
+
+                    <div class="card__content">
+                        <span class="card__title text-center">Bidang Kesehatan Desa</span>
+                        <span class="card__name">Rina Sari</span>
+                        <div class="flex flex-wrap grid grid-cols-5 justify-center items-center">
+                            <svg class="w-6 h-6 text-yellow-500 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFD700"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-width="2"
+                                    d="M11.083 5.104c.35-.8 1.485-.8 1.834 0l1.752 4.022a1 1 0 0 0 .84.597l4.463.342c.9.069 1.255 1.2.556 1.771l-3.33 2.723a1 1 0 0 0-.337 1.016l1.03 4.119c.214.858-.71 1.552-1.474 1.106l-3.913-2.281a1 1 0 0 0-1.008 0L7.583 20.8c-.764.446-1.688-.248-1.474-1.106l1.03-4.119A1 1 0 0 0 6.8 14.56l-3.33-2.723c-.698-.571-.342-1.702.557-1.771l4.462-.342a1 1 0 0 0 .84-.597l1.753-4.022Z" />
+                            </svg>
+
+                            <svg class="w-6 h-6 text-yellow-500 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFD700"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-width="2"
+                                    d="M11.083 5.104c.35-.8 1.485-.8 1.834 0l1.752 4.022a1 1 0 0 0 .84.597l4.463.342c.9.069 1.255 1.2.556 1.771l-3.33 2.723a1 1 0 0 0-.337 1.016l1.03 4.119c.214.858-.71 1.552-1.474 1.106l-3.913-2.281a1 1 0 0 0-1.008 0L7.583 20.8c-.764.446-1.688-.248-1.474-1.106l1.03-4.119A1 1 0 0 0 6.8 14.56l-3.33-2.723c-.698-.571-.342-1.702.557-1.771l4.462-.342a1 1 0 0 0 .84-.597l1.753-4.022Z" />
+                            </svg>
+
+                            <svg class="w-6 h-6 text-yellow-500 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFD700"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-width="2"
+                                    d="M11.083 5.104c.35-.8 1.485-.8 1.834 0l1.752 4.022a1 1 0 0 0 .84.597l4.463.342c.9.069 1.255 1.2.556 1.771l-3.33 2.723a1 1 0 0 0-.337 1.016l1.03 4.119c.214.858-.71 1.552-1.474 1.106l-3.913-2.281a1 1 0 0 0-1.008 0L7.583 20.8c-.764.446-1.688-.248-1.474-1.106l1.03-4.119A1 1 0 0 0 6.8 14.56l-3.33-2.723c-.698-.571-.342-1.702.557-1.771l4.462-.342a1 1 0 0 0 .84-.597l1.753-4.022Z" />
+                            </svg>
+
+                            <svg class="w-6 h-6 text-yellow-500 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFD700"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-width="2"
+                                    d="M11.083 5.104c.35-.8 1.485-.8 1.834 0l1.752 4.022a1 1 0 0 0 .84.597l4.463.342c.9.069 1.255 1.2.556 1.771l-3.33 2.723a1 1 0 0 0-.337 1.016l1.03 4.119c.214.858-.71 1.552-1.474 1.106l-3.913-2.281a1 1 0 0 0-1.008 0L7.583 20.8c-.764.446-1.688-.248-1.474-1.106l1.03-4.119A1 1 0 0 0 6.8 14.56l-3.33-2.723c-.698-.571-.342-1.702.557-1.771l4.462-.342a1 1 0 0 0 .84-.597l1.753-4.022Z" />
+                            </svg>
+
+                            <svg class="w-6 h-6 text-yellow-500 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFD700"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-width="2"
+                                    d="M11.083 5.104c.35-.8 1.485-.8 1.834 0l1.752 4.022a1 1 0 0 0 .84.597l4.463.342c.9.069 1.255 1.2.556 1.771l-3.33 2.723a1 1 0 0 0-.337 1.016l1.03 4.119c.214.858-.71 1.552-1.474 1.106l-3.913-2.281a1 1 0 0 0-1.008 0L7.583 20.8c-.764.446-1.688-.248-1.474-1.106l1.03-4.119A1 1 0 0 0 6.8 14.56l-3.33-2.723c-.698-.571-.342-1.702.557-1.771l4.462-.342a1 1 0 0 0 .84-.597l1.753-4.022Z" />
+                            </svg>
+
+                        </div>
+                        <p class="card__text">sigmaDev sangat membantu kami dalam mendata vaksinasi warga desa.
+                            Pelayanan yang cepat dan efisien.</p>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="card__image">
+                        <img src="../assets/image/user3.jpg" alt="gambar kartu">
+                    </div>
+
+                    <div class="card__content">
+                        <span class="card__title">Kepala Desa</span>
+                        <span class="card__name">Imam Sutanto</span>
+                        <div class="flex flex-wrap grid grid-cols-5 justify-center items-center">
+                            <svg class="w-6 h-6 text-yellow-500 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFD700"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-width="2"
+                                    d="M11.083 5.104c.35-.8 1.485-.8 1.834 0l1.752 4.022a1 1 0 0 0 .84.597l4.463.342c.9.069 1.255 1.2.556 1.771l-3.33 2.723a1 1 0 0 0-.337 1.016l1.03 4.119c.214.858-.71 1.552-1.474 1.106l-3.913-2.281a1 1 0 0 0-1.008 0L7.583 20.8c-.764.446-1.688-.248-1.474-1.106l1.03-4.119A1 1 0 0 0 6.8 14.56l-3.33-2.723c-.698-.571-.342-1.702.557-1.771l4.462-.342a1 1 0 0 0 .84-.597l1.753-4.022Z" />
+                            </svg>
+
+                            <svg class="w-6 h-6 text-yellow-500 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFD700"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-width="2"
+                                    d="M11.083 5.104c.35-.8 1.485-.8 1.834 0l1.752 4.022a1 1 0 0 0 .84.597l4.463.342c.9.069 1.255 1.2.556 1.771l-3.33 2.723a1 1 0 0 0-.337 1.016l1.03 4.119c.214.858-.71 1.552-1.474 1.106l-3.913-2.281a1 1 0 0 0-1.008 0L7.583 20.8c-.764.446-1.688-.248-1.474-1.106l1.03-4.119A1 1 0 0 0 6.8 14.56l-3.33-2.723c-.698-.571-.342-1.702.557-1.771l4.462-.342a1 1 0 0 0 .84-.597l1.753-4.022Z" />
+                            </svg>
+
+                            <svg class="w-6 h-6 text-yellow-500 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFD700"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-width="2"
+                                    d="M11.083 5.104c.35-.8 1.485-.8 1.834 0l1.752 4.022a1 1 0 0 0 .84.597l4.463.342c.9.069 1.255 1.2.556 1.771l-3.33 2.723a1 1 0 0 0-.337 1.016l1.03 4.119c.214.858-.71 1.552-1.474 1.106l-3.913-2.281a1 1 0 0 0-1.008 0L7.583 20.8c-.764.446-1.688-.248-1.474-1.106l1.03-4.119A1 1 0 0 0 6.8 14.56l-3.33-2.723c-.698-.571-.342-1.702.557-1.771l4.462-.342a1 1 0 0 0 .84-.597l1.753-4.022Z" />
+                            </svg>
+
+                            <svg class="w-6 h-6 text-yellow-500 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFD700"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-width="2"
+                                    d="M11.083 5.104c.35-.8 1.485-.8 1.834 0l1.752 4.022a1 1 0 0 0 .84.597l4.463.342c.9.069 1.255 1.2.556 1.771l-3.33 2.723a1 1 0 0 0-.337 1.016l1.03 4.119c.214.858-.71 1.552-1.474 1.106l-3.913-2.281a1 1 0 0 0-1.008 0L7.583 20.8c-.764.446-1.688-.248-1.474-1.106l1.03-4.119A1 1 0 0 0 6.8 14.56l-3.33-2.723c-.698-.571-.342-1.702.557-1.771l4.462-.342a1 1 0 0 0 .84-.597l1.753-4.022Z" />
+                            </svg>
+
+                            <svg class="w-6 h-6 text-yellow-500 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFD700"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-width="2"
+                                    d="M11.083 5.104c.35-.8 1.485-.8 1.834 0l1.752 4.022a1 1 0 0 0 .84.597l4.463.342c.9.069 1.255 1.2.556 1.771l-3.33 2.723a1 1 0 0 0-.337 1.016l1.03 4.119c.214.858-.71 1.552-1.474 1.106l-3.913-2.281a1 1 0 0 0-1.008 0L7.583 20.8c-.764.446-1.688-.248-1.474-1.106l1.03-4.119A1 1 0 0 0 6.8 14.56l-3.33-2.723c-.698-.571-.342-1.702.557-1.771l4.462-.342a1 1 0 0 0 .84-.597l1.753-4.022Z" />
+                            </svg>
+
+                        </div>
+                        <p class="card__text">Dengan sigmaDev, saya dapat dengan mudah memantau perkembangan vaksinasi
+                            di desa kami. Sangat berguna dan mudah digunakan!</p>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="card__image">
+                        <img src="../assets/image/user4.jpg" alt="gambar kartu">
+                    </div>
+
+                    <div class="card__content">
+                        <span class="card__title">Warga Desa</span>
+                        <span class="card__name">Nurul Sukmawati</span>
+                        <div class="flex flex-wrap grid grid-cols-5 justify-center items-center">
+                            <svg class="w-6 h-6 text-yellow-500 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFD700"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-width="2"
+                                    d="M11.083 5.104c.35-.8 1.485-.8 1.834 0l1.752 4.022a1 1 0 0 0 .84.597l4.463.342c.9.069 1.255 1.2.556 1.771l-3.33 2.723a1 1 0 0 0-.337 1.016l1.03 4.119c.214.858-.71 1.552-1.474 1.106l-3.913-2.281a1 1 0 0 0-1.008 0L7.583 20.8c-.764.446-1.688-.248-1.474-1.106l1.03-4.119A1 1 0 0 0 6.8 14.56l-3.33-2.723c-.698-.571-.342-1.702.557-1.771l4.462-.342a1 1 0 0 0 .84-.597l1.753-4.022Z" />
+                            </svg>
+
+                            <svg class="w-6 h-6 text-yellow-500 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFD700"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-width="2"
+                                    d="M11.083 5.104c.35-.8 1.485-.8 1.834 0l1.752 4.022a1 1 0 0 0 .84.597l4.463.342c.9.069 1.255 1.2.556 1.771l-3.33 2.723a1 1 0 0 0-.337 1.016l1.03 4.119c.214.858-.71 1.552-1.474 1.106l-3.913-2.281a1 1 0 0 0-1.008 0L7.583 20.8c-.764.446-1.688-.248-1.474-1.106l1.03-4.119A1 1 0 0 0 6.8 14.56l-3.33-2.723c-.698-.571-.342-1.702.557-1.771l4.462-.342a1 1 0 0 0 .84-.597l1.753-4.022Z" />
+                            </svg>
+
+                            <svg class="w-6 h-6 text-yellow-500 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFD700"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-width="2"
+                                    d="M11.083 5.104c.35-.8 1.485-.8 1.834 0l1.752 4.022a1 1 0 0 0 .84.597l4.463.342c.9.069 1.255 1.2.556 1.771l-3.33 2.723a1 1 0 0 0-.337 1.016l1.03 4.119c.214.858-.71 1.552-1.474 1.106l-3.913-2.281a1 1 0 0 0-1.008 0L7.583 20.8c-.764.446-1.688-.248-1.474-1.106l1.03-4.119A1 1 0 0 0 6.8 14.56l-3.33-2.723c-.698-.571-.342-1.702.557-1.771l4.462-.342a1 1 0 0 0 .84-.597l1.753-4.022Z" />
+                            </svg>
+
+                            <svg class="w-6 h-6 text-yellow-500 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFD700"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-width="2"
+                                    d="M11.083 5.104c.35-.8 1.485-.8 1.834 0l1.752 4.022a1 1 0 0 0 .84.597l4.463.342c.9.069 1.255 1.2.556 1.771l-3.33 2.723a1 1 0 0 0-.337 1.016l1.03 4.119c.214.858-.71 1.552-1.474 1.106l-3.913-2.281a1 1 0 0 0-1.008 0L7.583 20.8c-.764.446-1.688-.248-1.474-1.106l1.03-4.119A1 1 0 0 0 6.8 14.56l-3.33-2.723c-.698-.571-.342-1.702.557-1.771l4.462-.342a1 1 0 0 0 .84-.597l1.753-4.022Z" />
+                            </svg>
+
+                            <svg class="w-6 h-6 text-yellow-500 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFD700"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-width="2"
+                                    d="m12.25 20.825 4.247-2.436a1 1 0 0 0 .503-.867V4.03c0-.405-2.062 3.38-2.8 4.747a1 1 0 0 1-.807.523l-4.87.367c-.903.068-1.258 1.208-.55 1.776l3.576 2.878a1 1 0 0 1 .343 1.025l-1.11 4.366c-.217.856.701 1.553 1.468 1.113Z" />
+                            </svg>
+
+
+                        </div>
+                        <p class="card__text">sigmaDev membantu kami mendapatkan informasi yang lengkap tentang
+                            vaksinasi. Terima kasih atas pelayanannya!</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
 
         <?php include "../layout/footer.php" ?>
 
