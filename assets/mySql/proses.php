@@ -1,9 +1,5 @@
 <?php
 include "connect.php" ;
-
-
-
-
     //  Submit Proses Insert
     if (isset($_POST['formLayan'])){
 
@@ -20,9 +16,10 @@ include "connect.php" ;
 
     $namaP = $first_name . ' ' . $last_name ;
     
-    $query = mysqli_query($conn, "INSERT INTO pasien VALUES('$nikP', '$emailP', '$namaP', '$jkP', '$lahirP', '$telpP', '$domisiliP', '$isShow', '$selectedLayanan')") or die(mysqli_error($conn)) ;
+    $query = mysqli_query($conn, "INSERT INTO pasien VALUES('$nikP', '$emailP', '$first_name','$last_name','$namaP', '$jkP', '$lahirP', '$telpP', '$domisiliP', '$isShow', '$selectedLayanan')") or die(mysqli_error($conn)) ;
         if($query){
-        header('Location : ../../pages/beranda.php?insertSukses=true', true, 301) ; exit ;
+        header('Location : ../../pages/beranda.php?insertSukses=true') ; 
+        exit ();
         }
 }
 
@@ -51,7 +48,7 @@ include "connect.php" ;
 
     
         $namaP = $first_name . ' ' . $last_name ;
-        $query = mysqli_query($conn,"UPDATE pasien  SET nikP='$nikP',emailP='$emailP', namaP='$namaP', jkP='$jkP', lahirP='$lahirP', telpP='$telpP', domisiliP='$domisiliP', isShow='$isShow', selectedLayanan='$selectedLayanan' where nikP='$nikP'") or die(mysqli_error($db));
+        $query = mysqli_query($conn,"UPDATE pasien  SET nikP='$nikP',emailP='$emailP',first_name='$first_name',last_name=$last_name, namaP='$namaP', jkP='$jkP', lahirP='$lahirP', telpP='$telpP', domisiliP='$domisiliP', isShow='$isShow', selectedLayanan='$selectedLayanan' where nikP='$nikP'") or die(mysqli_error($db));
         if($query){
             header('Location: ../../pages/AdaKes.php?editSukses=true', true, 301) ;
          }
