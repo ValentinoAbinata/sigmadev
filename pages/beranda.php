@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="../assets/css/beranda.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-
-
 </head>
 
 <body style="font-family: Poppins;">
@@ -31,7 +29,7 @@
                     data-carousel-item="active">
                     <div class="flex flex-col text-left justify-center h-full bg-black bg-opacity-50 p-6 mt-0">
                         <div class="relative z-10" style="margin-left:50px;">
-                            <h1 class="text-7xl font-bold mb-2 " style="font-family: Roboto !important ">
+                            <h1 class="text-7xl font-bold mb-2 " style="font-family: Roboto !important">
                                 Lindungi Dirimu
                                 atau <br> Kematian Menjemputmu</h1>
                             <h1 class="mb-2" style="font-size:20px">Vaksinasi diperlukan untuk
@@ -211,7 +209,7 @@
                                     src="../assets/image/pengertian.jpg" alt="Gambar Pengertian Vaksinasi">
                                 <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">INFORMASI
                                 </h3>
-                                <h2 class="font-bold text-gray-900 text-2xl text-center mb-4" style="Roboto">Pengertian
+                                <h2 class="font-bold text-gray-900 text-2xl text-center mb-4" style="Roboto;">Pengertian
                                 </h2>
                                 <p class="leading-relaxed text-base text-justify mb-5">Vaksinasi adalah proses pemberian
                                     vaksin untuk membantu sistem kekebalan tubuh dalam mengembangkan perlindungan
@@ -228,7 +226,7 @@
                                     src="../assets/image/caraKerja.jpg" alt="Gambar Cara Kerja Vaksinasi">
                                 <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">MEKANISME
                                 </h3>
-                                <h2 class="font-bold text-gray-900 text-2xl text-center mb-4" style="Roboto">Cara Kerja
+                                <h2 class="font-bold text-gray-900 text-2xl text-center mb-4" style="Roboto;">Cara Kerja
                                 </h2>
                                 <p class="leading-relaxed text-base text-justify mb-5">Vaksinasi bekerja dengan
                                     merangsang
@@ -246,7 +244,7 @@
                                     src="../assets/image/manfaat.jpg" alt="Gambar Manfaat Vaksinasi">
                                 <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">KEUNTUNGAN
                                 </h3>
-                                <h2 class="font-bold text-gray-900 text-2xl text-center mb-4" style="Roboto">Manfaat
+                                <h2 class="font-bold text-gray-900 text-2xl text-center mb-4" style="Roboto;">Manfaat
                                 </h2>
                                 <p class="leading-relaxed text-base text-justify">Vaksinasi membantu mencegah penyebaran
                                     penyakit dengan meningkatkan imunitas individu dan komunitas. Vaksinasi berperan
@@ -265,8 +263,7 @@
             <section>
                 <div class="container px-5 py-24 mx-auto">
                     <div class="flex flex-col justify-center items-center text-center w-full mb-20">
-                        <img src="../assets/image/iconsigmaDev2.png" alt="iconsigmaDev"
-                            style="width:125px; height:125px;">
+                        <img src="../assets/image/iconsigmaDev2.png" alt="iconsigmaDev" style="width : 125 px; height : 125 px ;">
                         <h1 class="text-4xl font-bold text-black">Cara Pendaftaran</h1>
                         <div class="h-1 bg-red-600 rounded" style="width: 270px;"></div>
                         <p class="lg:w-2/3 mx-auto leading-relaxed text-base mt-5">Pendaftaran vaksinasi di website
