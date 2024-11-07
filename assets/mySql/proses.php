@@ -1,6 +1,6 @@
 <?php
 
-include "connect.php" ;
+    include "connect.php" ;
     //  Submit Proses Insert
     if (isset($_POST['formLayan'])){
 
@@ -16,17 +16,14 @@ include "connect.php" ;
     $selectedLayanan = $_POST['selectedLayanan'] ;
 
     $namaP = $first_name . ' ' . $last_name ;
-    
-    $query = mysqli_query($conn, "INSERT INTO pasien VALUES('$nikP', '$emailP', '$first_name','$last_name','$namaP', '$jkP', '$lahirP', '$telpP', '$domisiliP', '$isShow', '$selectedLayanan')") ;
-        if($query){
-<<<<<<< HEAD
-            header('Location: ../../pages/beranda.php?insertSukses=true') ; 
-=======
+
+    $query = mysqli_query($conn, "INSERT INTO pasien VALUES('$nikP', '$emailP', '$first_name','$last_name','$namaP', '$jkP', '$lahirP', '$telpP', '$domisiliP', '$isShow', '$selectedLayanan')") or die(mysqli_error($conn)) ;
+    if($query){
         header('Location: ../../pages/beranda.php?insertSukses=true') ; 
->>>>>>> 96bb963308bf37e6de49645bd02bc9656e582ccd
         exit ();
-        }
-}
+    }
+    }
+
 
 
     //  Submit Proses Delete
