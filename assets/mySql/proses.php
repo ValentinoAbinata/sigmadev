@@ -1,4 +1,5 @@
 <?php
+
 include "connect.php" ;
     //  Submit Proses Insert
     if (isset($_POST['formLayan'])){
@@ -18,7 +19,7 @@ include "connect.php" ;
     
     $query = mysqli_query($conn, "INSERT INTO pasien VALUES('$nikP', '$emailP', '$first_name','$last_name','$namaP', '$jkP', '$lahirP', '$telpP', '$domisiliP', '$isShow', '$selectedLayanan')") or die(mysqli_error($conn)) ;
         if($query){
-        header('Location : ../../pages/beranda.php?insertSukses=true') ; 
+            header('Location: ../../pages/beranda.php?insertSukses=true') ; 
         exit ();
         }
 }

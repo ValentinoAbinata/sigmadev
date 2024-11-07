@@ -139,7 +139,7 @@ $selectedLayanan = isset($_GET['layanan']) ? $_GET['layanan'] : '';
         </div>
 
 
-        <script>
+        <!-- <script>
             // document.addEventListener("DOMContentLoaded", function() {
             //     const closeButton = document.querySelector(".close");
 
@@ -195,7 +195,7 @@ $selectedLayanan = isset($_GET['layanan']) ? $_GET['layanan'] : '';
             //     });
             // });
 
-        </script>
+        </script> -->
         <?php include "../layout/footer.php" ?>
     </div>
 

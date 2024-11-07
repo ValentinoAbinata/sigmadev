@@ -20,3 +20,7 @@ function debug_to_console($data)//  Biar Echo Koneksi Berhasil! dan Koneksi Gaga
     } else {
        debug_to_console("Koneksi Gagal!");
     }
+
+
+
+
