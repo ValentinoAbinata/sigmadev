@@ -10,6 +10,18 @@ $selectedLayanan = isset($_GET['layanan']) ? $_GET['layanan'] : '';
     <link rel="icon" href="../assets/image/iconWeb.png">
     <title>sigmaDev</title>
     <link rel="stylesheet" href="https://unpkg.com/flowbite@latest/dist/flowbite.min.css" />
+    <style>
+        /* warna tombol */
+        .swal-confirm-button {
+            background-color: green !important;
+            color: white;
+        }
+
+        .swal-cancel-button {
+            background-color: red !important;
+            color: white;
+        }
+    </style>
 
 </head>
 
@@ -20,7 +32,7 @@ $selectedLayanan = isset($_GET['layanan']) ? $_GET['layanan'] : '';
             <p class="text-center text-4xl font-bold text-gray-600 mb-10"> Pengisian Form <?= $selectedLayanan ?> </p>
 
             <div class="border-2 border-gray-800 py-8 mx-auto" style="width:50%; margin-bottom : 8%;">
-                <form class="max-w-md mx-auto close" method="POST" action="../assets/mySql/proses.php">
+                <form class="max-w-md mx-auto close" method="POST" action="../assets/mySql/cek_input.php">
 
                     <div class="relative z-0 w-full mb-5 group">
                         <input type="email" name="email" id="email"
@@ -105,10 +117,26 @@ $selectedLayanan = isset($_GET['layanan']) ? $_GET['layanan'] : '';
                     </div>
 
                     <div class="grid grid-cols-2 gap-6 flex justify-center items-center">
-
+                        <!-- manipulate submit  -->
                         <div>
-                            <button type="submit" name="formLayan" value="formLayan"
+                            <button type="submit" name="formLayan" value="formLayan" id="confirmButton"
                                 class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 mx-auto focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-32 px-2 py-2 flex items-center justify-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            <svg class="w-6 h-6 inline-block mr-2 text-whitetext-gray-800 dark:text-white"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                            Submit
+                            </button>
+                        </div>
+                    
+                    
+                    
+                        <!-- submit real -->
+                        <div>
+                            <button type="submit" name="formLayan" value="formLayan" id="realSubmitButton"
+                                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 mx-auto focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-32 px-2 py-2 flex items-center justify-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" style="display: none;">
                             <svg class="w-6 h-6 inline-block mr-2 text-whitetext-gray-800 dark:text-white"
                                 aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
                                 viewBox="0 0 24 24">
@@ -139,7 +167,33 @@ $selectedLayanan = isset($_GET['layanan']) ? $_GET['layanan'] : '';
         </div>
 
 
+<<<<<<< HEAD
         <!-- <script>
+=======
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const confirmButton = document.getElementById("confirmButton");
+            const realSubmitButton = document.getElementById("realSubmitButton");
+
+            confirmButton.addEventListener("click", function() {
+                Swal.fire({
+                    title: "Terima Kasih\ntelah mengisi form",
+                    text: "Silahkan hubungi Admin pada 'Tentang kami'",
+                    icon: "success",
+                    showCancelButton: true,
+                    confirmButtonText: "Oke",
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        // Klik tombol submit yang sebenarnya
+                        realSubmitButton.click();
+                    }
+                });
+            });
+        });
+        </script>
+        <script>
+>>>>>>> 96bb963308bf37e6de49645bd02bc9656e582ccd
             // document.addEventListener("DOMContentLoaded", function() {
             //     const closeButton = document.querySelector(".close");
 
