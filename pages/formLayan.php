@@ -1,5 +1,10 @@
 <?php
-$selectedLayanan = isset($_GET['layanan']) ? $_GET['layanan'] : '';
+    include("../assets/mySql/connect.php");
+    $selectedLayanan = isset($_GET['layanan']) ? $_GET['layanan'] : '';
+    $id = isset($_GET['id']) ? $_GET['id'] : '';
+    
+
+  
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,6 +15,7 @@ $selectedLayanan = isset($_GET['layanan']) ? $_GET['layanan'] : '';
     <link rel="icon" href="../assets/image/iconWeb.png">
     <title>sigmaDev</title>
     <link rel="stylesheet" href="https://unpkg.com/flowbite@latest/dist/flowbite.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
     /* warna tombol */
     .swal-confirm-button {
@@ -17,9 +23,38 @@ $selectedLayanan = isset($_GET['layanan']) ? $_GET['layanan'] : '';
         color: white;
     }
 
-    .swal-cancel-button {
+    .galatB {
         background-color: red !important;
-        color: white;
+        color: white !important;
+
+    }
+
+    .galatB:hover {
+        background-color: darkred !important;
+    }
+
+    /* styling tombol file */
+    .btn-file {
+        position: relative;
+        padding: 11px 16px;
+        font-size: 15px;
+        line-height: 1.5;
+        border-radius: 3px;
+        color: #fff;
+        background-color: #d90000;
+        border: 0;
+        transition: 0.2s;
+        overflow: hidden;
+
+    }
+
+    .btn-file input[type="file"] {
+        cursor: pointer;
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        transform: scale(3);
+        opacity: 0;
     }
     </style>
 
@@ -32,7 +67,8 @@ $selectedLayanan = isset($_GET['layanan']) ? $_GET['layanan'] : '';
             <p class="text-center text-4xl font-bold text-gray-600 mb-10"> Pengisian Form <?= $selectedLayanan ?> </p>
 
             <div class="border-2 border-gray-800 py-8 mx-auto" style="width:50%; margin-bottom : 8%;">
-                <form class="max-w-md mx-auto close" method="POST" action="../assets/mySql/proses.php">
+                <form class="max-w-md mx-auto close" method="POST" action="../assets/mySql/proses.php"
+                    autocomplete="off" enctype="multipart/form-data">
 
                     <div class="relative z-0 w-full mb-5 group">
                         <input type="email" name="email" id="email"
@@ -108,13 +144,31 @@ $selectedLayanan = isset($_GET['layanan']) ? $_GET['layanan'] : '';
                                 placeholder=" " required />
                             <label for="domisili"
                                 class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Domisili</label>
+
                             <!-- isShow -->
                             <input type="hidden" name="isShow" value="0">
-                            <!-- $selectedLayanan -->
-                            <input type="hidden" name="selectedLayanan" value="<?= $selectedLayanan ?>">
+                            <!-- id -->
+                            <input type="hidden" name="id" value="<?= $id ?>">
+                        </div>
 
+
+
+                    </div>
+
+                    <!-- input file -->
+                    <div class="flex flex-col items-center mb-7 mt-4">
+                        <p class="text-gray-600 font-semibold mb-2">Upload Foto KTP sebagai bukti:</p>
+                        <div class="relative w-64">
+                            <label for="image"
+                                class="btn-file bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 flex items-center justify-center space-x-2 cursor-pointer">
+                                <i class="fa fa-upload text-white"></i>
+                                <span id="uploadLabel">Pilih File</span>
+                            </label>
+                            <input type="file" name="image" id="image" accept=".jpg, .jpeg, .png"
+                                class="absolute inset-0 opacity-0 cursor-pointer" />
                         </div>
                     </div>
+
 
                     <div class="grid grid-cols-2 gap-6 flex justify-center items-center">
                         <!-- manipulate submit  -->
@@ -169,89 +223,9 @@ $selectedLayanan = isset($_GET['layanan']) ? $_GET['layanan'] : '';
 
 
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        <script>
-            document.addEventListener("DOMContentLoaded", function() {
-            const confirmButton = document.getElementById("confirmButton");
-            const realSubmitButton = document.getElementById("realSubmitButton");
-
-            confirmButton.addEventListener("click", function(event) {
-                // Mencegah pengiriman formulir langsung
-                event.preventDefault();
-
-                // Menampilkan SweetAlert
-                Swal.fire({
-                    title: "Terima Kasih telah mengisi form!",
-                    text: "Silahkan hubungi Admin pada 'Tentang kami'.",
-                    icon: "success",
-                    confirmButtonText: "Kembali ke Beranda",
-                    customClass: {
-                        confirmButton: "swal-confirm-button",
-                    }
-                }).then((result) => {
-                    if (result.isConfirmed) {
-                        // Klik tombol submit yang sebenarnya
-                        realSubmitButton.click();
-                    }
-                });
-            });
-        });
+        <script src="../assets/src/formLayan.js">
         </script>
-        <script>
-        // document.addEventListener("DOMContentLoaded", function() {
-        //     const closeButton = document.querySelector(".close");
 
-        //     closeButton.addEventListener("submit", function(event) {
-
-
-        //         Swal.fire({
-        //             title: "Terima Kasih \ntelah mengisi form!",
-        //             text: "Silahkan Menghubungi mimin",
-        //             icon: "success",
-        //             confirmButtonText: "Ke Nganu Proses"
-        //         }).then((result) => {
-        //             if (result.isConfirmed) {
-        //                 closeButton.submit();
-        //                 // window.location.href = "../assets/mySql/proses.php";
-
-        //             }
-        //         });
-        //     });
-        // });
-
-        // closeButton.addEventListener("submit", function (event) {
-        //     event.preventDefault(); // Prevent default form submission
-
-        //     Swal.fire({
-        //         title: "Terima Kasih \ntelah mengisi form!",
-        //         text: "Silahkan Menghubungi mimin",
-        //         icon: "success",
-        //         confirmButtonText: "Ke Nganu Proses"
-        //     }).then((result) => {
-        //         if (result.isConfirmed) {
-        //             closeButton.submit(); // Only submit if confirmed
-        //         }
-        //     });
-        // });
-
-        // document.addEventListener("DOMContentLoaded", function () {
-        //     const closeButton = document.querySelector(".close");
-
-        //     closeButton.addEventListener("submit", function (event) {
-        //         event.preventDefault(); // Prevent default form submission
-
-        //         Swal.fire({
-        //             title: "Terima Kasih \ntelah mengisi form!",
-        //             text: "Silahkan Menghubungi mimin",
-        //             icon: "success",
-        //             confirmButtonText: "Ke Nganu Proses"
-        //         }).then((result) => {
-        //             if (result.isConfirmed) {
-        //                 closeButton.submit(); // Only submit if confirmed
-        //             }
-        //         });
-        //     });
-        // });
-        </script>
         <?php include "../layout/footer.php" ?>
     </div>
 

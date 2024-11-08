@@ -1,3 +1,28 @@
+<?php
+include("../assets/mySql/connect.php");
+
+
+$query = mysqli_query($conn, "SELECT * FROM vaksin");
+
+
+$gambar = [
+    "../assets/image/Sinovac.png",
+    "../assets/image/Moderna.png",
+    "../assets/image/rubella.jpg",
+    "../assets/image/campak.png",
+    "../assets/image/polio.jpg",
+    "../assets/image/rabies.jpeg",
+    "../assets/image/antraks.jpeg",
+    "../assets/image/hepatitis.png",
+];
+
+// Ambil semua data vaksin menjadi array
+$vaksinData = [];
+while ($data = mysqli_fetch_array($query)) {
+    $vaksinData[] = $data;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,118 +32,205 @@
     <link rel="icon" href="../assets/image/iconWeb.png">
     <title>sigmaDev</title>
     <link rel="stylesheet" href="https://unpkg.com/flowbite@latest/dist/flowbite.min.css" />
-
 </head>
+<style>
+.tombolP {
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+    overflow: hidden;
+}
+
+.tombolP::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #6190ed;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms
+}
+
+.tombolP:hover {
+    color: #e8e8e8;
+}
+
+.tombolP:hover::before {
+    width: 100%;
+}
+
+.infoT {
+    transition: transform 0.9s ease;
+}
+
+.infoT:hover {
+    transform: scale(1.05);
+}
+</style>
 
 <body>
     <?php include "../layout/navbar.php" ?>
     <div class="bg-gray-100">
-        <div style=" padding: 5%; padding-top : 9%; padding-bottom : 0%; min-height:75dvh;">
+        <div style="padding: 5%; padding-top: 9%; padding-bottom: 0%; min-height:75vh;">
+            <p class="text-center text-4xl font-bold text-blue-700 mb-10">Layanan Kesehatan</p>
 
-            <p class="text-center text-4xl font-bold text-blue-700 mb-10"> Layanan Kesehatan </p>
-
-            <form method="GET" action="formLayan.php">
-                <div class="grid grid-cols-3 gap-4">
-
-                    <button type="submit" name="layanan" value="Vaksin Sinovac" 
-                    class="relative w-full p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" style = "height: 250px">
-                        <img class="absolute inset-0 object-cover w-full h-full rounded-lg opacity-30 blur-sm hover:blur-none"
-                            src="../assets/image/Sinovac.png"
-                            alt="Gambar Sinovac">
-                        <div class="relative">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-1000 dark:text-white">Vaksin Sinovac</h5>
-                            <p class="mb-3 font-normal text-gray- font-semibold">Vaksin Sinovac atau CoronaVac adalah vaksin COVID-19 yang dikembangkan oleh perusahaan bioteknologi asal China.</p>
-                        </div>
-                    </button>
-
-                    <button type="submit" name="layanan" value="Vaksin AstraZeneca" 
-                    class="relative w-full p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" style = "height: 250px">
-                        <img class="absolute inset-0 object-cover w-full h-full rounded-lg opacity-30 blur-sm hover:blur-none"
-                            src="../assets/image/AstraZeneca.png"
-                            alt="Gambar AstraZeneca">
-                        <div class="relative">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-1000 dark:text-white">Vaksin AstraZeneca</h5>
-                            <p class="mb-3 font-normal text-gray-   font-semibold">Vaksin AstraZeneca adalah vaksin COVID-19 yang dikembangkan oleh Universitas Oxford dan AstraZeneca. Vaksin ini menggunakan vektor virus yang dilemahkan untuk menyampaikan protein spiku SARS-CoV-2 ke dalam tubuh.</p>
-                        </div>
-                    </button>
-
-
-                    <button type="submit" name="layanan" value="Vaksin Moderna" 
-                    class="relative w-full p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" style = "height: 250px">
-                        <img class="absolute inset-0 object-cover w-full h-full rounded-lg opacity-30 blur-sm hover:blur-none"
-                            src="../assets/image/Moderna.png"
-                            alt="Gambar Moderna">
-                        <div class="relative">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">Vaksin Moderna</h5>
-                            <p class="mb-3 font-normal text-white font-semibold">Vaksin Sinovac atau CoronaVac adalah vaksin COVID-19 yang dikembangkan oleh perusahaan bioteknologi asal China.</p>
-                        </div>
-                    </button>
-
-                    <button type="submit" name="layanan" value="Vaksin Stunting" 
-                    class="relative w-full p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" style = "height: 250px">
-                        <img class="absolute inset-0 object-cover w-full h-full rounded-lg opacity-30 blur-sm hover:blur-none"
-                            src="../assets/image/Stunting.png"
-                            alt="Gambar Stunting">
-                        <div class="relative">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Vaksin Stunting</h5>
-                            <p class="mb-3 font-normal text-gray- font-semibold">Vaksin stunting adalah vaksin yang sedang dikembangkan untuk mengatasi masalah stunting atau kerdil pada anak-anak. Stunting disebabkan oleh kekurangan gizi kronis sehingga anak tidak tumbuh secara optimal.</p>
-                        </div>
-                    </button>
-
-                    <button type="submit" name="layanan" value="Vaksin BioNTech" 
-                    class="relative w-full p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" style = "height: 250px">
-                        <img class="absolute inset-0 object-cover w-full h-full rounded-lg opacity-30 blur-sm hover:blur-none"
-                            src="../assets/image/BioNTech.png"
-                            alt="Gambar BioNTech">
-                        <div class="relative">
-                            <h5 class="mb-2 text-2xl text-white font-bold tracking-tight text-gray-900 dark:text-white">Vaksin BioNTech</h5>
-                            <p class="mb-3 font-normal text-white font-semibold">Vaksin BioNTech, juga dikenal sebagai Comirnaty, adalah vaksin COVID-19 yang dikembangkan bersama oleh BioNTech dan Pfizer. Vaksin ini menggunakan teknologi mRNA untuk menyampaikan instruksi genetik ke sel-sel tubuh agar memproduksi protein spiku SARS-CoV-2.</p>
-                        </div>
-                    </button>
-
-                    <button type="submit" name="layanan" value="Vaksin Sinopharm" 
-                    class="relative w-full p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" style = "height: 250px">
-                        <img class="absolute inset-0 object-cover w-full h-full rounded-lg opacity-30 blur-sm hover:blur-none"
-                            src="../assets/image/Sinopharm.png"
-                            alt="Gambar Sinopharm">
-                        <div class="relative">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Vaksin Sinopharm</h5>
-                            <p class="mb-3 font-normal text-gray- font-semibold">Vaksin Sinopharm adalah vaksin COVID-19 yang dikembangkan oleh perusahaan farmasi Cina, Sinopharm. Vaksin ini menggunakan virus SARS-CoV-2 yang dilemahkan.</p>
-                        </div>
-                    </button>
-
-                    <button type="submit" name="layanan" value="Vaksin Janssen" 
-                    class="relative w-full p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" style = "height: 250px">
-                        <img class="absolute inset-0 object-cover w-full h-full rounded-lg opacity-30 blur-sm hover:blur-none"
-                            src="../assets/image/Janssen.jpg"
-                            alt="Gambar Janssen">
-                        <div class="relative">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Vaksin Janssen</h5>
-                            <p class="mb-3 font-normal text-gray- font-semibold">Vaksin Janssen, juga dikenal sebagai vaksin COVID-19 Johnson & Johnson, adalah vaksin satu dosis yang menggunakan teknologi vektor virus. Dikembangkan oleh Janssen Pharmaceutical Companies.</p>
-                        </div>
-                    </button>
-
-                    <button type="submit" name="layanan" value="Vaksin SputnikV" 
-                    class="relative w-full p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" style = "height: 250px">
-                        <img class="absolute inset-0 object-cover w-full h-full rounded-lg opacity-30 blur-sm hover:blur-none"
-                            src="../assets/image/sputnikv.jpg"
-                            alt="Gambar SputnikV">
-                        <div class="relative">
-                            <h5 class="mb-2 text-2xl font-bold text-white tracking-tight text-gray-900 dark:text-white">Vaksin SputnikV</h5>
-                            <p class="mb-3 font-normal text-white font-semibold">SputnikV adalah vaksin COVID-19 yang dikembangkan oleh Pusat Riset Epidemiologi dan Mikrobiologi Gamaleya di Rusia. Vaksin ini menggunakan teknologi vektor virus yang sama dengan vaksin AstraZeneca.</p>
-                        </div>
-                    </button>
-
-
+            <div class="flex flex-wrap grid grid-rows w-full mb-3" style="padding-top:50px; padding-right:14px;">
+                <div class="lg:w-1/2 w-full mb-6 lg:mb-0" style="padding-left: 15px;">
+                    <h1 class="text-3xl font-bold mb-2 text-black">Pendataan Vaksin COVID-19</h1>
+                    <div class="h-1 bg-red-600 rounded" style="width: 315px;"></div>
                 </div>
-            </form>
+                <p class="col-span-2 text-md text-black text-justify" style="padding-left: 15px;margin-top: 20px;">
+                    sigmaDev juga
+                    menyediakan informasi lengkap seputar vaksin dan sumber daya kesehatan, dirancang khusus
+                    untuk mendukung komunitas desa. Kami berfokus pada memberikan informasi yang faktual dan
+                    mudah diakses untuk membantu masyarakat dalam mengambil keputusan kesehatan yang tepat.</p>
+            </div>
 
+            <div class="px-3 py-3">
+                <div
+                    class="grid grid-cols-4 items-center block rounded-lg bg-white p-6 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white shadow-lg hover:shadow-xl">
+                    <?php
+                    for ($i = 0; $i < count($vaksinData); $i++) {
+                        if ($i >= 2) break; // Hanya tampilkan dua item pertama di sini
+                        $data = $vaksinData[$i];
+                    ?>
+                    <!-- Kolom Teks -->
+                    <div class="col-span-3 pembuka p-4">
+                        <h2 class="text-2xl font-bold mb-4 text-indigo-600"
+                            style="border-left: 4px solid #000; padding-left: 10px;">
+                            <?= $data['namaVaksin'] ?>
+                        </h2>
+                        <p class="text-md text-gray-700 mb-6 mt-5 px-3"
+                            style="border-right: 4px solid #000; text-align: justify;">
+                            <?= $data['deskripsi'] ?>
+                        </p>
+                        <form action="formLayan.php" method="GET" class="w-full">
+                            <button type="submit" class="tombolP" name="layanan" value="<?= $data['namaVaksin'] ?>">
+                                <span class="hover-underline-animation px-5 mx-auto">Pilih Vaksin</span>
+                            </button>
+                            <input type="hidden" name="id" value="<?= $data['id'] ?>">
+                        </form>
+                    </div>
+
+                    <!-- Kolom Gambar -->
+                    <form action="formLayan.php" method="GET" class="w-full">
+                        <button type="submit" name="layanan" value="<?= $data['namaVaksin'] ?>" class="w-full">
+                            <div class="flex justify-center bg-center bg-cover overflow-hidden">
+                                <img src="<?= $gambar[$i] ?>" alt="vaksin Desa"
+                                    class="rounded-lg object-fit bg-cover infoT" style="height:250px; width:250px;">
+                            </div>
+                        </button>
+                        <input type="hidden" name="id" value="<?= $data['id'] ?>">
+                    </form>
+                    <?php
+                    }
+                    ?>
+                </div>
+            </div>
+            
+            <div class="flex flex-wrap grid grid-rows w-full mb-3" style="padding-top:80px; padding-right:14px;">
+                <div class="lg:w-1/2 w-full mb-6 lg:mb-0" style="padding-left: 15px;">
+                    <h1 class="text-3xl font-bold mb-2 text-black">Pendataan Vaksin COVID-19</h1>
+                    <div class="h-1 bg-red-600 rounded" style="width: 315px;"></div>
+                </div>
+                <p class="col-span-2 text-md text-black text-justify" style="padding-left: 15px;margin-top: 20px;">
+                    sigmaDev juga
+                    menyediakan informasi lengkap seputar vaksin dan sumber daya kesehatan, dirancang khusus
+                    untuk mendukung komunitas desa. Kami berfokus pada memberikan informasi yang faktual dan
+                    mudah diakses untuk membantu masyarakat dalam mengambil keputusan kesehatan yang tepat.</p>
+            </div>
+            
+            <div class="px-3 py-3" style="padding-bottom:70px;">
+                <div
+                    class="grid grid-cols-4 items-center block rounded-lg bg-white p-6 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white shadow-lg hover:shadow-xl">
+                    <?php
+                    for ($i = 2; $i < count($vaksinData); $i++) {
+                        $data = $vaksinData[$i];
+                        // Alternating layout setiap baris
+                        if ($i % 2 == 0) {
+                    ?>
+                    <!-- Kolom Teks -->
+                    <div class="col-span-3 pembuka p-4">
+                        <h2 class="text-2xl font-bold mb-4 text-indigo-600"
+                            style="border-left: 4px solid #000; padding-left: 10px;">
+                            <?= $data['namaVaksin'] ?>
+                        </h2>
+                        <p class="text-md text-gray-700 mb-6 mt-5 px-3"
+                            style="border-right: 4px solid #000; text-align: justify;">
+                            <?= $data['deskripsi'] ?>
+                        </p>
+                        <form action="formLayan.php" method="GET" class="w-full">
+                            <button type="submit" class="tombolP" name="layanan" value="<?= $data['namaVaksin'] ?>">
+                                <span class="hover-underline-animation px-5 mx-auto">Pilih Vaksin</span>
+                            </button>
+                            <input type="hidden" name="id" value="<?= $data['id'] ?>">
+                        </form>
+                    </div>
+
+                    <!-- Kolom Gambar -->
+                    <form action="formLayan.php" method="GET" class="w-full">
+                        <button type="submit" name="layanan" value="<?= $data['namaVaksin'] ?>" class="w-full">
+                            <div class="flex justify-center bg-center bg-cover overflow-hidden">
+                                <img src="<?= $gambar[$i] ?>" alt="vaksin Desa"
+                                    class="rounded-lg object-fit bg-cover infoT" style="height:250px; width:250px;">
+                            </div>
+                        </button>
+                        <input type="hidden" name="id" value="<?= $data['id'] ?>">
+                    </form>
+                    <?php
+                        } else {
+                    ?>
+                    <!-- Kolom Gambar -->
+                    <form action="formLayan.php" method="GET" class="w-full">
+                        <button type="submit" name="layanan" value="<?= $data['namaVaksin'] ?>" class="w-full">
+                            <div class="flex justify-center bg-center bg-cover overflow-hidden">
+                                <img src="<?= $gambar[$i] ?>" alt="vaksin Desa"
+                                    class="rounded-lg object-fit bg-cover infoT" style="height:250px; width:250px;">
+                            </div>
+                        </button>
+                        <input type="hidden" name="id" value="<?= $data['id'] ?>">
+                    </form>
+
+                    <!-- Kolom Teks -->
+                    <div class="col-span-3 pembuka p-4">
+                        <h2 class="text-2xl font-bold mb-4 text-indigo-600"
+                            style="border-left: 4px solid #000; padding-left: 10px;">
+                            <?= $data['namaVaksin'] ?>
+                        </h2>
+                        <p class="text-md text-gray-700 mb-6 mt-5 px-3"
+                            style="border-right: 4px solid #000; text-align: justify;">
+                            <?= $data['deskripsi'] ?>
+                        </p>
+                        <form action="formLayan.php" method="GET" class="w-full">
+                            <button type="submit" class="tombolP" name="layanan" value="<?= $data['namaVaksin'] ?>">
+                                <span class="hover-underline-animation px-5 mx-auto">Pilih Vaksin</span>
+                            </button>
+                            <input type="hidden" name="id" value="<?= $data['id'] ?>">
+                        </form>
+                    </div>
+                    <?php
+                        }
+                    }
+                    ?>
+                </div>
+            </div>
         </div>
         <?php include "../layout/footer.php" ?>
     </div>
-
-
-
     <script src="https://unpkg.com/flowbite@latest/dist/flowbite.bundle.js"></script>
 </body>
 

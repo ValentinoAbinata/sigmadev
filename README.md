@@ -45,3 +45,9 @@ INSERT INTO `pasien` (`nikP`, `emailP`, `namaP`, `jkP`, `lahirP`, `telpP`, `domi
 INSERT INTO `pasien` (`nikP`, `emailP`, `namaP`, `jkP`, `lahirP`, `telpP`, `domisiliP`, `isShow`, `selectedLayanan`) VALUES ('2', 'akudummy2@gmail.com', 'dummy2', 'L', '0002-02-02', '2', '2', '0', '2');
 
 INSERT INTO `pasien` (`nikP`, `emailP`, `namaP`, `jkP`, `lahirP`, `telpP`, `domisiliP`, `isShow`, `selectedLayanan`) VALUES ('3', 'akudummy3@gmail.com', 'dummy3', 'L', '0003-03-03', '3', '3', '0', '3');
+
+kekurangan:
+-form Edit
+-Adakes
+-background all
+-Database mungkin masih 3 (admins,pasien,vaksin)? [how bout isshow disendirikan]

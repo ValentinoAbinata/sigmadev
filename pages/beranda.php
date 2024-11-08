@@ -30,13 +30,11 @@
                     <div class="flex flex-col text-left justify-center h-full bg-black bg-opacity-50 p-6 mt-0">
                         <div class="relative z-10" style="margin-left:50px;">
                             <h1 class="text-7xl font-bold mb-2 " style="font-family: Roboto !important">
-                                Lindungi Dirimu
-                                atau <br> Kematian Menjemputmu</h1>
-                            <h1 class="mb-2" style="font-size:20px">Vaksinasi diperlukan untuk
-                                memperkuat imunitas
-                                tubuh. <br> Ayo daftar vaksin sekarang
-                                dan jaga kesehatanmu agar terhindar dari penyakit yang berbahaya. <br>
-                                Pastikan untuk mendapatkan vaksin lengkap untuk perlindungan maksimal.</h1>
+                                Pendataan Vaksinasi <br> untuk Desa Kita</h1>
+                            <h1 class="mb-2" style="font-size:20px">
+                                Mari dukung kesehatan bersama dengan mengikuti program pendataan vaksinasi desa.
+                                <br> Daftar sekarang untuk membantu memastikan semua warga terlindungi dengan baik.
+                                <br> Bersama kita ciptakan desa yang lebih sehat.</h1>
                             <div class="" style="margin-top: 2.5%">
                                 <a href="#banner"
                                     class="bg-teal-500 hover:bg-teal-600 text-white  mx-auto rounded-lg font-semibold"
@@ -52,15 +50,12 @@
                     style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/image/bg2.jpg');"
                     data-carousel-item>
                     <div class="flex flex-col text-left justify-center h-full bg-black bg-opacity-50 p-6 mt-0">
-                        <div class="relative z-10" style="margin-left:50px;">
+                        <div class="relative z-10">
                             <h1 class="text-7xl font-bold mb-2"
-                                style="font-family: Roboto !important; margin-left:50px;">Ciptakan Masa
-                                Depan Sehatmu</h1>
-                            <h1 class="mb-2" style="font-size:20px; margin-left:50px;">Vaksinasi adalah langkah pertama
-                                untuk melindungi
-                                diri dan orang yang kamu cintai. <br> Segera daftar vaksinasi dan tingkatkan
-                                perlindunganmu dari berbagai penyakit. <br> Jangan tunggu lagi, jaga kesehatanmu
-                                sekarang juga!</h1>
+                                style="font-family: Roboto !important; margin-left:50px;">Bersama Lindungi Desa <br> Dengan Mendata Diri Anda</h1>
+                            <h1 class="mb-2" style="font-size:20px; margin-left:50px;">Pendataan vaksinasi adalah langkah awal untuk membangun lingkungan yang sehat.
+                                <br> Segera daftarkan diri dan keluarga agar seluruh desa terlindungi.
+                                <br> Jadilah bagian dari upaya menjaga kesehatan desa kita!</h1>
                             <div style="margin-top: 2.5%">
                                 <a href="#banner"
                                     class="bg-teal-500 hover:bg-teal-600 text-white  mx-auto rounded-lg font-semibold"
@@ -77,12 +72,9 @@
                     data-carousel-item>
                     <div class="flex flex-col text-left justify-center h-full bg-black bg-opacity-50 p-6 mt-0">
                         <div class="relative z-10">
-                            <h1 class="text-7xl font-bold mb-2" style="font-family: Roboto !important">Kesehatan Adalah
-                                Investasi</h1>
-                            <h1 class="mb-2" style="font-size:20px">Dengan vaksinasi, kamu tidak hanya melindungi diri
-                                sendiri tetapi juga berkontribusi pada kesehatan masyarakat. <br> Ayo, jadilah bagian
-                                dari perubahan positif dan pastikan imunmu terjaga. <br> Vaksin lengkap adalah kunci
-                                untuk kesehatan optimal.</h1>
+                            <h1 class="text-7xl font-bold mb-2" style="font-family: Roboto !important;margin-left:50px;">Wujudkan Desa Bebas Penyakit</h1>
+                            <h1 class="mb-2" style="font-size:20px; margin-left:50px;">Dengan pendataan vaksinasi, kita berkontribusi dalam menciptakan desa yang sehat dan kuat.
+                                <br> Ayo ambil bagian dalam program ini untuk masa depan desa yang lebih aman.</h1>
                             <div style="margin-top: 2.5%;margin-left:50px;">
                                 <a href="#banner"
                                     class="bg-teal-500 hover:bg-teal-600 text-white  mx-auto rounded-lg font-semibold"
@@ -136,7 +128,7 @@
                     <div class="announcement-marquee">
                         <marquee behavior="scroll" scrollamount="5">
                             <span class="announcement-text text-2xl">
-                                Pengumuman: Program vaksinasi flu gratis akan dilaksanakan pada tanggal 3 Desember 2024
+                                Pengumuman: Program vaksinasi campak akan dilaksanakan pada tanggal 3 Desember 2024
                                 di Puskesmas terdekat. Daftarkan diri Anda sekarang!
                             </span>
                         </marquee>
@@ -155,27 +147,20 @@
                         </h2>
                         <p class="text-md text-gray-700 mb-6 mt-5 px-3"
                             style="border-right: 4px solid #000; text-align: justify;">
-                            Platform sigmaDev menyediakan informasi penting seputar vaksinasi dan pendataan warga untuk
-                            vaksinasi, yang
-                            bertujuan untuk meningkatkan kesadaran masyarakat tentang pentingnya imunisasi serta
-                            memastikan
-                            bahwa setiap warga mendapatkan akses yang tepat terhadap vaksin yang dibutuhkan. Dalam upaya
-                            ini, sigmaDev mengintegrasikan berbagai fitur yang memudahkan proses pendataan dan
-                            informasi.
+                            Platform sigmaDev hadir untuk mempermudah proses pendataan vaksinasi di desa Anda. Kami menyediakan
+                            solusi digital yang membantu warga desa mendaftarkan diri secara mandiri, mencatat informasi identitas, dan seputar informasi vaksin. 
+                            Kami berharap dapat meningkatkan
+                            partisipasi warga dalam program vaksinasi demi terciptanya desa yang lebih sehat.
                             <br><br>
-                            Dengan menggunakan platform ini, masyarakat dapat dengan mudah mendaftarkan diri dan
-                            memberikan
-                            informasi terkait status vaksinasi mereka. Ini termasuk data identitas warga, seperti nama,
-                            alamat, dan tanggal lahir, yang diperlukan untuk memastikan bahwa semua informasi yang
-                            tercatat
-                            akurat dan up-to-date. Selain itu, platform ini juga mencakup riwayat vaksinasi,
-                            memungkinkan
-                            warga untuk melaporkan jenis vaksin yang telah diterima beserta tanggalnya, sehingga pihak
-                            kesehatan dapat memantau cakupan vaksinasi di komunitas.
+                            Melalui sigmaDev, Anda dapat dengan cepat memasukkan data seperti email, nik, nama, alamat, tanggal lahir, dan
+                            jenis kelamin. Pendataan yang lengkap dan akurat ini akan memudahkan pihak kesehatan desa dalam memantau dan memastikan setiap warga terlindungi dengan baik.
+                            Bergabunglah bersama kami dalam upaya untuk mewujudkan desa yang aman dan terbebas dari berbagai
+                            penyakit. Mari pastikan bersama bahwa semua warga desa memiliki akses yang mudah dan transparan untuk
+                            memperoleh vaksinasi yang diperlukan.
                         </p>
                         <a href="laykes.php">
                             <button class="tombolP">
-                                <span class="hover-underline-animation px-5 mx-auto">Pilih Vaksin</span>
+                                <span class="hover-underline-animation px-5 mx-auto">Daftar Vaksin</span>
                             </button>
                         </a>
                     </div>
@@ -195,8 +180,8 @@
                             <h1 class="text-4xl font-bold mb-4 text-black">Informasi sigmaDev</h1>
                             <div class="h-1 bg-red-600 rounded" style="width: 315px;"></div>
                         </div>
-                        <p class="col-span-2 text-md text-black text-justify">sigmaDev adalah platform yang
-                            menyediakan informasi lengkap seputar vaksinasi dan sumber daya kesehatan, dirancang khusus
+                        <p class="col-span-2 text-md text-black text-justify">sigmaDev juga
+                            menyediakan informasi lengkap seputar vaksin dan sumber daya kesehatan, dirancang khusus
                             untuk mendukung komunitas desa. Kami berfokus pada memberikan informasi yang faktual dan
                             mudah diakses untuk membantu masyarakat dalam mengambil keputusan kesehatan yang tepat.</p>
                     </div>
@@ -206,7 +191,7 @@
                             <div
                                 class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
                                 <img class="h-40 rounded w-full object-cover object-center mb-6"
-                                    src="../assets/image/pengertian.jpg" alt="Gambar Pengertian Vaksinasi">
+                                    src="../assets/image/pengertian.jpg" alt="Gambar Pengertian Vaksinasi" style="height:230px">
                                 <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">INFORMASI
                                 </h3>
                                 <h2 class="font-bold text-gray-900 text-2xl text-center mb-4" style="Roboto;">Pengertian
@@ -228,7 +213,7 @@
                                 </h3>
                                 <h2 class="font-bold text-gray-900 text-2xl text-center mb-4" style="Roboto;">Cara Kerja
                                 </h2>
-                                <p class="leading-relaxed text-base text-justify mb-5">Vaksinasi bekerja dengan
+                                <p class="leading-relaxed text-base text-justify mb-5" style="padding-bottom: 30px">Vaksinasi bekerja dengan
                                     merangsang
                                     sistem kekebalan tubuh untuk mengenali dan melawan patogen penyebab penyakit
                                     tertentu. Vaksin mengajarkan tubuh untuk melawan infeksi secara efektif tanpa
@@ -262,8 +247,8 @@
             <!-- Cara Pendaftaran -->
             <section>
                 <div class="container px-5 py-24 mx-auto">
-                    <div class="flex flex-col justify-center items-center text-center w-full mb-20">
-                        <img src="../assets/image/iconsigmaDev2.png" alt="iconsigmaDev" style="width : 125 px; height : 125 px ;">
+                    <div class="flex flex-col justify-center items-center text-center mb-20">
+                        <img src="../assets/image/iconsigmaDev2.png" alt="iconsigmaDev" style="width: 135px;  height: 125px;">
                         <h1 class="text-4xl font-bold text-black">Cara Pendaftaran</h1>
                         <div class="h-1 bg-red-600 rounded" style="width: 270px;"></div>
                         <p class="lg:w-2/3 mx-auto leading-relaxed text-base mt-5">Pendaftaran vaksinasi di website

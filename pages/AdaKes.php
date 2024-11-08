@@ -1,11 +1,11 @@
 <?php
     session_start();
     if(empty($_SESSION['username'])){
-        header("location:loginNew.php?islogin=false");
+        header("location:login.php?islogin=false");
     }
     
     include("../assets/mySql/connect.php");
-    $query = mysqli_query($conn, "SELECT * FROM pasien") ;
+    $query = mysqli_query($conn, "SELECT * FROM pasien ") ;
 ?>
 <!DOCTYPE html>
 <html lang="en">    
