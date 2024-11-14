@@ -52,7 +52,7 @@
             move_uploaded_file($temp_name, '../uploadImg/' . $uploadFoto);
             $query = mysqli_query($conn, "INSERT INTO pasien VALUES('$nikP', '$emailP', '$first_name','$last_name','$namaP', '$jkP', '$lahirP', '$telpP', '$domisiliP', '$isShow', '$id', '$uploadFoto')") or die(mysqli_error($conn)) ;
             if($query){
-                header('Location: ../../pages/beranda.php?insertSukses=true') ; 
+                header('Location:../../pages/beranda.php?insertSukses=true') ; 
                 exit ();
             }
           }
@@ -94,12 +94,14 @@
         $nikP = $_GET['deleteNikP'] ;
         $query = mysqli_query($conn, "DELETE FROM pasien WHERE nikP = $nikP;") or die(mysqli_error($conn)) ;
         if($query){
-            header('Location: ../../pages/beranda.php?deleteSukses=true', true, 301) ; exit ;            
+            header('Location: ../../pages/Adakes.php?deleteSukses=true') ; 
+            exit() ;            
         }
     
     }
     //submit edit data
     if (isset($_POST['submitEdit'])) {
+        $nikPawal = $_POST['nikPawal'];
         $nikP = $_POST['NIK'] ;
         $emailP = $_POST['email'] ;
         $first_name = $_POST['first_name'] ;
@@ -109,12 +111,13 @@
         $telpP = $_POST['phone'] ;
         $domisiliP = $_POST['domisili'] ;
         $isShow = $_POST['isShow'] ;
-        $selectedLayanan = $_POST['selectedLayanan'] ;
+        $id = $_POST['id'] ;
 
     
         $namaP = $first_name . ' ' . $last_name ;
-        $query = mysqli_query($conn,"UPDATE pasien  SET nikP='$nikP',emailP='$emailP',first_name='$first_name',last_name='$last_name', namaP='$namaP', jkP='$jkP', lahirP='$lahirP', telpP='$telpP', domisiliP='$domisiliP', isShow='$isShow', selectedLayanan='$selectedLayanan' where nikP='$nikP'") or die(mysqli_error($db));
+        $query = mysqli_query($conn,"UPDATE pasien  SET nikP='$nikP',emailP='$emailP',first_name='$first_name',last_name='$last_name', namaP='$namaP', jkP='$jkP', lahirP='$lahirP', telpP='$telpP', domisiliP='$domisiliP', isShow='$isShow', id='$id' where nikP='$nikPawal'") or die(mysqli_error($db));
         if($query){
-            header('Location: ../../pages/AdaKes.php?editSukses=true', true, 301) ;
+            header('Location: ../../pages/AdaKes.php?editSukses=true') ;
+            exit();
          }
     }
