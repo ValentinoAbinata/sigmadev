@@ -1,6 +1,7 @@
 <?php
     include("../assets/mySql/connect.php");
-    $query = mysqli_query($conn, "SELECT * FROM pasien") ;
+    $query = mysqli_query($conn, "SELECT p.emailP, p.namaP, p.jkP, p.lahirP, p.telpP,p.isShow, p.domisiliP, v.namaVaksin 
+                          FROM pasien AS p INNER JOIN vaksin AS v ON p.id = v.id") ;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -58,7 +59,7 @@
                                 class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
                                 <th scope="row"
                                     class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    <?= $data['selectedLayanan'] ?>
+                                    <?= $data['namaVaksin'] ?>
                                 </th>
                                 <td class="px-6 py-4">
                                   <?= $data['emailP'] ?>

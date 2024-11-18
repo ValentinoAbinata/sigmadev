@@ -23,7 +23,7 @@
                     <h2 class="title mb-3">Welcome Admin</h2>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Username" name="username" />
+                        <input type="text" placeholder="Username" name="username"/>
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
@@ -44,7 +44,9 @@
                     </div>
                     <?php
                     }elseif ($_GET['islogin'] == "logout") {
-                        echo "<div id='error-message'>Anda telah berhasil logout</div>";
+                        echo "<div id='success-message' class='p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400 text-center'
+                        role='alert' style='z-index: 100;'>
+                        <span class='font-medium '>Anda Berhasil Logout!</span></div>";
                     }elseif ($_GET['islogin'] == "false") {
                         ?>
                     <div id="error-message"

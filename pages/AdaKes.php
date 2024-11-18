@@ -23,9 +23,9 @@
 
 
 <body>
-    <?php include "../layout/navbar.php" ?>
+    <?php include "../layout/anavbar.php" ?>
     <div class="bg-gray-100">
-        <div style=" padding: 5%; padding-top : 9%; padding-bottom : 0%; min-height:75dvh;">
+        <div style=" padding: 7%; padding-top : 2%; padding-bottom : 0%; min-height:75dvh;">
             <p class="text-center text-4xl font-bold text-blue-700 mb-10"> Data Kesehatan </p>
             <div>
                 <?php 
@@ -196,7 +196,7 @@
                                     </a>
 
                                     <!-- Tampil Button -->
-                                    <a href="../assets/mySql/proses.php?nikP=<?=$data['nikP'];?>">
+                                    <a href="../assets/mySql/proses.php?tampilNikP=<?=$data['nikP'];?>">
                                         <button class="archiveBtn" title="Unarchive">
                                             <svg height="512" width="512" viewBox="0 0 2048 2048" version="1.1"
                                                 xmlns="http://www.w3.org/2000/svg">

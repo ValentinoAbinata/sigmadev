@@ -7,7 +7,7 @@ $query = mysqli_query($conn, "SELECT * FROM admins WHERE username='$username' AN
 if(mysqli_num_rows($query)) {
     session_start();
     $_SESSION["username"] = $username;
-    header("Location:../../pages/beranda.php");
+    header("Location:../../pages/aberanda.php?login=berhasil");
 }else {
     header("Location:../../pages/login.php?islogin=gagal_login");
 }

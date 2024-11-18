@@ -121,3 +121,20 @@
             exit();
          }
     }
+
+    //logout
+    if(isset($_GET['logout'])){
+        session_start();
+        session_unset();
+        session_destroy();
+        header("Location:../../pages/login.php?islogin=logout");  
+
+    }
+    //submit tampil
+    if (isset($_GET['tampilNikP'])) {
+        $nikP = $_GET['tampilNikP'] ;
+        $query = mysqli_query($conn, "UPDATE pasien SET isShow = '1' WHERE nikP = '$nikP'") or die(mysqli_error($conn)) ;
+        if($query){
+            header('Location: ../../pages/Adakes.php?tampilSukses=true') ;
+        }
+   }

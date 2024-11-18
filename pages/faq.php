@@ -95,7 +95,7 @@
                     <button onclick="q5()">Siapakah pembuat website sigma ini?</button>
 
                     <div id="q5" class="" style="display:none; border-color:gray; border-top-width : 3px;">
-                    Hanya Valentino Abinata
+                    Hanya Reza Rasendriya Adi Putra NIM 13 afk
                     </div>
 
                     <script>

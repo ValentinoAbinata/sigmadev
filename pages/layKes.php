@@ -32,6 +32,7 @@ while ($data = mysqli_fetch_array($query)) {
     <link rel="icon" href="../assets/image/iconWeb.png">
     <title>sigmaDev</title>
     <link rel="stylesheet" href="https://unpkg.com/flowbite@latest/dist/flowbite.min.css" />
+
 </head>
 <style>
 .tombolP {
@@ -86,18 +87,20 @@ while ($data = mysqli_fetch_array($query)) {
     <?php include "../layout/navbar.php" ?>
     <div class="bg-gray-100">
         <div style="padding: 5%; padding-top: 9%; padding-bottom: 0%; min-height:75vh;">
-            <p class="text-center text-4xl font-bold text-blue-700 mb-10">Layanan Kesehatan</p>
+            <p class="text-center text-4xl font-bold mt-5 mb-10">Layanan Kesehatan</p>
 
             <div class="flex flex-wrap grid grid-rows w-full mb-3" style="padding-top:50px; padding-right:14px;">
                 <div class="lg:w-1/2 w-full mb-6 lg:mb-0" style="padding-left: 15px;">
                     <h1 class="text-3xl font-bold mb-2 text-black">Pendataan Vaksin COVID-19</h1>
-                    <div class="h-1 bg-red-600 rounded" style="width: 315px;"></div>
+                    <div class="h-1 bg-red-600 rounded" style="width: 135px; margin-left: 284px;"></div>
                 </div>
                 <p class="col-span-2 text-md text-black text-justify" style="padding-left: 15px;margin-top: 20px;">
-                    sigmaDev juga
-                    menyediakan informasi lengkap seputar vaksin dan sumber daya kesehatan, dirancang khusus
-                    untuk mendukung komunitas desa. Kami berfokus pada memberikan informasi yang faktual dan
-                    mudah diakses untuk membantu masyarakat dalam mengambil keputusan kesehatan yang tepat.</p>
+                    Pendataan Vaksinasi COVID-19 untuk Masyarakat
+                    Dalam upaya mendukung program vaksinasi nasional, kami menyediakan platform untuk mendata vaksinasi
+                    COVID-19 yang telah dilaksanakan di berbagai daerah. Kami berkomitmen untuk memberikan data yang
+                    akurat dan transparan terkait vaksinasi, yang bertujuan untuk memastikan setiap individu mendapatkan
+                    akses vaksin yang tepat demi kesehatan masyarakat yang lebih baik. Dengan informasi ini, masyarakat
+                    diharapkan dapat lebih memahami pentingnya vaksinasi dalam melawan pandemi.</p>
             </div>
 
             <div class="px-3 py-3">
@@ -141,19 +144,20 @@ while ($data = mysqli_fetch_array($query)) {
                     ?>
                 </div>
             </div>
-            
+
             <div class="flex flex-wrap grid grid-rows w-full mb-3" style="padding-top:80px; padding-right:14px;">
                 <div class="lg:w-1/2 w-full mb-6 lg:mb-0" style="padding-left: 15px;">
-                    <h1 class="text-3xl font-bold mb-2 text-black">Pendataan Vaksin COVID-19</h1>
-                    <div class="h-1 bg-red-600 rounded" style="width: 315px;"></div>
+                    <h1 class="text-3xl font-bold mb-2 text-black">Pendataan Vaksin Lainnya</h1>
+                    <div class="h-1 bg-red-600 rounded" style="width: 270px;"></div>
                 </div>
                 <p class="col-span-2 text-md text-black text-justify" style="padding-left: 15px;margin-top: 20px;">
-                    sigmaDev juga
-                    menyediakan informasi lengkap seputar vaksin dan sumber daya kesehatan, dirancang khusus
-                    untuk mendukung komunitas desa. Kami berfokus pada memberikan informasi yang faktual dan
-                    mudah diakses untuk membantu masyarakat dalam mengambil keputusan kesehatan yang tepat.</p>
+                    Kami juga menyediakan informasi mengenai berbagai jenis vaksinasi penting lainnya yang diperlukan
+                    untuk kesehatan masyarakat, seperti vaksin campak, polio, rubella, dan lain-lain. Data vaksinasi ini penting
+                    untuk mendukung upaya pencegahan penyakit menular dan meningkatkan kualitas hidup di komunitas desa.
+                    Kami berharap informasi ini dapat mempermudah masyarakat dalam mengambil langkah-langkah preventif
+                    yang dibutuhkan untuk menjaga kesehatan dan kesejahteraan bersama.</p>
             </div>
-            
+
             <div class="px-3 py-3" style="padding-bottom:70px;">
                 <div
                     class="grid grid-cols-4 items-center block rounded-lg bg-white p-6 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white shadow-lg hover:shadow-xl">
