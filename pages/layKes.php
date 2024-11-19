@@ -32,6 +32,8 @@ while ($data = mysqli_fetch_array($query)) {
     <link rel="icon" href="../assets/image/iconWeb.png">
     <title>sigmaDev</title>
     <link rel="stylesheet" href="https://unpkg.com/flowbite@latest/dist/flowbite.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 
 </head>
 <style>
@@ -89,7 +91,7 @@ while ($data = mysqli_fetch_array($query)) {
         <div style="padding: 5%; padding-top: 9%; padding-bottom: 0%; min-height:75vh;">
             <p class="text-center text-4xl font-bold mt-5 mb-10">Layanan Kesehatan</p>
 
-            <div class="flex flex-wrap grid grid-rows w-full mb-3" style="padding-top:50px; padding-right:14px;">
+            <div class="flex flex-wrap grid grid-rows w-full mb-3" style="padding-top:50px; padding-right:14px;" data-aos="zoom-in-up">
                 <div class="lg:w-1/2 w-full mb-6 lg:mb-0" style="padding-left: 15px;">
                     <h1 class="text-3xl font-bold mb-2 text-black">Pendataan Vaksin COVID-19</h1>
                     <div class="h-1 bg-red-600 rounded" style="width: 135px; margin-left: 284px;"></div>
@@ -105,14 +107,14 @@ while ($data = mysqli_fetch_array($query)) {
 
             <div class="px-3 py-3">
                 <div
-                    class="grid grid-cols-4 items-center block rounded-lg bg-white p-6 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white shadow-lg hover:shadow-xl">
+                    class="grid grid-cols-4 items-center block rounded-lg bg-white p-6 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white shadow-lg hover:shadow-xl" data-aos="fade-in">
                     <?php
                     for ($i = 0; $i < count($vaksinData); $i++) {
                         if ($i >= 2) break; // Hanya tampilkan dua item pertama di sini
                         $data = $vaksinData[$i];
                     ?>
                     <!-- Kolom Teks -->
-                    <div class="col-span-3 pembuka p-4">
+                    <div class="col-span-3 pembuka p-4" data-aos="fade-up">
                         <h2 class="text-2xl font-bold mb-4 text-indigo-600"
                             style="border-left: 4px solid #000; padding-left: 10px;">
                             <?= $data['namaVaksin'] ?>
@@ -134,7 +136,7 @@ while ($data = mysqli_fetch_array($query)) {
                         <button type="submit" name="layanan" value="<?= $data['namaVaksin'] ?>" class="w-full">
                             <div class="flex justify-center bg-center bg-cover overflow-hidden">
                                 <img src="<?= $gambar[$i] ?>" alt="vaksin Desa"
-                                    class="rounded-lg object-fit bg-cover infoT" style="height:250px; width:250px;">
+                                    class="rounded-lg object-fit bg-cover infoT" data-aos="fade-right" style="height:250px; width:250px;">
                             </div>
                         </button>
                         <input type="hidden" name="id" value="<?= $data['id'] ?>">
@@ -145,7 +147,7 @@ while ($data = mysqli_fetch_array($query)) {
                 </div>
             </div>
 
-            <div class="flex flex-wrap grid grid-rows w-full mb-3" style="padding-top:80px; padding-right:14px;">
+            <div class="flex flex-wrap grid grid-rows w-full mb-3" style="padding-top:80px; padding-right:14px;" data-aos="zoom-in-up">
                 <div class="lg:w-1/2 w-full mb-6 lg:mb-0" style="padding-left: 15px;">
                     <h1 class="text-3xl font-bold mb-2 text-black">Pendataan Vaksin Lainnya</h1>
                     <div class="h-1 bg-red-600 rounded" style="width: 270px;"></div>
@@ -168,7 +170,7 @@ while ($data = mysqli_fetch_array($query)) {
                         if ($i % 2 == 0) {
                     ?>
                     <!-- Kolom Teks -->
-                    <div class="col-span-3 pembuka p-4">
+                    <div class="col-span-3 pembuka p-4" data-aos="fade-up">
                         <h2 class="text-2xl font-bold mb-4 text-indigo-600"
                             style="border-left: 4px solid #000; padding-left: 10px;">
                             <?= $data['namaVaksin'] ?>
@@ -190,7 +192,7 @@ while ($data = mysqli_fetch_array($query)) {
                         <button type="submit" name="layanan" value="<?= $data['namaVaksin'] ?>" class="w-full">
                             <div class="flex justify-center bg-center bg-cover overflow-hidden">
                                 <img src="<?= $gambar[$i] ?>" alt="vaksin Desa"
-                                    class="rounded-lg object-fit bg-cover infoT" style="height:250px; width:250px;">
+                                    class="rounded-lg object-fit bg-cover infoT" data-aos="fade-left" style="height:250px; width:250px;">
                             </div>
                         </button>
                         <input type="hidden" name="id" value="<?= $data['id'] ?>">
@@ -203,14 +205,14 @@ while ($data = mysqli_fetch_array($query)) {
                         <button type="submit" name="layanan" value="<?= $data['namaVaksin'] ?>" class="w-full">
                             <div class="flex justify-center bg-center bg-cover overflow-hidden">
                                 <img src="<?= $gambar[$i] ?>" alt="vaksin Desa"
-                                    class="rounded-lg object-fit bg-cover infoT" style="height:250px; width:250px;">
+                                    class="rounded-lg object-fit bg-cover infoT" data-aos="fade-right" style="height:250px; width:250px;">
                             </div>
                         </button>
                         <input type="hidden" name="id" value="<?= $data['id'] ?>">
                     </form>
 
                     <!-- Kolom Teks -->
-                    <div class="col-span-3 pembuka p-4">
+                    <div class="col-span-3 pembuka p-4" data-aos="fade-up">
                         <h2 class="text-2xl font-bold mb-4 text-indigo-600"
                             style="border-left: 4px solid #000; padding-left: 10px;">
                             <?= $data['namaVaksin'] ?>
@@ -236,6 +238,15 @@ while ($data = mysqli_fetch_array($query)) {
         <?php include "../layout/footer.php" ?>
     </div>
     <script src="https://unpkg.com/flowbite@latest/dist/flowbite.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1500, // Durasi animasi (dalam milidetik)
+        once: false,      // Animasi hanya terjadi sekali (true/false)
+        loop:true
+    });
+</script>
+
 </body>
 
 </html>

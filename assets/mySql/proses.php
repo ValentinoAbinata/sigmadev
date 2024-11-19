@@ -70,7 +70,7 @@
         }
     }
 
-    //  Submit Proses Delete
+    //Submit Proses Delete
     if (isset($_GET['deleteNikP'])) {
         $nikP = $_GET['deleteNikP'] ;
         $query = mysqli_query($conn, "DELETE FROM pasien WHERE nikP = $nikP;") or die(mysqli_error($conn)) ;
@@ -103,19 +103,11 @@
          }
     }
 
-    //logout
-    if(isset($_GET['logout'])){
-        session_start();
-        session_unset();
-        session_destroy();
-        header("Location:../../pages/login.php?islogin=logout");  
-
-    }
     //submit tampil
     if (isset($_GET['tampilNikP'])) {
-        $nikP = $_GET['tampilNikP'] ;
-        $query = mysqli_query($conn, "UPDATE pasien SET isShow = '1' WHERE nikP = '$nikP'") or die(mysqli_error($conn)) ;
-        if($query){
+      $nikP = $_GET['tampilNikP'] ;
+      $query = mysqli_query($conn, "UPDATE pasien SET isShow = '1' WHERE nikP = '$nikP'") or die(mysqli_error($conn)) ;
+      if($query){
             header('Location: ../../pages/Adakes.php?tampilSukses=true') ;
         }
    }
@@ -126,4 +118,23 @@
     if($query){
         header('Location: ../../pages/Adakes.php?sembunyikanSukses=true') ;
     }
-}
+  }
+
+  //Submit delete Pesan
+  if (isset($_GET['deletePesan'])) {
+    $nikP = $_GET['deletePesan'] ;
+    $query = mysqli_query($conn, "DELETE FROM pesan WHERE nikP = $nikP;") or die(mysqli_error($conn)) ;
+    if($query){
+      header('Location: ../../pages/apesan.php?deleteSukses=true') ; 
+      exit() ;            
+    }  
+  }
+
+  //logout
+  if(isset($_GET['logout'])){
+      session_start();
+      session_unset();
+      session_destroy();
+      header("Location:../../pages/login.php?islogin=logout");  
+
+  }

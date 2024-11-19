@@ -41,13 +41,19 @@
         <div style=" padding: 7%; padding-top : 2%; padding-bottom : 0%; min-height:75dvh;">
             <p class="text-center text-4xl font-bold text-gray-800 mb-5"> Statistik Vaksinasi </p>
             <p class="text-center text-xl text-gray-800 mb-10">
-            Data vaksinasi terbaru untuk memantau jumlah orang yang telah mendapatkan vaksin sesuai jenisnya. </p>
+                Data vaksinasi terbaru untuk memantau jumlah orang yang telah mendapatkan vaksin sesuai jenisnya. </p>
 
 
-            <center>
-                <canvas id="myChart"
-                    style="width:100%;max-width:900px;justify-content:center;display:flex;align-items:center"></canvas>
-            </center>
+
+            <div class="flex row justify-center items-center gap-2  mx-auto">
+                <div class="col w-full h-full">
+                    <canvas class="mt-10" id="myChart"></canvas>
+                </div>
+                <div class="col w-full h-full">
+                    <canvas id="myPieChart"></canvas>
+                </div>
+            </div>
+
 
 
 
@@ -55,12 +61,8 @@
         <?php include "../layout/footer.php" ?>
     </div>
 
-
-
-
     <script src="https://unpkg.com/flowbite@latest/dist/flowbite.bundle.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
-
     <script>
     const vaksinData = <?php echo json_encode($vaksinData); ?>; //json_ecode untuk ngirim php ke js
     const xValues = vaksinData.map(item => item.namaVaksin);
@@ -71,40 +73,69 @@
     ];
 
     new Chart("myChart", {
-    type: "bar",
-    data: {
-        labels: xValues,
-        datasets: [{
-            backgroundColor: barColors.slice(0, xValues.length),
-            data: yValues
-        }]
-    },
-    options: {
-        legend: {
-            display: false
-        },
-        title: {
-            display: true,
-            text: "Grafik Vaksinasi"
-        },
-        tooltips: {
-            callbacks: {
-                label: function(tooltipItem, data) {
-                    return tooltipItem.yLabel + " orang";
-                }
-            }
-        },
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: true,
-                    stepSize: 1      
-                }
+        type: "bar",
+        data: {
+            labels: xValues,
+            datasets: [{
+                backgroundColor: barColors.slice(0, xValues.length),
+                data: yValues
             }]
+        },
+        options: {
+            legend: {
+                display: false
+            },
+            title: {
+                display: true,
+                text: "Grafik Vaksinasi"
+            },
+            tooltips: {
+                callbacks: {
+                    label: function(tooltipItem, data) {
+                        return tooltipItem.yLabel + " orang";
+                    }
+                }
+            },
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true,
+                        stepSize: 1
+                    }
+                }]
+            }
         }
-    }
     });
 
+    new Chart("myPieChart", {
+        type: "pie",
+        data: {
+            labels: xValues, // Gunakan label yang sama dengan grafik batang
+            datasets: [{
+                backgroundColor: barColors.slice(0, xValues.length), // Warna sesuai jumlah data
+                data: yValues // Data vaksinasi
+            }]
+        },
+        options: {
+            title: {
+                display: true,
+                text: "Diagram Vaksinasi"
+            },
+            responsive: true,
+            maintainAspectRatio: false,
+            tooltips: {
+                callbacks: {
+                    label: function(tooltipItem, data) {
+                        const label = data.labels[tooltipItem.index];
+                        const value = data.datasets[0].data[tooltipItem.index];
+                        const total = data.datasets[0].data.reduce((sum, val) => sum + val, 0);
+                        const percentage = ((value / total) * 100).toFixed(2);
+                        return `${label}: ${value} orang (${percentage}%)`;
+                    }
+                }
+            }
+        }
+    });
     </script>
 
 </body>

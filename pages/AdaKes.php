@@ -300,7 +300,7 @@
                     <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                         <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                             <tr>
-                                <th scope="col" class="px-6 py-3 text-center">
+                                <th scope="col" class="px-3 py-3 text-center">
                                     Foto
                                 </th>
                                 <th scope="col" class="px-6 py-3">
@@ -339,7 +339,7 @@
                             <tr
                                 class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
                                 <td scope=""
-                                    class="flex justify-center items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    class="flex justify-center items-center px-3 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                     <img src="../assets/uploadImg/<?= $dataTampil['imgP'] ?>" alt="ktp" style="width:75%">
                                 </td>
                                 <td scope="row"
