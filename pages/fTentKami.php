@@ -7,6 +7,7 @@
     <link rel="icon" href="../assets/image/iconWeb.png">
     <title>sigmaDev</title>
     <link rel="stylesheet" href="https://unpkg.com/flowbite@latest/dist/flowbite.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <style>
 .tombolP {
@@ -47,6 +48,15 @@
 .tombolP:hover::before {
     width: 100%;
 }
+
+.img-hover-grayscale {
+    transition: filter 0.8s ease; 
+    filter: grayscale(100%); 
+}
+
+.img-hover-grayscale:hover {
+    filter: grayscale(0%); 
+}
 </style>
 
 <body>
@@ -65,7 +75,7 @@
                 </div>
             </div>
 
-            <p class="text-center text-4xl font-bold text-black mb-5"> OUR TEAM </p>
+            <p class="text-center text-4xl font-bold text-gray-800 mb-5"> OUR TEAM </p>
 
             <section class="text-gray-600 body-font">
                 <div class="container py-0 mx-auto" style="padding-left : 10%; padding-right : 10%">
@@ -76,9 +86,9 @@
                     <div class="flex flex-wrap -m-4">
                         <div class="p-4 basis-1/2 flex-auto" style="width:40%;">
                             <div class="h-full flex flex-col items-center text-center">
-                                <img alt="team" class="rounded-lg w-full object-cover object-center mb-4" style=""
-                                    src="../assets/image/valent.png">
-                                <div class="w-full">
+                                <img alt="team" class="img-hover-grayscale rounded-lg w-full object-cover object-center mb-4" style=""
+                                    src="../assets/image/valent.png" data-aos="fade-up">
+                                <div class="w-full" data-aos="zoom-in">
                                     <h2 class="title-font font-medium text-lg text-gray-900">Valentino Abinata</h2>
                                     <h3 class="text-gray-500 mb-3">123230013</h3>
                                     <p class="mb-4">Background : Umumnya dikenal dengan julukan Northern Blade, adalah
@@ -92,9 +102,9 @@
                         </div>
                         <div class="p-4 basis-1/2 flex-auto" style="width:40%;">
                             <div class="h-full flex flex-col items-center text-center">
-                                <img alt="team" class="flex-shrink-0 rounded-lg w-full object-cover object-center mb-4"
-                                    style="" src="../assets/image/reza.png">
-                                <div class="w-full">
+                                <img alt="team" class="img-hover-grayscale flex-shrink-0 rounded-lg w-full object-cover object-center mb-4"
+                                    style="" src="../assets/image/reza.png" data-aos="fade-down">
+                                <div class="w-full" data-aos="zoom-in">
                                     <h2 class="title-font font-medium text-lg text-gray-900">Reza Rasendriya Adi Putra
                                     </h2>
                                     <h3 class="text-gray-500 mb-3">123230030</h3>
@@ -110,7 +120,7 @@
                 </div>
             </section>
 
-            <div class="text-center flex justify-center items-center mb-10">
+            <div class="text-center flex justify-center items-center mb-10" data-aos="zoom-in">
                 <button id="hubungiKamiBtn" class="tombolP">
                     <span class="hover-underline-animation px-5 mx-auto">Hubungi Kami</span>
                 </button>
@@ -151,6 +161,14 @@
 
 
     <script src="https://unpkg.com/flowbite@latest/dist/flowbite.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+    AOS.init({
+        duration: 1500,
+        once: false,
+        loop: true
+    });
+    </script>
     <script>
     // Modal Hubungi Kami
     const modal = document.getElementById("modalHubungiKami");

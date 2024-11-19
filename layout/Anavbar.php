@@ -42,9 +42,9 @@
             <li>
                 <a href="../pages/apesan.php">
                     <i class='bx bx-chat'></i>
-                    <span class="links_name">Messages</span>
+                    <span class="links_name">Pesan</span>
                 </a>
-                <span class="tooltip">Messages</span>
+                <span class="tooltip">Pesan</span>
             </li>
             <li>
                 <a href="../pages/astatistik.php">

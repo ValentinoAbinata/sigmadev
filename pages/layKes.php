@@ -89,7 +89,7 @@ while ($data = mysqli_fetch_array($query)) {
     <?php include "../layout/navbar.php" ?>
     <div class="bg-gray-100">
         <div style="padding: 5%; padding-top: 9%; padding-bottom: 0%; min-height:75vh;">
-            <p class="text-center text-4xl font-bold mt-5 mb-10">Layanan Kesehatan</p>
+            <p class="text-center text-4xl font-bold mt-5 mb-10 text-blue-700">Layanan Kesehatan</p>
 
             <div class="flex flex-wrap grid grid-rows w-full mb-3" style="padding-top:50px; padding-right:14px;" data-aos="zoom-in-up">
                 <div class="lg:w-1/2 w-full mb-6 lg:mb-0" style="padding-left: 15px;">
@@ -241,8 +241,8 @@ while ($data = mysqli_fetch_array($query)) {
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
     AOS.init({
-        duration: 1500, // Durasi animasi (dalam milidetik)
-        once: false,      // Animasi hanya terjadi sekali (true/false)
+        duration: 1500, 
+        once: false,    
         loop:true
     });
 </script>

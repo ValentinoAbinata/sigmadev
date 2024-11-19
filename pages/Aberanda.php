@@ -4,9 +4,7 @@
         header("location:login.php?islogin=false");
         
     }
-    
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,11 +18,13 @@
     <link rel="stylesheet" href="../assets/css/beranda.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body style="font-family: Poppins;">
 
-<?php include "../layout/anavbar.php" ?>
+    <?php include "../layout/anavbar.php" ?>
 
     <div style="background-color: #FBFBFB">
 
@@ -37,13 +37,14 @@
                     style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/image/bg1.jpg');"
                     data-carousel-item="active">
                     <div class="flex flex-col text-left justify-center h-full bg-black bg-opacity-50 p-6 mt-0">
-                        <div class="relative z-10" style="margin-left:70px;">
-                            <h1 class="text-7xl font-bold mb-2 " style="font-family: Roboto !important">
+                        <div class="relative z-10" style="margin-left:50px;">
+                            <h1 class="text-7xl font-bold mb-2 " style="font-family: Roboto !important" data-aos ="fade-up">
                                 Pendataan Vaksinasi <br> untuk Desa Kita</h1>
-                            <h1 class="mb-2" style="font-size:20px">
+                            <h1 class="mb-2" style="font-size:20px" data-aos="slide-left">
                                 Mari dukung kesehatan bersama dengan mengikuti program pendataan vaksinasi desa.
                                 <br> Daftar sekarang untuk membantu memastikan semua warga terlindungi dengan baik.
-                                <br> Bersama kita ciptakan desa yang lebih sehat.</h1>
+                                <br> Bersama kita ciptakan desa yang lebih sehat.
+                            </h1>
                             <div class="" style="margin-top: 2.5%">
                                 <a href="#banner"
                                     class="bg-teal-500 hover:bg-teal-600 text-white  mx-auto rounded-lg font-semibold"
@@ -61,14 +62,17 @@
                     <div class="flex flex-col text-left justify-center h-full bg-black bg-opacity-50 p-6 mt-0">
                         <div class="relative z-10">
                             <h1 class="text-7xl font-bold mb-2"
-                                style="font-family: Roboto !important; margin-left:70px;">Bersama Lindungi Desa <br> Dengan Mendata Diri Anda</h1>
-                            <h1 class="mb-2" style="font-size:20px; margin-left:70px;">Pendataan vaksinasi adalah langkah awal untuk membangun lingkungan yang sehat.
+                                style="font-family: Roboto !important; margin-left:50px;">Bersama Lindungi Desa <br>
+                                Dengan Mendata Diri Anda</h1>
+                            <h1 class="mb-2" style="font-size:20px; margin-left:50px;">Pendataan vaksinasi adalah
+                                langkah awal untuk membangun lingkungan yang sehat.
                                 <br> Segera daftarkan diri dan keluarga agar seluruh desa terlindungi.
-                                <br> Jadilah bagian dari upaya menjaga kesehatan desa kita!</h1>
+                                <br> Jadilah bagian dari upaya menjaga kesehatan desa kita!
+                            </h1>
                             <div style="margin-top: 2.5%">
                                 <a href="#banner"
                                     class="bg-teal-500 hover:bg-teal-600 text-white  mx-auto rounded-lg font-semibold"
-                                    style="padding: 20px; font-size: 20px;margin-left:70px;">
+                                    style="padding: 20px; font-size: 20px;margin-left:50px;">
                                     Mulai Sekarang
                                 </a>
                             </div>
@@ -81,10 +85,14 @@
                     data-carousel-item>
                     <div class="flex flex-col text-left justify-center h-full bg-black bg-opacity-50 p-6 mt-0">
                         <div class="relative z-10">
-                            <h1 class="text-7xl font-bold mb-2" style="font-family: Roboto !important;margin-left:70px;">Wujudkan Desa Bebas Penyakit</h1>
-                            <h1 class="mb-2" style="font-size:20px; margin-left:70px;">Dengan pendataan vaksinasi, kita berkontribusi dalam menciptakan desa yang sehat dan kuat.
-                                <br> Ayo ambil bagian dalam program ini untuk masa depan desa yang lebih aman.</h1>
-                            <div style="margin-top: 2.5%;margin-left:70px;">
+                            <h1 class="text-7xl font-bold mb-2"
+                                style="font-family: Roboto !important;margin-left:50px;">Wujudkan Desa Bebas Penyakit
+                            </h1>
+                            <h1 class="mb-2" style="font-size:20px; margin-left:50px;">Dengan pendataan vaksinasi, kita
+                                berkontribusi dalam menciptakan desa yang sehat dan kuat.
+                                <br> Ayo ambil bagian dalam program ini untuk masa depan desa yang lebih aman.
+                            </h1>
+                            <div style="margin-top: 2.5%;margin-left:50px;">
                                 <a href="#banner"
                                     class="bg-teal-500 hover:bg-teal-600 text-white  mx-auto rounded-lg font-semibold"
                                     style="padding: 20px; font-size: 20px">
@@ -126,7 +134,7 @@
 
         <div style=" padding: 5%; padding-top : 0%; padding-bottom : 0%; min-height:75dvh;">
             <!-- Banner Pengumuman Kesehatan -->
-            <div class="announcement-banner" id="banner">
+            <div class="announcement-banner" id="banner" data-aos="slide-right">
                 <div class="announcement-content">
                     <div class="announcement-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -147,24 +155,30 @@
 
 
             <div class="mt-7 px-8 py-24">
-                <div class="grid grid grid-cols-3 gap-3 items-center">
+                <div class="grid grid grid-cols-3 gap-3 items-center" data-aos="zoom-in-up">
                     <!-- Kolom Teks -->
-                    <div class=" col-span-2 pembuka p-4 ">
+                    <div class=" col-span-2 pembuka p-4">
                         <h2 class="text-6xl font-bold mb-4 text-indigo-600"
-                            style="border-left: 4px solid #000; padding-left: 10px;">
+                            style="border-left: 4px solid #000; padding-left: 10px;" data-aos="slide-left">
                             Selamat Datang di sigmaDev
                         </h2>
                         <p class="text-md text-gray-700 mb-6 mt-5 px-3"
-                            style="border-right: 4px solid #000; text-align: justify;">
-                            Platform sigmaDev hadir untuk mempermudah proses pendataan vaksinasi di desa Anda. Kami menyediakan
-                            solusi digital yang membantu warga desa mendaftarkan diri secara mandiri, mencatat informasi identitas, dan seputar informasi vaksin. 
+                            style="border-right: 4px solid #000; text-align: justify;" data-aos="fade-up">
+                            Platform sigmaDev hadir untuk mempermudah proses pendataan vaksinasi di desa Anda. Kami
+                            menyediakan
+                            solusi digital yang membantu warga desa mendaftarkan diri secara mandiri, mencatat informasi
+                            identitas, dan seputar informasi vaksin.
                             Kami berharap dapat meningkatkan
                             partisipasi warga dalam program vaksinasi demi terciptanya desa yang lebih sehat.
                             <br><br>
-                            Melalui sigmaDev, Anda dapat dengan cepat memasukkan data seperti email, nik, nama, alamat, tanggal lahir, dan
-                            jenis kelamin. Pendataan yang lengkap dan akurat ini akan memudahkan pihak kesehatan desa dalam memantau dan memastikan setiap warga terlindungi dengan baik.
-                            Bergabunglah bersama kami dalam upaya untuk mewujudkan desa yang aman dan terbebas dari berbagai
-                            penyakit. Mari pastikan bersama bahwa semua warga desa memiliki akses yang mudah dan transparan untuk
+                            Melalui sigmaDev, Anda dapat dengan cepat memasukkan data seperti email, nik, nama, alamat,
+                            tanggal lahir, dan
+                            jenis kelamin. Pendataan yang lengkap dan akurat ini akan memudahkan pihak kesehatan desa
+                            dalam memantau dan memastikan setiap warga terlindungi dengan baik.
+                            Bergabunglah bersama kami dalam upaya untuk mewujudkan desa yang aman dan terbebas dari
+                            berbagai
+                            penyakit. Mari pastikan bersama bahwa semua warga desa memiliki akses yang mudah dan
+                            transparan untuk
                             memperoleh vaksinasi yang diperlukan.
                         </p>
                         <a href="laykes.php">
@@ -186,21 +200,22 @@
                 <div class="container px-5 mx-auto">
                     <div class="flex flex-wrap grid grid-cols-3 w-full mb-10">
                         <div class="lg:w-1/2 w-full mb-6 lg:mb-0" style="padding-left: 15px;">
-                            <h1 class="text-4xl font-bold mb-4 text-black">Informasi sigmaDev</h1>
-                            <div class="h-1 bg-red-600 rounded" style="width: 315px;"></div>
+                            <h1 class="text-4xl font-bold mb-4 text-black" data-aos="slide-right">Informasi sigmaDev</h1>
+                            <div class="h-1 bg-red-600 rounded" style="width: 175px;" data-aos="slide-right"></div>
                         </div>
-                        <p class="col-span-2 text-md text-black text-justify">sigmaDev juga
+                        <p class="col-span-2 text-md text-black text-justify" data-aos="slide-left">sigmaDev juga
                             menyediakan informasi lengkap seputar vaksin dan sumber daya kesehatan, dirancang khusus
                             untuk mendukung komunitas desa. Kami berfokus pada memberikan informasi yang faktual dan
                             mudah diakses untuk membantu masyarakat dalam mengambil keputusan kesehatan yang tepat.</p>
                     </div>
-                    <div class="flex flex-wrap -m-4 grid grid-cols-3 gap-6">
+                    <div class="flex flex-wrap -m-4 grid grid-cols-3 gap-6" data-aos="zoom-out-up">
                         <!-- Card 1 - Pengertian -->
                         <div class="xl:w-1/4 md:w-1/2 p-4">
                             <div
                                 class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
                                 <img class="h-40 rounded w-full object-cover object-center mb-6"
-                                    src="../assets/image/pengertian.jpg" alt="Gambar Pengertian Vaksinasi" style="height:230px">
+                                    src="../assets/image/pengertian.jpg" alt="Gambar Pengertian Vaksinasi"
+                                    style="height:230px">
                                 <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">INFORMASI
                                 </h3>
                                 <h2 class="font-bold text-gray-900 text-2xl text-center mb-4" style="Roboto;">Pengertian
@@ -213,7 +228,7 @@
                         </div>
 
                         <!-- Card 2 - Cara Kerja -->
-                        <div class="xl:w-1/4 md:w-1/2 p-4">
+                        <div class="xl:w-1/4 md:w-1/2 p-4" data-aos="zoom-out-down">
                             <div
                                 class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
                                 <img class="h-40 rounded w-full object-cover object-center mb-6"
@@ -222,7 +237,8 @@
                                 </h3>
                                 <h2 class="font-bold text-gray-900 text-2xl text-center mb-4" style="Roboto;">Cara Kerja
                                 </h2>
-                                <p class="leading-relaxed text-base text-justify mb-5" style="padding-bottom: 30px">Vaksinasi bekerja dengan
+                                <p class="leading-relaxed text-base text-justify mb-5" style="padding-bottom: 30px">
+                                    Vaksinasi bekerja dengan
                                     merangsang
                                     sistem kekebalan tubuh untuk mengenali dan melawan patogen penyebab penyakit
                                     tertentu. Vaksin mengajarkan tubuh untuk melawan infeksi secara efektif tanpa
@@ -231,7 +247,7 @@
                         </div>
 
                         <!-- Card 3 - Manfaat -->
-                        <div class="xl:w-1/4 md:w-1/2 p-4">
+                        <div class="xl:w-1/4 md:w-1/2 p-4" data-aos="zoom-out-up">
                             <div
                                 class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
                                 <img class="h-40 rounded w-full object-cover object-center mb-6"
@@ -256,17 +272,18 @@
             <!-- Cara Pendaftaran -->
             <section>
                 <div class="container px-5 py-24 mx-auto">
-                    <div class="flex flex-col justify-center items-center text-center mb-20">
-                        <img src="../assets/image/iconsigmaDev2.png" alt="iconsigmaDev" style="width: 135px;  height: 125px;">
+                    <div class="flex flex-col justify-center items-center text-center mb-20" data-aos="fade-up">
+                        <img src="../assets/image/iconsigmaDev2.png" alt="iconsigmaDev"
+                            style="width: 135px;  height: 125px;">
                         <h1 class="text-4xl font-bold text-black">Cara Pendaftaran</h1>
-                        <div class="h-1 bg-red-600 rounded" style="width: 270px;"></div>
+                        <div class="h-1 bg-red-600 rounded" style="width: 325px;"></div>
                         <p class="lg:w-2/3 mx-auto leading-relaxed text-base mt-5">Pendaftaran vaksinasi di website
                             sigmaDev sangat mudah dan cepat. Kami telah merancang proses ini untuk memudahkan setiap
                             orang dalam mendaftar vaksinasi dengan langkah-langkah yang jelas dan sederhana. Berikut ini
                             adalah langkah-langkah pendaftaran vaksinasi:</p>
                     </div>
 
-                    <div class="container mx-auto flex flex-col items-center">
+                    <div class="container mx-auto flex flex-col items-center" data-aos="zoom-in">
                         <!-- Garis dan Nomor -->
                         <div class="flex items-center justify-center space-x-10 mb-5">
                             <div class="flex items-center space-x-2">
@@ -288,7 +305,7 @@
                                 <div
                                     class="w-6 h-6 rounded-full bg-indigo-500 text-white flex items-center justify-center font-medium text-sm">
                                     3</div>
-                                <div class=" h-1 bg-gray-200"style="width: 200px"></div>
+                                <div class=" h-1 bg-gray-200" style="width: 200px"></div>
                             </div>
                         </div>
 
@@ -353,11 +370,11 @@
 
 
             <section class="text-gray-600 body-font py-12">
-                <h1 class="text-4xl font-bold text-black px-5">Kenapa Harus sigmaDev?</h1>
-                <div class=" h-1 bg-red-600 rounded mb-2 mt-2" style="margin-left: 248px;width: 165px;"></div>
+                <h1 class="text-4xl font-bold text-black px-5" data-aos="slide-right">Kenapa Harus sigmaDev?</h1>
+                <div class=" h-1 bg-red-600 rounded mb-2 mt-2" style="margin-left: 292px;width: 190px;" data-aos="slide-right"></div>
                 <div class="container px-5 py-3 mx-auto flex flex-wrap">
                     <div class="flex flex-wrap grid grid-cols-3 gap-5 w-full">
-                        <div class="col-span-2 lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
+                        <div class="col-span-2 lg:w-2/5 md:w-1/2 md:pr-10 md:py-6" data-aos="fade-up">
                             <div class="flex relative pb-12">
                                 <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
                                     <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
@@ -466,7 +483,7 @@
                             </div>
                         </div>
                         <img class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12"
-                            src="../assets/image/kenapaharusSigma.jpg" alt="step" style="height: 350px; width: 400px">
+                            src="../assets/image/kenapaharusSigma.jpg"  data-aos="zoom-in" alt="step" style="height: 350px; width: 400px">
                     </div>
                 </div>
             </section>
@@ -474,14 +491,14 @@
             <div class="text-black py-24 px-3  rounded-lg mt-8">
                 <div class="grid grid-cols-3 items-center">
                     <!-- Gambar  -->
-                    <div class="flex justify-center lg:justify-end">
+                    <div class="flex justify-center lg:justify-end" data-aos="slide-right">
                         <img src="../assets/image/vaccine.jpg" alt="keberagaman"
                             class="rounded-lg max-w-xs object-cover"
                             style=" margin-left: 20px;width:400px;height:250px">
                     </div>
 
                     <!-- Teks Pencapaian -->
-                    <div class="col-span-2 text-justify p-3" style="margin-left: 20px;">
+                    <div class="col-span-2 text-justify p-3" style="margin-left: 20px;" data-aos="fade-down">
                         <h2 class="text-3xl font-bold mb-4">Pencapaian Kesehatan Desa</h2>
 
                         <p class="mb-4 text-left">
@@ -503,7 +520,7 @@
                 </div>
 
                 <!-- Statistik -->
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center mt-8 justify-center items-center"
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center mt-8 justify-center items-center" data-aos="zoom-in"
                     style="margin-right:50px">
                     <div>
                         <div
@@ -582,9 +599,9 @@
             </div>
             <!-- Info tambahan Ngarah ke Website Lain-->
             <section class="text-gray-600 body-font">
-                <h2 class="text-center text-3xl font-bold text-black mt-7 mb-3">Informasi Lainnya</h2>
+                <h2 class="text-center text-3xl font-bold text-black mt-7 mb-3" data-aos="fade-up">Informasi Lainnya</h2>
                 <div class="container px-5 py-3 mx-auto">
-                    <div class="flex flex-wrap -m-4 grid grid-cols-3">
+                    <div class="flex flex-wrap -m-4 grid grid-cols-3" data-aos="zoom-out-down">
                         <div class="p-4 md:w-1/3">
                             <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                                 <img class="lg:h-48 md:h-36 w-full object-cover object-center infoT"
@@ -722,15 +739,10 @@
                     </div>
                 </div>
             </section>
-
-
-
         </div>
-
-
         <!-- Testimoni Pasien -->
-        <section class="swiper mySwiper py-24 px-6">
-            <h2 class="text-center text-3xl font-bold text-blue-700 mb-5">Apa Kata Mereka?</h2>
+        <section class="swiper mySwiper py-24 px-6" data-aos="zoom-in">
+            <h2 class="text-center text-3xl font-bold text-gray-800 mb-5">Apa Kata Mereka?</h2>
             <div class="swiper-wrapper">
 
                 <div class="card swiper-slide">
@@ -1086,7 +1098,16 @@
         <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.polyfills.min.js">
         </script>
-        <script src="../assets/src/aberanda.js"></script>
+        <script src="../assets/src/beranda.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script>
+        AOS.init({
+            duration: 1500,
+            once: false,
+            loop: true
+        });
+        </script>
+
 </body>
 
 </html>
