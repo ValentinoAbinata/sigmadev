@@ -47,7 +47,7 @@ INSERT INTO `pasien` (`nikP`, `emailP`, `namaP`, `jkP`, `lahirP`, `telpP`, `domi
 INSERT INTO `pasien` (`nikP`, `emailP`, `namaP`, `jkP`, `lahirP`, `telpP`, `domisiliP`, `isShow`, `selectedLayanan`) VALUES ('3', 'akudummy3@gmail.com', 'dummy3', 'L', '0003-03-03', '3', '3', '0', '3');
 
 kekurangan:
--form Edit
--Adakes
+-animation
 -background all
--Database mungkin masih 3 (admins,pasien,vaksin)? [how bout isshow disendirikan]
+-ftentangkami
+-fkebijakanprivasi

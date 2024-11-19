@@ -59,35 +59,16 @@
         }
       }
 
-
-
-
-
-
-    // //  Submit Proses Insert original
-    // if (isset($_POST['formLayan'])){
-
-    // $nikP = $_POST['NIK'] ;
-    // $emailP = $_POST['email'] ;
-    // $first_name = $_POST['first_name'] ;
-    // $last_name = $_POST['last_name'] ;
-    // $jkP = $_POST['gender'] ;
-    // $lahirP = $_POST['tLahir'] ;
-    // $telpP = $_POST['phone'] ;
-    // $domisiliP = $_POST['domisili'] ;
-    // $isShow = $_POST['isShow'] ;
-    // $id = $_POST['id'] ;
-
-    // $namaP = $first_name . ' ' . $last_name ;
-
-    // $query = mysqli_query($conn, "INSERT INTO pasien VALUES('$nikP', '$emailP', '$first_name','$last_name','$namaP', '$jkP', '$lahirP', '$telpP', '$domisiliP', '$isShow', '$id')") or die(mysqli_error($conn)) ;
-    // if($query){
-    //     header('Location: ../../pages/beranda.php?insertSukses=true') ; 
-    //     exit ();
-    // }
-    // }
-
-
+    //submit Pesan
+    if(isset($_POST['submitPesan'])){
+        $nikP = $_POST['nikP'] ;
+        $deskripsi = $_POST['deskripsi'] ;
+        $query = mysqli_query($conn, "INSERT INTO pesan VALUES('','$nikP', '$deskripsi')") or die(mysqli_error($conn)) ;
+        if($query){
+          header('Location: ../../pages/fTentKami.php?pesanSukses=true') ;
+          exit();
+        }
+    }
 
     //  Submit Proses Delete
     if (isset($_GET['deleteNikP'])) {
@@ -138,3 +119,11 @@
             header('Location: ../../pages/Adakes.php?tampilSukses=true') ;
         }
    }
+   //submit sembunyikan
+   if (isset($_GET['sembunyikanNikP'])) {
+    $nikP = $_GET['sembunyikanNikP'] ;
+    $query = mysqli_query($conn, "UPDATE pasien SET isShow = '0' WHERE nikP = '$nikP'") or die(mysqli_error($conn)) ;
+    if($query){
+        header('Location: ../../pages/Adakes.php?sembunyikanSukses=true') ;
+    }
+}
