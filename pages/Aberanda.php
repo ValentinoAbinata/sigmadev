@@ -1,3 +1,11 @@
+<?php
+    session_start();
+    if(!isset($_SESSION['username'])){
+        header("location:login.php?islogin=false");   
+    }
+    include '../assets/mySql/connect.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,7 +23,7 @@
 
 </head>
 
-<body style="font-family: Poppins;">
+<body style="font-family: Poppins; padding-left: 15px;" class="overflow-x-hidden">
 
     <?php include "../layout/anavbar.php" ?>
 
@@ -203,7 +211,7 @@
                     </div>
                     <div class="flex flex-wrap -m-4 grid grid-cols-3 gap-6" data-aos="zoom-out-up">
                         <!-- Card 1 - Pengertian -->
-                        <div class="xl:w-1/4 md:w-1/2 p-4">
+                        <div class="xl:w-1/4 md:w-1/2 p-3 mt-1">
                             <div
                                 class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
                                 <img class="h-40 rounded w-full object-cover object-center mb-6"
@@ -1084,22 +1092,14 @@
             </div>
         </section>
 
-        <?php include "../layout/footer.php" ?>
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="https://unpkg.com/flowbite@latest/dist/flowbite.bundle.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.polyfills.min.js">
-        </script>
-        <script src="../assets/src/beranda.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.polyfills.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-        <script>
-        AOS.init({
-            duration: 1500,
-            once: false,
-            loop: true
-        });
-        </script>
+         <script src="../assets/src/aberanda.js"></script>
+
 
 </body>
 

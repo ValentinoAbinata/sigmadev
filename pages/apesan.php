@@ -21,9 +21,9 @@
 </head>
 
 
-<body>
+<body style="background-image: url('../assets/image/pesan.jpg'); background-size: cover;">
     <?php include "../layout/anavbar.php" ?>
-    <div class="bg-gray-100">
+    <div>
         <div style=" padding: 7%; padding-top : 2%; padding-bottom : 0%; min-height:75dvh;">
             <p class="text-center text-4xl font-bold text-gray-800 mb-10"> Pesan Penduduk </p>
             <div class= "mb-10">
@@ -134,7 +134,7 @@
 
             </div>
         </div>
-        <?php include "../layout/footer.php" ?>
+       
 
 
 

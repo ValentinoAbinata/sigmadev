@@ -25,11 +25,11 @@
                     <h2 class="title mb-3">Welcome Admin</h2>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Username" name="username"/>
+                        <input type="text" placeholder="Username" name="username" style="border-radius : 14px;"/>
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Password" name="password" />
+                        <input type="password" placeholder="Password" name="password" style="border-radius : 14px;" />
                     </div>
                     <button type="submit" value="Login" class="btn solid mt-3" name="login">LOGIN </button>
                    

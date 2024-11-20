@@ -4,7 +4,6 @@
         header("location:login.php?islogin=false");
         
     }
-    
     include("../assets/mySql/connect.php");
     $query = mysqli_query($conn, "SELECT p.nikP, p.emailP, p.namaP, p.jkP, p.lahirP, p.telpP, p.domisiliP, p.isShow, p.imgP, v.namaVaksin 
                           FROM pasien AS p INNER JOIN vaksin AS v ON p.id = v.id") ;
@@ -22,12 +21,15 @@
 </head>
 
 
-<body>
+<body style="background-image : url('../assets/image/dakes.avif'); background-size: cover;">
     <?php include "../layout/anavbar.php" ?>
-    <div class="bg-gray-100">
+    <div>
         <div style=" padding: 7%; padding-top : 2%; padding-bottom : 0%; min-height:75dvh;">
             <p class="text-center text-4xl font-bold text-gray-800 mb-10"> Data Kesehatan </p>
             <div>
+                <div class="mt-5">
+                    <p class="text-start text-2xl font-bold text-gray-800 mb-5"> Data Tidak Tampil </p>
+                </div>
                 <?php 
                 if(isset($_GET['editSukses'])) :
                     if($_GET['editSukses'] == "true") :
@@ -120,9 +122,6 @@
                 endif;
             ?>
 
-                <div class="mt-5">
-                    <p class="text-start text-2xl font-bold text-gray-800 mb-5"> Data Tidak Tampil </p>
-                </div>
 
                 <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
                     <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
@@ -296,7 +295,7 @@
                 endif;
             ?>
 
-                <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+                <div class="relative overflow-x-auto shadow-md sm:rounded-lg mb-10 ">
                     <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                         <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                             <tr>
@@ -402,7 +401,7 @@
             </div>
 
         </div>
-        <?php include "../layout/footer.php" ?>
+
     </div>
 
 

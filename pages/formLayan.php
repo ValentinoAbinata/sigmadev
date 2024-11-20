@@ -1,10 +1,7 @@
 <?php
     include("../assets/mySql/connect.php");
     $selectedLayanan = isset($_GET['layanan']) ? $_GET['layanan'] : '';
-    $id = isset($_GET['id']) ? $_GET['id'] : '';
-    
-
-  
+    $id = isset($_GET['id']) ? $_GET['id'] : '';  
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,56 +11,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../assets/image/iconWeb.png">
     <title>sigmaDev</title>
+    <link rel="stylesheet" href="../assets/css/formlayan.css">
     <link rel="stylesheet" href="https://unpkg.com/flowbite@latest/dist/flowbite.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-    /* warna tombol */
-    .swal-confirm-button {
-        background-color: green !important;
-        color: white;
-    }
-
-    .galatB {
-        background-color: red !important;
-        color: white !important;
-
-    }
-
-    .galatB:hover {
-        background-color: darkred !important;
-    }
-
-    /* styling tombol file */
-    .btn-file {
-        position: relative;
-        padding: 11px 16px;
-        font-size: 15px;
-        line-height: 1.5;
-        border-radius: 3px;
-        color: #fff;
-        background-color: #d90000;
-        border: 0;
-        transition: 0.2s;
-        overflow: hidden;
-
-    }
-
-    .btn-file input[type="file"] {
-        cursor: pointer;
-        position: absolute;
-        left: 0%;
-        top: 0%;
-        transform: scale(3);
-        opacity: 0;
-    }
-
-    .pembuka {
-  backdrop-filter: blur(15px) saturate(166%);
-  -webkit-backdrop-filter: blur(25px) saturate(166%);
-  background-color: rgba(255, 255, 255, 0.53);
-  border-radius: 12px;
-  border: 1px solid rgba(209, 213, 219, 0.3);
-}
 
     </style>
 
@@ -71,11 +22,11 @@
 
 <body>
     <?php include "../layout/navbar.php" ?>
-    <div style="background-image: url('../assets/image/coba.jpg'); background-size: cover;">
+    <div style="background-image: url('../assets/image/dakes.jpg'); background-size: cover;">
         <div style=" padding: 5%; padding-top : 9%; padding-bottom : 0%; min-height:75dvh;">
-            <p class="text-center text-4xl font-bold mb-10" style="color: #000000"> Pengisian Form <?= $selectedLayanan ?> </p>
+            <p class="text-center text-4xl font-bold mb-10" style="color: #ffffff !important"> Pengisian Form <?= $selectedLayanan ?> </p>
 
-            <div class="py-8 mx-auto pembuka" style="width:50%; margin-bottom : 8%;">
+            <div class="py-8 mx-auto formlayann" style="width:50%; margin-bottom : 8%;">
                 <form class="max-w-md mx-auto close" method="POST" action="../assets/mySql/proses.php"
                     autocomplete="off" enctype="multipart/form-data">
 

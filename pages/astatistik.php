@@ -35,9 +35,9 @@
 </head>
 
 
-<body style="font-family: Poppins;">
+<body style="font-family: Poppins;background-image : url('../assets/image/statistik.jpg'); background-size: cover;">
     <?php include "../layout/anavbar.php" ?>
-    <div class="bg-gray-100">
+    <div>
         <div style=" padding: 7%; padding-top : 2%; padding-bottom : 0%; min-height:75dvh;">
             <p class="text-center text-4xl font-bold text-gray-800 mb-5"> Statistik Vaksinasi </p>
             <p class="text-center text-xl text-gray-800 mb-10">
@@ -45,7 +45,7 @@
 
 
 
-            <div class="flex row justify-center items-center gap-2  mx-auto">
+            <div class="flex row justify-center items-center gap-2 py-12 mx-auto">
                 <div class="col w-full h-full">
                     <canvas class="mt-10" id="myChart"></canvas>
                 </div>
@@ -61,11 +61,7 @@
 
             </div>
 
-
-
-
         </div>
-        <?php include "../layout/footer.php" ?>
     </div>
 
     <script src="https://unpkg.com/flowbite@latest/dist/flowbite.bundle.js"></script>
@@ -117,9 +113,9 @@
     new Chart("myPieChart", {
         type: "pie",
         data: {
-            labels: xValues, // Gunakan label yang sama dengan grafik batang
+            labels: xValues, //label sama kyk grafik 
             datasets: [{
-                backgroundColor: barColors.slice(0, xValues.length), // Warna sesuai jumlah data
+                backgroundColor: barColors.slice(0, xValues.length), 
                 data: yValues // Data vaksinasi
             }]
         },

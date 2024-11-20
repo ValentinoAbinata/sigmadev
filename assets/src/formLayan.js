@@ -1,15 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector("form"); // Pilih form
+    const form = document.querySelector("form");
     const confirmButton = document.getElementById("confirmButton");
     const realSubmitButton = document.getElementById("realSubmitButton");
     const imageInput = document.getElementById("image"); // Input file gambar
 
     // Menangani tombol submit yang sebenarnya
     form.addEventListener("submit", function (event) {
-        // Cek validitas form
         if (!form.checkValidity()) {
             event.preventDefault();
-            // Tampilkan pesan error atau lakukan tindakan lain yang diinginkan
             Swal.fire({
                 title: "Form tidak lengkap!",
                 text: "Mohon pastikan semua kolom yang wajib diisi telah terisi dengan benar.",
@@ -17,10 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 confirmButtonText: "Tutup"
             });
         }
-
-        // Validasi file gambar jika tidak ada file yang dipilih
         if (!imageInput.files.length) {
-            event.preventDefault(); // Batalkan submit
+            event.preventDefault();
             Swal.fire({
                 title: "Gambar Wajib Di-upload!",
                 text: "Mohon pilih file gambar untuk di-upload.",

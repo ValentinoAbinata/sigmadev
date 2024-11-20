@@ -1,30 +1,11 @@
 <?php
-// function debug_to_console($data)//  Biar Echo Koneksi Berhasil! dan Koneksi Gagal! keluar di console
 
-//     {
-//     $output = $data;
-//     if (is_array($output))
-//         $output = implode(',', $output);
+$hostname = "localhost" ;
+$username = "root" ;
+$password = "" ;
+$database = "sigmaDev" ;
 
-//     echo "<script>console.log('Debug Objects: " . $output . "' );</script>";
-//     }
-
-    // $hostname = "localhost";
-    // $username = "root";
-    // $password = "";
-    // $database = "sigmaDev";
-
-    // $conn = mysqli_connect($hostname, $username, $password, $database);
-    // if ($conn) {
-    //     debug_to_console("Koneksi Berhasil!");
-    // } else {
-    //    debug_to_console("Koneksi Gagal!");
-    // }
-//freak gawe gagal sek admin
-
-$conn = mysqli_connect("localhost", "root", "", "sigmaDev");
+$conn = mysqli_connect($hostname, $username, $password, $database);
 if (!$conn) {
     die("Gagal terhubung ke database. " . mysqli_connect_error());
 }
-
-

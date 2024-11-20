@@ -11,9 +11,9 @@
 
 <body>
     <?php include "../layout/navbar.php" ?>
-    <div class="bg-gray-100">
+    <div style="background-image: url('../assets/image/faq.jpg'); background-size: cover;">
         <div style=" padding: 5%; padding-top : 9%; padding-bottom : 0%; min-height:75dvh;">
-            <p class="text-center text-4xl font-bold text-blue-700 mb-10"> Frequently Asked Questions (FAQ) </p>
+            <p class="text-center text-4xl font-bold mb-10" style="color: #003366"> Frequently Asked Questions (FAQ) </p>
             <div class="mb-5" style="padding:0px 20% 0px 20%;" >
                 
                 <div class="col p-2 bg-green-300" style="border-color : white; border-width : 3px; border-radius: 12px;">
@@ -39,7 +39,7 @@
                     <button onclick="q2()">Bagaimana cara agar data Saya tampil dalam data kesehatan?</button>
 
                     <div id="q2" class="" style="display:none; border-color:gray; border-top-width : 3px;">
-                        Setelah Anda mengisi form, maka laporkan kepada Customer Service.
+                        Setelah Anda mengisi form layan, kemudian hubungi admin di "Tentang Kami".
                     </div>
 
                     <script>

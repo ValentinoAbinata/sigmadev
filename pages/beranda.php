@@ -15,7 +15,7 @@
 
 </head>
 
-<body style="font-family: Poppins;">
+<body style="font-family: Poppins;" class="overflow-x-hidden">
 
     <?php include "../layout/navbar.php" ?>
 

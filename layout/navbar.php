@@ -8,10 +8,19 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 </head>
+<style>
+.pembuka {
+backdrop-filter: blur(2px) saturate(166%);
+-webkit-backdrop-filter: blur(30px) saturate(166%);
+background-color: rgba(255, 255, 255, 0.2);
+
+}
+
+</style>
 
 <body style="font-family: Poppins;">
     <div>
-    <nav class="fixed w-full z-20 top-0 start-0" style="background-color: transparant; z-index:1000000">
+    <nav class="fixed w-full z-20 top-0 start-0 pembuka" style=" z-index:1000000;border-radius:0px !important">
 
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="beranda.php" class="flex items-center space-x-3 rtl:space-x-reverse">

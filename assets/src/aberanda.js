@@ -1,3 +1,8 @@
+AOS.init({
+  duration: 1500,
+  once: false,
+  loop: true
+});
 const scroll = new SmoothScroll('a[href="#banner"]', {
     speed: 1,
     speedAsDuration: true,
