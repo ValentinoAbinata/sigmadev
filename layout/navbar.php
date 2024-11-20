@@ -11,8 +11,8 @@
 
 <body style="font-family: Poppins;">
     <div>
-        <nav class="bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 fixed w-full z-20 top-0 start-0 border-b border-blue-200"
-            style="z-index: 100000;">
+    <nav class="fixed w-full z-20 top-0 start-0" style="background-color: transparant; z-index:1000000">
+
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="beranda.php" class="flex items-center space-x-3 rtl:space-x-reverse">
                     <img src="../assets/image/iconsigmaDev.png" class="h-20" alt="sigmaDev Logo">

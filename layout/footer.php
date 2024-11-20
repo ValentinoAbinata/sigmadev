@@ -26,9 +26,7 @@
                     <li>
                         <a href="fTentKami.php" class="hover:underline me-4 md:me-6">Tentang Kami</a>
                     </li>
-                    <li>
-                        <a href="fSyarPengg.php" class="hover:underline me-4 md:me-6">Syarat Penggunaan</a>
-                    </li>
+                    
                     <li>
                         <a href="fzKebPriv.php" class="hover:underline me-4 md:me-6">Kebijakan Privasi</a>
                     </li>

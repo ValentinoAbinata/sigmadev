@@ -73,7 +73,7 @@
     <?php include "../layout/navbar.php" ?>
     <div style="background-image: url('../assets/image/coba.jpg'); background-size: cover;">
         <div style=" padding: 5%; padding-top : 9%; padding-bottom : 0%; min-height:75dvh;">
-            <p class="text-center text-4xl font-bold mb-10 text-white"> Pengisian Form <?= $selectedLayanan ?> </p>
+            <p class="text-center text-4xl font-bold mb-10" style="color: #000000"> Pengisian Form <?= $selectedLayanan ?> </p>
 
             <div class="py-8 mx-auto pembuka" style="width:50%; margin-bottom : 8%;">
                 <form class="max-w-md mx-auto close" method="POST" action="../assets/mySql/proses.php"

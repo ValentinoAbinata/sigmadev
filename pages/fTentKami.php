@@ -10,6 +10,25 @@
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <style>
+.background {
+    position: relative;
+    overflow: hidden; 
+}
+
+.background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/image/tentkami.jpg'); 
+    background-size: cover;
+    background-position: center;
+    filter: brightness(50%); 
+    z-index: -1;
+}
+
 .tombolP {
     padding: 15px 25px;
     border: unset;
@@ -49,19 +68,57 @@
     width: 100%;
 }
 
-.img-hover-grayscale {
-    transition: filter 0.8s ease; 
-    filter: grayscale(100%); 
+.image-hover {
+    position: relative;
+    width: auto;
+    height: auto;
 }
 
-.img-hover-grayscale:hover {
-    filter: grayscale(0%); 
+.default-image {
+    display: block;
+    filter: grayscale(100%);
+    transition: opacity 0.5s ease, filter 0.5s ease;
+}
+
+.hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    opacity: 0;
+    filter: grayscale(0%);
+    transition: opacity 0.5s ease;
+}
+.hover-image2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 455px;
+    opacity: 0;
+    filter: grayscale(0%);
+    transition: opacity 0.5s ease;
+}
+.image-hover:hover .default-image {
+    opacity: 0;
+}
+
+.image-hover:hover .hover-image {
+    opacity: 1;
+}
+.image-hover:hover .hover-image2{
+    opacity: 1;
+}
+.text-font {
+    
+    font: weight 400px;;
 }
 </style>
 
 <body>
     <?php include "../layout/navbar.php" ?>
-    <div class="bg-gray-100">
+    <div class="background">
         <div style=" padding: 10%; padding-top : 9%; padding-bottom : 0%; min-height:75dvh;">
             <!-- Notification Modal -->
             <div id="notificationModal"
@@ -75,7 +132,7 @@
                 </div>
             </div>
 
-            <p class="text-center text-4xl font-bold text-gray-800 mb-5"> OUR TEAM </p>
+            <p class="text-center text-4xl font-bold text-white mb-5"> OUR TEAM </p>
 
             <section class="text-gray-600 body-font">
                 <div class="container py-0 mx-auto" style="padding-left : 10%; padding-right : 10%">
@@ -85,30 +142,34 @@
                     </div>
                     <div class="flex flex-wrap -m-4">
                         <div class="p-4 basis-1/2 flex-auto" style="width:40%;">
-                            <div class="h-full flex flex-col items-center text-center">
-                                <img alt="team" class="img-hover-grayscale rounded-lg w-full object-cover object-center mb-4" style=""
+                            <div class="h-full flex flex-col items-center text-center image-hover">
+
+                                <img alt="team" class="default-image rounded-lg w-full object-cover object-center mb-4"
                                     src="../assets/image/valent.png" data-aos="fade-up">
-                                <div class="w-full" data-aos="zoom-in">
-                                    <h2 class="title-font font-medium text-lg text-gray-900">Valentino Abinata</h2>
-                                    <h3 class="text-gray-500 mb-3">123230013</h3>
-                                    <p class="mb-4">Background : Umumnya dikenal dengan julukan Northern Blade, adalah
+                                <img alt="team hover"
+                                    class="hover-image rounded-lg w-full object-cover object-center mb-4"
+                                    src="../assets/image/valent2.jpg">
+                                <div class="w-full text-font" data-aos="zoom-in">
+                                    <h2 class="title-font font-medium text-lg text-white">Valentino Abinata</h2>
+                                    <h3 class="text-white mb-3">123230013</h3>
+                                    <p class="mb-4" style="color:#ffffff;">Background : Umumnya dikenal dengan julukan Northern Blade, adalah
                                         Pemimpin Sekte Sekte Surgawi Utara generasi ke-5. Dia juga satu-satunya praktisi
                                         seni bela diri rahasia yang dikenal sebagai ''Gathering Of Ten Thousand
-                                        Shadows'', dan putra dari Pemimpin Sekte generasi ke-4, Jin Kwan-Ho.
-                                    </p>
-
+                                        Shadows'', dan putra dari Pemimpin Sekte generasi ke-4, Jin Kwan-Ho.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="p-4 basis-1/2 flex-auto" style="width:40%;">
-                            <div class="h-full flex flex-col items-center text-center">
-                                <img alt="team" class="img-hover-grayscale flex-shrink-0 rounded-lg w-full object-cover object-center mb-4"
+                            <div class="h-full flex flex-col items-center text-center image-hover">
+                                <img alt="team" class="default-image rounded-lg w-full object-cover object-center mb-4"
                                     style="" src="../assets/image/reza.png" data-aos="fade-down">
-                                <div class="w-full" data-aos="zoom-in">
-                                    <h2 class="title-font font-medium text-lg text-gray-900">Reza Rasendriya Adi Putra
+                                <img alt="team hover" class=" hover-image2 rounded-lg w-full object-cover object-center mb-4"
+                                    style="" src="../assets/image/reza2.jpg">
+                                <div class="w-full text-font" data-aos="zoom-in">
+                                    <h2 class="title-font font-medium text-lg text-white">Reza Rasendriya Adi Putra
                                     </h2>
-                                    <h3 class="text-gray-500 mb-3">123230030</h3>
-                                    <p class="mb-4">Background : adalah seorang samurai dan ronin yang sangat terkenal
+                                    <h3 class="text-white mb-3">123230030</h3>
+                                    <p class="mb-4 text-bold" style="color:#ffffff">Background : Seorang samurai dan ronin yang sangat terkenal
                                         di Jepang pada abad pertengahan. Ia diperkirakan lahir pada sekitar tahun 1584,
                                         dan meninggal tahun 1645. Nama aslinya adalah Shinmen Takezo. Kata Musashi
                                         merupakan lafal lain dari "Takezo".</p>
@@ -136,7 +197,8 @@
                             <div class="mb-4">
                                 <label for="nikP" class="block text-sm font-medium text-gray-700">NIK</label>
                                 <input type="text" name="nikP" id="nikP"
-                                    class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+                                    class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                                    placeholder="NIK harus sesuai form!   ">
                             </div>
                             <div class="mb-4">
                                 <label for="deskripsi" class="block text-sm font-medium text-gray-700">Pesan</label>
@@ -195,8 +257,7 @@
 
     closeNotificationBtn.addEventListener("click", () => {
         notificationModal.classList.add("hidden");
-
-        // Remove query string
+        
         const newUrl = window.location.origin + window.location.pathname;
         window.history.replaceState({}, document.title, newUrl);
     });
