@@ -25,7 +25,7 @@
 
 <body style="font-family: Poppins;" class="overflow-x-hidden">
 
-    <?php include "../layout/navbar.php" ?>
+    <?php include "../layout/anavbar.php" ?>
 
     <div style="background-image : url('../assets/image/beranda.jpg'); background-size: cover;">
 
