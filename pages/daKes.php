@@ -18,7 +18,7 @@
     <?php include "../layout/navbar.php" ?>
     <div class="bg-gray-100">
         <div style=" padding: 5%; padding-top : 9%; padding-bottom : 0%; min-height:75dvh;">
-            <p class="text-center text-4xl font-bold text-blue-700 mb-10"> Data Kesehatan </p>
+            <p class="text-center text-4xl font-bold mb-10" style="color: #003366"> Data Kesehatan </p>
 
             <div>
 

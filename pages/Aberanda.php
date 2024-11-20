@@ -1,10 +1,3 @@
-<?php
-    session_start();
-    if(!isset($_SESSION['username'])){
-        header("location:login.php?islogin=false");
-        
-    }
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,7 +19,7 @@
 
     <?php include "../layout/anavbar.php" ?>
 
-    <div style="background-color: #FBFBFB">
+    <div style="background-image : url('../assets/image/beranda.jpg'); background-size: cover;">
 
         <!-- Carousel Hero -->
         <div id="hero-carousel" class="relative w-full h-screen overflow-hidden" data-carousel="slide">
@@ -158,12 +151,12 @@
                 <div class="grid grid grid-cols-3 gap-3 items-center" data-aos="zoom-in-up">
                     <!-- Kolom Teks -->
                     <div class=" col-span-2 pembuka p-4">
-                        <h2 class="text-6xl font-bold mb-4 text-indigo-600"
-                            style="border-left: 4px solid #000; padding-left: 10px;" data-aos="slide-left">
+                        <h2 class="text-6xl font-bold mb-4"
+                            style="border-left: 4px solid #000; padding-left: 10px; color: #003366" data-aos="slide-left">
                             Selamat Datang di sigmaDev
                         </h2>
-                        <p class="text-md text-gray-700 mb-6 mt-5 px-3"
-                            style="border-right: 4px solid #000; text-align: justify;" data-aos="fade-up">
+                        <p class="text-md mb-6 mt-5 px-3"
+                            style="border-right: 4px solid #000; text-align: justify; color: #004d4d." data-aos="fade-up">
                             Platform sigmaDev hadir untuk mempermudah proses pendataan vaksinasi di desa Anda. Kami
                             menyediakan
                             solusi digital yang membantu warga desa mendaftarkan diri secara mandiri, mencatat informasi
@@ -200,10 +193,10 @@
                 <div class="container px-5 mx-auto">
                     <div class="flex flex-wrap grid grid-cols-3 w-full mb-10">
                         <div class="lg:w-1/2 w-full mb-6 lg:mb-0" style="padding-left: 15px;">
-                            <h1 class="text-4xl font-bold mb-4 text-black" data-aos="slide-right">Informasi sigmaDev</h1>
+                            <h1 class="text-4xl font-bold mb-4" data-aos="slide-right" style="color:#003366">Informasi sigmaDev</h1>
                             <div class="h-1 bg-red-600 rounded" style="width: 175px;" data-aos="slide-right"></div>
                         </div>
-                        <p class="col-span-2 text-md text-black text-justify" data-aos="slide-left">sigmaDev juga
+                        <p class="col-span-2 text-md text-justify" style="color:#000000;" data-aos="slide-left">sigmaDev juga
                             menyediakan informasi lengkap seputar vaksin dan sumber daya kesehatan, dirancang khusus
                             untuk mendukung komunitas desa. Kami berfokus pada memberikan informasi yang faktual dan
                             mudah diakses untuk membantu masyarakat dalam mengambil keputusan kesehatan yang tepat.</p>
@@ -216,11 +209,11 @@
                                 <img class="h-40 rounded w-full object-cover object-center mb-6"
                                     src="../assets/image/pengertian.jpg" alt="Gambar Pengertian Vaksinasi"
                                     style="height:230px">
-                                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">INFORMASI
+                                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font" style="color:#333333">INFORMASI
                                 </h3>
-                                <h2 class="font-bold text-gray-900 text-2xl text-center mb-4" style="Roboto;">Pengertian
+                                <h2 class="font-bold text-2xl text-center mb-4" style="Roboto;color: #003366;">Pengertian
                                 </h2>
-                                <p class="leading-relaxed text-base text-justify mb-5">Vaksinasi adalah proses pemberian
+                                <p class="leading-relaxed text-base text-justify mb-5" style="color:#4d4d4d">Vaksinasi adalah proses pemberian
                                     vaksin untuk membantu sistem kekebalan tubuh dalam mengembangkan perlindungan
                                     terhadap suatu penyakit. Vaksin mengandung mikroorganisme atau virus dalam keadaan
                                     lemah, atau mengandung protein/toksin dari organisme tertentu.</p>
@@ -233,11 +226,11 @@
                                 class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
                                 <img class="h-40 rounded w-full object-cover object-center mb-6"
                                     src="../assets/image/caraKerja.jpg" alt="Gambar Cara Kerja Vaksinasi">
-                                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">MEKANISME
+                                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font" style="color:#333333">MEKANISME
                                 </h3>
-                                <h2 class="font-bold text-gray-900 text-2xl text-center mb-4" style="Roboto;">Cara Kerja
+                                <h2 class="font-bold text-2xl text-center mb-4" style="Roboto;color: #003366;">Cara Kerja
                                 </h2>
-                                <p class="leading-relaxed text-base text-justify mb-5" style="padding-bottom: 30px">
+                                <p class="leading-relaxed text-base text-justify mb-5" style="padding-bottom: 30px;color:#4d4d4d">
                                     Vaksinasi bekerja dengan
                                     merangsang
                                     sistem kekebalan tubuh untuk mengenali dan melawan patogen penyebab penyakit
@@ -252,11 +245,11 @@
                                 class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
                                 <img class="h-40 rounded w-full object-cover object-center mb-6"
                                     src="../assets/image/manfaat.jpg" alt="Gambar Manfaat Vaksinasi">
-                                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">KEUNTUNGAN
+                                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font" style="color:#333333">KEUNTUNGAN
                                 </h3>
-                                <h2 class="font-bold text-gray-900 text-2xl text-center mb-4" style="Roboto;">Manfaat
+                                <h2 class="font-bold text-2xl text-center mb-4" style="Roboto;color: #003366;">Manfaat
                                 </h2>
-                                <p class="leading-relaxed text-base text-justify">Vaksinasi membantu mencegah penyebaran
+                                <p class="leading-relaxed text-base text-justify" style="color:#4d4d4d">Vaksinasi membantu mencegah penyebaran
                                     penyakit dengan meningkatkan imunitas individu dan komunitas. Vaksinasi berperan
                                     penting dalam mengurangi angka
                                     kematian dan penyakit parah akibat infeksi, serta menekan biaya kesehatan dan
@@ -275,9 +268,9 @@
                     <div class="flex flex-col justify-center items-center text-center mb-20" data-aos="fade-up">
                         <img src="../assets/image/iconsigmaDev2.png" alt="iconsigmaDev"
                             style="width: 135px;  height: 125px;">
-                        <h1 class="text-4xl font-bold text-black">Cara Pendaftaran</h1>
+                        <h1 class="text-4xl font-bold" style="color: #003366;">Cara Pendaftaran</h1>
                         <div class="h-1 bg-red-600 rounded" style="width: 325px;"></div>
-                        <p class="lg:w-2/3 mx-auto leading-relaxed text-base mt-5">Pendaftaran vaksinasi di website
+                        <p class="lg:w-2/3 mx-auto leading-relaxed text-base mt-5" style="color:4d4d4d">Pendaftaran vaksinasi di website
                             sigmaDev sangat mudah dan cepat. Kami telah merancang proses ini untuk memudahkan setiap
                             orang dalam mendaftar vaksinasi dengan langkah-langkah yang jelas dan sederhana. Berikut ini
                             adalah langkah-langkah pendaftaran vaksinasi:</p>
@@ -324,7 +317,7 @@
                                     </svg>
 
                                 </div>
-                                <h2 class="font-medium title-font text-gray-900 mb-1 text-2xl">Tekan Menu "Layanan
+                                <h2 class="font-medium title-font mb-1 text-2xl" style="color: #003366;">Tekan Menu "Layanan
                                     Kesehatan"</h2>
                                 <p class="leading-relaxed text-center">Menu layanan kesehatan berisi vaksin-vaksin yang
                                     telah disediakan.</p>
@@ -341,7 +334,7 @@
                                         </path>
                                     </svg>
                                 </div>
-                                <h2 class="font-medium title-font text-gray-900 mb-1 text-2xl">Pilih Vaksin </h2>
+                                <h2 class="font-medium title-font mb-1 text-2xl" style="color: #003366;">Pilih Vaksin </h2>
                                 <p class="leading-relaxed text-center">Pilih vaksin yang tersedia lalu isi form sesuai
                                     dengan jenis vaksin.</p>
                             </div>
@@ -358,7 +351,7 @@
                                     </svg>
 
                                 </div>
-                                <h2 class="font-medium title-font text-gray-900 mb-1 text-2xl">Hubungi Admin</h2>
+                                <h2 class="font-medium title-font mb-1 text-2xl" style="color: #003366;">Hubungi Admin</h2>
                                 <p class="leading-relaxed text-center">Jika ingin data Anda tampil pada "Data Kesehatan"
                                     pilih menu "Tentang Kami" lalu hubungi admin yang tersedia</p>
                             </div>
@@ -369,8 +362,8 @@
 
 
 
-            <section class="text-gray-600 body-font py-12">
-                <h1 class="text-4xl font-bold text-black px-5" data-aos="slide-right">Kenapa Harus sigmaDev?</h1>
+            <section class=" body-font py-12">
+                <h1 class="text-4xl font-bold px-5" style="color: #003366;" data-aos="slide-right">Kenapa Harus sigmaDev?</h1>
                 <div class=" h-1 bg-red-600 rounded mb-2 mt-2" style="margin-left: 292px;width: 190px;" data-aos="slide-right"></div>
                 <div class="container px-5 py-3 mx-auto flex flex-wrap">
                     <div class="flex flex-wrap grid grid-cols-3 gap-5 w-full">
@@ -390,7 +383,7 @@
                                     <h2 class="font-medium title-font text-md text-gray-900 mb-1 tracking-wider">
                                         Keamanan Terjamin
                                     </h2>
-                                    <p class="leading-relaxed text-justify">Platform kami dirancang dengan standar
+                                    <p class="leading-relaxed text-justify text-gray-700">Platform kami dirancang dengan standar
                                         keamanan yang
                                         tinggi, melindungi data pengguna dari ancaman digital dan memastikan informasi
                                         tetap terjaga.</p>
@@ -411,7 +404,7 @@
                                     <h2 class="font-medium title-font text-md text-gray-900 mb-1 tracking-wider">Akses
                                         Informasi yang Mudah
                                     </h2>
-                                    <p class="leading-relaxed text-justify">sigmaDev menawarkan antarmuka yang mudah
+                                    <p class="leading-relaxed text-justify text-gray-700">sigmaDev menawarkan antarmuka yang mudah
                                         digunakan dan
                                         mempermudah pengguna dalam mencari informasi kesehatan dan vaksinasi.</p>
                                 </div>
@@ -432,7 +425,7 @@
                                     <h2 class="font-medium title-font text-md text-gray-900 mb-1 tracking-wider">Sumber
                                         Tepercaya
                                     </h2>
-                                    <p class="leading-relaxed text-justify">Kami bekerja sama dengan sumber terpercaya
+                                    <p class="leading-relaxed text-justify text-gray-700">Kami bekerja sama dengan sumber terpercaya
                                         dan
                                         diverifikasi sehingga informasi yang disajikan di sigmaDev adalah akurat dan
                                         dapat dipercaya.</p>
@@ -457,7 +450,7 @@
                                     <h2 class="font-medium title-font text-md text-gray-900 mb-1 tracking-wider">
                                         Kemudahan Pembaruan Data
                                     </h2>
-                                    <p class="leading-relaxed text-justify">Platform kami memungkinkan pembaruan
+                                    <p class="leading-relaxed text-justify text-gray-700">Platform kami memungkinkan pembaruan
                                         informasi kesehatan
                                         secara berkala, memastikan semua data selalu up-to-date.</p>
                                 </div>
@@ -476,7 +469,7 @@
                                     <h2 class="font-medium title-font text-md text-gray-900 mb-1 tracking-wider">Fokus
                                         pada Kesehatan Masyarakat
                                     </h2>
-                                    <p class="leading-relaxed text-justify">Komitmen sigmaDev adalah meningkatkan
+                                    <p class="leading-relaxed text-justify text-gray-700">Komitmen sigmaDev adalah meningkatkan
                                         kualitas hidup
                                         masyarakat melalui akses informasi kesehatan yang mudah dan cepat.</p>
                                 </div>
@@ -499,16 +492,16 @@
 
                     <!-- Teks Pencapaian -->
                     <div class="col-span-2 text-justify p-3" style="margin-left: 20px;" data-aos="fade-down">
-                        <h2 class="text-3xl font-bold mb-4">Pencapaian Kesehatan Desa</h2>
+                        <h2 class="text-3xl font-bold mb-4" style="color:#003366;">Pencapaian Kesehatan Desa</h2>
 
-                        <p class="mb-4 text-left">
+                        <p class="mb-4 text-left" style="color:#333333">
                             Kami berkomitmen untuk menyediakan informasi vaksinasi yang akurat dan sumber daya kesehatan
                             bagi komunitas desa. Dengan akses yang lebih baik, kami berharap dapat memberdayakan
                             masyarakat untuk membuat keputusan kesehatan yang lebih baik. Bersama, kita bisa menciptakan
                             lingkungan yang lebih sehat dan produktif untuk semua.
                         </p>
 
-                        <p class="mb-8 text-right">
+                        <p class="mb-8 text-right" style="color:#333333">
                             Lihat bagaimana inisiatif kesehatan kami berdampak positif pada komunitas. Dari peningkatan
                             vaksinasi hingga kegiatan edukasi yang bermanfaat, kami berupaya menciptakan kesehatan yang
                             lebih baik untuk semua. Mari bergandeng tangan untuk masa depan yang
@@ -599,19 +592,19 @@
             </div>
             <!-- Info tambahan Ngarah ke Website Lain-->
             <section class="text-gray-600 body-font">
-                <h2 class="text-center text-3xl font-bold text-black mt-7 mb-3" data-aos="fade-up">Informasi Lainnya</h2>
+                <h2 class="text-center text-3xl font-bold mt-7 mb-3" style="color: #003366" data-aos="fade-up">Informasi Lainnya</h2>
                 <div class="container px-5 py-3 mx-auto">
-                    <div class="flex flex-wrap -m-4 grid grid-cols-3" data-aos="zoom-out-down">
-                        <div class="p-4 md:w-1/3">
+                    <div class="flex flex-wrap -m-4 grid grid-cols-3 gap-5" data-aos="zoom-out-down">
+                        <div class="md:w-1/3 pembuka">
                             <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                                 <img class="lg:h-48 md:h-36 w-full object-cover object-center infoT"
                                     src="../assets/image/info1.jpeg" alt="blog">
                                 <div class="p-6">
-                                    <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
+                                    <h2 class="tracking-widest text-xs title-font font-medium text-gray-700 mb-1">
                                         CATEGORY</h2>
                                     <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Pertanyaan Seputar
                                         Vaksin</h1>
-                                    <p class="leading-relaxed mb-7">Website tersebut memaparkan pertanyaan yang
+                                    <p class="leading-relaxed mb-7" style="color:#333333">Website tersebut memaparkan pertanyaan yang
                                         berkaitan dengan vaksin</p>
                                     <div class="flex items-center flex-wrap ">
                                         <a class="inline-flex items-center md:mb-2 lg:mb-0  transition-all duration-300"
@@ -628,14 +621,14 @@
                                             </svg>
                                         </a>
                                         <span
-                                            class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                                            class="text-gray-700 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
                                             <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
                                                 stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
                                                 <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
                                                 <circle cx="12" cy="12" r="3"></circle>
                                             </svg>50.2K
                                         </span>
-                                        <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                                        <span class="text-gray-700 inline-flex items-center leading-none text-sm">
                                             <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
                                                 stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
                                                 <path
@@ -647,15 +640,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-4 md:w-1/3">
+                        <div class="pembuka md:w-1/3">
                             <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                                 <img class="lg:h-48 md:h-36 w-full object-cover object-center infoT"
                                     src="../assets/image/info2.jpeg" style="height: 275px;" alt="blog">
                                 <div class="p-6">
-                                    <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
+                                    <h2 class="tracking-widest text-xs title-font font-medium text-gray-700 mb-1">
                                         CATEGORY</h2>
                                     <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Vaksin Covid-19</h1>
-                                    <p class="leading-relaxed mb-7">Tujuan, manfaat, jenis-jenis, dan prosedur vaksin
+                                    <p class="leading-relaxed mb-7" style="color:#333333">Tujuan, manfaat, jenis-jenis, dan prosedur vaksin
                                         Covid-19.</p>
                                     <div class="flex items-center flex-wrap">
                                         <a class="inline-flex items-center md:mb-2 lg:mb-0  transition-all duration-300"
@@ -672,14 +665,14 @@
                                             </svg>
                                         </a>
                                         <span
-                                            class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                                            class="text-gray-700 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
                                             <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
                                                 stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
                                                 <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
                                                 <circle cx="12" cy="12" r="3"></circle>
                                             </svg>15.9K
                                         </span>
-                                        <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                                        <span class="text-gray-700 inline-flex items-center leading-none text-sm">
                                             <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
                                                 stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
                                                 <path
@@ -691,16 +684,16 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-4 md:w-1/3">
+                        <div class="pembuka md:w-1/3">
                             <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                                 <img class="lg:h-48 md:h-36 w-full object-cover object-center infoT"
                                     src="../assets/image/info3.jpeg" alt="blog" style="height:275px;">
                                 <div class="p-6">
-                                    <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
+                                    <h2 class="tracking-widest text-xs title-font font-medium text-gray-700 mb-1">
                                         CATEGORY</h2>
                                     <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Mitos-Mitos Tentang
                                         Vaksin COVID-19</h1>
-                                    <p class="leading-relaxed mb-7">Informasi mengenai hoaks yang beredar di masyarakat
+                                    <p class="leading-relaxed mb-7" style="color:#333333">Informasi mengenai hoaks yang beredar di masyarakat
                                         mengenai vaksin COVID-19</p>
                                     <div class="flex items-center flex-wrap ">
                                         <a class="inline-flex items-center md:mb-2 lg:mb-0  transition-all duration-300"
@@ -717,14 +710,14 @@
                                             </svg>
                                         </a>
                                         <span
-                                            class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                                            class="text-gray-700 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
                                             <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
                                                 stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
                                                 <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
                                                 <circle cx="12" cy="12" r="3"></circle>
                                             </svg>11.7K
                                         </span>
-                                        <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                                        <span class="text-gray-700 inline-flex items-center leading-none text-sm">
                                             <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
                                                 stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
                                                 <path
@@ -742,7 +735,7 @@
         </div>
         <!-- Testimoni Pasien -->
         <section class="swiper mySwiper py-24 px-6" data-aos="zoom-in">
-            <h2 class="text-center text-3xl font-bold text-gray-800 mb-5">Apa Kata Mereka?</h2>
+            <h2 class="text-center text-3xl font-bold mb-5" style="color: #000000">Apa Kata Mereka?</h2>
             <div class="swiper-wrapper">
 
                 <div class="card swiper-slide">
