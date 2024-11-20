@@ -114,7 +114,7 @@
 
                     <!-- input file -->
                     <div class="flex flex-col items-center mb-7 mt-4">
-                        <p class="text-gray-600 font-semibold mb-2">Upload Foto KTP sebagai bukti:</p>
+                        <p class="text-gray-600 font-semibold mb-2">Upload gambar muka sebagai bukti:</p>
                         <div class="relative w-64">
                             <label for="image"
                                 class="btn-file bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 flex items-center justify-center space-x-2 cursor-pointer">
@@ -124,7 +124,7 @@
                             <input type="file" name="image" id="image" accept=".jpg, .jpeg, .png"
                                 class="absolute inset-0 opacity-0 cursor-pointer" />
                         </div>
-                    </div>
+                        </div>
 
 
                     <div class="grid grid-cols-2 gap-6 flex justify-center items-center">

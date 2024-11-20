@@ -190,7 +190,7 @@
                                     <?= $data['domisiliP'] ?>
                                 </td>
                                 <td
-                                    class="px-6 py-4 flex relative justify-center items-center space-x-2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                    class="px-6 py-4 flex relative justify-center items-center space-x-2 ">
                                     <!-- Edit Button -->
                                     <a href="AformEdit.php?editNikP=<?=$data['nikP'];?>">
                                         <button class="editBtn gx-3 col">

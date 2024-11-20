@@ -28,9 +28,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../assets/image/iconWeb.png">
     <title>sigmaDev</title>
-    <link rel="stylesheet" href="https://unpkg.com/flowbite@latest/dist/flowbite.min.css" />
+    <link rel="stylesheet" href="../assets/cdn/flowbite.min.css" />
     <link rel="stylesheet" href="../assets/css/adakes.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
 
@@ -63,7 +63,8 @@
     </div>
 
     <script src="https://unpkg.com/flowbite@latest/dist/flowbite.bundle.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="../assets/cdn/flowbite.min.js"></script>
     <script>
     const vaksinData = <?php echo json_encode($vaksinData); ?>; //json_ecode untuk ngirim php ke js
     const xValues = vaksinData.map(item => item.namaVaksin);

@@ -29,8 +29,8 @@
 <body>
     <div style="background-image: url('../assets/image/dakes.jpg'); background-size: cover;">
         <?php include "../layout/anavbar.php" ?>
-        <div style=" padding: 5%; padding-top : 9%; padding-bottom : 0%; min-height:75dvh;">
-            <p class="text-center text-4xl font-bold text-gray-600 mb-10"> Edit Form <?= $data['namaVaksin'] ?></p>
+        <div style=" padding: 5%; padding-top : 9%; padding-bottom : 1%; min-height:75dvh;">
+            <p class="text-center text-4xl font-bold text-gray-800 mb-10"> Edit Form <?= $data['namaVaksin'] ?></p>
 
             <div class="formEditt py-8 mx-auto" style="width:50%; margin-bottom : 8%;">
                 <form class="max-w-md mx-auto" method="POST" action="../assets/mySql/proses.php" id="editForm">

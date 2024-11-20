@@ -66,7 +66,7 @@
                                     No
                                 </th>
                                 <th scope="col" class="px-6 py-3">
-                                    NIK
+                                    Nama
                                 </th>
                                 <th scope="col" class="px-6 py-3">
                                     Pesan
@@ -88,7 +88,7 @@
                                     <?= $i; ?>
                                 </td>
                                 <td class="px-6 py-4">
-                                    <?= $data['nikP'] ?>
+                                    <?= $data['namaP'] ?>
                                 </td>
                                 <td class="px-6 py-4">
                                     <?= $data['deskripsi'] ?>
@@ -96,7 +96,7 @@
                                 <td class="px-6 py-4 flex relative justify-center items-center space-x-2 ">
 
                                     <!-- Delete Button -->
-                                    <a href="../assets/mySql/proses.php?deletePesan=<?=$data['nikP'];?>">
+                                    <a href="../assets/mySql/proses.php?deletePesan=<?=$data['idPesan'];?>">
                                         <button class="bin-button">
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 39 7"
                                                 class="bin-top">

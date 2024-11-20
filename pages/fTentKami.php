@@ -90,10 +90,10 @@
                         <h2 class="text-xl font-bold mb-4 text-gray-900">Hubungi Kami</h2>
                         <form action="../assets/mySql/proses.php" method="POST">
                             <div class="mb-4">
-                                <label for="nikP" class="block text-sm font-medium text-gray-700">NIK</label>
-                                <input type="text" name="nikP" id="nikP"
+                                <label for="namaP" class="block text-sm font-medium text-gray-700">Nama</label>
+                                <input type="text" name="namaP" id="namaP"
                                     class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
-                                    placeholder="NIK harus sesuai form!   ">
+                                    placeholder="Nama harus sesuai form!">
                             </div>
                             <div class="mb-4">
                                 <label for="deskripsi" class="block text-sm font-medium text-gray-700">Pesan</label>

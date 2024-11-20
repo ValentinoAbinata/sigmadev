@@ -61,9 +61,9 @@
 
     //submit Pesan
     if(isset($_POST['submitPesan'])){
-        $nikP = $_POST['nikP'] ;
+        $namaP = $_POST['namaP'] ;
         $deskripsi = $_POST['deskripsi'] ;
-        $query = mysqli_query($conn, "INSERT INTO pesan VALUES('','$nikP', '$deskripsi')") or die(mysqli_error($conn)) ;
+        $query = mysqli_query($conn, "INSERT INTO pesan VALUES('','$namaP', '$deskripsi')") or die(mysqli_error($conn)) ;
         if($query){
           header('Location: ../../pages/fTentKami.php?pesanSukses=true') ;
           exit();
@@ -122,8 +122,8 @@
 
   //Submit delete Pesan
   if (isset($_GET['deletePesan'])) {
-    $nikP = $_GET['deletePesan'] ;
-    $query = mysqli_query($conn, "DELETE FROM pesan WHERE nikP = $nikP;") or die(mysqli_error($conn)) ;
+    $idPesan = $_GET['deletePesan'] ;
+    $query = mysqli_query($conn, "DELETE FROM pesan WHERE idPesan = $idPesan;") or die(mysqli_error($conn)) ;
     if($query){
       header('Location: ../../pages/apesan.php?deleteSukses=true') ; 
       exit() ;            
