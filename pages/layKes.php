@@ -31,8 +31,8 @@ while ($data = mysqli_fetch_array($query)) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../assets/image/iconWeb.png">
     <title>sigmaDev</title>
-    <link rel="stylesheet" href="https://unpkg.com/flowbite@latest/dist/flowbite.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/cdn/flowbite.min.css" />
+    <link href="../assets/cdn/aos.css" rel="stylesheet">
 
 
 </head>
@@ -238,7 +238,7 @@ while ($data = mysqli_fetch_array($query)) {
         <?php include "../layout/footer.php" ?>
     </div>
     <script src="https://unpkg.com/flowbite@latest/dist/flowbite.bundle.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="../assets/cdn/aos.js"></script>
 <script>
     AOS.init({
         duration: 1500, 

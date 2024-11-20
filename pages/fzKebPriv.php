@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../assets/image/iconWeb.png">
     <title>Privacy Policy - sigmaDev</title>
-    <link rel="stylesheet" href="https://unpkg.com/flowbite@latest/dist/flowbite.min.css" />
+    <link rel="stylesheet" href="../assets/cdn/flowbite.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
@@ -69,7 +69,7 @@
     <?php include "../layout/footer.php" ?>
 
     <script src="https://unpkg.com/flowbite@latest/dist/flowbite.bundle.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="../assets/cdn/aos.js"></script>
     <script>
     AOS.init({
         duration: 1500,

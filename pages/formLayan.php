@@ -12,21 +12,18 @@
     <link rel="icon" href="../assets/image/iconWeb.png">
     <title>sigmaDev</title>
     <link rel="stylesheet" href="../assets/css/formlayan.css">
-    <link rel="stylesheet" href="https://unpkg.com/flowbite@latest/dist/flowbite.min.css" />
+    <link rel="stylesheet" href="../assets/cdn/flowbite.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-
-    </style>
-
+    <link rel="stylesheet" href="../assets/cdn/aos.css">
 </head>
 
 <body>
     <?php include "../layout/navbar.php" ?>
     <div style="background-image: url('../assets/image/dakes.jpg'); background-size: cover;">
         <div style=" padding: 5%; padding-top : 9%; padding-bottom : 0%; min-height:75dvh;">
-            <p class="text-center text-4xl font-bold mb-10" style="color: #ffffff !important"> Pengisian Form <?= $selectedLayanan ?> </p>
+            <p class="text-center text-4xl font-bold mb-10" style="color: #ffffff !important" data-aos ="fade-up"> Pengisian Form <?= $selectedLayanan ?> </p>
 
-            <div class="py-8 mx-auto formlayann" style="width:50%; margin-bottom : 8%;">
+            <div class="py-8 mx-auto formlayann" style="width:50%; margin-bottom : 8%;" data-aos="zoom-in">
                 <form class="max-w-md mx-auto close" method="POST" action="../assets/mySql/proses.php"
                     autocomplete="off" enctype="multipart/form-data">
 
@@ -193,6 +190,14 @@
     <!-- sweet alert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/flowbite@latest/dist/flowbite.bundle.js"></script>
+    <script src="../assets/cdn/aos.js"></script>
+    <script>
+    AOS.init({
+        duration: 1500,
+        once: false,
+        loop: true
+    });
+    </script>
 </body>
 
 </html>

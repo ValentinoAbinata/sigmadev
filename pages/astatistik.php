@@ -43,8 +43,6 @@
             <p class="text-center text-xl text-gray-800 mb-10">
                 Data vaksinasi terbaru untuk memantau jumlah orang yang telah mendapatkan vaksin sesuai jenisnya. </p>
 
-
-
             <div class="flex row justify-center items-center gap-2 py-12 mx-auto">
                 <div class="col w-full h-full">
                     <canvas class="mt-10" id="myChart"></canvas>

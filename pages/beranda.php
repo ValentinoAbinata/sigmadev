@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../assets/image/iconWeb.png">
     <title>sigmaDev</title>
-    <link rel="stylesheet" href="https://unpkg.com/flowbite@latest/dist/flowbite.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../assets/cdn/flowbite.min.css"/>
+    <link rel="stylesheet" href="../assets/cdn/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../assets/css/beranda.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="../assets/cdn/aos.css" rel="stylesheet">
 
 </head>
 
@@ -1086,13 +1086,14 @@
 
         <?php include "../layout/footer.php" ?>
 
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script src="https://unpkg.com/flowbite@latest/dist/flowbite.bundle.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+        <script src="../assets/cdn/swiper.js"></script>
+        <!-- flowbite e down -->
+        <script src="https://unpkg.com/flowbite@latest/dist/flowbite.bundle.js"></script> 
+        <script src="../assets/cdn/flowbite.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.polyfills.min.js">
         </script>
         <script src="../assets/src/beranda.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script src="../assets/cdn/aos.js"></script>
         <script>
         AOS.init({
             duration: 1500,

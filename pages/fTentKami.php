@@ -7,8 +7,8 @@
     <link rel="icon" href="../assets/image/iconWeb.png">
     <title>sigmaDev</title>
     <link rel="stylesheet" href="../assets/css/tentKami.css">
-    <link rel="stylesheet" href="https://unpkg.com/flowbite@latest/dist/flowbite.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/cdn/flowbite.min.css" />
+    <link href="../assets/cdn/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -116,7 +116,7 @@
     </div>
 
     <script src="https://unpkg.com/flowbite@latest/dist/flowbite.bundle.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="../assets/cdn/aos.js"></script>
     <script src="../assets/src/tentKami.js"></script>
 </body>
 

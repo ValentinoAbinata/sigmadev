@@ -14,18 +14,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../assets/image/iconWeb.png">
     <title>sigmaDev</title>
-    <link rel="stylesheet" href="https://unpkg.com/flowbite@latest/dist/flowbite.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../assets/cdn/flowbite.min.css"/>
+    <link rel="stylesheet" href="../assets/cdn/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../assets/css/beranda.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="../assets/cdn/aos.css" rel="stylesheet">
 
 </head>
 
-<body style="font-family: Poppins; padding-left: 15px;" class="overflow-x-hidden">
+<body style="font-family: Poppins;" class="overflow-x-hidden">
 
-    <?php include "../layout/anavbar.php" ?>
+    <?php include "../layout/navbar.php" ?>
 
     <div style="background-image : url('../assets/image/beranda.jpg'); background-size: cover;">
 
@@ -211,7 +211,7 @@
                     </div>
                     <div class="flex flex-wrap -m-4 grid grid-cols-3 gap-6" data-aos="zoom-out-up">
                         <!-- Card 1 - Pengertian -->
-                        <div class="xl:w-1/4 md:w-1/2 p-3 mt-1">
+                        <div class="xl:w-1/4 md:w-1/2 p-4">
                             <div
                                 class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
                                 <img class="h-40 rounded w-full object-cover object-center mb-6"
@@ -1092,14 +1092,23 @@
             </div>
         </section>
 
+        <?php include "../layout/footer.php" ?>
 
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script src="https://unpkg.com/flowbite@latest/dist/flowbite.bundle.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.polyfills.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-         <script src="../assets/src/aberanda.js"></script>
-
+        <script src="../assets/cdn/swiper.js"></script>
+        <!-- flowbite e down -->
+        <script src="https://unpkg.com/flowbite@latest/dist/flowbite.bundle.js"></script> 
+        <script src="../assets/cdn/flowbite.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.polyfills.min.js">
+        </script>
+        <script src="../assets/src/beranda.js"></script>
+        <script src="../assets/cdn/aos.js"></script>
+        <script>
+        AOS.init({
+            duration: 1500,
+            once: false,
+            loop: true
+        });
+        </script>
 
 </body>
 
