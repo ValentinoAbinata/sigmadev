@@ -23,7 +23,7 @@
 
 </head>
 
-<body style="font-family: Poppins;" class="overflow-x-hidden">
+<body style="font-family: Poppins; padding-left: 15px;" class="overflow-x-hidden">
 
     <?php include "../layout/anavbar.php" ?>
 
@@ -211,7 +211,7 @@
                     </div>
                     <div class="flex flex-wrap -m-4 grid grid-cols-3 gap-6" data-aos="zoom-out-up">
                         <!-- Card 1 - Pengertian -->
-                        <div class="xl:w-1/4 md:w-1/2 p-4">
+                        <div class="xl:w-1/4 md:w-1/2 p-3" style="margin-top:5px">
                             <div
                                 class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
                                 <img class="h-40 rounded w-full object-cover object-center mb-6"
