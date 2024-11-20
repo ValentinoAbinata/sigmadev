@@ -54,6 +54,13 @@
                 </div>
             </div>
 
+            <div class="justify-center flex items-center">
+                <p class="text-2xl font-semibold text-gray-800 py-12">
+                    Jumlah seluruh orang yang telah mendapatkan vaksinasi: <?php echo array_sum(array_column($vaksinData, 'jumlah')); ?>
+                </p>
+
+            </div>
+
 
 
 
