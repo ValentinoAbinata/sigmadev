@@ -139,7 +139,7 @@
 
 
 
-        <script src="https://unpkg.com/flowbite@latest/dist/flowbite.bundle.js"></script>
+        <script src="../assets/cdn/flowbite.bundle.js"></script> 
         <script src="../assets/cdn/flowbite.min.js"></script>
 </body>
 

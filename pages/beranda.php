@@ -1088,7 +1088,7 @@
 
         <script src="../assets/cdn/swiper.js"></script>
         <!-- flowbite e down -->
-        <script src="https://unpkg.com/flowbite@latest/dist/flowbite.bundle.js"></script> 
+        <script src="../assets/cdn/flowbite.bundle.js"></script> 
         <script src="../assets/cdn/flowbite.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.polyfills.min.js">
         </script>

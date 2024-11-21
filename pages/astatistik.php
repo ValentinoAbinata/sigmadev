@@ -62,7 +62,7 @@
         </div>
     </div>
 
-    <script src="https://unpkg.com/flowbite@latest/dist/flowbite.bundle.js"></script>
+    <script src="../assets/cdn/flowbite.bundle.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     <script src="../assets/cdn/flowbite.min.js"></script>
     <script>

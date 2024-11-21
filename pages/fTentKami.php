@@ -115,7 +115,7 @@
         <?php include "../layout/footer.php" ?>
     </div>
 
-    <script src="https://unpkg.com/flowbite@latest/dist/flowbite.bundle.js"></script>
+  <script src="../assets/cdn/flowbite.bundle.js"></script>
     <script src="../assets/cdn/aos.js"></script>
     <script src="../assets/src/tentKami.js"></script>
 </body>

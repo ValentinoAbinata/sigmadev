@@ -34,7 +34,7 @@
             </div>
         </footer>
 
-        <script src="https://unpkg.com/flowbite@latest/dist/flowbite.bundle.js"></script>
+      <script src="../assets/cdn/flowbite.bundle.js"></script>
 </body>
 
 </html>

@@ -237,7 +237,7 @@ while ($data = mysqli_fetch_array($query)) {
         </div>
         <?php include "../layout/footer.php" ?>
     </div>
-    <script src="https://unpkg.com/flowbite@latest/dist/flowbite.bundle.js"></script>
+  <script src="../assets/cdn/flowbite.bundle.js"></script>
     <script src="../assets/cdn/aos.js"></script>
 <script>
     AOS.init({

@@ -21,7 +21,7 @@
 </head>
 
 
-<body style="background-image : url('../assets/image/dakes.avif'); background-size: cover;">
+<body style="background-image : url('../assets/image/dakes.avif'); background-size: cover; height: 100dvh;">
     <?php include "../layout/anavbar.php" ?>
     <div>
         <div style=" padding: 7%; padding-top : 2%; padding-bottom : 0%; min-height:75dvh;">
@@ -407,7 +407,7 @@
 
 
 
-    <script src="https://unpkg.com/flowbite@latest/dist/flowbite.bundle.js"></script>
+    <script src="../assets/cdn/flowbite.bundle.js"></script> 
     <script src="../assets/cdn/flowbite.min.js"></script>
 </body>
 
