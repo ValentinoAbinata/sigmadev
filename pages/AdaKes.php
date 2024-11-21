@@ -130,7 +130,7 @@
                                 <th scope="col" class="px-6 py-3 text-center">
                                     Foto
                                 </th>
-                                <th scope="col" class="px-6 py-3">
+                                <th scope="col" class="px-2 py-3">
                                     Layanan Kesehatan
                                 </th>
                                 <th scope="col" class="px-6 py-3">
@@ -164,11 +164,11 @@
                             <tr
                                 class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
                                 <td scope=""
-                                    class="flex justify-center items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    <img src="../assets/uploadImg/<?= $data['imgP'] ?>" alt="ktp" style="width:100%">
+                                    class="flex justify-center items-center py-2 px-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    <img src="../assets/uploadImg/<?= $data['imgP'] ?>" alt="ktp" style="width:100%;height:100%;">
                                 </td>
                                 <td scope="row"
-                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    class="px-2 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                     <?= $data['namaVaksin'] ?>
                                 </td>
                                 <td class="px-6 py-4">
@@ -177,7 +177,7 @@
                                 <td class="px-6 py-4">
                                     <?= $data['namaP'] ?>
                                 </td>
-                                <td class="px-6 py-4">
+                                <td class="px-4 py-4">
                                     <?= $data['jkP'] ?>
                                 </td>
                                 <td class="px-6 py-4">
