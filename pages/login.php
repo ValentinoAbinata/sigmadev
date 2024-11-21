@@ -137,7 +137,7 @@
                     <h3 class="mb-3">Ingin Kembali?</h3>
                     <p>
                         Tekan tombol di bawah ini untuk kembali ke login page
-                    </p>
+                    </p>    
                     <button class="btn transparent" id="sign-in-btn">
                         Login page
                     </button>
@@ -153,8 +153,8 @@
     const container = document.querySelector(".container");
     const errorMessage = document.querySelector("#error-message");
 
-    sign_up_btn.addEventListener("click", () => {
-        container.classList.add("sign-up-mode");
+   sign_up_btn.addEventListener("click", () => {
+         container.classList.add("sign-up-mode");
         container.classList.remove("bg-login");
         container.classList.add("bg-info");
         if (errorMessage) {

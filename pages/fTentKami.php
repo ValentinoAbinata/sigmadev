@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <audio src=""></audio>
     <?php include "../layout/navbar.php" ?>
     <div class="background">
         <div style=" padding: 10%; padding-top : 9%; padding-bottom : 0%; min-height:75dvh;">

@@ -20,7 +20,7 @@ background-color: rgba(255, 255, 255, 0.2);
 
 <body style="font-family: Poppins;">
     <div>
-    <nav class="fixed w-full z-20 top-0 start-0 pembuka" style=" z-index:1000000;border-radius:0px !important">
+    <nav class="fixed w-full 0 top-0 start-0 pembuka" style=" z-index:1010;border-radius:0px !important">
 
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="beranda.php" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -107,7 +107,6 @@ background-color: rgba(255, 255, 255, 0.2);
         </nav>
     </div>
 
-  <script src="../assets/cdn/flowbite.bundle.js"></script>
 </body>
 
 </html>
