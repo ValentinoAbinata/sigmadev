@@ -1,4 +1,10 @@
 <?php
+
+session_start();
+if(!isset($_SESSION['username'])){
+    header("location:login.php?islogin=false");
+    
+}
 include("../assets/mySql/connect.php");
 
 $query = mysqli_query($conn, "SELECT * FROM vaksin");
@@ -17,19 +23,100 @@ while ($data = mysqli_fetch_array($query)) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../assets/image/iconWeb.png">
     <title>sigmaDev</title>
-    <link rel="stylesheet" href="../assets/css/laykes.css">
+    <link rel="stylesheet" href="../assets/css/alaykes.css">
     <link rel="stylesheet" href="../assets/cdn/flowbite.min.css" />
     <link href="../assets/cdn/aos.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 
 
 </head>
 
-<body style="background-image: url('../assets/image/laykes.jpg'); background-size: cover; height: 100dvh; font-family: Poppins">
-    <?php include "../layout/navbar.php" ?>
-  
-        <div style="padding: 5%; padding-top: 9%; padding-bottom: 0%; min-height:75vh;">
+<body style="background-image: url('../assets/image/laykes.jpg'); background-size: cover height: 100dvh">
+    <?php include "../layout/anavbar.php" ?>
+    <div >
+        <div style="padding: 5%; padding-top: 3%; padding-bottom: 0%; min-height:75vh;">
             <p class="text-center text-4xl font-bold mt-5 mb-10" style="color: #003366">Layanan Kesehatan</p>
+            <center>
+                <a href="addVaksin.php">
+                    <button class="add-btn ">
+                        <span>Tambah Vaksin</span>
+                        <svg class="w-6 h-6 text-white dark:text-white" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 7.757v8.486M7.757 12h8.486M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+
+                    </button>
+                </a>
+            </center>
+            <div class="py-5"></div>
+
+            <?php 
+                if(isset($_GET['insertSukses'])) :
+                    if($_GET['insertSukses'] == "true") :
+                ?>
+            <center>
+
+                <div id="alert-border-3"
+                    class="flex rounded justify-center items-center p-4 mb-4 text-green-800 border-t-4 border-green-300 bg-green-50 dark:text-green-400 dark:bg-gray-800 dark:border-green-800"
+                    role="alert" style="width: 50%;">
+                    <svg class="flex-shrink-0 w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                            d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
+                    </svg>
+                    <div class="ms-3 text-sm font-medium">
+                        <p>Vaksin baru berhasil ditambahkan!</p>
+                    </div>
+                    <button type="button"
+                        class="ms-auto -mx-1.5 -my-1.5 bg-green-50 text-green-500 rounded-lg focus:ring-2 focus:ring-green-400 p-1.5 hover:bg-green-200 inline-flex items-center justify-center h-8 w-8 dark:bg-gray-800 dark:text-green-400 dark:hover:bg-gray-700"
+                        data-dismiss-target="#alert-border-3" aria-label="Close">
+
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                        </svg>
+                    </button>
+                </div>
+            </center>
+            <?php
+                    endif;
+                endif;
+            ?>
+
+            <?php 
+                if(isset($_GET['deleteSukses'])) :
+                    if($_GET['deleteSukses'] == "true") :
+                ?>
+            <center>
+
+                <div id="alert-border-3"
+                    class="flex rounded justify-center items-center p-4 mb-4 text-green-800 border-t-4 border-green-300 bg-green-50 dark:text-green-400 dark:bg-gray-800 dark:border-green-800"
+                    role="alert" style="width: 50%;">
+                    <svg class="flex-shrink-0 w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                            d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
+                    </svg>
+                    <div class="ms-3 text-sm font-medium">
+                        <p>Vaksin berhasil dihapus!</p>
+                    </div>
+                    <button type="button"
+                        class="ms-auto -mx-1.5 -my-1.5 bg-green-50 text-green-500 rounded-lg focus:ring-2 focus:ring-green-400 p-1.5 hover:bg-green-200 inline-flex items-center justify-center h-8 w-8 dark:bg-gray-800 dark:text-green-400 dark:hover:bg-gray-700"
+                        data-dismiss-target="#alert-border-3" aria-label="Close">
+
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                        </svg>
+                    </button>
+                </div>
+            </center>
+            <?php
+                    endif;
+                endif;
+            ?>
 
 
             <div class="flex flex-wrap grid grid-rows w-full mb-3" style="padding-top:50px; padding-right:14px;"
@@ -69,6 +156,27 @@ while ($data = mysqli_fetch_array($query)) {
                                 <span class="hover-underline-animation px-5 mx-auto">Pilih Vaksin</span>
                             </button>
                             <input type="hidden" name="id" value="<?= $data['id'] ?>">
+                            <!-- Delete Button -->
+                            <a href="../assets/mySql/proses.php?deleteVaksin=<?=$data['id'];?>"
+                                class="button bin-button" onclick="return confirm('Yakin ingin menghapus data ini?');">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 39 7" class="bin-top">
+                                    <line stroke-width="4" stroke="white" y2="5" x2="39" y1="5"></line>
+                                    <line stroke-width="3" stroke="white" y2="1.5" x2="26.0357" y1="1.5" x1="12"></line>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 33 39"
+                                    class="bin-bottom">
+                                    <mask fill="white" id="path-1-inside-1_8_19">
+                                        <path d="M0 0H33V35C33 37.2091 31.2091 39 29 39H4C1.79086 39 0 37.2091 0 35V0Z">
+                                        </path>
+                                    </mask>
+                                    <path mask="url(#path-1-inside-1_8_19)" fill="white"
+                                        d="M0 0H33H0ZM37 35C37 39.4183 33.4183 43 29 43H4C-0.418278 43 -4 39.4183 -4 35H4H29H37ZM4 43C-0.418278 43 -4 39.4183 -4 35V0H4V35V43ZM37 0V35C37 39.4183 33.4183 43 29 43V35V0H37Z">
+                                    </path>
+                                    <path stroke-width="4" stroke="white" d="M12 6L12 29"></path>
+                                    <path stroke-width="4" stroke="white" d="M21 6V29"></path>
+                                </svg>
+
+                            </a>
                         </form>
 
                     </div>
@@ -135,7 +243,26 @@ while ($data = mysqli_fetch_array($query)) {
                                 <span class="hover-underline-animation px-5 mx-auto">Pilih Vaksin</span>
                             </button>
                             <input type="hidden" name="id" value="<?= $data['id'] ?>">
-
+                            <a href="../assets/mySql/proses.php?deleteVaksin=<?=$data['id'];?>"
+                                class="button bin-button" onclick="return confirm('Yakin ingin menghapus data ini?');">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 39 7" class="bin-top">
+                                    <line stroke-width="4" stroke="white" y2="5" x2="39" y1="5"></line>
+                                    <line stroke-width="3" stroke="white" y2="1.5" x2="26.0357" y1="1.5" x1="12">
+                                    </line>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 33 39"
+                                    class="bin-bottom">
+                                    <mask fill="white" id="path-1-inside-1_8_19">
+                                        <path d="M0 0H33V35C33 37.2091 31.2091 39 29 39H4C1.79086 39 0 37.2091 0 35V0Z">
+                                        </path>
+                                    </mask>
+                                    <path mask="url(#path-1-inside-1_8_19)" fill="white"
+                                        d="M0 0H33H0ZM37 35C37 39.4183 33.4183 43 29 43H4C-0.418278 43 -4 39.4183 -4 35H4H29H37ZM4 43C-0.418278 43 -4 39.4183 -4 35V0H4V35V43ZM37 0V35C37 39.4183 33.4183 43 29 43V35V0H37Z">
+                                    </path>
+                                    <path stroke-width="4" stroke="white" d="M12 6L12 29"></path>
+                                    <path stroke-width="4" stroke="white" d="M21 6V29"></path>
+                                </svg>
+                            </a>
                         </form>
                     </div>
 
@@ -180,7 +307,26 @@ while ($data = mysqli_fetch_array($query)) {
                                 <span class="hover-underline-animation px-5 mx-auto">Pilih Vaksin</span>
                             </button>
                             <input type="hidden" name="id" value="<?= $data['id'] ?>">
-
+                            <a href="../assets/mySql/proses.php?deleteVaksin=<?=$data['id'];?>"
+                                class="button bin-button" onclick="return confirm('Yakin ingin menghapus data ini?');">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 39 7" class="bin-top">
+                                    <line stroke-width="4" stroke="white" y2="5" x2="39" y1="5"></line>
+                                    <line stroke-width="3" stroke="white" y2="1.5" x2="26.0357" y1="1.5" x1="12">
+                                    </line>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 33 39"
+                                    class="bin-bottom">
+                                    <mask fill="white" id="path-1-inside-1_8_19">
+                                        <path d="M0 0H33V35C33 37.2091 31.2091 39 29 39H4C1.79086 39 0 37.2091 0 35V0Z">
+                                        </path>
+                                    </mask>
+                                    <path mask="url(#path-1-inside-1_8_19)" fill="white"
+                                        d="M0 0H33H0ZM37 35C37 39.4183 33.4183 43 29 43H4C-0.418278 43 -4 39.4183 -4 35H4H29H37ZM4 43C-0.418278 43 -4 39.4183 -4 35V0H4V35V43ZM37 0V35C37 39.4183 33.4183 43 29 43V35V0H37Z">
+                                    </path>
+                                    <path stroke-width="4" stroke="white" d="M12 6L12 29"></path>
+                                    <path stroke-width="4" stroke="white" d="M21 6V29"></path>
+                                </svg>
+                            </a>
                         </form>
                     </div>
                     <?php endif; ?>
@@ -195,7 +341,7 @@ while ($data = mysqli_fetch_array($query)) {
         </div>
     </div>
     <?php include "../layout/footer.php" ?>
-  
+    </div>
     <script src="../assets/cdn/flowbite.bundle.js"></script>
     <script src="../assets/cdn/flowbite.min.js"></script>
     <script src="../assets/cdn/aos.js"></script>

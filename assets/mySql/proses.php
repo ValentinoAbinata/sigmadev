@@ -1,7 +1,7 @@
 <?php
 
     include "connect.php" ;
-    //insert brutal
+    //insert brutal pendataan
     if(isset($_POST["formLayan"])){
         $nikP = $_POST['NIK'] ;
         $emailP = $_POST['email'] ;
@@ -59,13 +59,63 @@
         }
       }
 
+    //insert brutal tambah Vaksin
+    if(isset($_POST["submitAdd"])){
+      $namaVaksin = $_POST['namaVaksin'] ;
+      $deskripsi = $_POST['deskripsi'] ;
+      $tipe = $_POST['tipe'] ;
+
+      if($_FILES["image"]["error"] == 4){
+        echo
+        "<script> alert('Gambar Tidak Tersedia!'); </script>"
+        ;
+      }
+      else{
+        $fileName = $_FILES["image"]["name"]; //Nama File
+        $fileSize = $_FILES["image"]["size"]; //Ukuran file
+        $temp_name = $_FILES["image"]["tmp_name"]; //untuk menampung file
+    
+        $khususon = ['jpg', 'jpeg', 'png']; // file yang bisa diupload
+        $imgExtension = explode('.', $fileName);
+        $imgExtension = strtolower(end($imgExtension));
+        if ( !in_array($imgExtension, $khususon) ){
+          echo
+          "
+          <script>
+            alert('Extension Gambar Tidak Valid!');
+          </script>
+          ";
+        }
+        else if($fileSize > 10000000){ //max 20 mb
+          echo
+          "
+          <script>
+            alert('Ukuran Gambar Terlalu Besar!');
+          </script>
+          ";
+        }
+        else{
+          $uploadFoto = uniqid();
+          $uploadFoto .= '.' . $imgExtension;
+    
+          move_uploaded_file($temp_name, '../uploadVaksin/' . $uploadFoto);
+          $query = mysqli_query($conn, "INSERT INTO vaksin (namaVaksin, deskripsi, tipe, imgV) VALUES ('$namaVaksin', '$deskripsi', '$tipe', '$uploadFoto')") or die(mysqli_error($conn));
+
+          if($query){
+              header('Location:../../pages/alaykes.php?insertSukses=true') ; 
+              exit ();
+          }
+        }
+      }
+    }
+
     //submit Pesan
     if(isset($_POST['submitPesan'])){
         $namaP = $_POST['namaP'] ;
         $deskripsi = $_POST['deskripsi'] ;
         $query = mysqli_query($conn, "INSERT INTO pesan VALUES('','$namaP', '$deskripsi')") or die(mysqli_error($conn)) ;
         if($query){
-          header('Location: ../../pages/fTentKami.php?pesanSukses=true') ;
+          header('Location../../pages/fTentKami.php?pesanSukses=true') ;
           exit();
         }
     }
@@ -80,6 +130,22 @@
         }
     
     }
+
+    if (isset($_GET['deleteVaksin'])) {
+      $id = $_GET['deleteVaksin'];
+      $deleteQuery = mysqli_query($conn, "DELETE FROM vaksin WHERE id = $id") or die(mysqli_error($conn));
+      
+      if ($deleteQuery) {
+          // Reset ulang ID setelah data dihapus
+          mysqli_query($conn, "SET @count = 0;") or die(mysqli_error($conn));
+          mysqli_query($conn, "UPDATE vaksin SET id = @count:= @count + 1;") or die(mysqli_error($conn));
+          mysqli_query($conn, "ALTER TABLE vaksin AUTO_INCREMENT = 1;") or die(mysqli_error($conn));
+          
+          header('Location: ../../pages/alaykes.php?deleteSukses=true');
+          exit();
+      }
+  }
+  
     //submit edit data
     if (isset($_POST['submitEdit'])) {
         $nikPawal = $_POST['nikPawal'];

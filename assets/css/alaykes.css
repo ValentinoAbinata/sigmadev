@@ -1,0 +1,155 @@
+.tombolP {
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+    overflow: hidden;
+}
+
+.tombolP::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #6190ed;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms
+}
+
+.tombolP:hover {
+    color: #e8e8e8;
+}
+
+.tombolP:hover::before {
+    width: 100%;
+}
+
+.infoT {
+    transition: transform 0.9s ease;
+}
+
+.infoT:hover {
+    transform: scale(1.05);
+}
+
+/* From Uiverse.io by Df12345677 */ 
+.add-btn {
+    height: 60px;
+    width: 200px;
+    background-color: #132233;
+    border: 2px solid rgb(182, 128, 128);
+    color: #eee;
+    transition: .6s;
+    font-size: 15px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px; */
+    overflow: hidden;
+  }
+  
+  .add-btn span {
+    transform: translateX(10px);
+    transition: .5s;
+  }
+  
+  .add-btn svg {
+    transform: translateX(-300px);
+    transition: .6s;
+    z-index: 3;
+    height: 20px;
+  }
+  
+  .add-btn:hover {
+    width: 60px;
+    background-color: rgba(51, 34, 51, 0.815);
+    box-shadow: 20px 20px 96px #bebebe,-20px -20px 96px #ffffff;
+  }
+  
+  .add-btn:hover svg {
+    transform: translateX(-5px);
+  }
+  
+  .add-btn:hover span {
+    transform: translateY(70px);
+    font-size: .1rem;
+  }
+
+  .bin-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: rgb(255, 95, 95);
+    cursor: pointer;
+    border: 2px solid rgb(255, 201, 201);
+    transition-duration: 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.bin-bottom {
+    width: 15px;
+    z-index: 2;
+}
+
+.bin-top {
+    width: 17px;
+    transform-origin: right;
+    transition-duration: 0.3s;
+    z-index: 2;
+}
+
+.bin-button:hover .bin-top {
+    transform: rotate(45deg);
+}
+
+.bin-button:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+.bin-button:active {
+    transform: scale(0.9);
+}
+
+.garbage {
+    position: absolute;
+    width: 14px;
+    height: auto;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.bin-button:hover .garbage {
+    animation: throw 0.4s linear;
+}
+
+@keyframes throw {
+    from {
+        transform: translate(-400%, -700%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+}

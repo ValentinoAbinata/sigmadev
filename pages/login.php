@@ -62,57 +62,57 @@
                 ?>
 
                 <form action class="sign-up-form shadow-lg p-8">
-                    <h2 class="title text-3xl font-bold text-gray-800 mb-6 text-center">Informasi Login Page</h2>
-                    <div class="content p-6 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl">
-                        <p class="text-xl font-semibold mb-6 text-gray-700 border-b pb-3 border-gray-400">
-                            Halaman ini hanya dapat diakses oleh admin karena:
-                        </p>
-                        <ul class="space-y-4">
-                            <li
-                                class="flex items-center space-x-3 text-gray-600 hover:text-indigo-600 transition-colors duration-200">
-                                <svg class="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                                </svg>
-                                <span>Mengandung informasi sensitif yang perlu dijaga</span>
-                            </li>
-                            <li
-                                class="flex items-center space-x-3 text-gray-600 hover:text-indigo-600 transition-colors duration-200">
-                                <svg class="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" />
-                                </svg>
-                                <span>Memerlukan otorisasi khusus untuk mengakses fitur administratif</span>
-                            </li>
-                            <li
-                                class="flex items-center space-x-3 text-gray-600 hover:text-indigo-600 transition-colors duration-200">
-                                <svg class="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                                </svg>
-                                <span>Menjaga keamanan data pengguna</span>
-                            </li>
-                            <li
-                                class="flex items-center space-x-3 text-gray-600 hover:text-indigo-600 transition-colors duration-200">
-                                <svg class="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
-                                </svg>
-                                <span>Memberikan kontrol penuh atas sistem</span>
-                            </li>
-                            <li
-                                class="flex items-center space-x-3 text-gray-600 hover:text-indigo-600 transition-colors duration-200">
-                                <svg class="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                                </svg>
-                                <span>Mencegah akses tidak sah ke data penting</span>
-                            </li>
-                        </ul>
-                    </div>
+                        <h2 class="title text-3xl font-bold text-gray-800 mb-6 text-center">Informasi Login Page</h2>
+                        <div class="content p-6 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl">
+                            <p class="text-xl font-semibold mb-6 text-gray-700 border-b pb-3 border-gray-400">
+                                Halaman ini hanya dapat diakses oleh admin karena:
+                            </p>
+                            <ul class="space-y-4">
+                                <li
+                                    class="flex items-center space-x-3 text-gray-600 hover:text-indigo-600 transition-colors duration-200">
+                                    <svg class="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                    </svg>
+                                    <span>Mengandung informasi sensitif yang perlu dijaga</span>
+                                </li>
+                                <li
+                                    class="flex items-center space-x-3 text-gray-600 hover:text-indigo-600 transition-colors duration-200">
+                                    <svg class="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" />
+                                    </svg>
+                                    <span>Memerlukan otorisasi khusus untuk mengakses fitur administratif</span>
+                                </li>
+                                <li
+                                    class="flex items-center space-x-3 text-gray-600 hover:text-indigo-600 transition-colors duration-200">
+                                    <svg class="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                                    </svg>
+                                    <span>Menjaga keamanan data pengguna</span>
+                                </li>
+                                <li
+                                    class="flex items-center space-x-3 text-gray-600 hover:text-indigo-600 transition-colors duration-200">
+                                    <svg class="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                                    </svg>
+                                    <span>Memberikan kontrol penuh atas sistem</span>
+                                </li>
+                                <li
+                                    class="flex items-center space-x-3 text-gray-600 hover:text-indigo-600 transition-colors duration-200">
+                                    <svg class="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                    <span>Mencegah akses tidak sah ke data penting</span>
+                                </li>
+                            </ul>
+                        </div>
                     
                 </form>
 
