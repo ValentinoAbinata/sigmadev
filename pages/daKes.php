@@ -1,7 +1,7 @@
 <?php
     include("../assets/mySql/connect.php");
     $query = mysqli_query($conn, "SELECT p.emailP, p.namaP, p.jkP, p.lahirP, p.telpP,p.isShow, p.domisiliP, v.namaVaksin 
-                          FROM pasien AS p INNER JOIN vaksin AS v ON p.id = v.id") ;
+                          FROM pasien AS p INNER JOIN vaksin AS v ON p.id = v.id ORDER BY p.namaP ASC") ;
 ?>
 <!DOCTYPE html>
 <html lang="en">

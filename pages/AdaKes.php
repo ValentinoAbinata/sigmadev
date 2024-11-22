@@ -5,8 +5,8 @@
         
     }
     include("../assets/mySql/connect.php");
-    $query = mysqli_query($conn, "SELECT p.nikP, p.emailP, p.namaP, p.jkP, p.lahirP, p.telpP, p.domisiliP, p.isShow, p.imgP, v.namaVaksin 
-                          FROM pasien AS p INNER JOIN vaksin AS v ON p.id = v.id") ;
+        $query = mysqli_query($conn, "SELECT p.nikP, p.emailP, p.namaP, p.jkP, p.lahirP, p.telpP, p.domisiliP, p.isShow, p.imgP, v.namaVaksin 
+                            FROM pasien AS p INNER JOIN vaksin AS v ON p.id = v.id ORDER BY p.namaP ASC") ;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -366,7 +366,10 @@
                         <tbody>
                             <?php
                             $query2 = $query = mysqli_query($conn, "SELECT p.nikP, p.emailP, p.namaP, p.jkP, p.lahirP, p.telpP, p.domisiliP, p.isShow, p.imgP, v.namaVaksin 
-                                                            FROM pasien AS p INNER JOIN vaksin AS v ON p.id = v.id") ;
+                                                            FROM pasien AS p 
+                                                            INNER JOIN vaksin AS v 
+                                                            ON p.id = v.id 
+                                                            ORDER BY p.namaP ASC");
                             while ($dataTampil = mysqli_fetch_array($query)) : 
                             if($dataTampil['isShow'] == 1) : 
                         ?>

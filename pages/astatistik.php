@@ -30,7 +30,7 @@
     <title>sigmaDev</title>
     <link rel="stylesheet" href="../assets/cdn/flowbite.min.css" />
     <link rel="stylesheet" href="../assets/css/adakes.css" />
-  
+
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
 
@@ -54,7 +54,8 @@
 
             <div class="justify-center flex items-center">
                 <p class="text-2xl font-semibold text-gray-800 py-12">
-                    Jumlah seluruh orang yang telah mendapatkan vaksinasi: <?php echo array_sum(array_column($vaksinData, 'jumlah')); ?>
+                    Jumlah seluruh orang yang telah mendapatkan vaksinasi:
+                    <?php echo array_sum(array_column($vaksinData, 'jumlah')); ?>
                 </p>
 
             </div>
@@ -62,7 +63,7 @@
         </div>
     </div>
 
-    <script src="../assets/cdn/flowbite.bundle.js"></script> 
+    <script src="../assets/cdn/flowbite.bundle.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     <script src="../assets/cdn/flowbite.min.js"></script>
     <script>
@@ -114,7 +115,7 @@
         data: {
             labels: xValues, //label sama kyk grafik 
             datasets: [{
-                backgroundColor: barColors.slice(0, xValues.length), 
+                backgroundColor: barColors.slice(0, xValues.length),
                 data: yValues // Data vaksinasi
             }]
         },
@@ -129,9 +130,11 @@
                 callbacks: {
                     label: function(tooltipItem, data) {
                         const label = data.labels[tooltipItem.index];
-                        const value = data.datasets[0].data[tooltipItem.index];
-                        const total = data.datasets[0].data.reduce((sum, val) => sum + val, 0);
-                        const percentage = ((value / total) * 100).toFixed(2);
+                        const value = parseInt(data.datasets[0].data[tooltipItem.index],
+                        10); 
+                        const total = data.datasets[0].data.reduce((sum, val) => sum + parseInt(val, 10),
+                        0); 
+                        const percentage = ((value / total) * 100).toFixed(2); // Hitung persentase
                         return `${label}: ${value} orang (${percentage}%)`;
                     }
                 }
