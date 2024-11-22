@@ -23,6 +23,7 @@ while ($data = mysqli_fetch_array($query)) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../assets/image/iconWeb.png">
     <title>sigmaDev</title>
+    
     <link rel="stylesheet" href="../assets/css/alaykes.css">
     <link rel="stylesheet" href="../assets/cdn/flowbite.min.css" />
     <link href="../assets/cdn/aos.css" rel="stylesheet">
@@ -83,40 +84,9 @@ while ($data = mysqli_fetch_array($query)) {
                     endif;
                 endif;
             ?>
+            
 
-            <?php 
-                if(isset($_GET['deleteSukses'])) :
-                    if($_GET['deleteSukses'] == "true") :
-                ?>
-            <center>
-
-                <div id="alert-border-3"
-                    class="flex rounded justify-center items-center p-4 mb-4 text-green-800 border-t-4 border-green-300 bg-green-50 dark:text-green-400 dark:bg-gray-800 dark:border-green-800"
-                    role="alert" style="width: 50%;">
-                    <svg class="flex-shrink-0 w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                        fill="currentColor" viewBox="0 0 20 20">
-                        <path
-                            d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
-                    </svg>
-                    <div class="ms-3 text-sm font-medium">
-                        <p>Vaksin berhasil dihapus!</p>
-                    </div>
-                    <button type="button"
-                        class="ms-auto -mx-1.5 -my-1.5 bg-green-50 text-green-500 rounded-lg focus:ring-2 focus:ring-green-400 p-1.5 hover:bg-green-200 inline-flex items-center justify-center h-8 w-8 dark:bg-gray-800 dark:text-green-400 dark:hover:bg-gray-700"
-                        data-dismiss-target="#alert-border-3" aria-label="Close">
-
-                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 14 14">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
-                        </svg>
-                    </button>
-                </div>
-            </center>
-            <?php
-                    endif;
-                endif;
-            ?>
+         
 
 
             <div class="flex flex-wrap grid grid-rows w-full mb-3" style="padding-top:50px; padding-right:14px;"
@@ -151,7 +121,7 @@ while ($data = mysqli_fetch_array($query)) {
                             style="border-right: 4px solid #000; text-align: justify;">
                             <?= $data['deskripsi'] ?>
                         </p>
-                        <form action="formLayan.php" method="GET" class="w-full flex space-x-5">
+                        <form action="aformLayan.php" method="GET" class="w-full flex space-x-5">
                             <button type="submit" class="tombolP" name="layanan" value="<?= $data['namaVaksin'] ?>">
                                 <span class="hover-underline-animation px-5 mx-auto">Pilih Vaksin</span>
                             </button>
@@ -182,7 +152,7 @@ while ($data = mysqli_fetch_array($query)) {
                     </div>
 
                     <!-- Kolom Gambar -->
-                    <form action="formLayan.php" method="GET" class="w-full">
+                    <form action="aformLayan.php" method="GET" class="w-full">
                         <button type="submit" name="layanan" value="<?= $data['namaVaksin'] ?>" class="w-full">
                             <div class="flex justify-center bg-center bg-cover overflow-hidden">
                                 <img src="../assets/uploadVaksin/<?=$data['imgV']?>" alt="vaksin Desa"
@@ -238,7 +208,7 @@ while ($data = mysqli_fetch_array($query)) {
                             style="border-right: 4px solid #000; text-align: justify;">
                             <?= $data['deskripsi'] ?>
                         </p>
-                        <form action="formLayan.php" method="GET" class="w-full flex space-x-5">
+                        <form action="aformLayan.php" method="GET" class="w-full flex space-x-5">
                             <button type="submit" class="tombolP" name="layanan" value="<?= $data['namaVaksin'] ?>">
                                 <span class="hover-underline-animation px-5 mx-auto">Pilih Vaksin</span>
                             </button>
@@ -267,7 +237,7 @@ while ($data = mysqli_fetch_array($query)) {
                     </div>
 
                     <!-- Kolom Gambar -->
-                    <form action="formLayan.php" method="GET" class="w-full">
+                    <form action="aformLayan.php" method="GET" class="w-full">
                         <button type="submit" name="layanan" value="<?= $data['namaVaksin'] ?>" class="w-full">
                             <div class="flex justify-center bg-center bg-cover overflow-hidden">
                                 <img src="../assets/uploadVaksin/<?=$data['imgV']?>" alt="vaksin Desa"
@@ -281,7 +251,7 @@ while ($data = mysqli_fetch_array($query)) {
 
                     <?php else: ?>
                     <!-- Kolom Gambar -->
-                    <form action="formLayan.php" method="GET" class="w-full">
+                    <form action="aformLayan.php" method="GET" class="w-full">
                         <button type="submit" name="layanan" value="<?= $data['namaVaksin'] ?>" class="w-full">
                             <div class="flex justify-center bg-center bg-cover overflow-hidden">
                                 <img src="../assets/uploadVaksin/<?=$data['imgV']?>" alt="vaksin Desa"
@@ -302,7 +272,7 @@ while ($data = mysqli_fetch_array($query)) {
                             style="border-right: 4px solid #000; text-align: justify;">
                             <?= $data['deskripsi'] ?>
                         </p>
-                        <form action="formLayan.php" method="GET" class="w-full flex space-x-5">
+                        <form action="aformLayan.php" method="GET" class="w-full flex space-x-5">
                             <button type="submit" class="tombolP" name="layanan" value="<?= $data['namaVaksin'] ?>">
                                 <span class="hover-underline-animation px-5 mx-auto">Pilih Vaksin</span>
                             </button>
@@ -345,13 +315,47 @@ while ($data = mysqli_fetch_array($query)) {
     <script src="../assets/cdn/flowbite.bundle.js"></script>
     <script src="../assets/cdn/flowbite.min.js"></script>
     <script src="../assets/cdn/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
     AOS.init({
         duration: 1500,
         once: false,
         loop: true
     });
-    </script>
+
+    function showMessage() {
+        // Menangkap parameter deleteSukses dari URL
+        const params = new URLSearchParams(window.location.search);
+        const deleteSukses = params.get('deleteSukses');
+
+        // Menampilkan SweetAlert sesuai status deleteSukses
+        if (deleteSukses === 'success') {
+            Swal.fire({
+                icon: 'success',
+                title: 'Berhasil',
+                text: 'Vaksin berhasil dihapus!',
+                confirmButtonColor: '#3085d6',
+            });
+        } else if (deleteSukses === 'failed') {
+            Swal.fire({
+                icon: 'error',
+                title: 'Gagal',
+                text: 'Vaksin gagal dihapus karena ada pasien terkait!',
+                confirmButtonColor: '#d33',
+            });
+        } else if (deleteSukses === 'error') {
+            Swal.fire({
+                icon: 'error',
+                title: 'Gagal',
+                text: 'Terjadi kesalahan saat menghapus vaksin!',
+                confirmButtonColor: '#d33',
+            });
+        }
+    }
+
+    // Panggil fungsi showMessage() saat halaman dimuat
+    window.onload = showMessage;
+</script>
 
 </body>
 

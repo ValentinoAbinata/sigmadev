@@ -30,6 +30,41 @@
                 <div class="mt-5">
                     <p class="text-start text-2xl font-bold text-gray-800 mb-5"> Data Tidak Tampil </p>
                 </div>
+
+                <?php 
+                if(isset($_GET['insertSukses'])) :
+                    if($_GET['insertSukses'] == "true") :
+                ?>
+
+                <div id="alert-border-3"
+                    class="flex rounded justify-center items-center p-4 mb-4 text-green-800 border-t-4 border-green-300 bg-green-50 dark:text-green-400 dark:bg-gray-800 dark:border-green-800"
+                    role="alert">
+                    <svg class="flex-shrink-0 w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                            d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
+                    </svg>
+                    <div class="ms-3 text-sm font-medium">
+                        <p>Data Penduduk berhasil ditambahkan!</p>
+                    </div>
+                    <button type="button"
+                        class="ms-auto -mx-1.5 -my-1.5 bg-green-50 text-green-500 rounded-lg focus:ring-2 focus:ring-green-400 p-1.5 hover:bg-green-200 inline-flex items-center justify-center h-8 w-8 dark:bg-gray-800 dark:text-green-400 dark:hover:bg-gray-700"
+                        data-dismiss-target="#alert-border-3" aria-label="Close">
+
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                        </svg>
+                    </button>
+                </div>
+            
+            <?php
+                    endif;
+                endif;
+            ?>
+            
+
                 <?php 
                 if(isset($_GET['editSukses'])) :
                     if($_GET['editSukses'] == "true") :
@@ -165,7 +200,7 @@
                                 class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
                                 <td scope=""
                                     class="flex justify-center items-center py-2 px-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    <img src="../assets/uploadImg/<?= $data['imgP'] ?>" alt="ktp" style="width:100%;height:100%;">
+                                    <img src="../assets/uploadImg/<?= $data['imgP'] ?>" alt="ktp" style="max-width:100px;max-height:100px;">
                                 </td>
                                 <td scope="row"
                                     class="px-2 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
@@ -339,7 +374,7 @@
                                 class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
                                 <td scope=""
                                     class="flex justify-center items-center px-3 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    <img src="../assets/uploadImg/<?= $dataTampil['imgP'] ?>" alt="ktp" style="width:75%">
+                                    <img src="../assets/uploadImg/<?= $dataTampil['imgP'] ?>" alt="ktp" style="max-width:150px; max-height:150px">
                                 </td>
                                 <td scope="row"
                                     class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
