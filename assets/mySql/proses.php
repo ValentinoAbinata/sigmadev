@@ -1,5 +1,5 @@
-<?php
 
+<?php
       include "connect.php" ;
       //insert brutal pendataan diuser
       if(isset($_POST["formLayan"])){
@@ -19,7 +19,7 @@
               // Jika NIK sudah ada
               echo "
               <script>
-                  alert('Data dengan NIK ini sudah terdaftar!');
+                  alert('Terdapat kesalahan pada NIK, silahkan ulangi lagi!');
                   window.history.back();
               </script>";
               exit();
@@ -70,6 +70,7 @@
 
         //insert brutal pendataan diadmin
       if(isset($_POST["aformLayan"])){
+     
         $nikP = $_POST['NIK'] ;
         $emailP = $_POST['email'] ;
         $first_name = $_POST['first_name'] ;
@@ -82,17 +83,18 @@
         $id = $_POST['id'] ;
 
         $namaP = $first_name . ' ' . $last_name ;
-        $checkQuery = mysqli_query($conn, "SELECT * FROM pasien WHERE nikP = '$nikP'");
-        if (mysqli_num_rows($checkQuery) > 0) {
+
+        $query = mysqli_query($conn, "SELECT * FROM pasien WHERE nikP = '$nikP'");
+        if (mysqli_num_rows($query) > 0) {
             // Jika NIK sudah ada
             echo "
             <script>
-                alert('Data dengan NIK ini sudah terdaftar!');
+                alert('Terdapat kesalahan pada NIK, silahkan ulangi lagi!');
                 window.history.back();
             </script>";
             exit();
         }
-
+        
         if($_FILES["image"]["error"] == 4){
           echo
           "<script> alert('Gambar Tidak Tersedia!'); </script>"

@@ -21,11 +21,27 @@
     <?php include "../layout/anavbar.php" ?>
     <div style="background-image: url('../assets/image/dakes.jpg'); background-size: cover;">
         <div style=" padding: 5%; padding-top : 3%; padding-bottom : 0%; min-height:75dvh;">
-            <p class="text-center text-4xl font-bold mb-10" style="color: #ffffff !important" data-aos ="fade-up"> Pengisian Form <?= $selectedLayanan ?> </p>
+            <p class="text-center text-4xl font-bold mb-10" style="color: #ffffff !important" data-aos="fade-up">
+                Pengisian Form <?= $selectedLayanan ?> </p>
 
             <div class="py-8 mx-auto formlayann" style="width:50%; margin-bottom : 8%;" data-aos="zoom-in">
                 <form class="max-w-md mx-auto close" method="POST" action="../assets/mySql/proses.php"
                     autocomplete="off" enctype="multipart/form-data">
+
+                    <?php
+                    if(isset($_POST["aformLayan"])){
+                    $query = mysqli_query($conn, "SELECT * FROM pasien WHERE nikP = '$nikP'");
+                        if (mysqli_num_rows($query) > 0) {
+                            // Jika NIK sudah ada
+                            echo "
+                            <script>
+                                alert('Terdapat kesalahan pada NIK, silahkan ulangi lagi!');
+                                window.history.back();
+                            </script>";
+                            exit();
+                        }
+                    }
+                    ?>
 
                     <div class="relative z-0 w-full mb-5 group">
                         <input type="email" name="email" id="email"
@@ -124,7 +140,7 @@
                             <input type="file" name="image" id="image" accept=".jpg, .jpeg, .png"
                                 class="absolute inset-0 opacity-0 cursor-pointer" />
                         </div>
-                        </div>
+                    </div>
 
 
                     <div class="grid grid-cols-2 gap-6 flex justify-center items-center">
@@ -143,7 +159,7 @@
                         </div>
 
 
-                        <a href ="alaykes.php"
+                        <a href="alaykes.php"
                             class="focus:outline-none text-white bg-red-700 hover:bg-red-800 mx-auto focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm w-32 px-2 py-2 flex items-center justify-center dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">
                             <svg class="w-6 h-6 mr-2 text-white dark:text-white" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
@@ -178,8 +194,6 @@
             </div>
         </div>
 
-
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script src="../assets/src/aformLayan.js">
         </script>
 
@@ -189,7 +203,7 @@
 
     <!-- sweet alert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script src="../assets/cdn/flowbite.bundle.js"></script>
+    <script src="../assets/cdn/flowbite.bundle.js"></script>
     <script src="../assets/cdn/aos.js"></script>
     <script>
     AOS.init({

@@ -179,9 +179,6 @@
         </div>
 
 
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        <script src="../assets/src/formLayan.js">
-        </script>
 
         <?php include "../layout/footer.php" ?>
     </div>
@@ -189,7 +186,8 @@
 
     <!-- sweet alert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script src="../assets/cdn/flowbite.bundle.js"></script>
+    <script src="../assets/src/formLayan.js"></script>
+    <script src="../assets/cdn/flowbite.bundle.js"></script>
     <script src="../assets/cdn/aos.js"></script>
     <script>
     AOS.init({
