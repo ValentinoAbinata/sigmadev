@@ -352,8 +352,6 @@ while ($data = mysqli_fetch_array($query)) {
             });
         }
     }
-
-    // Panggil fungsi showMessage() saat halaman dimuat
     window.onload = showMessage;
 </script>
 

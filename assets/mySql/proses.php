@@ -321,3 +321,4 @@
     session_destroy();
     header("Location:../../pages/beranda.php?logout=true");  
   }
+?>
