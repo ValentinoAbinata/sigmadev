@@ -1,3 +1,6 @@
+<?php
+session_start() ;
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +14,17 @@
 </head>
 
 <body style="background-image: url('../assets/image/kebpriv.jpg'); background-size: cover;">
-    <?php include "../layout/navbar.php" ?>
+<?php 
+    if(isset($_SESSION['usernameU'])){
+        include "../layout/unavbar.php" ;
+    } else {
+        if(isset($_SESSION['username'])){
+            include "../layout/unavbar.php" ;
+        } else {
+            include "../layout/navbar.php" ;
+        }
+    }
+    ?>
 
     
     <div style=" padding: 5%; padding-top : 9%; padding-bottom : 0%; min-height:75dvh;">

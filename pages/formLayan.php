@@ -1,7 +1,12 @@
 <?php
     include("../assets/mySql/connect.php");
     $selectedLayanan = isset($_GET['layanan']) ? $_GET['layanan'] : '';
-    $id = isset($_GET['id']) ? $_GET['id'] : '';  
+    $id = isset($_GET['id']) ? $_GET['id'] : '';
+    
+    session_start() ;
+    if(!isset($_SESSION['usernameU'])){
+        header("Location: ulogin.php?islogin=harap_login");
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,7 +23,17 @@
 </head>
 
 <body>
-    <?php include "../layout/navbar.php" ?>
+<?php 
+    if(isset($_SESSION['usernameU'])){
+        include "../layout/unavbar.php" ;
+    } else {
+        if(isset($_SESSION['username'])){
+            include "../layout/unavbar.php" ;
+        } else {
+            include "../layout/navbar.php" ;
+        }
+    }
+    ?>
     <div style="background-image: url('../assets/image/dakes.jpg'); background-size: cover;">
         <div style=" padding: 5%; padding-top : 9%; padding-bottom : 0%; min-height:75dvh;">
             <p class="text-center text-4xl font-bold mb-10" style="color: #ffffff !important" data-aos ="fade-up"> Pengisian Form <?= $selectedLayanan ?> </p>

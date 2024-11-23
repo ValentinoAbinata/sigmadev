@@ -2,6 +2,8 @@
     include("../assets/mySql/connect.php");
     $query = mysqli_query($conn, "SELECT p.emailP, p.namaP, p.jkP, p.lahirP, p.telpP,p.isShow, p.domisiliP, v.namaVaksin 
                           FROM pasien AS p INNER JOIN vaksin AS v ON p.id = v.id ORDER BY p.namaP ASC") ;
+
+    session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,9 +16,19 @@
     <link rel="stylesheet" href="../assets/cdn/flowbite.min.css" />
 </head>
 
-<body>
-    <?php include "../layout/navbar.php" ?>
-    <div style="background-image : url('../assets/image/dakes.avif'); background-size: cover;">
+<body style="background-image : url('../assets/image/dakes.avif'); background-size: cover;">
+<?php 
+    if(isset($_SESSION['usernameU'])){
+        include "../layout/unavbar.php" ;
+    } else {
+        if(isset($_SESSION['username'])){
+            include "../layout/unavbar.php" ;
+        } else {
+            include "../layout/navbar.php" ;
+        }
+    }
+    ?>
+    <div>
         <div style=" padding: 5%; padding-top : 9%; padding-bottom : 0%; min-height:75dvh;">
             <p class="text-center text-4xl font-bold mb-10" style="color: #003366"> Data Kesehatan </p>
 

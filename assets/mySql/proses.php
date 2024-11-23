@@ -189,13 +189,29 @@
       }
     }
 
+    //register user
+    if(isset($_POST["uregister"])){
+      $pengguna = $_POST['pengguna'];
+      $pass = $_POST['pass'];
+      $query1 = mysqli_query($conn, "SELECT * FROM user");
+      while($data=mysqli_fetch_array($query1)){
+          if($pengguna == $data['pengguna']){
+              header("Location:../../pages/ulogin.php?register=gagal_daftar");
+              exit();
+          }
+      }
+      $query = mysqli_query($conn,"INSERT INTO user VALUES ('','$pengguna','$pass')");
+      header("Location:../../pages/ulogin.php?register=berhasil");
+    
+    }
+
     //submit Pesan
     if(isset($_POST['submitPesan'])){
         $namaP = $_POST['namaP'] ;
         $deskripsi = $_POST['deskripsi'] ;
         $query = mysqli_query($conn, "INSERT INTO pesan VALUES('','$namaP', '$deskripsi')") or die(mysqli_error($conn)) ;
         if($query){
-          header('Location../../pages/fTentKami.php?pesanSukses=true') ;
+          header('Location:../../pages/fTentKami.php?pesanSukses=true') ;
           exit();
         }
     }

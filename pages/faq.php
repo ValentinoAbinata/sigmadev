@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,7 +19,17 @@
 <body
     style="font-family: Poppins;background-image: url('../assets/image/faq.jpg'); background-size: cover;background-attachment: fixed"
     class="overflow-x-hidden">
-    <?php include "../layout/navbar.php" ?>
+    <?php 
+    if(isset($_SESSION['usernameU'])){
+        include "../layout/unavbar.php" ;
+    } else {
+        if(isset($_SESSION['username'])){
+            include "../layout/unavbar.php" ;
+        } else {
+            include "../layout/navbar.php" ;
+        }
+    }
+    ?>
     <div>
         <div style=" padding: 5%; padding-top : 9%; padding-bottom : 0%; min-height:75dvh;">
             <p class="text-center text-4xl font-bold mb-10" style="color: #003366" data-aos="zoom-in"> Frequently Asked

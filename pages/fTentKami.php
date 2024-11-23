@@ -1,3 +1,6 @@
+<?php
+session_start() ;
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,8 +15,20 @@
 </head>
 
 <body>
-    <audio src=""></audio>
-    <?php include "../layout/navbar.php" ?>
+    <audio autoplay>
+        <source src="../assets/mp3/duvet.mp3" type="audio/mp3" />
+    </audio>
+    <?php 
+    if(isset($_SESSION['usernameU'])){
+        include "../layout/unavbar.php" ;
+    } else {
+        if(isset($_SESSION['username'])){
+            include "../layout/unavbar.php" ;
+        } else {
+            include "../layout/navbar.php" ;
+        }
+    }
+    ?>
     <div class="background">
         <div style=" padding: 10%; padding-top : 9%; padding-bottom : 0%; min-height:75dvh;">
             <!-- Notification Modal -->
@@ -48,7 +63,8 @@
                                 <div class="w-full text-font" data-aos="zoom-in">
                                     <h2 class="title-font font-medium text-lg text-white">Valentino Abinata</h2>
                                     <h3 class="text-white mb-3">123230013</h3>
-                                    <p class="mb-4" style="color:#ffffff;">Background : Umumnya dikenal dengan julukan Northern Blade, adalah
+                                    <p class="mb-4" style="color:#ffffff;">Background : Umumnya dikenal dengan julukan
+                                        Northern Blade, adalah
                                         Pemimpin Sekte Sekte Surgawi Utara generasi ke-5. Dia juga satu-satunya praktisi
                                         seni bela diri rahasia yang dikenal sebagai ''Gathering Of Ten Thousand
                                         Shadows'', dan putra dari Pemimpin Sekte generasi ke-4, Jin Kwan-Ho.</p>
@@ -59,13 +75,15 @@
                             <div class="h-full flex flex-col items-center text-center image-hover">
                                 <img alt="team" class="default-image rounded-lg w-full object-cover object-center mb-4"
                                     style="" src="../assets/image/reza.png" data-aos="fade-down">
-                                <img alt="team hover" class=" hover-image2 rounded-lg w-full object-cover object-center mb-4"
-                                    style="" src="../assets/image/reza2.jpg">
+                                <img alt="team hover"
+                                    class=" hover-image2 rounded-lg w-full object-cover object-center mb-4" style=""
+                                    src="../assets/image/reza2.jpg">
                                 <div class="w-full text-font" data-aos="zoom-in">
                                     <h2 class="title-font font-medium text-lg text-white">Reza Rasendriya Adi Putra
                                     </h2>
                                     <h3 class="text-white mb-3">123230030</h3>
-                                    <p class="mb-4 text-bold" style="color:#ffffff">Background : Seorang samurai dan ronin yang sangat terkenal
+                                    <p class="mb-4 text-bold" style="color:#ffffff">Background : Seorang samurai dan
+                                        ronin yang sangat terkenal
                                         di Jepang pada abad pertengahan. Ia diperkirakan lahir pada sekitar tahun 1584,
                                         dan meninggal tahun 1645. Nama aslinya adalah Shinmen Takezo. Kata Musashi
                                         merupakan lafal lain dari "Takezo".</p>
@@ -82,7 +100,7 @@
                     <span class="hover-underline-animation px-5 mx-auto">Hubungi Kami</span>
                 </button>
             </div>
-
+           
             <!-- Modal -->
             <div id="hubKami"
                 class="hidden fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center z-50">
@@ -116,7 +134,7 @@
         <?php include "../layout/footer.php" ?>
     </div>
 
-  <script src="../assets/cdn/flowbite.bundle.js"></script>
+    <script src="../assets/cdn/flowbite.bundle.js"></script>
     <script src="../assets/cdn/aos.js"></script>
     <script src="../assets/src/tentKami.js"></script>
 </body>

@@ -1,3 +1,6 @@
+<?php
+session_start() 
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,7 +19,17 @@
 
 <body>
     <div class="container bg-login mt-0">
-        <?php include "../layout/navbar.php" ?>
+    <?php 
+    if(isset($_SESSION['usernameU'])){
+        include "../layout/unavbar.php" ;
+    } else {
+        if(isset($_SESSION['username'])){
+            include "../layout/unavbar.php" ;
+        } else {
+            include "../layout/navbar.php" ;
+        }
+    }
+    ?>
         <div class="forms-container">
             <div class="signin-signup">
 
@@ -31,7 +44,8 @@
                         <i class="fas fa-lock"></i>
                         <input type="password" placeholder="Password" name="password" style="border-radius : 14px;" />
                     </div>
-                    <button type="submit" value="Login" class="btn solid mt-3" name="login">LOGIN </button>
+                    <p> Kamu bukan Admin? Klik <a href="ulogin.php" class="text-blue-700"> disini! </a> </p>
+                    <button type="submit" value="Login" class="btn solid mt-3" name="login" style="background-color: #4d84e2;">LOGIN </button>
                    
                 </form>
 

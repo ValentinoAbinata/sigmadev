@@ -7,6 +7,8 @@ $vaksinData = [];
 while ($data = mysqli_fetch_array($query)) {
     $vaksinData[] = $data;
 }
+
+session_start() ;
 ?>
 
 <!DOCTYPE html>
@@ -26,7 +28,17 @@ while ($data = mysqli_fetch_array($query)) {
 </head>
 
 <body style="background-image: url('../assets/image/laykes.jpg'); background-size: cover; height: 100dvh; font-family: Poppins">
-    <?php include "../layout/navbar.php" ?>
+<?php 
+    if(isset($_SESSION['usernameU'])){
+        include "../layout/unavbar.php" ;
+    } else {
+        if(isset($_SESSION['username'])){
+            include "../layout/unavbar.php" ;
+        } else {
+            include "../layout/navbar.php" ;
+        }
+    }
+    ?>
   
         <div style="padding: 5%; padding-top: 9%; padding-bottom: 0%; min-height:75vh;">
             <p class="text-center text-4xl font-bold mt-5 mb-10" style="color: #003366">Layanan Kesehatan</p>

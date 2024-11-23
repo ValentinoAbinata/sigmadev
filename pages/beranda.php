@@ -1,3 +1,6 @@
+<?php
+session_start() ;
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,11 +18,22 @@
 
 </head>
 
-<body style="font-family: Poppins;" class="overflow-x-hidden">
+<body style="font-family: Poppins; background-image : url('../assets/image/beranda.jpg'); background-size: cover; " class="overflow-x-hidden">
 
-    <?php include "../layout/navbar.php" ?>
+    <?php 
+    if(isset($_SESSION['usernameU'])){
+        include "../layout/unavbar.php" ;
+    } else {
+        if(isset($_SESSION['username'])){
+            include "../layout/unavbar.php" ;
+        } else {
+            include "../layout/navbar.php" ;
+        }
+    }
+    ?>
 
-    <div style="background-image : url('../assets/image/beranda.jpg'); background-size: cover;">
+
+    <div >
 
         <!-- Carousel Hero -->
         <div id="hero-carousel" class="relative w-full h-screen overflow-hidden" data-carousel="slide">

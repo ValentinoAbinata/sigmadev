@@ -17,14 +17,14 @@
     <link rel="stylesheet" href="../assets/cdn/aos.css">
 </head>
 
-<body>
+<body  style="background-image: url('../assets/image/dakes.jpg'); background-size: cover; height:100dvh">
     <?php include "../layout/anavbar.php" ?>
-    <div style="background-image: url('../assets/image/dakes.jpg'); background-size: cover;">
+
         <div style=" padding: 5%; padding-top : 3%; padding-bottom : 0%; min-height:75dvh;">
             <p class="text-center text-4xl font-bold mb-10" style="color: #ffffff !important" data-aos="fade-up">
                 Pengisian Form <?= $selectedLayanan ?> </p>
 
-            <div class="py-8 mx-auto formlayann" style="width:50%; margin-bottom : 8%;" data-aos="zoom-in">
+            <div class="py-2 mx-auto formlayann" style="width:50%; margin-bottom : 8%; padding-top : 15px;" data-aos="zoom-in">
                 <form class="max-w-md mx-auto close" method="POST" action="../assets/mySql/proses.php"
                     autocomplete="off" enctype="multipart/form-data">
 
@@ -196,10 +196,6 @@
 
         <script src="../assets/src/aformLayan.js">
         </script>
-
-        <?php include "../layout/footer.php" ?>
-    </div>
-
 
     <!-- sweet alert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

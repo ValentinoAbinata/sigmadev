@@ -41,6 +41,13 @@
                     <span class="tooltip">Data Kesehatan</span>
                 </li>
                 <li>
+                    <a href="../pages/alaykes.php">
+                        <i class='bx bx-book    '></i>
+                        <span class="links_name">Layanan Kesehatan</span>
+                    </a>
+                    <span class="tooltip">Layanan Kesehatan</span>
+                </li>
+                <li>
                     <a href="../pages/apesan.php">
                         <i class='bx bx-chat'></i>
                         <span class="links_name">Pesan</span>
@@ -53,13 +60,6 @@
                         <span class="links_name">Statistik</span>
                     </a>
                     <span class="tooltip">Statistik</span>
-                </li>
-                <li>
-                    <a href="../pages/alaykes.php">
-                        <i class='bx bx-book    '></i>
-                        <span class="links_name">Layanan Kesehatan</span>
-                    </a>
-                    <span class="tooltip">Layanan Kesehatan</span>
                 </li>
 
                 <?php
