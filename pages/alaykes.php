@@ -127,7 +127,7 @@ while ($data = mysqli_fetch_array($query)) {
                             </button>
                             <input type="hidden" name="id" value="<?= $data['id'] ?>">
                             <!-- Delete Button -->
-                            <a href="../assets/mySql/proses.php?deleteVaksin=<?=$data['id'];?>"
+                            <a href="../assets/mySql/proses.php?deleteVaksin=<?=$data['id'];?>&deleteFile=<?=$data['imgV'];?>"
                                 class="button bin-button" onclick="return confirm('Yakin ingin menghapus data ini?');">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 39 7" class="bin-top">
                                     <line stroke-width="4" stroke="white" y2="5" x2="39" y1="5"></line>
@@ -213,7 +213,7 @@ while ($data = mysqli_fetch_array($query)) {
                                 <span class="hover-underline-animation px-5 mx-auto">Pilih Vaksin</span>
                             </button>
                             <input type="hidden" name="id" value="<?= $data['id'] ?>">
-                            <a href="../assets/mySql/proses.php?deleteVaksin=<?=$data['id'];?>"
+                            <a href="../assets/mySql/proses.php?deleteVaksin=<?=$data['id'];?>&deleteFile=<?=$data['imgV'];?>"
                                 class="button bin-button" onclick="return confirm('Yakin ingin menghapus data ini?');">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 39 7" class="bin-top">
                                     <line stroke-width="4" stroke="white" y2="5" x2="39" y1="5"></line>
@@ -277,7 +277,7 @@ while ($data = mysqli_fetch_array($query)) {
                                 <span class="hover-underline-animation px-5 mx-auto">Pilih Vaksin</span>
                             </button>
                             <input type="hidden" name="id" value="<?= $data['id'] ?>">
-                            <a href="../assets/mySql/proses.php?deleteVaksin=<?=$data['id'];?>"
+                            <a href="../assets/mySql/proses.php?deleteVaksin=<?=$data['id'];?>&deleteFile=<?=$data['imgV'];?>"
                                 class="button bin-button" onclick="return confirm('Yakin ingin menghapus data ini?');">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 39 7" class="bin-top">
                                     <line stroke-width="4" stroke="white" y2="5" x2="39" y1="5"></line>

@@ -238,7 +238,7 @@
                                     </a>
 
                                     <!-- Delete Button -->
-                                    <a href="../assets/mySql/proses.php?deleteNikP=<?=$data['nikP'];?>">
+                                    <a href="../assets/mySql/proses.php?deleteNikP=<?=$data['nikP'];?>&deleteFile=<?=$data['imgP'];?>">
                                         <button class="bin-button">
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 39 7"
                                                 class="bin-top">

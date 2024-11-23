@@ -219,8 +219,10 @@
     //Submit Proses Delete
     if (isset($_GET['deleteNikP'])) {
         $nikP = $_GET['deleteNikP'] ;
+        $file = $_GET['deleteFile'] ;
         $query = mysqli_query($conn, "DELETE FROM pasien WHERE nikP = $nikP;") or die(mysqli_error($conn)) ;
         if($query){
+            unlink('../uploadImg/'.$file) ;
             header('Location:../../pages/Adakes.php?deleteSukses=true') ; 
             exit() ;            
         }
@@ -229,6 +231,7 @@
     //submit delete vaksin
     if (isset($_GET['deleteVaksin'])) {
       $id = $_GET['deleteVaksin'];
+      $file = $_GET['deleteFile'];
       $cekQuery = "SELECT COUNT(*) as jumlah FROM pasien WHERE id = $id";
       $result = mysqli_query($conn, $cekQuery);
       $data = mysqli_fetch_assoc($result);
@@ -244,6 +247,7 @@
               mysqli_query($conn, "SET @count = 0;") or die(mysqli_error($conn));
               mysqli_query($conn, "UPDATE vaksin SET id = @count:= @count + 1;") or die(mysqli_error($conn));
               mysqli_query($conn, "ALTER TABLE vaksin AUTO_INCREMENT = 1;") or die(mysqli_error($conn));
+              unlink('../uploadVaksin/'.$file);
 
               header('Location:../../pages/alaykes.php?deleteSukses=success');
           } else {
