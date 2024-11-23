@@ -306,11 +306,18 @@
     }  
   }
 
-  //logout
+  //logout admin
   if(isset($_GET['logout'])){
       session_start();
       session_unset();
       session_destroy();
       header("Location:../../pages/login.php?islogin=logout");  
 
+  }
+  //logout user
+  if(isset($_GET['ulogout'])){
+    session_start();
+    session_unset();
+    session_destroy();
+    header("Location:../../pages/beranda.php?logout=true");  
   }
