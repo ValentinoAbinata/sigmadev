@@ -12,6 +12,8 @@ aberanda,adakes,aformedit,apesan,astatistik hanya bisa diakses admin
 
 user hanya dapat mengakses beranda, dakes,laykes,formlayan, tentang kami, kebijakan privasi,faq
 
+form dapat di isi jika user login terlebih dahulu
+
 beranda berisi berita dan informasi sigmadev
 dakes berisi tampilan data user yang ditampilkan oleh admin
 laykes berisi vaksin dan form

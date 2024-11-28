@@ -98,19 +98,19 @@ session_start() ;
                     <h2 class="title">Daftar Akun</h2>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Username" name="pengguna" style="border-radius : 14px;" />
+                        <input type="text" placeholder="Username" name="pengguna" style="border-radius : 14px;" required/>
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Password" name="pass" style="border-radius : 14px;" />
+                        <input type="password" placeholder="Password" name="pass" style="border-radius : 14px;" required/>
                     </div>
                     <button type="submit" value="uregister" class="btn solid mt-7 " name="uregister"
                         style="background-color: #4d84e2;">DAFTAR </button>
-                    
 
-                    
+
+
                 </form>
-                        <?php
+                <?php
                 if (isset($_GET['register'])) {
                     if ($_GET['register'] == "gagal_daftar") {
                     echo"
@@ -122,7 +122,6 @@ session_start() ;
                     }
                 }
                 ?>
-
 
             </div>
         </div>
@@ -137,6 +136,7 @@ session_start() ;
                     <button class="btn transparent bg-info" id="sign-up-btn">
                         Lanjut
                     </button>
+
                 </div>
                 <img src="../assets/image/log.svg" class="image" alt="" />
             </div>

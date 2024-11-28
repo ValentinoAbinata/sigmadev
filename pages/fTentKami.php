@@ -15,7 +15,7 @@ session_start() ;
 </head>
 
 <body>
-    <audio autoplay>
+    <audio autoplay loop>
         <source src="../assets/mp3/duvet.mp3" type="audio/mp3" />
     </audio>
     <?php 

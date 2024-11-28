@@ -135,7 +135,7 @@ session_start();
                 </div>
                 <div class="col p-2 bg-green-300" style="border-color : white; border-width : 3px; border-radius: 12px;"
                     data-aos="slide-right">
-                    <button onclick="q5()">Mengapa dibuat website sigmaDev</button>
+                    <button onclick="q5()">Mengapa dibuat website sigmaDev?</button>
 
                     <div id="q5" class="" style="display:none; border-color:gray; border-top-width : 3px;">
                         <p class="text-md mb-3 mt-3 px-3 text-justify">
@@ -159,7 +159,7 @@ session_start();
 
                 <div class="col p-2 bg-green-300" style="border-color : white; border-width : 3px; border-radius: 12px;"
                     data-aos="slide-left">
-                    <button onclick="q6()">Apakah Tujuan Utama sigmaDev</button>
+                    <button onclick="q6()">Apakah Tujuan Utama sigmaDev?</button>
 
                     <div id="q6" class="" style="display:none; border-color:gray; border-top-width : 3px;">
                         
